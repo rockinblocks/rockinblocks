@@ -5,6 +5,7 @@
   "private": true,
   "workspaces": [
     "gatsby-starter-rockindocs",
-    "gatsby-theme-rockindocs"
+    "gatsby-theme-rockindocs",
+    "gatsby-plugin-rockindocs-blocks"
   ]
 }
