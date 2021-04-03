@@ -1,0 +1,12 @@
+{
+  "builder": [
+    {
+      "_template": "builder-hero",
+      "rawJson": {
+        "heading": "Rockin' Docs",
+        "subheading": "This is just a test sentence.",
+        "buttonText": "View Documentation"
+      }
+    }
+  ]
+}

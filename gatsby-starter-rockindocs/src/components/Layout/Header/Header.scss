@@ -1,0 +1,41 @@
+.header {
+  background-color: yellowgreen;
+  padding: 0.25rem 1rem;
+
+  .container {
+    flex-direction: row;
+  }
+}
+
+.header__logo,
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__logo {
+  margin-right: 0.125rem;
+
+  img {
+    margin: 0;
+  }
+
+  .gatsby-image-wrapper {
+    max-width: 4rem;
+  }
+}
+
+.header__title {
+
+  h1 {
+    margin: 0 0 0 0.25rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.125rem;
+
+    a {
+      color: #f7f7f7;
+      text-decoration: none;
+    }
+  }
+}

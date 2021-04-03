@@ -1,0 +1,10 @@
+{
+  "name": "rockindocs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "gatsby-starter-rockindocs",
+    "gatsby-theme-rockindocs"
+  ]
+}

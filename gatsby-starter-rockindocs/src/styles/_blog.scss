@@ -1,0 +1,33 @@
+.blog {
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    &__article {
+        padding: 1rem;
+        background-color: #ffffff;
+        border-bottom: 1px solid #eeeeee;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.post-title {
+    margin-top: 2rem;
+}
+
+.post-image-wrapper {
+    .gatsby-image-wrapper {
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2) !important;
+
+        img {
+            max-width: 100% !important;
+            border-radius: 2rem;
+        }
+    }
+}
