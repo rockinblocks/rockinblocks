@@ -1,0 +1,59 @@
+@import '../../../styles/shared';
+
+.rd-navbar {
+  padding: spacing(xs);
+  background-color: $white;
+  font-family: $font-family-main;
+  color: $text-color;
+  font-weight: $button-font-weight;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.675rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.rd-navbar__container {
+  @include container();
+}
+
+.rd-navbar__row {
+  @include row();
+}
+
+.rd-navbar__column {
+  @include column();
+  justify-content: center;
+}
+
+.rd-navbar__column:last-of-type {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.rd-navbar__app-name {
+  font-weight: 600;
+}
+
+.rd-navbar__navigation-wrapper {
+  display: flex;
+}
+
+.rd-navbar__navigation {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+.rd-navbar__navigation li {
+  font-size: 1.125rem;
+  padding: 1rem;
+}
+
+.rd-navbar__navigation li:last-of-type {
+  padding-right: 0;
+}

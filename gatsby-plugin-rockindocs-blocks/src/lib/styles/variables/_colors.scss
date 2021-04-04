@@ -1,4 +1,19 @@
-:root {
-  --text-color: #383838;
-  --main-bg-color: brown;
-}
+$primary: #fa3250;
+$secondary: #6e3b84;
+$white: #ffffff;
+$light: #f7f7f7;
+$dark: #383838;
+
+$palette: (
+  dark: $dark,
+  light: $light,
+  primary: $primary,
+  secondary: $secondary,
+);
+
+$text-color: $dark;
+$text-color-muted: rgba($dark, 0.75);
+
+// Third-party
+$tina-orange: #ea4924;
+$gatsby-purple: #663399;

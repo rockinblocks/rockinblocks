@@ -2,3 +2,13 @@
   $screen: map-get($screens, $size);
   @return $screen;
 }
+
+@function palette($color) {
+  $hex: map-get($palette, $color);
+  @return $hex;
+}
+
+@function spacing($size) {
+  $spacing: map-get($spacings, $size);
+  @return $spacing;
+}

@@ -1,0 +1,16 @@
+@import '../../../styles/shared';
+
+.rd-button {
+  padding: spacing(xs) spacing(sm);
+  background-color: palette(primary);
+  font-family: $font-family-main;
+  color: $button-font-color;
+  font-weight: $button-font-weight;
+  border-radius: $button-border-radius;
+  display: inline-flex;
+  justify-content: center;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 12rem;
+  }
+}
