@@ -3,16 +3,7 @@
     {
       "_template": "builder-hero",
       "rawJson": {
-        "heading": "Hey Kyle",
-        "subheading": "This is the subheading."
-      }
-    },
-    {
-      "_template": "builder-hero",
-      "rawJson": {
-        "heading": "Rockin' Docs",
-        "subheading": "This is just a test sentence.",
-        "buttonText": "View Documentation"
+        "heading": "Testing"
       }
     }
   ]
