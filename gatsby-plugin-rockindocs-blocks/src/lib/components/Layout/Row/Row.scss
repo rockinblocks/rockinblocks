@@ -1,0 +1,10 @@
+@import "../../../styles/shared";
+
+.rd-row {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+  }
+}

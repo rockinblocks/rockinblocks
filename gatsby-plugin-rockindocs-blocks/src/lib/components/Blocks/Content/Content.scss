@@ -1,28 +1,28 @@
 @import '../../../styles/shared';
 
-.rd-layout {
+.rd-content {
   font-family: $font-family-main;
 }
 
-.rd-layout--light {
+.rd-content--light {
   background-color: #f7f7f7;
 }
 
-.rd-layout__container {
+.rd-content__container {
   @include container();
   padding: spacing(xs);
 }
 
-.rd-layout__row {
+.rd-content__row {
   @include row();
   flex-wrap: wrap;
 }
 
-.rd-layout__column {
+.rd-content__column {
   @include column();
   flex: 1 0 50%;
   padding: spacing(lg) 0;
 }
-.rd-layout__section {
+.rd-content__section {
   padding: 0 spacing(xs);
 }

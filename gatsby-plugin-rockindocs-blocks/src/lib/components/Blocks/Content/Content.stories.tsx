@@ -1,13 +1,13 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { Layout, LayoutProps } from './Layout';
+import { Content, ContentProps } from './Content';
 
 export default {
-  title: 'Blocks/Layout',
-  component: Layout,
+  title: 'Blocks/Content',
+  component: Content,
 } as Meta;
 
-const Template: Story<LayoutProps> = (args) => <Layout {...args} />;
+const Template: Story<ContentProps> = (args) => <Content {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

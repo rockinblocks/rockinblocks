@@ -1,21 +1,21 @@
 import React, { FC } from 'react';
-import './Layout.scss';
+import './Content.scss';
 import { Button } from '../../Elements/Button';
 
-export interface LayoutProps {
+export interface ContentProps {
   heading: string;
   subheading?: string;
 }
 
-export interface LayoutSection {
+export interface ContentSection {
   heading: string;
   body: string;
   buttonText: string;
   buttonLink: string;
 }
 
-export const Layout: FC<LayoutProps> = ({ heading, subheading }) => {
-  const sections: LayoutSection[] = [
+export const Content: FC<ContentProps> = ({ heading, subheading }) => {
+  const sections: ContentSection[] = [
     {
       heading: 'Sed ut perspiciatis',
       body:
@@ -47,19 +47,19 @@ export const Layout: FC<LayoutProps> = ({ heading, subheading }) => {
   ];
 
   return (
-    <div className="rd-layout rd-layout--alpha rd-layout--light">
-      <div className="rd-layout__container">
+    <div className="rd-content rd-content--alpha rd-content--light">
+      <div className="rd-content__container">
         <h2>{heading}</h2>
       </div>
-      <div className="rd-layout__container">
+      <div className="rd-content__container">
         {sections && (
-          <div className="rd-layout__row">
+          <div className="rd-content__row">
             {sections.map(({ heading: sectionHeading, body, buttonLink, buttonText }) => {
               return (
-                <div className="rd-layout__column">
-                  <div className="rd-layout__section">
-                    <h3 className="rd-layout__heading">{sectionHeading}</h3>
-                    <p className="rd-layout__body">{body}</p>
+                <div className="rd-content__column">
+                  <div className="rd-content__section">
+                    <h3 className="rd-content__heading">{sectionHeading}</h3>
+                    <p className="rd-content__body">{body}</p>
                     <Button text={buttonText} />
                   </div>
                 </div>
