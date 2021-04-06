@@ -1,27 +1,30 @@
 import React from "react"
 
-export interface ColProps {
-  children?: any
+export interface BoxProps {
+  children?: React.ReactNode
   display?: string
   flex?: number
-  flexDirection?: any
   justifyContent?: string
+  padding?: string
+  margin?: string
 }
 
-export const Col = ({
+export const Box = ({
+  children,
   display,
   flex,
-  flexDirection,
   justifyContent,
-  children,
-}: ColProps) => {
+  padding,
+  margin,
+}: BoxProps) => {
   const style = {
     display,
     flex,
-    flexDirection,
     justifyContent,
+    padding,
+    margin,
   }
   return <div style={{ ...style }}>{children}</div>
 }
 
-export default Col
+export default Box

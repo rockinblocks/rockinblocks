@@ -10,14 +10,6 @@ export interface HeroProps {
   subheading?: string
 }
 
-const HeroVector = () => {
-  if (Vector) {
-    return <Vector />
-  }
-
-  return null
-}
-
 export const Hero: FC<HeroProps> = ({ heading, seoHeading, subheading }) => {
   return (
     <div className={styles["rd-hero"]}>
@@ -34,7 +26,7 @@ export const Hero: FC<HeroProps> = ({ heading, seoHeading, subheading }) => {
 
           <Col flex={40}>
             <div className={styles["rd-hero__image-wrapper"]}>
-              <HeroVector />
+              <Vector />
             </div>
           </Col>
         </Row>

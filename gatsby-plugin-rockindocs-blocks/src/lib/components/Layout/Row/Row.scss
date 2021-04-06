@@ -3,6 +3,7 @@
 .rd-row {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   @include media-breakpoint-up(lg) {
     flex-direction: row;

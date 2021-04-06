@@ -1,11 +1,11 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import { Hero } from './Hero';
+import React from "react"
+import { shallow } from "enzyme"
+import { Navbar } from "./Navbar"
 
-describe('<Hero />', () => {
-  it('should render', () => {
-    const wrapper = shallow(<Hero />);
+describe("<Navbar />", () => {
+  it("should render", () => {
+    const wrapper = shallow(<Navbar />)
 
-    expect(wrapper).toBeDefined();
-  });
-});
+    expect(wrapper).toBeDefined()
+  })
+})

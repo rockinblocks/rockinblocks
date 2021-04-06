@@ -15,19 +15,27 @@ module.exports = {
       },
     },
   ],
-  webpackFinal: async (config, { configType }) => {
-    // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
-    // You can change the configuration based on that.
-    // 'PRODUCTION' is used when building the static version of storybook.
-
-    // Make whatever fine-grained changes you need
-    config.module.rules.push({
-      test: /\.svg$/,
-      include: path.resolve(__dirname, '../src/**/*'),
-      use: ['@svgr/webpack', 'url-loader'],
-    })
-
-    // Return the altered config
-    return config
-  },
+  webpackFinal(config = {}, options = {}) {
+    return {
+      ...config,
+      module: {
+        ...config.module,
+        rules: [
+          ...config.module.rules.map(_ => {
+            if (_?.test?.toString().includes('svg|')) {
+              return {
+                ..._,
+                test: new RegExp(_.test.source.replace('svg|', ''))
+              }
+            }
+            return _
+          }),
+          {
+            test: /\.svg$/,
+            use: [require.resolve('@svgr/webpack'), require.resolve('file-loader')]
+          }
+        ]
+      }
+    }
+  }
 }

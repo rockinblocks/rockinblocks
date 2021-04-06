@@ -2,17 +2,26 @@ import React from "react"
 import styles from "./Row.scss"
 
 export interface RowProps {
-  children?: any
-  wrap?: string
-  column?: string
-  columnReverse?: string
+  children?: React.ReactNode
+  display?: string
+  flexDirecton?: string
+  flexWrap?: string
+  justifyContent?: string
   rowReverse?: string
-  padded?: boolean
-  paddedSm?: boolean
 }
 
-export const Row = ({ children }) => {
-  return <div className={styles["rd-row"]}>{children}</div>
+export const Row = (props: RowProps): JSX.Element => {
+  const { children, display, flexDirecton, justifyContent } = props
+  const styleProps = {
+    display,
+    flexDirecton,
+    justifyContent,
+  }
+  return (
+    <div className={styles["rd-row"]} style={{ ...styleProps }}>
+      {children}
+    </div>
+  )
 }
 
 export default Row
