@@ -3286,7 +3286,7 @@
     "@svgr/plugin-svgo" "^5.5.0"
     rollup-pluginutils "^2.8.2"
 
-"@svgr/webpack@^5.5.0":
+"@svgr/webpack@^5.3.1", "@svgr/webpack@^5.5.0":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@svgr/webpack/-/webpack-5.5.0.tgz#aae858ee579f5fa8ce6c3166ef56c6a1b381b640"
   integrity sha512-DOBOK255wfQxguUta2INKkzPj6AIS6iafZYiYmHn6W3pHlycSRRlvWKCfLDG10fXfLWqE3DJHgRUOyJYmARa7g==
@@ -9689,7 +9689,7 @@ file-loader@^1.1.11:
     loader-utils "^1.0.2"
     schema-utils "^0.4.5"
 
-file-loader@^6.2.0:
+file-loader@^6.0.0, file-loader@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-6.2.0.tgz#baef7cf8e1840df325e4390b4484879480eebe4d"
   integrity sha512-qo3glqyTa61Ytg4u73GultjHGjdRyig3tG6lPtyX/jOEJvHif9uB0/OCI2Kif6ctF3caQTW2G5gym21oAsI4pw==
@@ -20536,6 +20536,14 @@ storybook-css-modules-preset@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/storybook-css-modules-preset/-/storybook-css-modules-preset-1.0.8.tgz#c5dc12ce62727dc24484674b6527e978eb7c7bed"
   integrity sha512-P9yFbM+HYAOpMO7bp/6u0dVbx0ZYaBqxPIhPdotu6gGBT1+FlEL8t41ML8IC1V0dWKT2ZEnzCiglOUES9Mg1cw==
+
+storybook-svgr-react-component@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/storybook-svgr-react-component/-/storybook-svgr-react-component-1.0.1.tgz#fd32bb1c48897d5111f8f683ab6e4cf0a7327a59"
+  integrity sha512-EPixzDU6/jZlzyDpCaG23o0e2hR0eMtBds7mhnrxYYEBvbWqmFczMtFvRXl7JO76k0hsRL8Mj1mVA6IbjAR2OQ==
+  dependencies:
+    "@svgr/webpack" "^5.3.1"
+    file-loader "^6.0.0"
 
 storybook@^6.2.2:
   version "6.2.2"
