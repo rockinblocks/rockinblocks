@@ -1,5 +1,5 @@
 import React from "react"
-import "./Row.scss"
+import styles from "./Row.scss"
 
 export interface RowProps {
   children?: any
@@ -12,7 +12,7 @@ export interface RowProps {
 }
 
 export const Row = ({ children }) => {
-  return <div className="rd-row">{children}</div>
+  return <div className={styles["rd-row"]}>{children}</div>
 }
 
 export default Row

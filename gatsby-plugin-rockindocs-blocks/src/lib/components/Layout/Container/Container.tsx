@@ -1,8 +1,9 @@
 import React from "react"
-import "./Container.scss"
+import clsx from "clsx"
+import styles from "./Container.scss"
 
 export interface ContainerProps {
-  children?: any,
+  children?: any
   wrap?: string
   column?: string
   columnReverse?: string
@@ -22,14 +23,17 @@ export const Container = ({
 }: ContainerProps) => {
   return (
     <div
-      className={`rd-container
-        ${wrap ? "wrap" : ""}
-        ${column ? "column" : ""}
-        ${columnReverse ? "column-reverse" : ""}
-        ${rowReverse ? "row-reverse" : ""}
-        ${padded ? "padded" : ""}
-        ${paddedSm ? "padded-sm" : ""}
-      `}
+      className={clsx(
+        styles["rd-container"],
+        `
+          ${wrap ? "wrap" : ""}
+          ${column ? "column" : ""}
+          ${columnReverse ? "column-reverse" : ""}
+          ${rowReverse ? "row-reverse" : ""}
+          ${padded ? "padded" : ""}
+          ${paddedSm ? "padded-sm" : ""}
+        `
+      )}
     >
       {children}
     </div>

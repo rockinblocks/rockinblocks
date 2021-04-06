@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import "./Hero.scss"
+import styles from "./Hero.scss"
 import svg from "./Hero.svg"
 import { Col, Container, Row } from "../../Layout"
 import { Button } from "../../Elements/Button"
@@ -12,23 +12,23 @@ export interface HeroProps {
 
 export const Hero: FC<HeroProps> = ({ heading, seoHeading, subheading }) => {
   return (
-    <div className="rd-hero">
+    <div className={styles["rd-hero"]}>
       <Container>
         <Row>
-          <Col>
-            <div className="rd-hero__content-wrapper">
-              <h1 className="rd-hero__seo-heading">{seoHeading}</h1>
-              <p className="rd-hero__heading">{heading}</p>
-              <p className="rd-hero__subheading">{subheading}</p>
+          <Col flex={60}>
+            <div className={styles["rd-hero__content-wrapper"]}>
+              <h1 className={styles["rd-hero__seo-heading"]}>{seoHeading}</h1>
+              <p className={styles["rd-hero__heading"]}>{heading}</p>
+              <p className={styles["rd-hero__subheading"]}>{subheading}</p>
               <Button text="Start a Project" />
             </div>
           </Col>
 
-          <div className="rd-hero__column">
-            <div className="rd-hero__image-wrapper">
-              <img className="rd-hero__vector" src={svg} alt="" />
+          <Col flex={40}>
+            <div className={styles["rd-hero__image-wrapper"]}>
+              <img className={styles["rd-hero__vector"]} src={svg} alt="" />
             </div>
-          </div>
+          </Col>
         </Row>
       </Container>
     </div>
