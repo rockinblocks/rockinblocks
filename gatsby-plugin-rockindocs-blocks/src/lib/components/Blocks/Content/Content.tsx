@@ -1,73 +1,78 @@
-import React, { FC } from 'react';
-import './Content.scss';
-import { Button } from '../../Elements/Button';
+import React, { FC } from "react"
+import styles from "./Content.scss"
+import { Button } from "../../Elements/Button"
+import { Box, Col, Container, Row } from "../../Layout"
 
 export interface ContentProps {
-  heading: string;
-  subheading?: string;
+  heading: string
+  subheading?: string
 }
 
 export interface ContentSection {
-  heading: string;
-  body: string;
-  buttonText: string;
-  buttonLink: string;
+  heading: string
+  body: string
+  buttonText: string
+  buttonLink: string
 }
 
 export const Content: FC<ContentProps> = ({ heading, subheading }) => {
   const sections: ContentSection[] = [
     {
-      heading: 'Sed ut perspiciatis',
+      heading: "Sed ut perspiciatis",
       body:
-        'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.',
-      buttonText: 'Learn More',
-      buttonLink: 'Lorem Ipsum',
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+      buttonText: "Learn More",
+      buttonLink: "Lorem Ipsum",
     },
     {
-      heading: 'Lorem ipsum dolor',
+      heading: "Lorem ipsum dolor",
       body:
-        'Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-      buttonText: 'Learn More',
-      buttonLink: 'Lorem Ipsum',
+        "Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      buttonText: "Learn More",
+      buttonLink: "Lorem Ipsum",
     },
     {
-      heading: 'Nemo enim ipsam',
+      heading: "Nemo enim ipsam",
       body:
-        'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.',
-      buttonText: 'Learn More',
-      buttonLink: 'Lorem Ipsum',
+        "Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.",
+      buttonText: "Learn More",
+      buttonLink: "Lorem Ipsum",
     },
     {
-      heading: 'Tempor incididunt',
+      heading: "Tempor incididunt",
       body:
-        'Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.',
-      buttonText: 'Learn More',
-      buttonLink: 'Lorem Ipsum',
+        "Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.",
+      buttonText: "Learn More",
+      buttonLink: "Lorem Ipsum",
     },
-  ];
+  ]
 
   return (
-    <div className="rd-content rd-content--alpha rd-content--light">
-      <div className="rd-content__container">
-        <h2>{heading}</h2>
-      </div>
-      <div className="rd-content__container">
+    <div className={styles["rd-content"]}>
+      <Container>
+        <Box>
+          <h2>{heading}</h2>
+        </Box>
+      </Container>
+      <Container>
         {sections && (
-          <div className="rd-content__row">
-            {sections.map(({ heading: sectionHeading, body, buttonLink, buttonText }) => {
-              return (
-                <div className="rd-content__column">
-                  <div className="rd-content__section">
-                    <h3 className="rd-content__heading">{sectionHeading}</h3>
-                    <p className="rd-content__body">{body}</p>
+          <Box display="flex" style={{ flexWrap: "wrap" }}>
+            {sections.map(
+              ({ heading: sectionHeading, body, buttonLink, buttonText }) => {
+                return (
+                  <Box flex="1 0 50%">
+                    <h3 className={styles["rd-content__heading"]}>
+                      {sectionHeading}
+                    </h3>
+                    <p className={styles["rd-content__body"]}>{body}</p>
                     <Button text={buttonText} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                  </Box>
+                )
+              }
+            )}
+          </Box>
         )}
-      </div>
+      </Container>
     </div>
-  );
-};
+  )
+}

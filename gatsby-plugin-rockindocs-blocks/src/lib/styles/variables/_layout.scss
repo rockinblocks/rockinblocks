@@ -1,3 +1,4 @@
+// Spacing
 $spacings: (
   xs: 1rem,
   sm: 1.5rem,
@@ -10,3 +11,6 @@ $spacings: (
 $button-font-weight: 600;
 $button-font-color: $white;
 $button-border-radius: 4rem;
+
+// Transitions
+$transition-time: 0.1s;

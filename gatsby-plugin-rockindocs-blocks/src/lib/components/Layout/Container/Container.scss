@@ -7,7 +7,6 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 0 1rem;
 
   @include media-breakpoint-up(md) {
     flex-direction: row;
@@ -15,38 +14,5 @@
 
   @include media-breakpoint-up(lg) {
     max-width: 1170px;
-  }
-
-  &.column {
-    flex-direction: column;
-  }
-
-  &.column-reverse {
-    flex-direction: column-reverse;
-    @include media-breakpoint-up(md) {
-      flex-direction: row;
-    }
-  }
-
-  &.row-reverse {
-    flex-direction: row-reverse;
-
-    @include media-breakpoint-up(md) {
-      flex-direction: row;
-    }
-  }
-
-  &.wrap {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  &.padded,
-  .padded-sm {
-    padding: 2rem 0;
-
-    @include media-breakpoint-up(sm) {
-      padding: 4rem 0;
-    }
   }
 }

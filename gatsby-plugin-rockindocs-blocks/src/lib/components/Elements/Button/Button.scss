@@ -1,4 +1,4 @@
-@import '../../../styles/shared';
+@import "../../../styles/shared";
 
 .rd-button {
   padding: spacing(xs) spacing(sm);
@@ -9,8 +9,20 @@
   border-radius: $button-border-radius;
   display: inline-flex;
   justify-content: center;
+  transition: background-color $transition-time, transform $transition-time;
+  transform: translateY(0);
 
   @include media-breakpoint-up(lg) {
     max-width: 12rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken($primary, 10%);
+    }
+
+    &:active {
+      transform: translateY(0.125rem);
+      background-color: darken($primary, 20%);
+    }
   }
 }

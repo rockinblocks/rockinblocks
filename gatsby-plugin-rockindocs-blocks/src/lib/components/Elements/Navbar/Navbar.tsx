@@ -22,7 +22,7 @@ export const Navbar: FC<NavbarProps> = ({ appName }) => {
 
   return (
     <div className={styles["rd-navbar"]}>
-      <Container>
+      <Container display="flex">
         <Row>
           <Col
             flex={1}
@@ -34,7 +34,12 @@ export const Navbar: FC<NavbarProps> = ({ appName }) => {
               <span className={styles["rd-navbar__app-name"]}>{appName}</span>
             </Box>
           </Col>
-          <Col flex={1} display="flex" justifyContent="flex-end">
+          <Col
+            flex={1}
+            flexDirection="row"
+            display="flex"
+            justifyContent="flex-end"
+          >
             <div className={styles["rd-navbar__navigation-wrapper"]}>
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
