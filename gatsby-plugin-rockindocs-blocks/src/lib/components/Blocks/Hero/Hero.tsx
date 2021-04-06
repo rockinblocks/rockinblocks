@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 import styles from "./Hero.scss"
-import svg from "./Hero.svg"
+import { ReactComponent as Vector } from "./Hero.svg"
 import { Col, Container, Row } from "../../Layout"
 import { Button } from "../../Elements/Button"
 
@@ -8,6 +8,14 @@ export interface HeroProps {
   heading: string
   seoHeading: string
   subheading?: string
+}
+
+const HeroVector = () => {
+  if (Vector) {
+    return <Vector />
+  }
+
+  return null
 }
 
 export const Hero: FC<HeroProps> = ({ heading, seoHeading, subheading }) => {
@@ -26,7 +34,7 @@ export const Hero: FC<HeroProps> = ({ heading, seoHeading, subheading }) => {
 
           <Col flex={40}>
             <div className={styles["rd-hero__image-wrapper"]}>
-              <img className={styles["rd-hero__vector"]} src={svg} alt="" />
+              <HeroVector />
             </div>
           </Col>
         </Row>
