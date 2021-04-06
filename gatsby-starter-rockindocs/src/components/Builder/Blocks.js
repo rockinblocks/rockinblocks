@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { InlineForm, InlineBlocks } from 'react-tinacms-inline'
 import { useBuilder } from '../Builder'
-import { Hero } from './Hero'
+import { Hero } from 'gatsby-plugin-rockindocs-blocks'
 
 export const Blocks = () => {
-  const { rawJson, form } = useBuilder()
+  const { rawJson } = useBuilder()
   const [blocks, setBlocks] = useState([])
 
   useEffect(() => {
@@ -20,6 +19,7 @@ export const Blocks = () => {
         return (
           <Hero
             heading={block?.rawJson?.heading ?? ''}
+            seoHeading={block?.rawJson?.heading ?? ''}
             subheading={block?.rawJson?.subheading ?? ''}
           />
         )
