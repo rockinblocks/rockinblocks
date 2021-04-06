@@ -1,4 +1,4 @@
-import { formConfig as BuilderHero } from './Hero/formConfig'
+import { HeroForm as BuilderHero } from 'gatsby-plugin-rockindocs-blocks'
 
 export const formConfig = {
   label: 'Page Builder',
