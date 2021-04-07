@@ -4,7 +4,7 @@
       "_template": "builder-hero",
       "rawJson": {
         "heading": "Rock out with your docs out.",
-        "seoHeading": "Testing",
+        "seoHeading": "A open-source GatsbyJS workspace built with Storybook and Tina CMS to help developers quickly build web applications.",
         "subheading": "Rockin' Docs is built with one of the fastest web frameworks, GatsbyJS, which means when it comes to performance, Rockin' Docs shreds."
       }
     }
