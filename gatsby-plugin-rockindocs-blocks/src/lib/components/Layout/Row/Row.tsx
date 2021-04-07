@@ -4,21 +4,24 @@ import styles from "./Row.scss"
 export interface RowProps {
   children?: React.ReactNode
   display?: string
-  flexDirecton?: string
+  flexDirection?: any
   flexWrap?: string
   justifyContent?: string
-  rowReverse?: string
+  style?: React.CSSProperties | undefined
 }
 
-export const Row = (props: RowProps): JSX.Element => {
-  const { children, display, flexDirecton, justifyContent } = props
+export const Row: React.FC<RowProps & React.HTMLAttributes<HTMLDivElement>> = (
+  props
+): JSX.Element => {
+  const { children, display, flexDirection, justifyContent, style } = props
   const styleProps = {
     display,
-    flexDirecton,
+    flexDirection,
     justifyContent,
+    ...style,
   }
   return (
-    <div className={styles["rd-row"]} style={{ ...styleProps }}>
+    <div className={styles["rd-row"]} style={{ ...styleProps }} {...props}>
       {children}
     </div>
   )

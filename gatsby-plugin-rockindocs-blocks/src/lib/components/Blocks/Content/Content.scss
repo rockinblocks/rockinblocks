@@ -3,4 +3,63 @@
 .rd-content {
   font-family: $font-family-main;
   background-color: palette(light);
+  padding: spacing(md) 0;
+}
+
+.rd-content__intro {
+  @include media-breakpoint-up(lg) {
+    flex: 0.6;
+  }
+}
+
+.rd-content__heading {
+  @include typography-h2();
+  margin-bottom: spacing(md);
+
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+  }
+}
+
+.rd-content__subheading {
+  @include typography-subheading();
+  margin-bottom: spacing(md);
+}
+
+.rd-content__section {
+  margin: spacing(xs) / 4;
+
+  // Card
+  background-color: $white;
+  border-radius: $card-border-radius;
+  box-shadow: 0 0 0.25rem rgba($black, 0.1);
+  color: $text-color-muted;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: spacing(md);
+
+  @include media-breakpoint-up(lg) {
+    padding: spacing(md);
+    margin-bottom: spacing(xs) / 4;
+  }
+}
+
+.rd-content__section-heading {
+  color: $text-color;
+  margin: 0;
+}
+
+.rd-content__section-body {
+  margin-bottom: spacing(md);
+}
+
+.rd-content__vector {
+  @include media-breakpoint-up(lg) {
+    width: 40rem;
+    margin-right: -20rem;
+  }
 }

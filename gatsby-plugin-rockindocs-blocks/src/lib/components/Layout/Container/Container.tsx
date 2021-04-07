@@ -11,7 +11,8 @@ export interface ContainerProps {
 
 export const Container: React.FC<
   ContainerProps & React.HTMLAttributes<HTMLDivElement>
-> = ({ display, flex, flexDirection, justifyContent, children }) => {
+> = props => {
+  const { display, flex, flexDirection, justifyContent, children } = props
   const style = {
     display,
     flex,
@@ -19,7 +20,7 @@ export const Container: React.FC<
     justifyContent,
   }
   return (
-    <div className={styles["rd-container"]} style={{ ...style }}>
+    <div className={styles["rd-container"]} style={{ ...style }} {...props}>
       {children}
     </div>
   )

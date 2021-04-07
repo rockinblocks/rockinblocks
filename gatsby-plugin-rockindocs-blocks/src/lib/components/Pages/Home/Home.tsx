@@ -5,8 +5,7 @@ import { Navbar } from "../../Elements/Navbar"
 
 export const Home = () => {
   const heroProps = {
-    heading:
-      "Rock out with your docs out.",
+    heading: "Rock out with your docs out.",
     seoHeading:
       "The best documentation GatsbyJS starter created with Tina CMS.",
     subheading:
@@ -17,7 +16,10 @@ export const Home = () => {
     <>
       <Navbar appName="Rockin' Docs!" />
       <Hero {...heroProps} />
-      <Content heading="Meet the band: GatsbyJS, Storybook, and Tina CMS." />
+      <Content
+        heading="Meet the band"
+        subheading="Gatsby, Storybook, and Tina CMS come together for the first time to bring you an elegant, efficient, and practical development experience."
+      />
     </>
   )
 }

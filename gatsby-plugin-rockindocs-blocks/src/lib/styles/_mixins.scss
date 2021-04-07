@@ -48,6 +48,15 @@
   line-height: 1.75rem;
 }
 
+@mixin typography-subheading() {
+  color: $text-color-muted;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
 @mixin container() {
   margin: 0 auto;
   width: 100%;

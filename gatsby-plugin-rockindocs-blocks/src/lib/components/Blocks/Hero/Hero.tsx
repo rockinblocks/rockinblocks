@@ -1,7 +1,7 @@
 import React, { FC } from "react"
 import styles from "./Hero.scss"
 import { ReactComponent as Vector } from "./Hero.svg"
-import { Col, Container, Row } from "../../Layout"
+import { Box, Col, Container, Row } from "../../Layout"
 import { Button } from "../../Elements/Button"
 
 export interface HeroProps {
@@ -15,13 +15,18 @@ export const Hero: FC<HeroProps> = ({ heading, seoHeading, subheading }) => {
     <div className={styles["rd-hero"]}>
       <Container>
         <Row>
-          <Col flex={60}>
-            <div className={styles["rd-hero__content-wrapper"]}>
+          <Col
+            flex={60}
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+          >
+            <Box>
               <h1 className={styles["rd-hero__seo-heading"]}>{seoHeading}</h1>
               <p className={styles["rd-hero__heading"]}>{heading}</p>
               <p className={styles["rd-hero__subheading"]}>{subheading}</p>
               <Button text="Start a Project" />
-            </div>
+            </Box>
           </Col>
 
           <Col flex={40}>
