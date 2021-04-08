@@ -21,6 +21,8 @@ export const Blocks = () => {
             heading={block?.rawJson?.heading ?? ''}
             seoHeading={block?.rawJson?.seoHeading ?? ''}
             subheading={block?.rawJson?.subheading ?? ''}
+            buttonText={block?.rawJson?.buttonText ?? ''}
+            buttonLink={block?.rawJson?.buttonLink ?? ''}
           />
         )
       default:

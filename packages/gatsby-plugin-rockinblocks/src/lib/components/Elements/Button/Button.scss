@@ -1,13 +1,17 @@
 @import "../../../styles/shared";
 
 .rd-button {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.rd-button__inner {
   padding: spacing(xs) spacing(sm);
   background-color: palette(primary);
   font-family: $font-family-main;
   color: $button-font-color;
   font-weight: $button-font-weight;
   border-radius: $button-border-radius;
-  display: inline-flex;
   justify-content: center;
   transition: background-color $transition-time, transform $transition-time;
   transform: translateY(0);
