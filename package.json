@@ -1,14 +1,9 @@
 {
-  "name": "rockindocs",
+  "name": "@rockindocshq/rockindocs",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "gatsby-starter-rockindocs",
-    "gatsby-theme-rockindocs",
-    "gatsby-plugin-rockindocs-blocks"
-  ],
-  "dependencies": {
-    "@svgr/webpack": "^5.5.0"
-  }
+    "packages/*"
+  ]
 }

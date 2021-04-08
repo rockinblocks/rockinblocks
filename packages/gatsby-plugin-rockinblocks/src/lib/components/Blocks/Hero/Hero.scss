@@ -1,0 +1,62 @@
+@import "../../../styles/shared";
+
+.rd-hero {
+  @include typography-body();
+  display: flex;
+  overflow: hidden;
+  flex-direction: column-reverse;
+  padding: spacing(xl) spacing(sm) spacing(md);
+
+  @include media-breakpoint-up(md) {
+    padding: spacing(xl) spacing(md) spacing(md);
+    flex-direction: row;
+  }
+}
+
+.rd-hero__seo-heading {
+  color: $text-color-muted;
+  font-size: 0.875rem;
+  margin-bottom: 0 spacing(xs);
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1rem;
+  }
+}
+
+.rd-hero__heading {
+  @include typography-display();
+  margin: 0;
+  margin-bottom: spacing(sm);
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: spacing(md);
+  }
+}
+
+.rd-hero__subheading {
+  @include typography-subheading();
+  margin-bottom: spacing(md);
+}
+
+.rd-hero__image-wrapper {
+  overflow: hidden;
+  margin-top: spacing(md);
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+}
+
+.rd-hero__vector {
+  position: relative;
+  max-width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    height: 36rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    // left: -60rem;
+    transform: none;
+  }
+}
