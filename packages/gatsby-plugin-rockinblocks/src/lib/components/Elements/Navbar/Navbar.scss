@@ -16,8 +16,10 @@
   z-index: 10;
 }
 
-.rd-navbar__app-name {
+.rd-navbar__brand {
   font-weight: 600;
+  color: $text-color;
+  text-decoration: none;
 }
 
 .rd-navbar__navigation {
@@ -27,6 +29,7 @@
   display: flex;
 }
 
+
 .rd-navbar__navigation li {
   font-size: 1.125rem;
   padding: 1rem;
@@ -34,4 +37,9 @@
 
 .rd-navbar__navigation li:last-of-type {
   padding-right: 0;
+}
+
+.rd-navbar__navigation li a {
+  text-decoration: none;
+  color: $primary;
 }

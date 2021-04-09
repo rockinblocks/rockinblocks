@@ -1,4 +1,5 @@
 import React, { FC } from "react"
+import { Link } from "gatsby"
 import { Box, Col, Container, Row } from "../../Layout"
 import styles from "./Navbar.scss"
 
@@ -32,7 +33,9 @@ export const Navbar: FC<NavbarProps> = props => {
             justifyContent="center"
           >
             <Box>
-              <span className={styles["rd-navbar__app-name"]}>{appName}</span>
+              <Link to="/" className={styles["rd-navbar__brand"]}>
+                <span>{appName}</span>
+              </Link>
             </Box>
           </Col>
           <Col
@@ -44,10 +47,9 @@ export const Navbar: FC<NavbarProps> = props => {
             <div className={styles["rd-navbar__navigation-wrapper"]}>
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
-                  <span>Get Started</span>
-                </li>
-                <li>
-                  <span>Docs</span>
+                  <Link to="/get-started">
+                    <span>Get Started</span>
+                  </Link>
                 </li>
               </ul>
             </div>

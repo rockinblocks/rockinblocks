@@ -37,12 +37,6 @@ export const Button: FC<ButtonProps> = props => {
         >
           {text}
         </span>
-        {/* <span
-        className={styles["rd-button__text"]}
-        style={{ color: textColor || "#ffffff" }}
-        >
-        {text}
-      </span> */}
       </div>
     </Wrapper>
   )

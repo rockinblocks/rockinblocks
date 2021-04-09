@@ -10,10 +10,18 @@ export interface HeroProps {
   subheading?: string
   buttonText: string
   buttonLink?: string
+  primaryColor?: string
 }
 
 export const Hero: FC<HeroProps> = props => {
-  const { heading, seoHeading, subheading, buttonText, buttonLink } = props
+  const {
+    heading,
+    seoHeading,
+    subheading,
+    buttonText,
+    buttonLink,
+    primaryColor,
+  } = props
   return (
     <div className={styles["rd-hero"]}>
       <Container>
@@ -28,7 +36,11 @@ export const Hero: FC<HeroProps> = props => {
               <h1 className={styles["rd-hero__seo-heading"]}>{seoHeading}</h1>
               <p className={styles["rd-hero__heading"]}>{heading}</p>
               <p className={styles["rd-hero__subheading"]}>{subheading}</p>
-              <Button text={buttonText} link={buttonLink} />
+              <Button
+                backgroundColor={primaryColor}
+                text={buttonText}
+                link={buttonLink}
+              />
             </Box>
           </Col>
 

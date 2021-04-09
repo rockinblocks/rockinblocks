@@ -5,5 +5,11 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "blocks:storybook": "yarn workspace @rockindocshq/gatsby-plugin-rockinblocks storybook",
+    "blocks:build": "yarn workspace @rockindocshq/gatsby-plugin-rockinblocks build",
+    "gatsby:dev": "yarn workspace @rockindocshq/gatsby-starter-rockindocs develop",
+    "gatsby:build": "yarn workspace @rockindocshq/gatsby-starter-rockindocs build"
+  }
 }

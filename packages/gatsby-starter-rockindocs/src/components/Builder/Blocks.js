@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useBuilder } from '../Builder'
+import { useTheme } from '../Utilities/Theme'
 import { Hero } from '@rockindocshq/gatsby-plugin-rockinblocks'
+// import { ThemeProvider } from 'react-bootstrap'
 
 export const Blocks = () => {
   const { rawJson } = useBuilder()
   const [blocks, setBlocks] = useState([])
+  const theme = useTheme()
 
   useEffect(() => {
     if (rawJson) {
@@ -23,6 +26,7 @@ export const Blocks = () => {
             subheading={block?.rawJson?.subheading ?? ''}
             buttonText={block?.rawJson?.buttonText ?? ''}
             buttonLink={block?.rawJson?.buttonLink ?? ''}
+            {...theme}
           />
         )
       default:
