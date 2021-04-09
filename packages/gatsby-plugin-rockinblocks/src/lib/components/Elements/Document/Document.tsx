@@ -5,16 +5,16 @@ import { Sidebar } from "../Sidebar"
 import { Navbar } from "../Navbar"
 import { Box, Col, Container, Row } from "../../Layout"
 
-export interface Document {
+export interface DocumentInterface {
   path: string
   title: string
 }
 
-export interface DocumentPageProps {
-  documents: Document[]
+export interface DocumentProps {
+  documents?: DocumentInterface[]
 }
 
-export const DocumentPage: FC<DocumentPageProps> = ({ documents }) => {
+export const Document: FC<DocumentProps> = ({ documents }) => {
   return (
     <>
       <Box className="rd-document" display="flex">
@@ -33,4 +33,4 @@ export const DocumentPage: FC<DocumentPageProps> = ({ documents }) => {
   )
 }
 
-export default DocumentPage
+export default Document

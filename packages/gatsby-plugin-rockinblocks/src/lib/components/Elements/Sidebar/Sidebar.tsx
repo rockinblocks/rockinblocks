@@ -2,9 +2,10 @@ import React, { FC } from "react"
 import { Link } from "gatsby"
 import { Box, Col, Container, Row } from "../../Layout"
 import styles from "./Sidebar.scss"
+import { DocumentInterface } from "../Document/Document"
 
 export interface SidebarProps {
-  documents: Document[]
+  documents?: DocumentInterface[]
 }
 
 export const Sidebar: FC<SidebarProps> = props => {
