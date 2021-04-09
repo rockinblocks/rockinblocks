@@ -9,17 +9,16 @@ description: >-
   breeze.
 keywords: 'markdown, gatsby, graphql'
 ---
-
-## Trying something new should be easy. GatsbyJS nails it.
+## Trying something new should be easy. GatsbyJS just nails it.
 
 This morning I became hell-bent on starting some sort of development project. The kicker, however, is that I not only wanted to start a new project today, I wanted to finish it today, as well. I really needed a new blog that allowed me to write more generally about web development, but I didn't want to use Medium or WordPress -- I really wanted to use Javascript, and I really wanted to host it myself. I kept hearing about the simplicity and ease-of-use of [GatsbyJS](https://www.gatsbyjs.org/) through some friends and colleagues, and decided to give it a shot.
 
----
+***
 
 ### GatsbyJS Installation
 
 <a href="https://www.gatsbyjs.com/docs/quick-start/" target="_blank">
-  Here is a link to Gatsby's Quick Start
+Here is a link to Gatsby's Quick Start
 </a>
 
 #### Install the Gatsby CLI tool globally on your machine:
@@ -44,7 +43,7 @@ $ cd project-name && gatsby develop
 
 Quick and painless. The team at GatsbyJS has also done a really great job with providing enough boilerplate so you can get started right away, but not so much that your application is immediately cluttered from the start.
 
----
+***
 
 ### Adding Sass to GatsbyJS
 
@@ -107,7 +106,7 @@ summary {
 import './src/styles/main.scss'
 ```
 
----
+***
 
 ### Adding Markdown support to GatsbyJS
 
