@@ -11,16 +11,6 @@ export interface NavbarProps {
 
 export const Navbar: FC<NavbarProps> = props => {
   const { appName, backgroundColor, color } = props
-  const navigation = [
-    {
-      text: "Get Started",
-      path: "/get-started",
-    },
-    {
-      text: "Docs",
-      path: "/docs",
-    },
-  ]
 
   return (
     <div className={styles["rd-navbar"]}>
