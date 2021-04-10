@@ -3,9 +3,7 @@
 .rd-navbar {
   padding: spacing(xs);
   background-color: $white;
-  font-family: $font-family-main;
   color: $text-color;
-  font-weight: $button-font-weight;
   display: flex;
   justify-content: space-between;
   font-size: 1.675rem;
@@ -17,9 +15,10 @@
 }
 
 .rd-navbar__brand {
-  font-weight: 600;
   color: $text-color;
   text-decoration: none;
+  font-family: $font-family-main;
+  font-weight: 700;
 }
 
 .rd-navbar__navigation {
@@ -27,6 +26,7 @@
   list-style: none;
   margin: 0;
   display: flex;
+  font-family: $font-family-main;
 }
 
 
@@ -42,4 +42,5 @@
 .rd-navbar__navigation li a {
   text-decoration: none;
   color: $primary;
+  font-weight: 600;
 }

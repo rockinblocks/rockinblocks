@@ -41,6 +41,11 @@ export const Navbar: FC<NavbarProps> = props => {
                     <span>Get Started</span>
                   </Link>
                 </li>
+                <li>
+                  <Link to="/docs/v1/blocks">
+                    <span>Blocks</span>
+                  </Link>
+                </li>
               </ul>
             </div>
           </Col>

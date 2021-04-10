@@ -1501,10 +1501,20 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/roboto-mono@^4.2.1":
+"@fontsource/righteous@^4.2.0":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/righteous/-/righteous-4.2.2.tgz#d0124ca6556000a2d08b09a2ad53988f91056fba"
+  integrity sha512-mUjFblfCV6eWZj+lkrXFZsER8pq/3LOCoT3ezKPcerYH7StXQ8Gflcs0uMqacZP7CVLyzVUkPvSgLMQJTQvypg==
+
+"@fontsource/roboto-mono@^4.2.0":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto-mono/-/roboto-mono-4.2.2.tgz#deb736753e9680e94a11d6e162badf8636310942"
   integrity sha512-qBEDhPHwN0m6VXSS1EGSAkmKT3gqfQZJyynSkSDQZNPRLeDVq7CTcmJWhjIqAFgVqJ4PNfMUIEl9+bqeBtlvhQ==
+
+"@fontsource/roboto@^4.2.0":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.2.2.tgz#39b87680b25915539e445cc6e0fac99e1a81f58b"
+  integrity sha512-VzYWCdqjrepaT7dezuaTZXKaW1L+f5FSp7DGxMqTrf81OTzh9xpKIpr8lgjPg2ZNwiT8rnU++mJ4hojsCnOoqw==
 
 "@graphql-tools/batch-execute@^7.1.0":
   version "7.1.0"
