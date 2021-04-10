@@ -5,7 +5,9 @@
   "version": "1.0.0",
   "author": "Jed Darrohn <oblongobjectshq@gmail.com>",
   "dependencies": {
-    "@fontsource/roboto-mono": "^4.2.1",
+    "@fontsource/righteous": "^4.2.0",
+    "@fontsource/roboto": "^4.2.0",
+    "@fontsource/roboto-mono": "^4.2.0",
     "@rockinblocks/gatsby-plugin-rockinblocks": "1.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.19.0",

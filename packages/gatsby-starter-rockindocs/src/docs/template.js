@@ -3,9 +3,9 @@ import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import { usePlugin } from "tinacms"
 import { useRemarkForm } from "gatsby-tinacms-remark"
-import Layout from "../components/layout"
-import SEO from "../components/Utilities/SEO"
-import { Container } from "../components/Layout/Container"
+import Layout from "@components/Layout"
+import SEO from "@components/Utilities/SEO"
+import Container from "@components/Layout/Container/Container"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -52,15 +52,15 @@ export default function Template({
         </script>
       </Helmet>
       <SEO title={title} description={description} />
-      <Container column className="rd-document">
-        <h1 className="document__title">{title}</h1>
+      <Container column>
+        <h1 className="post-title">{title}</h1>
         <p>{date}</p>
-        <div className="document__image-wrapper">
+        <div className="post-image-wrapper">
           <img style={{ maxWidth: "100%" }} src={imageBucket} />
         </div>
         <div
           style={{ flex: 1 }}
-          className="document__content"
+          className="blog-post-content"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: html }}
         />

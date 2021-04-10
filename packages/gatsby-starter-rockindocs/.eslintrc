@@ -27,11 +27,9 @@
     "import/resolver": {
       "alias": {
         "map": [
-          ["@components", "./src/components"],
-          ["@layout", "./src/components/Layout"],
-          ["@elements", "./src/components/Elements"]
+          ["@components", "src/components"]
         ],
-        "extensions": [".js", ".jsx"]
+        "extensions": [".ts", ".js", ".jsx", ".json"]
       },
       "node": {
         "extensions": [".js", ".jsx"]

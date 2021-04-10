@@ -61,6 +61,7 @@ export default function Template({
         <div
           style={{ flex: 1 }}
           className="blog-post-content"
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </Container>
