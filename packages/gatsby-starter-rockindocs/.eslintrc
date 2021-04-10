@@ -3,6 +3,8 @@
     "standard",
     "standard-react",
     "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     "plugin:react/recommended",
     "prettier",
     "prettier/react",

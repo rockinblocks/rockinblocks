@@ -1,12 +1,12 @@
 {
-  "name": "@rockindocshq/gatsby-starter-rockindocs",
+  "name": "@rockinblocks/gatsby-starter-rockindocs",
   "private": true,
   "description": "Docs that just rock.",
   "version": "1.0.0",
   "author": "Jed Darrohn <oblongobjectshq@gmail.com>",
   "dependencies": {
     "@fontsource/roboto-mono": "^4.2.1",
-    "@rockindocshq/gatsby-plugin-rockinblocks": "1.0.0",
+    "@rockinblocks/gatsby-plugin-rockinblocks": "1.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",

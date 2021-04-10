@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useBuilder } from '../Builder'
 import { useTheme } from '../Utilities/Theme'
-import { Hero } from '@rockindocshq/gatsby-plugin-rockinblocks'
+import { Hero } from '@rockinblocks/gatsby-plugin-rockinblocks'
 // import { ThemeProvider } from 'react-bootstrap'
 
 export const Blocks = () => {

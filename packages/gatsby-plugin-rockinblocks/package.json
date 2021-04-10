@@ -1,5 +1,5 @@
 {
-  "name": "@rockindocshq/gatsby-plugin-rockinblocks",
+  "name": "@rockinblocks/gatsby-plugin-rockinblocks",
   "version": "1.0.0",
   "description": "Blocks for Rockin' Docs pagebuilder.",
   "author": "Jed Darrohn",
@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git@gitlab.com:KaiHotz/react-rollup-boilerplate.git"
   },
-  "homepage": "https://github.com/rockindocshq/gatsby-plugin-rockinblocks",
+  "homepage": "https://github.com/@rockinblocks//gatsby-plugin-rockinblocks",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",

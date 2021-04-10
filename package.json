@@ -1,5 +1,5 @@
 {
-  "name": "@rockindocshq/rockindocs",
+  "name": "@rockinblocks/rockindocs",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
@@ -7,9 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "blocks:sb": "yarn workspace @rockindocshq/gatsby-plugin-rockinblocks storybook",
-    "blocks:build": "yarn workspace @rockindocshq/gatsby-plugin-rockinblocks build",
-    "gatsby:dev": "yarn workspace @rockindocshq/gatsby-starter-rockindocs develop",
-    "gatsby:build": "yarn workspace @rockindocshq/gatsby-starter-rockindocs build"
+    "blocks:sb": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks storybook",
+    "blocks:build": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks build",
+    "gatsby:dev": "yarn workspace @rockinblocks/gatsby-starter-rockindocs develop",
+    "gatsby:build": "yarn workspace @rockinblocks/gatsby-starter-rockindocs build"
   }
 }

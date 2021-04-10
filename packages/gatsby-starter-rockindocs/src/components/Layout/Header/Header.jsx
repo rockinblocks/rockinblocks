@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useSettings } from "../../Utilities/Settings"
 import { useTheme } from "../../Utilities/Theme"
-import { Navbar } from "@rockindocshq/gatsby-plugin-rockinblocks"
+import { Navbar } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 const Header = () => {
   const { appName } = useSettings()
