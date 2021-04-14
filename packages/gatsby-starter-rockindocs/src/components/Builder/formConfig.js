@@ -1,4 +1,7 @@
-import { HeroForm as BuilderHero } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import {
+  HeroForm as BuilderHero,
+  ContentForm as BuilderContent,
+} from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export const formConfig = {
   label: "Page Builder",
@@ -10,6 +13,7 @@ export const formConfig = {
       component: "blocks",
       templates: {
         "builder-hero": BuilderHero,
+        "builder-content": BuilderContent,
       },
     },
   ],

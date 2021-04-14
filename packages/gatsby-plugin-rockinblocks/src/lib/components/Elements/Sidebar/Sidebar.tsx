@@ -13,14 +13,16 @@ export const Sidebar: FC<SidebarProps> = props => {
 
   return (
     <div className={styles["rd-sidebar"]}>
-      <ul className={styles["rd-sidebar__menu"]}>
-        {documents &&
-          documents.map(document => (
-            <li key={document.path}>
-              <Link to={document.path}>{document.title}</Link>
-            </li>
-          ))}
-      </ul>
+      <div className={styles["rd-sidebar__navigation-wrapper"]}>
+        <ul className={styles["rd-sidebar__navigation"]}>
+          {documents &&
+            documents.map(document => (
+              <li key={document.path}>
+                <Link to={document.path}>{document.title}</Link>
+              </li>
+            ))}
+        </ul>
+      </div>
     </div>
   )
 }

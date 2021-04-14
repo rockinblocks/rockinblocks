@@ -1,15 +1,12 @@
 @import "../../../styles/shared";
 
 .rd-sidebar {
-  padding: spacing(xs);
   background-color: $white;
   font-family: $font-family-main;
   color: $text-color;
   font-weight: $button-font-weight;
   display: flex;
-  justify-content: space-between;
   font-size: 1.675rem;
-  position: fixed;
   background-color: palette(light);
 }
 
@@ -19,17 +16,23 @@
   text-decoration: none;
 }
 
+.rd-sidebar__navigation-wrapper {
+  width: 100%;
+}
+
 .rd-sidebar__navigation {
   padding: 0;
   list-style: none;
   margin: 0;
   display: flex;
+  flex-direction: column;
+  padding: spacing(xs);
 }
-
 
 .rd-sidebar__navigation li {
   font-size: 1.125rem;
-  padding: 1rem;
+  font-weight: 400;
+  padding: (spacing(xs) / 8) 0;
 }
 
 .rd-sidebar__navigation li:last-of-type {
@@ -38,5 +41,5 @@
 
 .rd-sidebar__navigation li a {
   text-decoration: none;
-  color: $primary;
+  color: $text-color;
 }
