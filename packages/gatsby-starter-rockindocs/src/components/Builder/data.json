@@ -3,7 +3,7 @@
     {
       "_template": "builder-hero",
       "rawJson": {
-        "heading": "Rock out with your docs out.",
+        "heading": "Rock out with your blocks out.",
         "seoHeading": "An open-Gatsby workspace with documentation-driven development in mind, focused on improving startup success.",
         "subheading": "Rockin' Docs is built with one of the fastest web frameworks, GatsbyJS, which means when it comes to performance, Rockin' Docs shreds. Utilizing Tina CMS, Rockin' Docs allows a live editing experience where changes are stored as Git commits when saved.",
         "buttonText": "Start a Project",
