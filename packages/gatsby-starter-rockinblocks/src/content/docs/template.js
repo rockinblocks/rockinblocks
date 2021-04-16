@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import { usePlugin } from "tinacms"
 import { useRemarkForm } from "gatsby-tinacms-remark"
-import Layout from "@components/Layout"
+import Layout from "../../components/layout"
 import SEO from "@components/Utilities/SEO"
 import Container from "@components/Layout/Container/Container"
 
