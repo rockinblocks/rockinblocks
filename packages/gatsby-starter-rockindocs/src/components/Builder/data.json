@@ -9,13 +9,6 @@
         "buttonText": "Start a Project",
         "buttonLink": "/get-started"
       }
-    },
-    {
-      "_template": "builder-content",
-      "rawJson": {
-        "contentHeading": "Meet the Band",
-        "contentSubheading": "Gatsby, Storybook, and Tina CMS come together for the first time to bring you an elegant, efficient, and practical development experience."
-      }
     }
   ]
 }
