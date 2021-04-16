@@ -1,6 +1,6 @@
 {
-  "name": "@rockinblocks/rockindocs",
-  "version": "1.0.0",
+  "name": "@rockinblocks/rockinblocks",
+  "version": "0.1.0-alpha",
   "license": "MIT",
   "private": true,
   "workspaces": [

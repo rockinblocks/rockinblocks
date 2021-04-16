@@ -1,9 +1,8 @@
 {
   "name": "@rockinblocks/gatsby-starter-rockindocs",
-  "private": true,
   "description": "Docs that just rock.",
-  "version": "1.0.0",
-  "author": "Jed Darrohn <oblongobjectshq@gmail.com>",
+  "version": "0.1.0-alpha",
+  "author": "Jed Darrohn <jed@rockinblocks.io>",
   "dependencies": {
     "@fontsource/righteous": "^4.2.0",
     "@fontsource/roboto": "^4.2.0",
