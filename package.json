@@ -9,7 +9,7 @@
   "scripts": {
     "blocks:sb": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks storybook",
     "blocks:build": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks build",
-    "gatsby:dev": "yarn workspace @rockinblocks/gatsby-starter-rockindocs develop",
-    "gatsby:build": "yarn workspace @rockinblocks/gatsby-starter-rockindocs build"
+    "gatsby:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
+    "gatsby:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build"
   }
 }
