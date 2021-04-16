@@ -37,13 +37,11 @@ export const Navbar: FC<NavbarProps> = props => {
             <div className={styles["rd-navbar__navigation-wrapper"]}>
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
-                  <Link to="/get-started">
+                  <Link
+                    to="http://github.com/rockinblocks/rockindocs"
+                    target="_blank"
+                  >
                     <span>Get Started</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/docs/v1/blocks">
-                    <span>Blocks</span>
                   </Link>
                 </li>
               </ul>
