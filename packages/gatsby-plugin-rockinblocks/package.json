@@ -1,14 +1,14 @@
 {
   "name": "@rockinblocks/gatsby-plugin-rockinblocks",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0-alpha.1",
   "description": "Blocks for Rockin' Docs pagebuilder.",
   "author": "Jed Darrohn",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:KaiHotz/react-rollup-boilerplate.git"
+    "url": "git@gitlab.com:rockinblocks/gatsby-plugin-rockinblocks.git"
   },
-  "homepage": "https://github.com/@rockinblocks//gatsby-plugin-rockinblocks",
+  "homepage": "https://rockinblocks.io",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
