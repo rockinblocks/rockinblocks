@@ -2,6 +2,7 @@ import React, { FC } from "react"
 import { Link } from "gatsby"
 import { Box, Col, Container, Row } from "../../Layout"
 import styles from "./Navbar.scss"
+import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg"
 
 export interface NavbarProps {
   appName?: string
@@ -24,7 +25,9 @@ export const Navbar: FC<NavbarProps> = props => {
           >
             <Box>
               <Link to="/" className={styles["rd-navbar__brand"]}>
-                <span>{appName}</span>
+                <span>
+                  <Logo className={styles["rd-navbar__logo"]} />
+                </span>
               </Link>
             </Box>
           </Col>

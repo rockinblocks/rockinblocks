@@ -2,6 +2,12 @@
 export { Box } from "./lib/components/Layout/Box"
 export type { BoxProps } from "./lib/components/Layout/Box"
 
+export { Col } from "./lib/components/Layout/Col"
+export type { ColProps } from "./lib/components/Layout/Col"
+
+export { Container } from "./lib/components/Layout/Container"
+export type { ContainerProps } from "./lib/components/Layout/Container"
+
 // Blocks
 export { Hero, HeroForm } from "./lib/components/Blocks/Hero"
 export type { HeroProps } from "./lib/components/Blocks/Hero"

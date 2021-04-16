@@ -1,12 +1,12 @@
 {
-  "name": "@rockinblocks/gatsby-plugin-rockinblocks",
+  "name": "@rockinblocks/rockinblocks",
   "version": "0.1.0-alpha.1",
-  "description": "Blocks for Rockin' Docs pagebuilder.",
+  "description": "Blocks for Rockin' Blocks",
   "author": "Jed Darrohn",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:rockinblocks/gatsby-plugin-rockinblocks.git"
+    "url": "git@gitlab.com:rockinblocks/rockinblocks.git"
   },
   "homepage": "https://rockinblocks.io",
   "main": "dist/index.js",
