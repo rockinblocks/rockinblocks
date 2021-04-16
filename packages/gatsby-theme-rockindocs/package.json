@@ -1,6 +1,6 @@
 {
-  "name": "@rockinblocks/gatsby-theme-rockindocs",
-  "version": "0.1.0-alpha",
+  "name": "@rockinblocks/gatsby-theme-rockinblocks",
+  "version": "0.1.0-alpha.1",
   "main": "gatsby-config.js",
   "license": "MIT",
   "peerDependencies": {

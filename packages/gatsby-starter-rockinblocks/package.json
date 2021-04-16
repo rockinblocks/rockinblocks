@@ -1,7 +1,7 @@
 {
   "name": "@rockinblocks/gatsby-starter-rockinblocks",
   "description": "Page builder GatsbyJS starter powered by Tina CMS",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0-alpha.1",
   "author": "Jed Darrohn <jed@rockinblocks.io>",
   "homepage": "https://rockinblocks.io",
   "dependencies": {
