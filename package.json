@@ -1,8 +1,7 @@
 {
   "name": "@rockinblocks/rockinblocks",
-  "version": "0.1.0-alpha",
+  "version": "0.1.0-alpha.1",
   "license": "MIT",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
