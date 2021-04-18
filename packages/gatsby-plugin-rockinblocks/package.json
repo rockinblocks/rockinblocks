@@ -43,7 +43,8 @@
   "peerDependencies": {
     "gatsby": "^2.20.12",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-helmet": "^5.2.1"
   },
   "dependencies": {
     "@babel/core": "^7.13.8",
@@ -69,8 +70,10 @@
     "@testing-library/react-hooks": "^5.1.0",
     "@testing-library/user-event": "^12.8.1",
     "@types/classnames": "^2.2.11",
+    "@types/enzyme": "^3.10.8",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "@types/react-helmet": "^6.1.1",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
@@ -160,7 +163,7 @@
     "testEnvironment": "jest-environment-jsdom",
     "testURL": "http://localhost",
     "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(js|jsx|ts|tsx)$": "babel-jest",
       "^.+\\.css$": "<rootDir>/config/cssTransform.js",
       "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/fileTransform.js"
     },
