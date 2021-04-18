@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "clear": "rimraf node_modules packages/gatsby-plugin-rockinblocks/node_modules packages/gatsby-starter-rockinblocks/node_modules packages/gatsby-starter-rockinblocks/.cache  packages/gatsby-starter-rockinblocks/public",
+    "clean": "rimraf node_modules packages/gatsby-plugin-rockinblocks/node_modules packages/gatsby-starter-rockinblocks/node_modules packages/gatsby-starter-rockinblocks/.cache  packages/gatsby-starter-rockinblocks/public",
     "dev": "yarn blocks:sb && yarn web:dev",
     "build": "yarn blocks:build && yarn web:build",
     "blocks:sb": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks storybook",

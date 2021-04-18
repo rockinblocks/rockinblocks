@@ -6,7 +6,7 @@ applications:
           commands:
             - nvm install 14
             - yarn install
-            - yarn clear
+            - yarn clean
         build:
           commands:
             - yarn gatsby build
