@@ -13,4 +13,4 @@ frontend:
       baseDirectory: packages/gatsby-starter-rockinblocks/public
       files:
         - "**/*"
-  appRoot: /
+    appRoot: /
