@@ -6,6 +6,6 @@
 
 // You can delete this file if you're not using it
 
-// import "@fontsource/poppins"
+import "@fontsource/poppins/700.css"
 import "@fontsource/roboto-mono"
 // import "./src/styles/main.scss"
