@@ -14,7 +14,4 @@ applications:
         baseDirectory: public
         files:
           - '**/*'
-      cache:
-        paths:
-          - node_modules/**/*
     appRoot: packages/gatsby-starter-rockinblocks
