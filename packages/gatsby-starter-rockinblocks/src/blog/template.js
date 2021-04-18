@@ -28,12 +28,12 @@ export default function Template({
     headline: title,
     datePublished: date,
     dateModified: date,
-    mainEntityOfPage: "https://www.oblongobjects.com",
+    mainEntityOfPage: "https://www.rockinblocks.io",
     publisher: {
       "@context": "http://schema.org",
       "@type": "Organization",
-      name: "Oblong Objects",
-      url: "https://www.oblongobjects.com",
+      name: "Rockin' Blocks",
+      url: "https://www.rockinblocks.io",
       logo: {
         "@type": "ImageObject",
         url:

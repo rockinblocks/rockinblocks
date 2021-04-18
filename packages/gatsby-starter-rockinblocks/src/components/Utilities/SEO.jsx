@@ -29,7 +29,7 @@ function SEO(frontmatter) {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "http://www.oblongobjects.com/",
+    "url": "http://www.rockinblocks.io/",
   }
 
   return (

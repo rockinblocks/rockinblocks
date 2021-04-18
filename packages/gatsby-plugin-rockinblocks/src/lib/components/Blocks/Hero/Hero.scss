@@ -8,7 +8,7 @@
   padding: spacing(xl) spacing(sm) spacing(md);
 
   @include media-breakpoint-up(md) {
-    padding: spacing(xl) spacing(md) spacing(md);
+    padding: spacing(md);
     flex-direction: row;
   }
 }

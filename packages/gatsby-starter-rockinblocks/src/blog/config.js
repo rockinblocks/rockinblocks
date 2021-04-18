@@ -8,7 +8,7 @@
 
  exports.createPages = async ({ actions, graphql, reporter }) => {
    const { createPage } = actions
-   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
+   const blogPostTemplate = path.resolve(`src/blog/template.js`)
    const posts = await graphql(`
      {
        allMarkdownRemark(
