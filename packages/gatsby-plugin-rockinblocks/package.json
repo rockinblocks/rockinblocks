@@ -1,5 +1,5 @@
 {
-  "name": "@rockinblocks/rockinblocks",
+  "name": "@rockinblocks/gatsby-plugin-rockinblocks",
   "version": "0.1.0-alpha.1",
   "description": "Blocks for Rockin' Blocks",
   "author": "Jed Darrohn",
