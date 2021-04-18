@@ -6,6 +6,6 @@
 
 // You can delete this file if you're not using it
 
-import "@fontsource/righteous"
+// import "@fontsource/poppins"
 import "@fontsource/roboto-mono"
 // import "./src/styles/main.scss"

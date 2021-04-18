@@ -7,11 +7,11 @@
     "packages/*"
   ],
   "scripts": {
-    "blx": "yarn workspace @rockinblocks/rockinblocks",
-    "blx:sb": "yarn workspace @rockinblocks/rockinblocks storybook",
-    "blx:build": "yarn workspace @rockinblocks/rockinblocks build",
-    "gatsby": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",
-    "gatsby:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
-    "gatsby:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build"
+    "lib": "yarn workspace @rockinblocks/rockinblocks",
+    "lib:sb": "yarn workspace @rockinblocks/rockinblocks storybook",
+    "lib:build": "yarn workspace @rockinblocks/rockinblocks build",
+    "web": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",
+    "web:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
+    "web:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build"
   }
 }
