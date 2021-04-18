@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useBuilder } from "../Builder"
 import { useTheme } from "../Utilities/Theme"
-import { Content, Hero } from "@rockinblocks/rockinblocks"
+import { Content, Hero } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export const Blocks = () => {
   const { rawJson } = useBuilder()
