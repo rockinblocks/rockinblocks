@@ -6,17 +6,17 @@ export interface ButtonProps {
   text: string
   backgroundColor?: string
   textColor?: string
-  link?: string
+  to?: string
   onClick?: () => {}
 }
 
 export const Button: FC<ButtonProps> = props => {
-  const { text, backgroundColor, textColor, link } = props
+  const { text, backgroundColor, textColor, to } = props
 
   const Wrapper: FC = ({ children }): JSX.Element => {
-    if (link) {
+    if (to) {
       return (
-        <Link className={styles["rd-button"]} to={link}>
+        <Link className={styles["rd-button"]} to={to}>
           {children}
         </Link>
       )

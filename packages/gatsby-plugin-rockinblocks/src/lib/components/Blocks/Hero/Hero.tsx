@@ -39,7 +39,7 @@ export const Hero: FC<HeroProps> = props => {
               <Button
                 backgroundColor={primaryColor}
                 text={buttonText}
-                link={buttonLink}
+                to={buttonLink}
               />
             </Box>
           </Col>
