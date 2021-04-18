@@ -2354,7 +2354,7 @@
     lodash "^4.17.20"
     lodash-es "^4.17.20"
 
-"@rockinblocks/gatsby-plugin-rockinblocks@0.1.0-alpha.2":
+"@rockinblocks/gatsby-plugin-rockinblocks@0.1.0-alpha.1":
   version "0.1.0-alpha.1"
   resolved "https://registry.yarnpkg.com/@rockinblocks/gatsby-plugin-rockinblocks/-/gatsby-plugin-rockinblocks-0.1.0-alpha.1.tgz#a17fa4070ce8197ec2f8c23839b15aacce5dbbc5"
   integrity sha512-2atd3e5MYTpgrB4hum35mT0RVx89TBZ762K3g3lAvnl7XdP3u56VQm7P8h+Ika4uSDiHx+/AO3ouHf3Vm4sT5Q==
