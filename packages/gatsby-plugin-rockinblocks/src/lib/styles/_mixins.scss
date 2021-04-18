@@ -25,12 +25,12 @@
 
   @include media-breakpoint-up(sm) {
     font-size: 4.5rem;
-    line-height: 4rem;
+    line-height: 4.125rem;
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: 5.5rem;
-    line-height: 4.75rem;
+    font-size: 6.5vw;
+    line-height: 6vw;
   }
 }
 
