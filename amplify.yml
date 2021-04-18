@@ -1,17 +1,16 @@
 version: 1
-applications:
-  - gatsby:
-      phases:
-        preBuild:
-          commands:
-            - nvm install 14
-            - yarn install
-            - yarn blocks:build
-        build:
-          commands:
-            - yarn web:build
-      artifacts:
-        baseDirectory: packages/gatsby-starter-rockinblocks/public
-        files:
-          - "**/*"
-    appRoot: /
+frontend:
+    phases:
+      preBuild:
+        commands:
+          - nvm install 14
+          - yarn install
+          - yarn blocks:build
+      build:
+        commands:
+          - yarn web:build
+    artifacts:
+      baseDirectory: packages/gatsby-starter-rockinblocks/public
+      files:
+        - "**/*"
+  appRoot: /
