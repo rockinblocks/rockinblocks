@@ -24,7 +24,7 @@ applications:
           commands:
             - yarn web:build
       artifacts:
-        baseDirectory: /public
+        baseDirectory: packages/gatsby-starter-rockinblocks/public
         files:
           - "**/*"
-    appRoot: packages/gatsby-starter-rockinblocks
+    appRoot:
