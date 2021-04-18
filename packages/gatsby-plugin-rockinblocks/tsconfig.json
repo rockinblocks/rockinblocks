@@ -5,7 +5,7 @@
     "module": "esnext",
     "noImplicitAny": true,
     "outDir": "./dist",
-    "target": "es5",
+    "target": "es2015",
     "moduleResolution": "node",
     "baseUrl": "./src",
     "lib": [
