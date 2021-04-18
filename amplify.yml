@@ -9,9 +9,8 @@ applications:
             - yarn clean
         build:
           commands:
-            - yarn gatsby build --verbose
+            - yarn web:build --verbose
       artifacts:
-        baseDirectory: public
+        baseDirectory: packages/gatsby-starter-rockinblocks/public
         files:
           - '**/*'
-    appRoot: packages/gatsby-starter-rockinblocks
