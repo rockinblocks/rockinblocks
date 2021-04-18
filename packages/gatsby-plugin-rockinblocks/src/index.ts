@@ -8,13 +8,6 @@ export type { ColProps } from "./lib/components/Layout/Col"
 export { Container } from "./lib/components/Layout/Container"
 export type { ContainerProps } from "./lib/components/Layout/Container"
 
-// Blocks
-export { Hero, HeroForm } from "./lib/components/Blocks/Hero"
-export type { HeroProps } from "./lib/components/Blocks/Hero"
-
-export { Content, ContentForm } from "./lib/components/Blocks/Content"
-export type { ContentProps } from "./lib/components/Blocks/Content"
-
 // Elements
 export { Navbar } from "./lib/components/Elements/Navbar"
 export type { NavbarProps } from "./lib/components/Elements/Navbar"
@@ -26,3 +19,10 @@ export { Document } from "./lib/components/Elements/Document"
 
 export { Sidebar } from "./lib/components/Elements/Sidebar"
 export type { SidebarProps } from "./lib/components/Elements/Sidebar"
+
+// Blocks
+export { Hero, HeroForm } from "./lib/components/Blocks/Hero"
+export type { HeroProps } from "./lib/components/Blocks/Hero"
+
+export { Content, ContentForm } from "./lib/components/Blocks/Content"
+export type { ContentProps } from "./lib/components/Blocks/Content"

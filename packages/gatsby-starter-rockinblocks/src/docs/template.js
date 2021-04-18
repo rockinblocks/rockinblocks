@@ -3,9 +3,9 @@ import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import { usePlugin } from "tinacms"
 import { useRemarkForm } from "gatsby-tinacms-remark"
-import Layout from "@components/Layout"
-import SEO from "@components/Utilities/SEO"
-import Container from "@components/Layout/Container/Container"
+import Layout from "../components/mainLayout"
+import SEO from "../components/Utilities/SEO"
+import { Container } from "../components/Layout/Container"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
