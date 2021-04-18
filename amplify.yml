@@ -8,6 +8,7 @@ applications:
             - yarn install
         build:
           commands:
+          - yarn blocks:build
       artifacts:
         baseDirectory: packages/gatsby-plugin-rockinblocks/dist
         files:
