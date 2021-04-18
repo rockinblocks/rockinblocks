@@ -1,8 +1,10 @@
 import React, { FC } from "react"
+import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import { Box, Col, Container, Row } from "../../Layout"
 import styles from "./Navbar.scss"
 import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg"
+import { ReactComponent as IconGitHub } from "../../../assets/icon-github.svg"
 
 export interface NavbarProps {
   appName?: string
@@ -37,7 +39,7 @@ export const Navbar: FC<NavbarProps> = props => {
             display="flex"
             justifyContent="flex-end"
           >
-            <div className={styles["rd-navbar__navigation-wrapper"]}>
+            <Box display="flex" flexDirection="column" justifyContent="center">
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
                   <Link
@@ -47,8 +49,18 @@ export const Navbar: FC<NavbarProps> = props => {
                     <span>Get Started</span>
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="http://github.com/rockinblocks/rockindocs"
+                    target="_blank"
+                  >
+                    <div className={styles["rd-navbar__github"]}>
+                      <IconGitHub />
+                    </div>
+                  </Link>
+                </li>
               </ul>
-            </div>
+            </Box>
           </Col>
         </Row>
       </Container>
