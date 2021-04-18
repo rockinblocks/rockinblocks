@@ -8,12 +8,11 @@ applications:
             - yarn install
         build:
           commands:
-            - yarn blocks:build
       artifacts:
         baseDirectory: packages/gatsby-plugin-rockinblocks/dist
         files:
           - "**/*"
-    appRoot:
+    appRoot: /
   - gatsby:
       phases:
         preBuild:
@@ -22,9 +21,10 @@ applications:
             - yarn install
         build:
           commands:
+            - yarn blocks:build
             - yarn web:build
       artifacts:
         baseDirectory: packages/gatsby-starter-rockinblocks/public
         files:
           - "**/*"
-    appRoot:
+    appRoot: /
