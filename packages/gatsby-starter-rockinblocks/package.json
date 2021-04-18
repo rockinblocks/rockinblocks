@@ -5,6 +5,7 @@
   "author": "Jed Darrohn <jed@rockinblocks.io>",
   "homepage": "https://rockinblocks.io",
   "dependencies": {
+    "@babel/core": "^7.13.14",
     "@fontsource/poppins": "^4.2.2",
     "@fontsource/righteous": "^4.2.0",
     "@fontsource/roboto": "^4.2.0",
@@ -36,17 +37,6 @@
     "prismjs": "^1.23.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "react-bootstrap": "^1.0.0",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^5.2.1",
-    "react-mailchimp-subscribe": "^2.1.0",
-    "react-tinacms-inline": "^0.38.0",
-    "storybook": "^6.2.2",
-    "styled-components": "^5.2.1",
-    "tinacms": "^0.38.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.13.14",
     "@storybook/addon-actions": "^6.2.2",
     "@storybook/addon-essentials": "^6.2.2",
     "@storybook/addon-links": "^6.2.2",
@@ -71,7 +61,15 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "prettier": "^1.19.1",
-    "react-test-renderer": "^17.0.1"
+    "react-test-renderer": "^17.0.1",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^5.2.1",
+    "react-mailchimp-subscribe": "^2.1.0",
+    "react-tinacms-inline": "^0.38.0",
+    "storybook": "^6.2.2",
+    "styled-components": "^5.2.1",
+    "tinacms": "^0.38.0"
   },
   "keywords": [
     "gatsby"
