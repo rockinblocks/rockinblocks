@@ -44,7 +44,10 @@ module.exports = {
           },
           // Remove preset SVG loaders from Storybook
           ...config.module.rules.map(_ => {
-            if (_?.test?.toString().includes("svg|")) {
+            if (
+              _
+              && _.test
+              && _.test.toString().includes("svg|")) {
               return {
                 ..._,
                 test: new RegExp(_.test.source.replace("svg|", "")),
