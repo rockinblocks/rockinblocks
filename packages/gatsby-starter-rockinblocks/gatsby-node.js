@@ -8,6 +8,6 @@ const { createPages: createBlogs } = require("./src/blog/config")
 const { createPages: createDocuments } = require("./src/docs/config")
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  await createBlogs({ actions, graphql, reporter })
+  const blogs = await createBlogs({ actions, graphql, reporter })
   await createDocuments({ actions, graphql, reporter })
 }

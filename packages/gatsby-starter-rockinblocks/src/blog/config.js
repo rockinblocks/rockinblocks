@@ -39,6 +39,4 @@
        context: {}, // additional data can be passed via context
      })
    })
-
-
  }

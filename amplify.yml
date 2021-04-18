@@ -9,7 +9,7 @@ applications:
             - yarn clean
         build:
           commands:
-            - yarn gatsby build
+            - yarn gatsby build --verbose
       artifacts:
         baseDirectory: public
         files:
