@@ -4,13 +4,13 @@ import { Hero, HeroProps } from "./Hero"
 
 describe("<Hero />", () => {
   it("should render", () => {
-    const props: HeroProps = {
+    const props = {
       seoHeading: "Gatsby starter",
       heading: "Rock out with your blocks out!",
       subheading: "Rockin' Blocks can shred!",
       buttonText: "Start a project",
     }
-    const wrapper: ShallowWrapper = shallow(<Hero {...props} />)
+    const wrapper = shallow(<Hero {...props} />)
     expect(wrapper).toBeDefined()
   })
 })

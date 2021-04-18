@@ -12,6 +12,7 @@
     "build": "yarn blocks:build && yarn web:build",
     "blocks:sb": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks storybook",
     "blocks:build": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks build",
+    "blocks:test": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks jest",
     "web": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",
     "web:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
     "web:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build"

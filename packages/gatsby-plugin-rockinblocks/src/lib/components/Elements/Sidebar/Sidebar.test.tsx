@@ -1,10 +1,10 @@
 import React from "react"
 import { shallow } from "enzyme"
-import { Navbar } from "./Navbar"
+import { Sidebar } from "./Sidebar"
 
-describe("<Navbar />", () => {
+describe("<Sidebar />", () => {
   it("should render", () => {
-    const wrapper = shallow(<Navbar />)
+    const wrapper = shallow(<Sidebar />)
 
     expect(wrapper).toBeDefined()
   })
