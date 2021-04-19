@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from "react"
 import { Link } from "gatsby"
 import styles from "./Button.scss"
 
-export interface ButtonProps {
+export interface IButtonProps {
   text: string
   backgroundColor?: string
   textColor?: string
@@ -10,7 +10,7 @@ export interface ButtonProps {
   onClick?: () => {}
 }
 
-export const Button: FC<ButtonProps> = props => {
+export const Button: FC<IButtonProps> = props => {
   const { text, backgroundColor, textColor, to } = props
 
   const Wrapper: FC = ({ children }): JSX.Element => {

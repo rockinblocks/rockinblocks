@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./Col.scss"
 
-export interface ColProps {
+export interface IColProps {
   children?: any
   display?: string
   flex?: number | string
@@ -11,7 +11,7 @@ export interface ColProps {
 }
 
 export const Col: React.FC<
-  ColProps & React.HTMLAttributes<HTMLDivElement>
+  IColProps & React.HTMLAttributes<HTMLDivElement>
 > = props => {
   const {
     display,

@@ -10,4 +10,10 @@ type: document
 
 ## Using the Yarn workspace (recommended)
 
-While you can pull in both the Gatsby Starter and Rockin' Blocks by themselves, the way to get the most out of Rockin' Blocks is to develop using the whole workspace.
+Leveraing a Yarn workspace for your development workflow is essential to working in Rockin' Docs.
+
+**Clone down the whole Yarn workspace**
+
+```bash
+git clone https://github.com/rockinblocks/rockinblocks sick-project
+```

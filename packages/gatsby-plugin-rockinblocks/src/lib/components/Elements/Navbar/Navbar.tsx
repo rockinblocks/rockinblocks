@@ -5,11 +5,11 @@ import styles from "./Navbar.scss"
 import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg"
 import { ReactComponent as IconGitHub } from "../../../assets/icon-github.svg"
 
-export interface NavbarProps {
+export interface INavbarProps {
   appName?: string
 }
 
-export const Navbar: FC<NavbarProps> = props => {
+export const Navbar: FC<INavbarProps> = props => {
   const { appName } = props
 
   return (
@@ -43,8 +43,8 @@ export const Navbar: FC<NavbarProps> = props => {
             <Box display="flex" flexDirection="column" justifyContent="center">
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
-                  <Link to="/docs/v1/get-started" target="_blank">
-                    <span>Get Started</span>
+                  <Link to="/docs/v1/installation" target="_blank">
+                    <span>Docs</span>
                   </Link>
                 </li>
                 <li>

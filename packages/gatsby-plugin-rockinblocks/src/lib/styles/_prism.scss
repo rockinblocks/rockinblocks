@@ -40,13 +40,13 @@ pre[class*="language-"] {
   padding: 1em;
   margin: 1rem 0;
   overflow: auto;
-  background: #2e3440;
+  background: $dark;
 }
 :not(pre) > code[class*="language-"] {
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   color: #d8dee9;
-  background: #2e3440;
+  background: $dark;
 }
 /*********************************************************
 * Tokens
@@ -94,7 +94,7 @@ pre[class*="language-"] {
   color: #81a1c1;
 }
 .token.function {
-  color: #8fbcbc;
+  color: lighten($primary, 10%);
 }
 .token.regex,
 .token.important,

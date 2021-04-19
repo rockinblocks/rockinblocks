@@ -5,13 +5,13 @@ import { Col, Container, Row } from "../../Layout"
 import { ReactComponent as Vector } from "./Content.svg"
 import styles from "./Content.scss"
 
-export interface ContentProps {
+export interface IContentProps {
   heading: string
   subheading: string
   sections: ContentSectionProps[]
 }
 
-export const Content: FC<ContentProps> = props => {
+export const Content: FC<IContentProps> = props => {
   const { heading, subheading, sections } = props
   return (
     <div className={styles["rd-content"]}>
