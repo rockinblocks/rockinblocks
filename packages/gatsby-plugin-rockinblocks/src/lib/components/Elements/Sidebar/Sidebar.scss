@@ -8,6 +8,11 @@
   display: flex;
   font-size: 1.675rem;
   background-color: palette(light);
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    padding: spacing(md) spacing(xs)
+  }
 }
 
 .rd-sidebar__brand {
@@ -26,7 +31,6 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  padding: spacing(xs);
 }
 
 .rd-sidebar__navigation li {
@@ -42,4 +46,5 @@
 .rd-sidebar__navigation li a {
   text-decoration: none;
   color: $text-color;
+  font-weight: 600;
 }

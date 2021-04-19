@@ -1,26 +1,29 @@
 import React, { FC } from "react"
 import { Link } from "gatsby"
-import { Box, Col, Container, Row } from "../../Layout"
 import styles from "./Sidebar.scss"
-import { DocumentInterface } from "../Document/Document"
 
-export interface SidebarProps {
-  documents?: DocumentInterface[]
+export interface ISidebarMenuItem {
+  title: string
+  path: string
+}
+export interface ISidebarProps {
+  menuItems: ISidebarMenuItem[]
 }
 
-export const Sidebar: FC<SidebarProps> = props => {
-  const { documents } = props
-
+export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
   return (
     <div className={styles["rd-sidebar"]}>
       <div className={styles["rd-sidebar__navigation-wrapper"]}>
         <ul className={styles["rd-sidebar__navigation"]}>
-          {documents &&
-            documents.map(document => (
-              <li key={document.path}>
-                <Link to={document.path}>{document.title}</Link>
-              </li>
-            ))}
+          {menuItems &&
+            menuItems.map((menuItem: ISidebarMenuItem) => {
+              const { path, title } = menuItem
+              return (
+                <li key={path}>
+                  <Link to={path}>{title}</Link>
+                </li>
+              )
+            })}
         </ul>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React, { FC } from "react"
-import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import { Box, Col, Container, Row } from "../../Layout"
 import styles from "./Navbar.scss"
@@ -8,12 +7,10 @@ import { ReactComponent as IconGitHub } from "../../../assets/icon-github.svg"
 
 export interface NavbarProps {
   appName?: string
-  backgroundColor?: string
-  color?: string
 }
 
 export const Navbar: FC<NavbarProps> = props => {
-  const { appName, backgroundColor, color } = props
+  const { appName } = props
 
   return (
     <div className={styles["rd-navbar"]}>
@@ -28,7 +25,11 @@ export const Navbar: FC<NavbarProps> = props => {
             <Box>
               <Link to="/" className={styles["rd-navbar__brand"]}>
                 <span>
-                  <Logo className={styles["rd-navbar__logo"]} />
+                  {Logo ? (
+                    <Logo className={styles["rd-navbar__logo"]} />
+                  ) : (
+                    <span>{appName}</span>
+                  )}
                 </span>
               </Link>
             </Box>

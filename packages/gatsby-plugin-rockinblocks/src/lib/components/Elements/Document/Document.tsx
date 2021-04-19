@@ -1,23 +1,25 @@
 import React, { FC } from "react"
-import { Sidebar } from "../Sidebar"
 import { Box } from "../../Layout"
-import styles from "./Documents.scss"
+import styles from "./Document.scss"
 
-export interface DocumentInterface {
-  path: string
+export interface IDocument {
   title: string
+  date_created: string
+  date_updated: string
+  keywords: string
+  path: string
+  description: string
+  type: string
+  html: string
 }
 export interface DocumentProps {
-  documents?: DocumentInterface[]
+  document: IDocument
 }
 
-export const Document: FC<DocumentProps> = ({ documents }) => {
+export const Document: FC<DocumentProps> = ({ document }) => {
   return (
     <>
       <Box className="rd-document" display="flex">
-        <Box flex={25}>
-          <Sidebar documents={documents} />
-        </Box>
         <Box flex={75}>
           <div className={styles["rd-document__main"]}>
             <main>

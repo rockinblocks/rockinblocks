@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import { usePlugin } from "tinacms"
@@ -17,6 +17,8 @@ export default function Template({
   const [markdownRemark, form] = useRemarkForm(data.markdownRemark)
   const { frontmatter, html, plainText } = markdownRemark
   const { title, date, description, keywords, imageBucket } = frontmatter
+  const { edges: documents } = data.allMarkdownRemark
+  const [menuItems, setMenuItems] = useState([])
 
   // Register Tina form
   usePlugin(form)
@@ -48,6 +50,14 @@ export default function Template({
     image: imageBucket,
   }
 
+  useEffect(() => {
+    const items = []
+    documents.forEach((document, index)=>{
+      items.push(document.node.frontmatter)
+    })
+    setMenuItems(items)
+  }, [documents])
+
   return (
     <Layout>
       <Helmet>
@@ -57,9 +67,11 @@ export default function Template({
       </Helmet>
       <SEO title={title} description={description} />
       <Box display="flex">
-        <Container column>
-          <Sidebar />
-          <Box>
+        <Container>
+          <Box display="flex" flex={20}>
+            <Sidebar menuItems={menuItems} />
+          </Box>
+          <Box flex={80}>
             <h1 className="post-title">{title}</h1>
             <p>{date}</p>
             <div className="post-image-wrapper">
@@ -80,6 +92,20 @@ export default function Template({
 
 export const pageQuery = graphql`
   query($path: String!) {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "document" } } }
+      sort: { order: DESC, fields: [frontmatter___title] }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       ...TinaRemark
       html
