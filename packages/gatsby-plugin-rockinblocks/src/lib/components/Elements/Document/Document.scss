@@ -1,6 +1,35 @@
 @import "../../../styles/shared";
 
 
+.rd-document__intro,
 .rd-document__main {
   padding: spacing(xs);
+
+  @include media-breakpoint-up(lg) {
+    padding: spacing(xs) spacing(md);
+  }
+}
+
+.rd-document__title {
+  font-family: $font-family-headings;
+  margin: 0;
+}
+
+.rd-document__html {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-headings;
+  }
+
+  // h1 {
+  //   @include typopgraphy-h1();
+  // }
+
+  // h2 {
+  //   @include typopgraphy-h2();
+  // }
 }

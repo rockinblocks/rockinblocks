@@ -16,6 +16,7 @@ export { Button } from "./lib/components/Elements/Button"
 export type { ButtonProps } from "./lib/components/Elements/Button"
 
 export { Document } from "./lib/components/Elements/Document"
+export type { DocumentProps } from "./lib/components/Elements/Document"
 
 export { Sidebar } from "./lib/components/Elements/Sidebar"
 export type { SidebarProps } from "./lib/components/Elements/Sidebar"

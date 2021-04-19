@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { Box } from "../../Layout"
 import styles from "./Document.scss"
 
-export interface IDocument {
+export interface IDocumentFrontmatter {
   title: string
   date_created: string
   date_updated: string
@@ -10,26 +10,29 @@ export interface IDocument {
   path: string
   description: string
   type: string
+}
+export interface IDocumentProps {
+  frontmatter: IDocumentFrontmatter
   html: string
 }
-export interface DocumentProps {
-  document: IDocument
-}
 
-export const Document: FC<DocumentProps> = ({ document }) => {
+export const Document: FC<IDocumentProps> = ({ html, frontmatter }) => {
+  const { title } = frontmatter
   return (
     <>
-      <Box className="rd-document" display="flex">
-        <Box flex={75}>
+      <Box className={styles["rd-document"]} display="flex">
+        <Box flex={0.8}>
+          <Box className={styles["rd-document__intro"]}>
+            <h1 className={styles["rd-document__title"]}>{title}</h1>
+          </Box>
           <div className={styles["rd-document__main"]}>
             <main>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <div
+                style={{ flex: 1 }}
+                className={styles["rd-document__html"]}
+                // eslint-disable-next-line react/no-danger
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
             </main>
           </div>
         </Box>

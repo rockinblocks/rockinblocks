@@ -9,7 +9,7 @@ const path = require("path")
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = path.resolve(`src/blog/template.js`)
+  const blogPostTemplate = path.resolve(`src/content/posts/template.js`)
   const posts = await graphql(`
     {
       allMarkdownRemark(
@@ -44,7 +44,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
 
   // Setup documentation files
-  const documentTemplate = path.resolve(`src/docs/template.js`)
+  const documentTemplate = path.resolve(`src/content/docs/template.js`)
   const documents = await graphql(`
     {
       allMarkdownRemark(

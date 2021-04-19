@@ -1,11 +1,16 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import { usePlugin } from "tinacms"
 import { useRemarkForm } from "gatsby-tinacms-remark"
-import Layout from "../../components/layout"
-import SEO from "@components/Utilities/SEO"
-import Container from "@components/Layout/Container/Container"
+import Layout from "../../components/mainLayout"
+import SEO from "../../components/Utilities/SEO"
+import {
+  Box,
+  Container,
+  Document,
+  Sidebar,
+} from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -13,6 +18,8 @@ export default function Template({
   const [markdownRemark, form] = useRemarkForm(data.markdownRemark)
   const { frontmatter, html, plainText } = markdownRemark
   const { title, date, description, keywords, imageBucket } = frontmatter
+  const { edges: documents } = data.allMarkdownRemark
+  const [menuItems, setMenuItems] = useState([])
 
   // Register Tina form
   usePlugin(form)
@@ -32,7 +39,7 @@ export default function Template({
     publisher: {
       "@context": "http://schema.org",
       "@type": "Organization",
-      name: "Oblong Objects",
+      name: "Rockin' Blocks",
       url: "https://www.rockinblocks.io",
       logo: {
         "@type": "ImageObject",
@@ -44,6 +51,14 @@ export default function Template({
     image: imageBucket,
   }
 
+  useEffect(() => {
+    const items = []
+    documents.forEach((document, index)=>{
+      items.push(document.node.frontmatter)
+    })
+    setMenuItems(items)
+  }, [documents])
+
   return (
     <Layout>
       <Helmet>
@@ -52,25 +67,36 @@ export default function Template({
         </script>
       </Helmet>
       <SEO title={title} description={description} />
-      <Container column>
-        <h1 className="post-title">{title}</h1>
-        <p>{date}</p>
-        <div className="post-image-wrapper">
-          <img style={{ maxWidth: "100%" }} src={imageBucket} />
-        </div>
-        <div
-          style={{ flex: 1 }}
-          className="blog-post-content"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </Container>
+      <Box display="flex">
+        <Container>
+          <Box display="flex" flex={20}>
+            <Sidebar menuItems={menuItems} />
+          </Box>
+          <Box flex={80}>
+            <Document frontmatter={frontmatter} html={html} />
+          </Box>
+        </Container>
+      </Box>
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
   query($path: String!) {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "document" } } }
+      sort: { order: DESC, fields: [frontmatter___title] }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            path
+          }
+        }
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       ...TinaRemark
       html

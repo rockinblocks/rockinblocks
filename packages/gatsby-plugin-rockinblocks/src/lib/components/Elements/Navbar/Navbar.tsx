@@ -43,10 +43,7 @@ export const Navbar: FC<NavbarProps> = props => {
             <Box display="flex" flexDirection="column" justifyContent="center">
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
-                  <Link
-                    to="http://github.com/rockinblocks/rockindocs"
-                    target="_blank"
-                  >
+                  <Link to="/docs/v1/get-started" target="_blank">
                     <span>Get Started</span>
                   </Link>
                 </li>

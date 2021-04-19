@@ -7,7 +7,6 @@
   font-weight: $button-font-weight;
   display: flex;
   font-size: 1.675rem;
-  background-color: palette(light);
   width: 100%;
 
   @include media-breakpoint-up(lg) {
@@ -36,8 +35,21 @@
 .rd-sidebar__navigation li {
   font-size: 1.125rem;
   font-weight: 400;
-  padding: (spacing(xs) / 8) 0;
+  padding: (spacing(xs) / 2) spacing(xs);
+  border-radius: 2rem;
+  transition: background-color $transition-time;
 }
+
+.rd-sidebar__navigation li:hover {
+  background-color: $light;
+  cursor: pointer;
+}
+
+.rd-sidebar__navigation li:active {
+  background-color: darken($light, 5%);
+  cursor: pointer;
+}
+
 
 .rd-sidebar__navigation li:last-of-type {
   padding-right: 0;
@@ -47,4 +59,5 @@
   text-decoration: none;
   color: $text-color;
   font-weight: 600;
+  display: block;
 }
