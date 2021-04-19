@@ -24,7 +24,7 @@ export const Navbar: FC<INavbarProps> = props => {
           >
             <Box>
               <Link to="/" className={styles["rd-navbar__brand"]}>
-                <span>
+                <span data-jest="brand">
                   {Logo ? (
                     <Logo className={styles["rd-navbar__logo"]} />
                   ) : (
@@ -48,14 +48,15 @@ export const Navbar: FC<INavbarProps> = props => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="http://github.com/rockinblocks/rockindocs"
+                  <a
+                    href="http://github.com/rockinblocks/rockindocs"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div className={styles["rd-navbar__github"]}>
                       <IconGitHub />
                     </div>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </Box>

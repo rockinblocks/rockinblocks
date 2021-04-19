@@ -1,7 +1,7 @@
 @import "../../../styles/shared";
 
 .rd-sidebar {
-  background-color: $dark;
+  background: linear-gradient($light, rgba($light, 0.2));
   font-family: $font-family-main;
   color: $light;
   font-weight: $button-font-weight;
@@ -9,7 +9,7 @@
   font-size: 1.675rem;
   width: 100%;
   padding: spacing(sm) spacing(xs);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .rd-sidebar__brand {
@@ -33,14 +33,14 @@
 .rd-sidebar__navigation li {
   font-size: 1rem;
   font-weight: 400;
-  padding: (spacing(xs) / 2) spacing(xs);
+  padding: (spacing(xs) / 4) spacing(xs);
   border-radius: 2rem;
   transition: background-color $transition-time;
   margin-bottom: spacing(xs) / 4;
 }
 
 .rd-sidebar__navigation li:hover {
-  background-color: darken($dark, 3%);
+  background-color: darken($light, 3%);
   cursor: pointer;
 }
 
@@ -56,7 +56,7 @@
 
 .rd-sidebar__navigation li a {
   text-decoration: none;
-  color: $light;
+  color: $text-color;
   font-weight: 600;
   display: block;
 }
