@@ -1,7 +1,7 @@
 @import "../../../styles/shared";
 
 .rd-navbar {
-  padding: spacing(xs);
+  padding: (spacing(xs) / 2) spacing(xs);
   background-color: $white;
   color: $text-color;
   display: flex;
@@ -22,6 +22,19 @@
 
 .rd-navbar__logo {
   max-width: 14rem;
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+}
+
+.rd-navbar__logo-mobile {
+  max-width: 3rem;
+
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
 }
 
 .rd-navbar__navigation {
@@ -32,13 +45,13 @@
   font-family: $font-family-main;
 }
 
-
 .rd-navbar__navigation li {
   font-size: 1.125rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .rd-navbar__navigation li:last-of-type {
@@ -55,4 +68,8 @@
   width: 2rem;
   height: 2rem;
   color: $light;
+}
+
+path.rockinblocks-logo_svg__st1 {
+  display: none;
 }
