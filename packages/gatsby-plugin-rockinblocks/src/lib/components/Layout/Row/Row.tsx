@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./Row.scss"
 
-export interface RowProps {
+export interface IRowProps {
   children?: React.ReactNode
   display?: string
   flexDirection?: any
@@ -10,7 +10,7 @@ export interface RowProps {
   style?: React.CSSProperties | undefined
 }
 
-export const Row: React.FC<RowProps & React.HTMLAttributes<HTMLDivElement>> = (
+export const Row: React.FC<IRowProps & React.HTMLAttributes<HTMLDivElement>> = (
   props
 ): JSX.Element => {
   const { children, display, flexDirection, justifyContent, style } = props

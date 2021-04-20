@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./Container.scss"
 
-export interface ContainerProps {
+export interface IContainerProps {
   children?: any
   display?: string
   flex?: number
@@ -10,7 +10,7 @@ export interface ContainerProps {
 }
 
 export const Container: React.FC<
-  ContainerProps & React.HTMLAttributes<HTMLDivElement>
+  IContainerProps & React.HTMLAttributes<HTMLDivElement>
 > = props => {
   const { display, flex, flexDirection, justifyContent, children } = props
   const style = {

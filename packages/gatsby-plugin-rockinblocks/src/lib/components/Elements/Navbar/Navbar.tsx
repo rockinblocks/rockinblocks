@@ -5,11 +5,11 @@ import styles from "./Navbar.scss"
 import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg"
 import { ReactComponent as IconGitHub } from "../../../assets/icon-github.svg"
 
-export interface NavbarProps {
+export interface INavbarProps {
   appName?: string
 }
 
-export const Navbar: FC<NavbarProps> = props => {
+export const Navbar: FC<INavbarProps> = props => {
   const { appName } = props
 
   return (
@@ -26,7 +26,10 @@ export const Navbar: FC<NavbarProps> = props => {
               <Link to="/" className={styles["rd-navbar__brand"]}>
                 <span>
                   {Logo ? (
-                    <Logo className={styles["rd-navbar__logo"]} />
+                    <Logo
+                      data-rb="navbar-logo"
+                      className={styles["rd-navbar__logo"]}
+                    />
                   ) : (
                     <span>{appName}</span>
                   )}
@@ -43,19 +46,21 @@ export const Navbar: FC<NavbarProps> = props => {
             <Box display="flex" flexDirection="column" justifyContent="center">
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
-                  <Link to="/docs/v1/get-started" target="_blank">
-                    <span>Get Started</span>
+                  <Link to="/docs" target="_blank">
+                    <span>Docs</span>
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="http://github.com/rockinblocks/rockindocs"
+                  <a
+                    href="http://github.com/rockinblocks/rockindocs"
                     target="_blank"
+                    rel="noreferrer"
+                    data-rb="navbar-github-anchor"
                   >
                     <div className={styles["rd-navbar__github"]}>
                       <IconGitHub />
                     </div>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </Box>

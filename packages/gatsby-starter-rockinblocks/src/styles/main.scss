@@ -1,10 +1,12 @@
+@import "~@rockinblocks/gatsby-plugin-rockinblocks/src/lib/styles/variables";
 @import "variables";
 @import "reset";
 @import "typography";
-@import "prism";
 @import "blog";
 @import "utilities";
 @import "functions";
 
 // Pull in our components SCSS files
 @import "@components";
+
+@import "~@rockinblocks/gatsby-plugin-rockinblocks/src/lib/styles/prism";

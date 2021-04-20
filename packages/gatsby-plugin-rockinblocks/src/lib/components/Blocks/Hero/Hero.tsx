@@ -4,7 +4,7 @@ import { ReactComponent as Vector } from "./Hero.svg"
 import { Box, Col, Container, Row } from "../../Layout"
 import { Button } from "../../Elements/Button"
 
-export interface HeroProps {
+export interface IHeroProps {
   heading: string
   seoHeading: string
   subheading?: string
@@ -13,7 +13,7 @@ export interface HeroProps {
   primaryColor?: string
 }
 
-export const Hero: FC<HeroProps> = props => {
+export const Hero: FC<IHeroProps> = props => {
   const {
     heading,
     seoHeading,
