@@ -24,9 +24,12 @@ export const Navbar: FC<INavbarProps> = props => {
           >
             <Box>
               <Link to="/" className={styles["rd-navbar__brand"]}>
-                <span data-jest="brand">
+                <span>
                   {Logo ? (
-                    <Logo className={styles["rd-navbar__logo"]} />
+                    <Logo
+                      data-rb="navbar-logo"
+                      className={styles["rd-navbar__logo"]}
+                    />
                   ) : (
                     <span>{appName}</span>
                   )}
@@ -43,7 +46,7 @@ export const Navbar: FC<INavbarProps> = props => {
             <Box display="flex" flexDirection="column" justifyContent="center">
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
-                  <Link to="/docs/v1/installation" target="_blank">
+                  <Link to="/docs" target="_blank">
                     <span>Docs</span>
                   </Link>
                 </li>
@@ -52,6 +55,7 @@ export const Navbar: FC<INavbarProps> = props => {
                     href="http://github.com/rockinblocks/rockindocs"
                     target="_blank"
                     rel="noreferrer"
+                    data-rb="navbar-github-anchor"
                   >
                     <div className={styles["rd-navbar__github"]}>
                       <IconGitHub />
