@@ -26,13 +26,8 @@ export const Hero: FC<IHeroProps> = props => {
     <div className={styles["rd-hero"]}>
       <Container>
         <Row>
-          <Col
-            flex={60}
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-          >
-            <Box>
+          <Col className={styles["rd-hero__col--content"]}>
+            <Box className={styles["rd-hero__inner"]}>
               <h1 className={styles["rd-hero__seo-heading"]}>{seoHeading}</h1>
               <p className={styles["rd-hero__heading"]}>{heading}</p>
               <p className={styles["rd-hero__subheading"]}>{subheading}</p>
@@ -44,7 +39,7 @@ export const Hero: FC<IHeroProps> = props => {
             </Box>
           </Col>
 
-          <Col flex={40}>
+          <Col className={styles["rd-hero__col--image"]}>
             <div className={styles["rd-hero__image-wrapper"]}>
               <Vector />
             </div>

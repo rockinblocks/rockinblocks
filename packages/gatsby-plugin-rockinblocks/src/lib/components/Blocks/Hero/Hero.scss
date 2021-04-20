@@ -5,17 +5,29 @@
   display: flex;
   overflow: hidden;
   flex-direction: column-reverse;
-  padding: spacing(xl) spacing(sm) spacing(md);
+  padding: spacing(sm);
+  background-color: $white;
 
-  @include media-breakpoint-up(md) {
-    padding: spacing(md);
+  @include media-breakpoint-up(lg) {
+    padding: spacing(md) spacing(sm) spacing(md);
     flex-direction: row;
+  }
+}
+
+.rd-hero__col--content {
+  @include media-breakpoint-up(sm) {
+    flex: 0.70;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex: 0.60;
   }
 }
 
 .rd-hero__seo-heading {
   color: $text-color-muted;
   font-size: 0.875rem;
+  line-height: 1.5rem;
   margin-bottom: 0 spacing(xs);
 
   @include media-breakpoint-up(sm) {
@@ -37,6 +49,16 @@
 .rd-hero__subheading {
   @include typography-subheading();
   margin-bottom: spacing(md);
+}
+
+.rd-hero__col--image {
+  @include media-breakpoint-up(sm) {
+    flex: 0.30;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex: 0.40;
+  }
 }
 
 .rd-hero__image-wrapper {

@@ -3,6 +3,7 @@
 .rd-content {
   @include typography-body();
   padding: spacing(md) 0;
+  background-color: $white;
 }
 
 .rd-content__intro {

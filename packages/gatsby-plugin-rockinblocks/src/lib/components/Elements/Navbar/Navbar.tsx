@@ -1,8 +1,10 @@
 import React, { FC } from "react"
 import { Link } from "gatsby"
+import clsx from "clsx"
 import { Box, Col, Container, Row } from "../../Layout"
 import styles from "./Navbar.scss"
 import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg"
+import { ReactComponent as LogoMobile } from "../../../assets/rockinblocks-no-mark.svg"
 import { ReactComponent as IconGitHub } from "../../../assets/icon-github.svg"
 
 export interface INavbarProps {
@@ -26,10 +28,16 @@ export const Navbar: FC<INavbarProps> = props => {
               <Link to="/" className={styles["rd-navbar__brand"]}>
                 <span>
                   {Logo ? (
-                    <Logo
-                      data-rb="navbar-logo"
-                      className={styles["rd-navbar__logo"]}
-                    />
+                    <>
+                      <Logo
+                        data-rb="navbar-logo"
+                        className={styles["rd-navbar__logo"]}
+                      />
+                      <LogoMobile
+                        data-rb="navbar-logo-mobile"
+                        className={styles["rd-navbar__logo-mobile"]}
+                      />
+                    </>
                   ) : (
                     <span>{appName}</span>
                   )}
