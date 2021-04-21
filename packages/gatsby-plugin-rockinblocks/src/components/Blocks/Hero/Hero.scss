@@ -21,6 +21,9 @@
 
   @include media-breakpoint-up(lg) {
     flex: 0.60;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

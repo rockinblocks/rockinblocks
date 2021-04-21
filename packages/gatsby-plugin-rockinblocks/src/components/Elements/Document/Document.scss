@@ -1,9 +1,12 @@
 @import "../../../styles/shared";
-
+@import "../../../styles/reset";
+@import "../../../styles/blog";
+@import "../../../styles/prism";
 
 .rd-document__intro,
 .rd-document__main {
   padding: spacing(xs);
+  font-family: $font-family-main;
 
   @include media-breakpoint-up(lg) {
     padding: spacing(xs) spacing(md);
@@ -24,12 +27,4 @@
   h6 {
     font-family: $font-family-headings;
   }
-
-  // h1 {
-  //   @include typopgraphy-h1();
-  // }
-
-  // h2 {
-  //   @include typopgraphy-h2();
-  // }
 }

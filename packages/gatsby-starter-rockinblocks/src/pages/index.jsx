@@ -1,11 +1,8 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-
-import Layout from '../components/mainLayout'
-import RecentPosts from '@elements/RecentPosts/RecentPosts'
-import SEO from '@utilities/SEO'
-import ContextProvider from '@utilities/ContextProvider'
-import { Blocks } from '../components/Builder'
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/mainLayout"
+import { ContextProvider, SEO } from "../components/Utilities"
+import { Blocks } from "../components/Builder"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -15,7 +12,6 @@ const BlogIndex = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <SEO title="All posts" />
         <Blocks />
-        <RecentPosts />
       </Layout>
     </ContextProvider>
   )

@@ -1,4 +1,0 @@
-@function screen($size) {
-  $screen: map-get($screens, $size);
-  @return $screen;
-}
