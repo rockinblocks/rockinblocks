@@ -1,5 +1,6 @@
 $primary: #fa3250;
-$secondary: #6e3b84;
+$secondary: #2067a6;
+$tertiary: #ab6cb8;
 $white: #ffffff;
 $black: #000000;
 $light: #f7f7f7;
@@ -10,6 +11,7 @@ $palette: (
   light: $light,
   primary: $primary,
   secondary: $secondary,
+  tertiary: $tertiary,
 );
 
 $text-color: $dark;

@@ -4,15 +4,15 @@ export const HeroForm = {
   key: "builder-hero",
   fields: [
     {
-      label: "SEO Heading",
-      name: "rawJson.seoHeading",
-      description: "Heading for SEO. This will be set as the H1.",
-      component: "text",
-    },
-    {
       label: "Hero Heading",
       name: "rawJson.heading",
       description: "Heading for the hero.",
+      component: "text",
+    },
+    {
+      label: "SEO Heading",
+      name: "rawJson.seoHeading",
+      description: "Heading for SEO. This will be set as the H1.",
       component: "text",
     },
     {

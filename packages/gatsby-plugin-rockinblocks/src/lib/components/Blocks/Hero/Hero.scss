@@ -9,7 +9,7 @@
   background-color: $white;
 
   @include media-breakpoint-up(lg) {
-    padding: spacing(md) spacing(sm) spacing(md);
+    padding: spacing(xs) spacing(sm) spacing(md);
     flex-direction: row;
   }
 }
@@ -24,25 +24,13 @@
   }
 }
 
-.rd-hero__seo-heading {
-  color: $text-color-muted;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  margin-bottom: 0 spacing(xs);
-
-  @include media-breakpoint-up(sm) {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-
 .rd-hero__heading {
   @include typography-display();
   margin: 0;
   margin-bottom: spacing(sm);
 
   @include media-breakpoint-up(lg) {
-    margin-bottom: spacing(md);
+    margin-bottom: spacing(xs);
   }
 }
 
@@ -58,6 +46,7 @@
 
   @include media-breakpoint-up(lg) {
     flex: 0.40;
+    padding: 0 spacing(md);
   }
 }
 

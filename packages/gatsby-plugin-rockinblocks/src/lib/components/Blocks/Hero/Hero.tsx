@@ -28,9 +28,8 @@ export const Hero: FC<IHeroProps> = props => {
         <Row>
           <Col className={styles["rd-hero__col--content"]}>
             <Box className={styles["rd-hero__inner"]}>
-              <h1 className={styles["rd-hero__seo-heading"]}>{seoHeading}</h1>
               <p className={styles["rd-hero__heading"]}>{heading}</p>
-              <p className={styles["rd-hero__subheading"]}>{subheading}</p>
+              <h1 className={styles["rd-hero__subheading"]}>{subheading}</h1>
               <Button
                 backgroundColor={primaryColor}
                 text={buttonText}
