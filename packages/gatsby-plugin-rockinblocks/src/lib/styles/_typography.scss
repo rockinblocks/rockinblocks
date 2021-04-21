@@ -1,3 +1,6 @@
+@import "~@fontsource/poppins/700.css";
+@import "~@fontsource/roboto-mono/400.css";
+
 body {
   color: var(--text-color);
 }
@@ -42,5 +45,5 @@ h6 {
 }
 
 .font-family-mono {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }

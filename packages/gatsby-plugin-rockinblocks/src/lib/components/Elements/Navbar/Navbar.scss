@@ -21,19 +21,19 @@
 }
 
 .rd-navbar__logo {
-  max-width: 14rem;
-  display: none;
+  transition: opacity ($transition-time * 4);
 
   @include media-breakpoint-up(sm) {
-    display: flex;
+    max-width: 12rem;
   }
 }
 
-.rd-navbar__logo-mobile {
-  max-width: 3rem;
+.rd-navbar__navigation-wrapper {
+  opacity: 0;
+  transition: opacity ($transition-time * 4);
 
   @include media-breakpoint-up(sm) {
-    display: none;
+    opacity: 1;
   }
 }
 
@@ -68,8 +68,4 @@
   width: 2rem;
   height: 2rem;
   color: $light;
-}
-
-path.rockinblocks-logo_svg__st1 {
-  display: none;
 }

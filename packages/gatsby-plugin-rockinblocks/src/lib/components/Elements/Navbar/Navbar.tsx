@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 import { Link } from "gatsby"
-import clsx from "clsx"
+import { NavbarToggle } from "../NavbarToggle"
 import { Box, Col, Container, Row } from "../../Layout"
 import styles from "./Navbar.scss"
 import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg"
@@ -33,10 +33,6 @@ export const Navbar: FC<INavbarProps> = props => {
                         data-rb="navbar-logo"
                         className={styles["rd-navbar__logo"]}
                       />
-                      <LogoMobile
-                        data-rb="navbar-logo-mobile"
-                        className={styles["rd-navbar__logo-mobile"]}
-                      />
                     </>
                   ) : (
                     <span>{appName}</span>
@@ -51,7 +47,11 @@ export const Navbar: FC<INavbarProps> = props => {
             display="flex"
             justifyContent="flex-end"
           >
-            <Box display="flex" flexDirection="column" justifyContent="center">
+            <Box
+              className={styles["rd-navbar__navigation-wrapper"]}
+              flexDirection="column"
+              justifyContent="center"
+            >
               <ul className={styles["rd-navbar__navigation"]}>
                 <li>
                   <Link to="/docs" target="_blank">
@@ -72,6 +72,7 @@ export const Navbar: FC<INavbarProps> = props => {
                 </li>
               </ul>
             </Box>
+            <NavbarToggle />
           </Col>
         </Row>
       </Container>
