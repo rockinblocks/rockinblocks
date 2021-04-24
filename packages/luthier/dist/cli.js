@@ -1,22 +1,12 @@
 #!/usr/bin/env node
+var _a, _b;
 import meow from "meow";
 import { generator } from "./generator.js";
-// import { GeneratorOptions } from "./declarations.d.js";
-const cli = meow(`
-    Usage
-      $ luthier [input]
-
-    Options
-      --framework  react, vue       [Default: react]
-      --name       component name   [Default: Block]
-
-    Examples
-      $ luthier --framework=vue --name=Hero
-`, {
+var cli = meow("\n    Usage\n      $ luthier [input]\n\n    Options\n      --framework  react, vue       [Default: react]\n      --name       component name   [Default: Block]\n\n    Examples\n      $ luthier --framework=vue --name=Hero\n", {
     flags: {
         framework: {
             type: "string",
-            default: "rainbows",
+            default: "react",
         },
         name: {
             type: "string",
@@ -24,13 +14,9 @@ const cli = meow(`
         },
     },
 });
-const options = {
-    framework: cli.flags.framework,
-    name: cli.flags.name,
+var options = {
+    framework: (_a = cli === null || cli === void 0 ? void 0 : cli.flags) === null || _a === void 0 ? void 0 : _a.framework,
+    name: (_b = cli === null || cli === void 0 ? void 0 : cli.flags) === null || _b === void 0 ? void 0 : _b.name,
 };
-// const options = {
-//   framework: "vue",
-//   name: "Card",
-// };
 generator(options);
 export default cli;

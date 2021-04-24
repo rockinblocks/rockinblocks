@@ -1,28 +1,28 @@
 import { GeneratorOptions } from "./declarations.d.js";
+import { mkdir, writeFile } from "fs/promises";
 
 export const generator = (options: GeneratorOptions): void => {
-  const { framework, name } = options;
+  const { name } = options;
+  generateReactBlock(name);
+};
 
-  switch (framework) {
-    case "react":
-      console.log("Generating the React component...");
-      generateReactBlock(name);
-      break;
-    case "vue":
-      console.log("Generating the Vue component...");
-      generateVueBlock(name);
-      break;
-    default:
-      break;
+const generateReactBlock = async (name?: string) => {
+  try {
+    await mkdir(`src/${name}`).then(() => {
+      writeFile(
+        `src/${name}/${name}.tsx`,
+        `
+import React from "react";
+`,
+      );
+    });
+  } catch (error) {
+    console.error("there was an error:", error.message);
   }
 };
 
-const generateReactBlock = (name?: string) => {
-  console.log(`Generating React block: ${name}...`);
-};
-
-const generateVueBlock = (name?: string) => {
-  console.log(`Generating Vue block: ${name}...`);
-};
+// const generateVueBlock = (name?: string) => {
+//   console.log(`Generating Vue block: ${name}...`);
+// };
 
 export default generator;

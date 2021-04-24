@@ -16,7 +16,7 @@ const cli = meow(`
     flags: {
         framework: {
             type: "string",
-            default: "rainbows",
+            default: "react",
         },
         name: {
             type: "string",
