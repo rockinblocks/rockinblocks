@@ -1,0 +1,43 @@
+{
+	"name": "@rockinblocks/luthier",
+	"version": "0.0.0",
+	"description": "Generate blocks for your Rockin' Blocks project",
+	"license": "MIT",
+	"repository": "https://github.com/rockinblocks/rockinblocks",
+	"author": {
+		"name": "Jed Darrohn",
+		"email": "jed@rockinblocks.io",
+		"url": "https://rockinblocks.io"
+	},
+	"type": "module",
+	"bin": {
+		"luthier": "dist/cli.js"
+	},
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"build": "tsc",
+		"start": "npm run build && dist/cli.js",
+		"pretest": "npm run build",
+		"test": "xo && ava"
+	},
+	"files": [
+		"dist/cli.js"
+	],
+	"keywords": [
+		"cli",
+		"vue",
+		"react",
+		"generator",
+		"components"
+	],
+	"dependencies": {
+		"meow": "^9.0.0"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"nyc": "^15.1.0",
+		"xo": "^0.38.0"
+	}
+}

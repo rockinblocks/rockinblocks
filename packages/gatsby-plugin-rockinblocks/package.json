@@ -57,6 +57,7 @@
     "@fontsource/righteous": "^4.2.0",
     "@fontsource/roboto": "^4.2.0",
     "@fontsource/roboto-mono": "^4.2.0",
+    "@rockinblocks/luthier": "0.0.0",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
