@@ -1,7 +1,5 @@
 export const generator = (options) => {
     const { framework, name } = options;
-    console.log({ options });
-    return;
     console.log("Generating the component...");
     console.log(`Framework: ${framework}`);
     switch (framework) {

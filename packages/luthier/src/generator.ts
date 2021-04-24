@@ -3,14 +3,6 @@ import { GeneratorOptions } from "./declarations.d.js";
 export const generator = (options: GeneratorOptions): void => {
   const { framework, name } = options;
 
-  console.log({ options });
-
-  return;
-
-  console.log("Generating the component...");
-
-  console.log(`Framework: ${framework}`);
-
   switch (framework) {
     case "react":
       console.log("Generating the React component...");
