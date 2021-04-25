@@ -2,7 +2,7 @@
 var _a, _b;
 import meow from "meow";
 import { generator } from "./generator.js";
-var cli = meow("\n    Usage\n      $ luthier [input]\n\n    Options\n      --framework  react, vue       [Default: react]\n      --name       component name   [Default: Block]\n\n    Examples\n      $ luthier --framework=vue --name=Hero\n", {
+var cli = meow("\n    Usage\n      $ riff [input]\n\n    Options\n      --name   component name   [Default: Block]\n\n    Examples\n      $ riff --name=Hero\n", {
     flags: {
         framework: {
             type: "string",

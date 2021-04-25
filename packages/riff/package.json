@@ -1,17 +1,13 @@
 {
-	"name": "@rockinblocks/luthier",
-	"version": "0.0.0",
+	"name": "@rockinblocks/riff",
+	"version": "0.1.0-alpha",
 	"description": "Generate blocks for your Rockin' Blocks project",
 	"license": "MIT",
 	"repository": "https://github.com/rockinblocks/rockinblocks",
-	"author": {
-		"name": "Jed Darrohn",
-		"email": "jed@rockinblocks.io",
-		"url": "https://rockinblocks.io"
-	},
+	"author": "Jed Darrohn <jed@rockinblocks.io> (https://rockinblocks.io)",
 	"type": "module",
 	"bin": {
-		"luthier": "dist/cli.js"
+		"riff": "dist/cli.js"
 	},
 	"engines": {
 		"node": ">=12"
@@ -34,6 +30,7 @@
 	],
 	"dependencies": {
 		"@sindresorhus/tsconfig": "^1.0.2",
+		"chalk": "^4.1.1",
 		"meow": "^9.0.0",
 		"pkg-dir": "^5.0.0"
 	},
@@ -41,5 +38,6 @@
 		"ava": "^3.15.0",
 		"nyc": "^15.1.0",
 		"xo": "^0.38.0"
-	}
+	},
+	"main": "index.js"
 }

@@ -4,14 +4,13 @@ import { generator } from "./generator.js";
 
 const cli = meow(`
     Usage
-      $ luthier [input]
+      $ riff [input]
 
     Options
-      --framework  react, vue       [Default: react]
-      --name       component name   [Default: Block]
+      --name   component name   [Default: Block]
 
     Examples
-      $ luthier --framework=vue --name=Hero
+      $ riff --name=Hero
 `, {
     flags: {
         framework: {
