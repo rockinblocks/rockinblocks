@@ -1,13 +1,16 @@
-// import test from 'ava';
-// import luthier from './cli';
+import test from "ava";
+import riff from "./cli";
 
-// test('title', t => {
-// 	t.throws(() => {
-// 		luthier(123);
-// 	}, {
-// 		instanceOf: TypeError,
-// 		message: 'Expected a string, got number'
-// 	});
+test("title", (t) => {
+  t.throws(
+    () => {
+      riff(123);
+    },
+    {
+      instanceOf: TypeError,
+      message: "Expected a string, got number",
+    },
+  );
 
-// 	t.is(luthier('unicorns'), 'unicorns & rainbows');
-// });
+  t.is(riff("unicorns"), "unicorns & rainbows");
+});

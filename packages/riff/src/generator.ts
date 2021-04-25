@@ -37,7 +37,7 @@ const generateBlockReact = async (name: string) => {
  * Creates the component directory and the index file
  * Exports the block and the type interface
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 const generateComponentIndex = async (name?: string) => {
   try {
@@ -57,7 +57,7 @@ export type { ${name}Props } from "./${name}"
 /**
  * Creates the React component for the block
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 const generateComponentReact = async (name?: string) => {
   try {
@@ -94,7 +94,7 @@ export default ${name}
  * Creates the SCSS Component for the block
  * Assumes the component directly already exists
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 const generateComponentScss = async (name?: string) => {
   try {
@@ -117,7 +117,7 @@ const generateComponentScss = async (name?: string) => {
  * Creates the Storybook stories for the block
  * Assumes the component directly already exists
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 const generateComponentStories = async (name?: string) => {
   try {
@@ -149,7 +149,7 @@ Default.args = {
  * Creates the Jest tests for the block
  * Assumes the component directly already exists
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 const generateComponentTests = async (name?: string) => {
   try {
