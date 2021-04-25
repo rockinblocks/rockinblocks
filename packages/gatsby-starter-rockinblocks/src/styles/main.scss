@@ -1,12 +1,8 @@
-@import "~@rockinblocks/gatsby-plugin-rockinblocks/src/lib/styles/variables";
+// Load the starter variables
+// TO-DO Load Rockin' Blocks defaults
 @import "variables";
-@import "reset";
-@import "typography";
-@import "blog";
-@import "utilities";
-@import "functions";
-
-// Pull in our components SCSS files
-@import "@components";
-
+@import "~@rockinblocks/gatsby-plugin-rockinblocks/src/lib/styles/variables";
+@import "~@rockinblocks/gatsby-plugin-rockinblocks/src/lib/styles/shared";
+@import "~@rockinblocks/gatsby-plugin-rockinblocks/src/lib/styles/reset";
+@import "~@rockinblocks/gatsby-plugin-rockinblocks/src/lib/styles/blog";
 @import "~@rockinblocks/gatsby-plugin-rockinblocks/src/lib/styles/prism";

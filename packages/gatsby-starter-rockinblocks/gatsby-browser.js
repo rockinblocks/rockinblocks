@@ -4,8 +4,5 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
-
 import "@fontsource/poppins/700.css"
 import "@fontsource/roboto-mono"
-import "./src/styles/main.scss"

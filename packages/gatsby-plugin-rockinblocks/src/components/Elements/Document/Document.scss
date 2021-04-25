@@ -1,0 +1,30 @@
+@import "../../../styles/shared";
+@import "../../../styles/reset";
+@import "../../../styles/blog";
+@import "../../../styles/prism";
+
+.document__intro,
+.document__main {
+  padding: spacing(xs);
+  font-family: $font-family-main;
+
+  @include media-breakpoint-up(lg) {
+    padding: spacing(xs) spacing(md);
+  }
+}
+
+.document__title {
+  font-family: $font-family-headings;
+  margin: 0;
+}
+
+.document__html {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-headings;
+  }
+}

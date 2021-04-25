@@ -1,10 +1,16 @@
 {
 	"name": "@rockinblocks/riff",
 	"version": "0.1.0-alpha",
+	"description": "Generate blocks for your Rockin' Blocks project",
 	"license": "MIT",
-	"bin": "dist/cli.js",
+	"repository": "https://github.com/rockinblocks/rockinblocks",
+	"author": "Jed Darrohn <jed@rockinblocks.io> (https://rockinblocks.io)",
+	"type": "module",
+	"bin": {
+		"riff": "dist/cli.js"
+	},
 	"engines": {
-		"node": ">=10"
+		"node": ">=12"
 	},
 	"scripts": {
 		"build": "tsc",
@@ -15,39 +21,23 @@
 	"files": [
 		"dist/cli.js"
 	],
+	"keywords": [
+		"cli",
+		"vue",
+		"react",
+		"generator",
+		"components"
+	],
 	"dependencies": {
-		"ink": "^3.0.8",
+		"@sindresorhus/tsconfig": "^1.0.2",
+		"chalk": "^4.1.1",
 		"meow": "^9.0.0",
-		"react": "^17.0.2"
+		"pkg-dir": "^5.0.0"
 	},
 	"devDependencies": {
-		"@ava/typescript": "^1.1.1",
-		"@sindresorhus/tsconfig": "^1.0.1",
-		"@types/babel__core": "^7.1.14",
-		"@types/react": "^17.0.3",
 		"ava": "^3.15.0",
-		"chalk": "^4.1.0",
-		"eslint-config-xo-react": "^0.25.0",
-		"eslint-plugin-react": "^7.23.1",
-		"eslint-plugin-react-hooks": "^4.2.0",
-		"ink-testing-library": "^2.1.0",
-		"typescript": "^4.2.4",
-		"xo": "^0.38.2"
+		"nyc": "^15.1.0",
+		"xo": "^0.38.0"
 	},
-	"ava": {
-		"typescript": {
-			"extensions": [
-				"tsx"
-			],
-			"rewritePaths": {
-				"source/": "dist/"
-			}
-		}
-	},
-	"xo": {
-		"extends": "xo-react",
-		"rules": {
-			"react/prop-types": "off"
-		}
-	}
+	"main": "index.js"
 }

@@ -1,9 +1,10 @@
 {
 	"extends": "@sindresorhus/tsconfig",
 	"compilerOptions": {
-		"jsx": "react",
+		"module": "ES2020",
+		"target": "ES5",
 		"esModuleInterop": true,
 		"outDir": "dist"
 	},
-	"include": ["source"]
+	"include": ["src"]
 }
