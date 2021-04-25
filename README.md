@@ -12,13 +12,25 @@
 
 - **Design should never be an afterthought.** Companies can struggle when design takes _too much_ of a back seat to solving business and technical problems. **Rockin' Blocks** is created for companies that are looking to start things off on the right foot, or maybe even companies that are looking to turn over a new leaf and start fresh.
 - **Components should be shareable across all of your web touchpoints.** If your company has five different apps, and they are all under the same brand umbrella, you should be developing and maintaining the same component library across all five applications.
-- **Frontend developers should be able to work independently of their backend counterparts.** Leveraging Storybook enables your frontend team to work in isolation and make progress on the design front without waiting from APIs to be completed from your backend team.
-- **Agencies and freelancers should be able to easily provide their clients with a real design solution.** Using **Rockin' Blocks** should be just as easy and building and maintaining a site in content management systems like WordPress or Shopify, while provide a true design system for your clientele.
+- **Frontend developers should be able to work independently of their backend counterparts.** Leveraging Storybook enables your frontend team to work in isolation and make progress on the design front without waiting for APIs to be completed by your backend team.
+- **Agencies and freelancers should be able to easily provide their clients with a real design solution.** Using **Rockin' Blocks** while provide a true design system for your clientele, not just a CMS theme with style overrides.
 
 
 ## Get Started
 
 <a href="#get-started"></a>
+
+### Dependencies
+
+#### Node 15
+
+**Rockin' Blocks** requires Node 15 to support the M1 chip in my new Mac. I know this might be a pain, so I do recommend installing `brew` and subsequently `nvm` to switch to Node 15.
+
+#### Yarn
+
+Yarn is currently required in order to use **Rockin' Blocks**, which leverages Yarn workspaces to create an easy-to-use environment that houses all of your Javascript applications in one place.
+
+[Lerna support is potentially on the horizon](https://github.com/rockinblocks/rockinblocks/issues/27), though at this time the primary focus is support for Yarn workspaces.
 
 ### Using the monorepo
 
@@ -50,9 +62,24 @@ $ yarn install
 
 This will install all dependencies throughout the workspace to Gatsby, your block library, and our CLI tool, `riff`, as well.
 
-### Development
+## Development
 
-#### Building your blocks in Storybook
+#### Generate a block with Riff 🎸
+
+**Rockin' Blocks** comes with `riff`, an early version of our CLI tool, to quickly generate a block. As of right now, `riff` needs to be run from within the `gatsby-plugin-rockinblocks` directory 
+
+```
+# From within gatsby-plugin-rockinblocks
+yarn riff --name=TestimonialSection
+```
+
+You should see the following success message (as of version 0.1.0):
+
+![riff CLI success message](./media/successful-riff.png)
+
+#### Developing your blocks in isolation within Storybook
+
+**Unlike Riff, which should be run from within the blocks plugin, these commands should be run from within `gatsby-plugin-rockinblocks`**
 
 **These commands should be run from the root of your workspace, not within the individual packages.** While you can run commands from within each package, it does get a little cumbersome bouncing from folder to folder, so we have provided some helper commands that can be run from the root of your workspace.
 
@@ -75,7 +102,7 @@ $ yarn blocks:build
 
 #### Seeing your blocks in your Gatsby site
 
-While building out a block, Storybook is typically the fastest way to work, but sometimes you want to be sure that Gatsby is properly pulling in your blocks package and everything looks okay. This is achieved by starting your Gatsby development server, and then building your blocks library. **Please note that changes made while developing in Storybook will not be seen in your Gatsby application until you build your blocks library.**
+While building out a block, Storybook is typically the fastest way to work, but sometimes you want to be sure that Gatsby is properly pulling in your blocks package and everything looks okay. This is achieved by starting your Gatsby development server, and then building your blocks library. **Please note that changes made while developing in Storybook will not be seen in your Gatsby application until you build your blocks library.** This is because the `dist`, which is created during the build, is what is distributed within the NPM package, and subsequently to your Gatsby site.
 
 ```
 # Start your Gatsby development site
