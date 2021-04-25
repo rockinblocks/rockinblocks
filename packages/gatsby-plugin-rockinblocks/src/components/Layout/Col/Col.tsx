@@ -29,7 +29,7 @@ export const Col: React.FC<
     ...style,
   }
   return (
-    <div className={styles["rd-col"]} style={{ ...styleProps }} {...props}>
+    <div className={styles["col"]} style={{ ...styleProps }} {...props}>
       {children}
     </div>
   )

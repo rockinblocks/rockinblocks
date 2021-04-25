@@ -31,7 +31,7 @@ export const Box: React.FC<IBoxProps & React.HTMLAttributes<HTMLDivElement>> = (
   }
 
   return (
-    <div className={styles["rd-box"]} style={{ ...styleProps }} {...props}>
+    <div className={styles["box"]} style={{ ...styleProps }} {...props}>
       {children}
     </div>
   )

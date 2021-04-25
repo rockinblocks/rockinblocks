@@ -1,6 +1,6 @@
 @import "../../../styles/shared";
 
-.rd-hero {
+.hero {
   @include typography-body();
   display: flex;
   overflow: hidden;
@@ -14,7 +14,7 @@
   }
 }
 
-.rd-hero__col--content {
+.hero__col--content {
   @include media-breakpoint-up(sm) {
     flex: 0.70;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-.rd-hero__heading {
+.hero__heading {
   @include typography-display();
   margin: 0;
   margin-bottom: spacing(sm);
@@ -37,12 +37,12 @@
   }
 }
 
-.rd-hero__subheading {
+.hero__subheading {
   @include typography-subheading();
   margin-bottom: spacing(md);
 }
 
-.rd-hero__col--image {
+.hero__col--image {
   @include media-breakpoint-up(sm) {
     flex: 0.30;
   }
@@ -53,7 +53,7 @@
   }
 }
 
-.rd-hero__image-wrapper {
+.hero__image-wrapper {
   overflow: hidden;
   margin-top: spacing(md);
 
@@ -62,7 +62,7 @@
   }
 }
 
-.rd-hero__vector {
+.hero__vector {
   position: relative;
   max-width: 100%;
 

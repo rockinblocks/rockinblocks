@@ -21,7 +21,7 @@ export const Row: React.FC<IRowProps & React.HTMLAttributes<HTMLDivElement>> = (
     ...style,
   }
   return (
-    <div className={styles["rd-row"]} style={{ ...styleProps }} {...props}>
+    <div className={styles["row"]} style={{ ...styleProps }} {...props}>
       {children}
     </div>
   )

@@ -23,13 +23,13 @@ export const Hero: FC<IHeroProps> = props => {
     primaryColor,
   } = props
   return (
-    <div className={styles["rd-hero"]}>
+    <div className={styles["hero"]}>
       <Container>
         <Row>
-          <Col className={styles["rd-hero__col--content"]}>
-            <Box className={styles["rd-hero__inner"]}>
-              <p className={styles["rd-hero__heading"]}>{heading}</p>
-              <h1 className={styles["rd-hero__subheading"]}>{subheading}</h1>
+          <Col className={styles["hero__col--content"]}>
+            <Box className={styles["hero__inner"]}>
+              <p className={styles["hero__heading"]}>{heading}</p>
+              <h1 className={styles["hero__subheading"]}>{subheading}</h1>
               <Button
                 backgroundColor={primaryColor}
                 text={buttonText}
@@ -38,8 +38,8 @@ export const Hero: FC<IHeroProps> = props => {
             </Box>
           </Col>
 
-          <Col className={styles["rd-hero__col--image"]}>
-            <div className={styles["rd-hero__image-wrapper"]}>
+          <Col className={styles["hero__col--image"]}>
+            <div className={styles["hero__image-wrapper"]}>
               <Vector />
             </div>
           </Col>

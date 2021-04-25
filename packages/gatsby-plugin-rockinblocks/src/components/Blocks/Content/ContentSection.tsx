@@ -17,10 +17,10 @@ export const ContentSection: React.FC<ContentSectionProps> = ({
   buttonLink,
 }): JSX.Element => {
   return (
-    <Box className={styles["rd-content__section"]}>
+    <Box className={styles["content__section"]}>
       <div>
-        <h3 className={styles["rd-content__section-heading"]}>{heading}</h3>
-        <p className={styles["rd-content__section-body"]}>{body}</p>
+        <h3 className={styles["content__section-heading"]}>{heading}</h3>
+        <p className={styles["content__section-body"]}>{body}</p>
       </div>
       <div>
         <Button text={buttonText} link={buttonLink ?? null} />

@@ -1,11 +1,11 @@
 @import "../../../styles/shared";
 
-.rd-button {
+.button {
   text-decoration: none;
   display: inline-flex;
 }
 
-.rd-button__inner {
+.button__inner {
   padding: spacing(xs) spacing(sm);
   background-color: palette(primary);
   font-family: $font-family-main;

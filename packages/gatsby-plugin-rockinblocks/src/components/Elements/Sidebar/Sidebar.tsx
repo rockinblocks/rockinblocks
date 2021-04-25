@@ -12,9 +12,9 @@ export interface ISidebarProps {
 
 export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
   return (
-    <div className={styles["rd-sidebar"]}>
-      <div className={styles["rd-sidebar__navigation-wrapper"]}>
-        <ul className={styles["rd-sidebar__navigation"]}>
+    <div className={styles["sidebar"]}>
+      <div className={styles["sidebar__navigation-wrapper"]}>
+        <ul className={styles["sidebar__navigation"]}>
           {menuItems &&
             menuItems.map((menuItem: ISidebarMenuItem) => {
               const { path, title } = menuItem

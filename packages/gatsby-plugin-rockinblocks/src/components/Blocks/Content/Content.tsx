@@ -14,7 +14,7 @@ export interface IContentProps {
 export const Content: FC<IContentProps> = props => {
   const { heading, subheading, sections } = props
   return (
-    <div className={styles["rd-content"]}>
+    <div className={styles.content}>
       <Container>
         <ContentIntro {...{ heading, subheading }} />
       </Container>
@@ -27,7 +27,7 @@ export const Content: FC<IContentProps> = props => {
             justifyContent="center"
             style={{ overflow: "hidden" }}
           >
-            <Vector className={styles["rd-content__vector"]} />
+            <Vector className={styles["content__vector"]} />
           </Col>
           <Col flex={2}>
             {sections && (

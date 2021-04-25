@@ -1,6 +1,6 @@
 @import "../../../styles/shared";
 
-.rd-navbar {
+.navbar {
   padding: (spacing(xs) / 2) spacing(xs);
   background-color: $white;
   color: $text-color;
@@ -13,14 +13,14 @@
   z-index: 10;
 }
 
-.rd-navbar__brand {
+.navbar__brand {
   color: $text-color;
   text-decoration: none;
   font-family: $font-family-main;
   font-weight: 700;
 }
 
-.rd-navbar__logo {
+.navbar__logo {
   transition: opacity ($transition-time * 4);
 
   @include media-breakpoint-up(sm) {
@@ -28,7 +28,7 @@
   }
 }
 
-.rd-navbar__navigation-wrapper {
+.navbar__navigation-wrapper {
   opacity: 0;
   transition: opacity ($transition-time * 4);
 
@@ -37,7 +37,7 @@
   }
 }
 
-.rd-navbar__navigation {
+.navbar__navigation {
   padding: 0;
   list-style: none;
   margin: 0;
@@ -45,7 +45,7 @@
   font-family: $font-family-main;
 }
 
-.rd-navbar__navigation li {
+.navbar__navigation li {
   font-size: 1.125rem;
   padding: 1rem;
   display: flex;
@@ -54,17 +54,17 @@
   margin-bottom: 0;
 }
 
-.rd-navbar__navigation li:last-of-type {
+.navbar__navigation li:last-of-type {
   padding-right: 0;
 }
 
-.rd-navbar__navigation li a {
+.navbar__navigation li a {
   text-decoration: none;
   color: $primary;
   font-weight: 600;
 }
 
-.rd-navbar__github {
+.navbar__github {
   width: 2rem;
   height: 2rem;
   color: $light;

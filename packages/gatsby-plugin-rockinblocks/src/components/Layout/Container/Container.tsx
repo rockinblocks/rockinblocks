@@ -20,7 +20,7 @@ export const Container: React.FC<
     justifyContent,
   }
   return (
-    <div className={styles["rd-container"]} style={{ ...style }} {...props}>
+    <div className={styles["container"]} style={{ ...style }} {...props}>
       {children}
     </div>
   )

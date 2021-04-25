@@ -16,23 +16,23 @@ export const Button: FC<IButtonProps> = props => {
   const Wrapper: FC = ({ children }): JSX.Element => {
     if (to) {
       return (
-        <Link className={styles["rd-button"]} to={to}>
+        <Link className={styles["button"]} to={to}>
           {children}
         </Link>
       )
     }
-    return <span className={styles["rd-button"]}>{children}</span>
+    return <span className={styles["button"]}>{children}</span>
   }
 
   return (
     <Wrapper>
       <div
-        className={styles["rd-button__inner"]}
+        className={styles["button__inner"]}
         style={{ backgroundColor }}
         {...props}
       >
         <span
-          className={styles["rd-button__text"]}
+          className={styles["button__text"]}
           style={{ color: textColor || "#ffffff" }}
         >
           {text}

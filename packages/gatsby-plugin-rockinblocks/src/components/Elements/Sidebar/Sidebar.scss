@@ -1,6 +1,6 @@
 @import "../../../styles/shared";
 
-.rd-sidebar {
+.sidebar {
   background: linear-gradient($light, rgba($light, 0.2));
   font-family: $font-family-main;
   color: $light;
@@ -12,17 +12,17 @@
   border-radius: 0.5rem;
 }
 
-.rd-sidebar__brand {
+.sidebar__brand {
   font-weight: 600;
   color: $text-color;
   text-decoration: none;
 }
 
-.rd-sidebar__navigation-wrapper {
+.sidebar__navigation-wrapper {
   width: 100%;
 }
 
-.rd-sidebar__navigation {
+.sidebar__navigation {
   padding: 0;
   list-style: none;
   margin: 0;
@@ -30,7 +30,7 @@
   flex-direction: column;
 }
 
-.rd-sidebar__navigation li {
+.sidebar__navigation li {
   font-size: 1rem;
   font-weight: 400;
   padding: (spacing(xs) / 4) spacing(xs);
@@ -39,22 +39,22 @@
   margin-bottom: spacing(xs) / 4;
 }
 
-.rd-sidebar__navigation li:hover {
+.sidebar__navigation li:hover {
   background-color: darken($light, 3%);
   cursor: pointer;
 }
 
-.rd-sidebar__navigation li:active {
+.sidebar__navigation li:active {
   background-color: darken($light, 5%);
   cursor: pointer;
 }
 
 
-.rd-sidebar__navigation li:last-of-type {
+.sidebar__navigation li:last-of-type {
   padding-right: 0;
 }
 
-.rd-sidebar__navigation li a {
+.sidebar__navigation li a {
   text-decoration: none;
   color: $text-color;
   font-weight: 600;

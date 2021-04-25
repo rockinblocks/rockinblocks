@@ -12,9 +12,9 @@ export const ContentIntro: React.FC<ContentIntroProps> = ({
   subheading,
 }) => {
   return (
-    <Box className={styles["rd-content__intro"]}>
-      <h3 className={styles["rd-content__heading"]}>{heading}</h3>
-      <p className={styles["rd-content__subheading"]}>{subheading}</p>
+    <Box className={styles["content__intro"]}>
+      <h3 className={styles["content__heading"]}>{heading}</h3>
+      <p className={styles["content__subheading"]}>{subheading}</p>
     </Box>
   )
 }

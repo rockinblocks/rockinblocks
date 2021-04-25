@@ -20,16 +20,16 @@ export const Document: FC<IDocumentProps> = ({ html, frontmatter }) => {
   const { title } = frontmatter
   return (
     <>
-      <Box className={styles["rd-document"]} display="flex">
+      <Box className={styles["document"]} display="flex">
         <Box flex={0.8}>
-          <Box className={styles["rd-document__intro"]}>
-            <h1 className={styles["rd-document__title"]}>{title}</h1>
+          <Box className={styles["document__intro"]}>
+            <h1 className={styles["document__title"]}>{title}</h1>
           </Box>
-          <div className={styles["rd-document__main"]}>
+          <div className={styles["document__main"]}>
             <main>
               <div
                 style={{ flex: 1 }}
-                className={styles["rd-document__html"]}
+                className={styles["document__html"]}
                 // eslint-disable-next-line react/no-danger
                 dangerouslySetInnerHTML={{ __html: html }}
               />

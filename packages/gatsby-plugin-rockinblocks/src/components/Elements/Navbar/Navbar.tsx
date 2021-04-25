@@ -15,7 +15,7 @@ export const Navbar: FC<INavbarProps> = props => {
   const { appName } = props
 
   return (
-    <div className={styles["rd-navbar"]}>
+    <div className={styles["navbar"]}>
       <Container display="flex">
         <Row>
           <Col
@@ -25,13 +25,13 @@ export const Navbar: FC<INavbarProps> = props => {
             justifyContent="center"
           >
             <Box>
-              <Link to="/" className={styles["rd-navbar__brand"]}>
+              <Link to="/" className={styles["navbar__brand"]}>
                 <span>
                   {Logo ? (
                     <>
                       <Logo
                         data-rb="navbar-logo"
-                        className={styles["rd-navbar__logo"]}
+                        className={styles["navbar__logo"]}
                       />
                     </>
                   ) : (
@@ -48,11 +48,11 @@ export const Navbar: FC<INavbarProps> = props => {
             justifyContent="flex-end"
           >
             <Box
-              className={styles["rd-navbar__navigation-wrapper"]}
+              className={styles["navbar__navigation-wrapper"]}
               flexDirection="column"
               justifyContent="center"
             >
-              <ul className={styles["rd-navbar__navigation"]}>
+              <ul className={styles["navbar__navigation"]}>
                 <li>
                   <Link to="/docs" target="_blank">
                     <span>Docs</span>
@@ -65,7 +65,7 @@ export const Navbar: FC<INavbarProps> = props => {
                     rel="noreferrer"
                     data-rb="navbar-github-anchor"
                   >
-                    <div className={styles["rd-navbar__github"]}>
+                    <div className={styles["navbar__github"]}>
                       <IconGitHub />
                     </div>
                   </a>

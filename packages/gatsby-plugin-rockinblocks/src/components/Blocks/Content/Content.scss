@@ -1,18 +1,18 @@
 @import "../../../styles/shared";
 
-.rd-content {
+.content {
   @include typography-body();
   padding: spacing(md) 0;
   background-color: $white;
 }
 
-.rd-content__intro {
+.content__intro {
   @include media-breakpoint-up(lg) {
     flex: 0.6;
   }
 }
 
-.rd-content__heading {
+.content__heading {
   @include typography-h2();
   margin-bottom: spacing(md);
 
@@ -21,12 +21,12 @@
   }
 }
 
-.rd-content__subheading {
+.content__subheading {
   @include typography-subheading();
   margin-bottom: spacing(md);
 }
 
-.rd-content__section {
+.content__section {
   margin: spacing(xs) / 4;
 
   // Card
@@ -47,16 +47,16 @@
   }
 }
 
-.rd-content__section-heading {
+.content__section-heading {
   color: $text-color;
   margin: 0;
 }
 
-.rd-content__section-body {
+.content__section-body {
   margin-bottom: spacing(md);
 }
 
-.rd-content__vector {
+.content__vector {
   @include media-breakpoint-up(lg) {
     width: 40rem;
     margin-right: -20rem;
