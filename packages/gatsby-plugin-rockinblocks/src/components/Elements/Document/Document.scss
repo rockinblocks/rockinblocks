@@ -25,6 +25,16 @@
   h4,
   h5,
   h6 {
-    font-family: $font-family-headings;
+    font-family: $font-family-main;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: $text-color-muted;
+
+    strong {
+      color: $text-color;
+    }
   }
 }

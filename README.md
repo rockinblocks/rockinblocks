@@ -13,7 +13,7 @@
 - **Design should never be an afterthought.** Companies can struggle when design takes _too much_ of a back seat to solving business and technical problems. **Rockin' Blocks** is created for companies that are looking to start things off on the right foot, or maybe even companies that are looking to turn over a new leaf and start fresh.
 - **Components should be shareable across all of your web touchpoints.** If your company has five different apps, and they are all under the same brand umbrella, you should be developing and maintaining the same component library across all five applications.
 - **Frontend developers should be able to work independently of their backend counterparts.** Leveraging Storybook enables your frontend team to work in isolation and make progress on the design front without waiting for APIs to be completed by your backend team.
-- **Agencies and freelancers should be able to easily provide their clients with a real design solution.** Using **Rockin' Blocks** while provide a true design system for your clientele, not just a CMS theme with style overrides.
+- **Agencies and freelancers should be able to easily provide their clients with a real design solution.** **Rockin' Blocks** by design provides a true design system for your clientele, not just a CMS theme with style overrides. Over time, their system grows, along with their block library, as company needs become more clear. 
 
 
 ## Get Started
