@@ -6,3 +6,4 @@
 
 import "@fontsource/poppins/700.css"
 import "@fontsource/roboto-mono"
+import "./src/styles/main.scss"

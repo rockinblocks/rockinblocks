@@ -37,10 +37,11 @@ code[class*="language-"]::mozselection {
   }
 }
 pre[class*="language-"] {
-  padding: 1em;
-  margin: 1rem 0;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
   overflow: auto;
   background: $dark;
+  border-radius: spacing(xs) / 4;
 }
 :not(pre) > code[class*="language-"] {
   padding: 0.25rem 0.5rem;
@@ -58,7 +59,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #606e87;
+  color: lighten(#606e87, 15%);
 }
 .token.punctuation {
   color: #81a1c1;
