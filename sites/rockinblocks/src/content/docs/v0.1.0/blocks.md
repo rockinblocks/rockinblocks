@@ -5,6 +5,7 @@ date_updated: '2020-04-12'
 keywords: 'gatsby, tinacms, blocks, gatsby page builder'
 path: /docs/v0.1.0/blocks
 description: Understanding blocks and how they work with Gatsby and Tina CMS.
+order: '3.1'
 type: document
 ---
 ## Generate a block with Riff 🎸
@@ -19,7 +20,7 @@ yarn riff --name=TestimonialSection
 
 You should see the following success message (as of version 0.1.0):
 
-![riff CLI success message](./media/successful-riff.png)
+![riff CLI success message](/images/successful-riff.png)
 
 ## Developing your blocks in isolation within Storybook
 

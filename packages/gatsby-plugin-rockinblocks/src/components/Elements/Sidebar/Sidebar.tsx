@@ -5,6 +5,7 @@ import styles from "./Sidebar.scss"
 export interface ISidebarMenuItem {
   title: string
   path: string
+  order: string
 }
 export interface ISidebarProps {
   menuItems: ISidebarMenuItem[]
@@ -17,7 +18,7 @@ export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
         <ul className={styles["sidebar__navigation"]}>
           {menuItems &&
             menuItems.map((menuItem: ISidebarMenuItem) => {
-              const { path, title } = menuItem
+              const { path, title, order } = menuItem
               return (
                 <li key={path}>
                   <Link to={path}>{title}</Link>

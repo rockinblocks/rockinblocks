@@ -196,6 +196,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/interface-name-prefix": "off",
         "@typescript-eslint/prefer-includes": "off",
+        "@typescript-eslint/dot-notation": "off",
       },
     },
   ],
