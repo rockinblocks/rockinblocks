@@ -10,7 +10,7 @@
 		"riff": "dist/cli.js"
 	},
 	"engines": {
-		"node": ">=12"
+		"node": ">=14"
 	},
 	"scripts": {
 		"build": "tsc",
