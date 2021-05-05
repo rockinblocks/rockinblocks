@@ -54,25 +54,14 @@ export default function Template({
 
   const sortAndSetItems = useCallback((items) => {
     items.sort((item, nextItem) => {
-      let { order } = item
-      order = String(order)
-      const coordinates = order.split(".")
-      const nextCoordinates = order.split(".")
-      const [menu, submenu] = coordinates
-      const [nextMenu, nextSubmenu] = nextCoordinates
+      const { order } = item
+      const { order: nextOrder } = nextItem
 
-      console.log({
-        menu,
-        submenu,
-        nextMenu,
-        nextSubmenu,
-      })
-
-      if (menu < nextMenu && submenu < nextSubmenu) {
-        return 1
+      if (order < nextOrder) {
+        return -1
       }
 
-      return -1
+      return 1
     })
 
     setMenuItems(items)
