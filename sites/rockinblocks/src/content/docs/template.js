@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useState } from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import { usePlugin } from "tinacms"
@@ -10,6 +10,7 @@ import {
   Container,
   Document,
   Sidebar,
+  IMenuItem,
 } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Template({
@@ -51,13 +52,30 @@ export default function Template({
     image: imageBucket,
   }
 
-  useEffect(() => {
-    const items = []
-    documents.forEach((document, index)=>{
-      items.push(document.node.frontmatter)
+  const sortAndSetItems = useCallback((items) => {
+    items.sort((item, nextItem) => {
+      const { order } = item
+      const { order: nextOrder } = nextItem
+
+      if (order < nextOrder) {
+        return -1
+      }
+
+      return 1
     })
+
     setMenuItems(items)
   }, [documents])
+
+  useEffect(() => {
+    const items = []
+    documents.forEach((document) => {
+      const { frontmatter } = document.node
+      items.push(frontmatter)
+    })
+
+    sortAndSetItems(items)
+  }, [documents, setMenuItems])
 
   return (
     <Layout>
@@ -93,6 +111,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            order
           }
         }
       }
