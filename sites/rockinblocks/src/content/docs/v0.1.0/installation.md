@@ -5,7 +5,7 @@ date_updated: '2020-04-12'
 keywords: 'rockin blocks installation, gatsby page builder'
 path: /docs/v0.1.0/installation
 description: Getting set up with Rockin' Blocks is a breeze.
-order: '1.1'
+order: '2.1'
 type: document
 ---
 ## Create a new project using Gatsby CLI
@@ -49,3 +49,4 @@ $ yarn install
 
 This will install all dependencies throughout the workspace to Gatsby, your block library, and our CLI tool, `riff`, as well.
 
+[Next: Using the monorepo](/docs/v0.1.0/monorepo)
