@@ -1,13 +1,25 @@
 ---
-title: Blocks
+title: Using blocks
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'gatsby, tinacms, blocks, gatsby page builder'
 path: /docs/v0.1.0/blocks
 description: Understanding blocks and how they work with Gatsby and Tina CMS.
-order: '3.1'
+order: '4.1'
 type: document
 ---
+
+## Develop your blocks in Storybook
+
+**These commands should be run from the root of your workspace, not within the individual packages.** While you can run commands from within each package, it does get a little cumbersome bouncing from folder to folder, so we have provided some helper commands that can be run from the root of your workspace.
+
+```bash
+# Develop your blocks in Storybook
+# This should open Storybook on http://localhost:6006
+
+$ yarn blocks:sb
+```
+
 ## Generate a block with Riff 🎸
 
 **Rockin' Blocks** comes with `riff`, an early version of our CLI tool, to quickly generate a block. As of right now, `riff` needs to be run from within the `gatsby-plugin-rockinblocks` directory
@@ -20,17 +32,9 @@ yarn riff --name=TestimonialSection
 
 You should see the following success message (as of version 0.1.0):
 
-![riff CLI success message](/images/successful-riff.png)
-
-## Developing your blocks in isolation within Storybook
-
-**These commands should be run from the root of your workspace, not within the individual packages.** While you can run commands from within each package, it does get a little cumbersome bouncing from folder to folder, so we have provided some helper commands that can be run from the root of your workspace.
-
-```bash
-# Develop your blocks in Storybook
-# This should open Storybook on http://localhost:6006
-
-$ yarn blocks:sb
+```
+🎸🎶🤘 Successfully created Card! 🤘🎶🎸
+Check your src/components/Blocks directory for you new block!
 ```
 
 ## Building a new version of your blocks package
