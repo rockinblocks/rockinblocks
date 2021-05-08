@@ -9,9 +9,6 @@
         "buttonText": "Start a Project",
         "buttonLink": "/docs/v1/get-started"
       }
-    },
-    {
-      "_template": "builder-content"
     }
   ]
 }
