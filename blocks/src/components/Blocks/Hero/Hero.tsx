@@ -6,7 +6,6 @@ import { Button } from "../../Elements/Button"
 
 export interface IHeroProps {
   heading: string
-  seoHeading: string
   subheading?: string
   buttonText: string
   buttonLink?: string
@@ -14,14 +13,7 @@ export interface IHeroProps {
 }
 
 export const Hero: FC<IHeroProps> = props => {
-  const {
-    heading,
-    seoHeading,
-    subheading,
-    buttonText,
-    buttonLink,
-    primaryColor,
-  } = props
+  const { heading, subheading, buttonText, buttonLink, primaryColor } = props
   return (
     <div className={styles["hero"]}>
       <Container>
@@ -47,4 +39,48 @@ export const Hero: FC<IHeroProps> = props => {
       </Container>
     </div>
   )
+}
+
+export const HeroForm = {
+  id: "rockin-docs-builder-hero",
+  label: "Hero",
+  key: "builder-hero",
+  fields: [
+    {
+      label: "Hero Heading",
+      name: "rawJson.heading",
+      description: "Heading for the hero.",
+      component: "text",
+    },
+    {
+      label: "SEO Heading",
+      name: "rawJson.seoHeading",
+      description: "Heading for SEO. This will be set as the H1.",
+      component: "text",
+    },
+    {
+      label: "Hero Subheading",
+      name: "rawJson.subheading",
+      description: "Subheading for the hero.",
+      component: "textarea",
+    },
+    {
+      label: "Hero Button Text",
+      name: "rawJson.buttonText",
+      description: "Text for the hero button.",
+      component: "text",
+    },
+    {
+      label: "Hero Button Text",
+      name: "rawJson.buttonLink",
+      description: "URL for the hero button link.",
+      component: "text",
+    },
+    {
+      label: "Hero Image",
+      name: "rawJson.image",
+      description: "Image for the hero",
+      component: "image",
+    },
+  ],
 }

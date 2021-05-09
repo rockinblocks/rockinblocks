@@ -1,3 +1,2 @@
-export { Hero } from "./Hero"
-export { HeroForm } from "./HeroForm"
+export { Hero, HeroForm } from "./Hero"
 export type { IHeroProps } from "./Hero"
