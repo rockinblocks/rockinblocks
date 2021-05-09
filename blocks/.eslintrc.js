@@ -118,6 +118,7 @@ module.exports = {
 
     // Best practices
     "prefer-destructuring": 0,
+    "dot-notation": 0,
     "no-restricted-syntax": ["error", "ForInStatement", "SequenceExpression"],
     "no-caller": "error",
     "no-template-curly-in-string": "error",
