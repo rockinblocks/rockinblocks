@@ -18,10 +18,10 @@ describe("<Hero />", () => {
   })
 
   it("should render the button", () => {
-    const { buttonText, to } = props
+    const { buttonText, buttonLink } = props
     const wrapper = shallow(<Hero {...props} />)
     expect(wrapper.find(Button)).toHaveLength(1)
     expect(wrapper.find(Button).props()).toHaveProperty("text", buttonText)
-    expect(wrapper.find(Button).props()).toHaveProperty("to", to)
+    expect(wrapper.find(Button).props()).toHaveProperty("to", buttonLink)
   })
 })

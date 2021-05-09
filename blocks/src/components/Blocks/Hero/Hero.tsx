@@ -21,7 +21,7 @@ export const Hero: FC<IHeroProps> = props => {
           <Col className={styles["hero__col--content"]}>
             <Box className={styles["hero__inner"]}>
               <p className={styles["hero__heading"]}>{heading}</p>
-              <h1 className={styles["hero__subheading"]}>{subheading}</h1>
+              <p className={styles["hero__subheading"]}>{subheading}</p>
               <Button
                 backgroundColor={primaryColor}
                 text={buttonText}
