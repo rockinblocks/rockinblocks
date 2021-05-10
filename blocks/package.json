@@ -21,7 +21,7 @@
     "npm": ">=6"
   },
   "scripts": {
-    "build": "rimraf dist && NODE_ENV=production BABEL_ENV=production rollup -c",
+    "build": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
     "build:watch": "rollup -c -w",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
@@ -215,5 +215,8 @@
       "transform-react-remove-prop-types"
     ],
     "exclude": "node_modules"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
