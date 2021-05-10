@@ -26,9 +26,14 @@
   h5,
   h6 {
     font-family: $font-family-main;
+    margin-top: spacing(md);
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
-  p {
+  p, li {
     font-size: 1.125rem;
     line-height: 2rem;
     color: $text-color-muted;

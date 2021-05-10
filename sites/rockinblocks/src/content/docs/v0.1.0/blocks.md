@@ -1,5 +1,5 @@
 ---
-title: Using blocks
+title: Blocks
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'gatsby, tinacms, blocks, gatsby page builder'
@@ -9,9 +9,7 @@ order: '4.1'
 type: document
 ---
 
-## Develop your blocks in Storybook
-
-**These commands should be run from the root of your workspace, not within the individual packages.** While you can run commands from within each package, it does get a little cumbersome bouncing from folder to folder, so we have provided some helper commands that can be run from the root of your workspace.
+## Storybook
 
 ```bash
 # Develop your blocks in Storybook
@@ -22,7 +20,7 @@ $ yarn blocks:sb
 
 ## Generate a block with Riff 🎸
 
-**Rockin' Blocks** comes with `riff`, an early version of our CLI tool, to quickly generate a block. As of right now, `riff` needs to be run from within the `gatsby-plugin-rockinblocks` directory
+**Rockin' Blocks** comes with `riff`, an early version of our CLI tool, to quickly generate a block.
 
 ```bash
 # From within gatsby-plugin-rockinblocks
