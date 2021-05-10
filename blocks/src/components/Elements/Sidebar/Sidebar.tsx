@@ -17,21 +17,9 @@ export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
       <div className={styles["sidebar__navigation-wrapper"]}>
         <ul className={styles["sidebar__navigation"]}>
           {menuItems &&
-            menuItems.map((menuItem: ISidebarMenuItem, index) => {
-              const prevItem = menuItems[index - 1]
-              const nextItem = menuItems[index + 1]
-
+            menuItems.map((menuItem: ISidebarMenuItem) => {
               const { path, title, order } = menuItem
-              const { order: orderPrev } = prevItem
-              const { order: orderNext } = nextItem
               const [top, sub] = order.split(".")
-              const [topPrev, subPrev] = orderPrev.split(".")
-              const [topNext, subNext] = orderNext.split(".")
-
-              let Wrapper = ({ children }) => <>{children}</>
-              if (top > topPrev && top === topNext) {
-                Wrapper = ({ children }) => <ul>{children}</ul>
-              }
 
               if (Number(sub)) {
                 return (

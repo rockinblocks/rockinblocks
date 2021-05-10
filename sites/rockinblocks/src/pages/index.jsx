@@ -10,7 +10,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <ContextProvider>
       <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="A practical Yarn workspace powered Gatsby, Storybook, and Tina CMS for building a block library in React." />
         <Blocks />
       </Layout>
     </ContextProvider>

@@ -1,6 +1,6 @@
 ---
-title: GatsbyJS Setup with Sass and Markdown Support
-path: /blog/gatsbyjs-setup-with-sass-and-markdown-support
+title: Rockin' Blocks is in early alpha!
+path: /blog/rockin-blocks-is-in-early-alpha
 image: post-1.png
 imageBucket: 'https://oblong-objects-media.s3-us-west-2.amazonaws.com/post-1.png'
 date: '2020-04-12'
