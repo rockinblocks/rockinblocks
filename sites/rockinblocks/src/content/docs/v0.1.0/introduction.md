@@ -5,14 +5,12 @@ date_updated: '2020-04-12'
 keywords: 'rockin blocks installation, gatsby page builder'
 path: /docs/v0.1.0/introduction
 description: Getting set up with Rockin' Blocks is a breeze.
-order: '1.1'
+order: '1.0'
 type: document
 ---
 ## What is Rockin' Blocks?
 
-**Rockin' Blocks** is a DesignOps-focused start kit for developing front end applications in [GatsbyJS](https://gatsbyjs.com).
-
-**Rockin' Blocks** covers a lot of ground, and is a diverse tool. So what is it exacty? What are some possible use cases of **Rockin' Blocks**?
+**Rockin' Blocks** is a DesignOps starter kit for developing a modular block library that can be shared and reused throughout multiple [Gatsby](https://gatsbyjs.com) applications.
 
 **Rockin' Blocks** could be great if you are looking for:
 
