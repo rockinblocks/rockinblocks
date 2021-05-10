@@ -1,40 +1,13 @@
 ---
-title: Blocks
+title: Workflow
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
-keywords: 'gatsby, tinacms, blocks, gatsby page builder'
-path: /docs/v0.1.0/blocks
-description: Understanding blocks and how they work with Gatsby and Tina CMS.
-order: '4.1'
+keywords: 'rockin blocks installation, gatsby page builder'
+path: /docs/v0.1.0/workflow
+description: Getting set up with Rockin' Blocks is a breeze.
+order: '6.0'
 type: document
 ---
-
-## Storybook
-
-```bash
-# Develop your blocks in Storybook
-# This should open Storybook on http://localhost:6006
-
-$ yarn blocks:sb
-```
-
-## Generate a block with Riff 🎸
-
-**Rockin' Blocks** comes with `riff`, an early version of our CLI tool, to quickly generate a block.
-
-```bash
-# From within gatsby-plugin-rockinblocks
-
-yarn riff --name=TestimonialSection
-```
-
-You should see the following success message (as of version 0.1.0):
-
-```
-🎸🎶🤘 Successfully created Card! 🤘🎶🎸
-Check your src/components/Blocks directory for you new block!
-```
-
 ## Building a new version of your blocks package
 
 Because we are leveraging Yarn workspaces, each time you build your **Rockin' Blocks** library, your Gatsby installation will automatically see the newest version of your blocks package, without going through the trouble of having to cut a new release.
@@ -63,3 +36,5 @@ $ yarn web:dev
 
 $ yarn blocks:build
 ```
+
+[Next: Examining the monorepo](/docs/v0.1.0/monorepo)

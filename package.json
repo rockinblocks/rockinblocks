@@ -24,7 +24,8 @@
     "blocks:test": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks jest",
     "web": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",
     "web:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
-    "web:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build"
+    "web:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build",
+    "riff": "yarn --cwd blocks riff"
   },
   "dependencies": {
     "rimraf": "^3.0.2"

@@ -5,7 +5,7 @@ date_updated: '2020-04-12'
 keywords: 'rockin blocks installation, gatsby page builder'
 path: /docs/v0.1.0/installation
 description: Getting set up with Rockin' Blocks is a breeze.
-order: '2.1'
+order: '2.0'
 type: document
 ---
 ## Create a new project

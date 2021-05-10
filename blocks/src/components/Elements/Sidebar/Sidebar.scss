@@ -36,6 +36,10 @@
   flex-direction: column;
 }
 
+.sidebar__navigation a {
+  text-decoration: none;
+}
+
 .sidebar__navigation li {
   font-size: 1rem;
   font-weight: 400;
@@ -60,9 +64,15 @@
   padding-right: 0;
 }
 
-.sidebar__navigation li a {
+.sidebar__nav-item-top a {
   text-decoration: none;
   color: $text-color;
   font-weight: 600;
   display: block;
+}
+
+.sidebar__nav-item-sub a {
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  color: $text-color-muted !important;
 }
