@@ -8,7 +8,9 @@ description: Getting set up with Rockin' Blocks is a breeze.
 order: '2.1'
 type: document
 ---
-## Create a new project using Gatsby CLI
+## Create a new project
+
+### Using Gatsby CLI
 
 The quickest way to get started is to use the [Gatsby CLI tool](https://www.gatsbyjs.com/docs/reference/gatsby-cli/).
 
@@ -16,7 +18,7 @@ The quickest way to get started is to use the [Gatsby CLI tool](https://www.gats
 $ gatsby new fresh-rockinblocks https://github.com/rockinblocks/rockinblocks
 ```
 
-## Create a new project from the repo
+### Use the GitHub repository
 
 ```bash
 # Clone down the Yarn workspace a new project folder
@@ -32,9 +34,9 @@ $ cd rb-demo-app && rm -rf ./.git && git init
 ```
 
 
-## Using the monorepo
+## Workspace
 
-**Rockin' Blocks** provides a working monorepo out of the box, which is a [Yarn workspace](https://classic.yarnpkg.com/en/docs/workspaces/) where you can develop your block library, your documentation, and your Gatsby project together in the same spot. If you haven't used a Yarn workspace before, no worries: **Rockin' Blocks** should work right away without any configuration.
+**Rockin' Blocks** provides a working [Yarn workspace](https://classic.yarnpkg.com/en/docs/workspaces/) out of the box. It is a [monorepo](https://www.atlassian.com/git/tutorials/monorepos) where you can develop your block library, your documentation, and your Gatsby project together in the same spot. If you haven't used a Yarn workspace before, no worries: **Rockin' Blocks** should work right away without any configuration.
 
 ### Install everything with Yarn
 
@@ -49,4 +51,26 @@ $ yarn install
 
 This will install all dependencies throughout the workspace to Gatsby, your block library, and our CLI tool, `riff`, as well.
 
-[Next: Using the monorepo](/docs/v0.1.0/monorepo)
+### Build your blocks library
+
+You will need to build your blocks library for the first time before starting your Gatsby site.
+
+```bash
+# This will create the /dist directory in the blocks package
+
+$ yarn blocks:build
+```
+
+### Start the Gatsby site
+
+After you build your blocks library, you Gatsby site should build just fine for development.
+
+```bash
+# The Gatsby site will be available on http://localhost:8787
+
+$ yarn web:dev
+```
+
+Your **Rockin' Blocks** project should be up and running!
+
+[Next: Examining the monorepo](/docs/v0.1.0/monorepo)
