@@ -3,7 +3,7 @@
   "description": "Page builder GatsbyJS starter powered by Tina CMS",
   "version": "0.1.0-alpha.1",
   "author": "Jed Darrohn <jed@rockinblocks.io>",
-  "homepage": "https://rockinblocks.io",
+  "homepage": "https://www.rockinblocks.io",
   "dependencies": {
     "@babel/core": "^7.13.14",
     "@fontsource/poppins": "^4.2.2",

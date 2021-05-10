@@ -36,5 +36,3 @@ $ yarn web:dev
 
 $ yarn blocks:build
 ```
-
-[Next: Examining the monorepo](/docs/v0.1.0/monorepo)
