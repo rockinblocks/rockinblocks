@@ -1,4 +1,4 @@
-<img src="./media/rockinblocks-logo.svg" width="300" />
+<img src="./storage/media/rockinblocks-logo.svg" width="300" />
 
 # Rockin' Blocks
 
