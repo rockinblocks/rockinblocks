@@ -1,0 +1,64 @@
+@import "../../../styles/shared";
+
+.content {
+  @include typography-body();
+  padding: spacing(md) 0;
+  background-color: $white;
+}
+
+.content__intro {
+  @include media-breakpoint-up(lg) {
+    flex: 0.6;
+  }
+}
+
+.content__heading {
+  @include typography-h2();
+  margin-bottom: spacing(md);
+
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+  }
+}
+
+.content__subheading {
+  @include typography-subheading();
+  margin-bottom: spacing(md);
+}
+
+.content__section {
+  margin: spacing(xs) / 4;
+
+  // Card
+  background-color: $white;
+  border-radius: $card-border-radius;
+  color: $text-color-muted;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: spacing(xs);
+  margin-bottom: spacing(md);
+
+  @include media-breakpoint-up(lg) {
+    padding: spacing(md);
+    margin-bottom: spacing(xs) / 4;
+  }
+}
+
+.content__section-heading {
+  color: $text-color;
+  margin: 0;
+}
+
+.content__section-body {
+  margin-bottom: spacing(md);
+}
+
+.content__vector {
+  @include media-breakpoint-up(lg) {
+    width: 40rem;
+    margin-right: -20rem;
+  }
+}

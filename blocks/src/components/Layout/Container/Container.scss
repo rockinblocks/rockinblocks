@@ -1,0 +1,18 @@
+@import "../../../styles/shared";
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 1170px;
+  }
+}

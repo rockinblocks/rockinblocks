@@ -5,7 +5,9 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/*"
+      "blocks",
+      "cli",
+      "sites/*"
     ],
     "nohoist": [
       "**/@fontsource",
@@ -13,10 +15,11 @@
     ]
   },
   "scripts": {
-    "clean": "rm -rf node_modules packages/gatsby-plugin-rockinblocks/node_modules packages/gatsby-starter-rockinblocks/node_modules packages/gatsby-starter-rockinblocks/.cache  packages/gatsby-starter-rockinblocks/public",
+    "clean": "rm -rf node_modules blocks/node_modules sites/rockinblocks/node_modules sites/rockinblocks/.cache sites/rockinblocks/public",
     "dev": "yarn blocks:sb && yarn web:dev",
     "build": "yarn blocks:build && yarn web:build",
     "blocks:sb": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks storybook",
+    "blocks:make": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks riff",
     "blocks:build": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks build",
     "blocks:test": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks jest",
     "web": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",

@@ -1,0 +1,77 @@
+@import "../../../styles/shared";
+
+.hero {
+  @include typography-body();
+  display: flex;
+  overflow: hidden;
+  flex-direction: column-reverse;
+  padding: spacing(sm);
+  background-color: $white;
+
+  @include media-breakpoint-up(lg) {
+    padding: spacing(xs) spacing(sm) spacing(md);
+    flex-direction: row;
+  }
+}
+
+.hero__col--content {
+  @include media-breakpoint-up(sm) {
+    flex: 0.70;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex: 0.60;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.hero__heading {
+  @include typography-display();
+  margin: 0;
+  margin-bottom: spacing(sm);
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: spacing(xs);
+  }
+}
+
+.hero__subheading {
+  @include typography-subheading();
+  margin-bottom: spacing(md);
+}
+
+.hero__col--image {
+  @include media-breakpoint-up(sm) {
+    flex: 0.30;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex: 0.40;
+    padding: 0 spacing(md);
+  }
+}
+
+.hero__image-wrapper {
+  overflow: hidden;
+  margin-top: spacing(md);
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+}
+
+.hero__vector {
+  position: relative;
+  max-width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    height: 36rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    // left: -60rem;
+    transform: none;
+  }
+}
