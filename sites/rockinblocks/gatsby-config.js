@@ -26,46 +26,34 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `docs`,
-        path: `${__dirname}/src/content/docs`,
+        path: path.join(__dirname, `/src/content/docs`),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/content/posts`,
+        path: path.join(__dirname, `/src/content/posts`),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, `/src/content/images`),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `componentJson`,
-        path: `${__dirname}/src/components`,
+        path: path.join(__dirname, `/src/components`),
       }
     },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/rockinblocks-logo.jpg`, // This path is relative to the root of the site.
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -105,12 +93,6 @@ module.exports = {
     },
     `gatsby-transformer-remark-plaintext`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-#####",
-      },
-    },
-    {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
@@ -123,7 +105,15 @@ module.exports = {
         },
         extensions: ['js', 'jsx']
       }
-    }
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.GOOGLE_GTM_PROPERTY_ID,
+        includeInDevelopment: true,
+        defaultDataLayer: { platform: "gatsby" },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
