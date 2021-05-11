@@ -4,9 +4,8 @@ path: /blog/rockin-blocks-is-in-early-alpha
 image: post-1.png
 imageBucket: 'https://oblong-objects-media.s3-us-west-2.amazonaws.com/post-1.png'
 date: '2021-05-10'
-description: >-
-  Rockin' Blocks is in early alpha. Use Rockin' Blocks for your next project to
-  accelerate product development and improve startup success.
+description:
+  Rockin' Blocks is in early alpha. Use Rockin' Blocks for your next project to accelerate product development and improve startup success.
 keywords: 'gatsby, yarn workspace, storybook, blocks, react'
 ---
 ## Our first tour has begun!

@@ -5,7 +5,7 @@ module.exports = {
     title: `Rockin' Blocks`,
     description: `Blocks that Just Rock`,
     author: `@RockinBlocksJS`,
-    siteUrl: `https://www.rockinblocks.io`
+    siteUrl: `https://rockinblocks.io`
   },
   plugins: [
     {
