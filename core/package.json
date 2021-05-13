@@ -217,6 +217,7 @@
     "exclude": "node_modules"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "symlink-dir": "^5.0.1"
   }
 }

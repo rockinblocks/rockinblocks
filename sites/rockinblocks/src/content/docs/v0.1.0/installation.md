@@ -61,6 +61,17 @@ You will need to build your blocks library for the first time before starting yo
 $ yarn blocks:build
 ```
 
+### Hoist your blocks
+
+When working within a monorepo, there are many folders, and it's easily to find yourself spending a little too much time navigating your file explorer in your editor. To hoist your blocks up to the top of the workspace, you can run:
+
+```bash
+# This will symlink your blocks into the root of your workspace for easy access
+# You can delete this folder at any time without affecting the core library
+
+$ yarn blocks:hoist
+```
+
 ### Start the Gatsby site
 
 After you build your blocks library, you Gatsby site should build just fine for development.
