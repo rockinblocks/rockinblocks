@@ -1,0 +1,19 @@
+@import "../../../styles/shared";
+
+// CSS Modules with SCSS support
+.footer {
+  background-color: $dark;
+  padding: spacing(sm);
+}
+
+.footer__quote {
+  color: $light;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.footer__link {
+  color: $light;
+  opacity: 0.5;
+}
+
