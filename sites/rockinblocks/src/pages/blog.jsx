@@ -1,23 +1,24 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/mainLayout"
-import { ContextProvider, SEO } from "../components/Utilities"
-import { Blocks } from "../components/Builder"
+import { SEO } from "../components/Utilities"
+import { Container } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
-const Home = ({ data, location }) => {
+const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
 
   return (
-    <ContextProvider>
       <Layout location={location} title={siteTitle}>
         <SEO title="A practical Yarn workspace powered Gatsby, Storybook, and Tina CMS for building a block library in React." />
-        <Blocks />
+        <Container>
+            <h1>Rockin' Blog</h1>
+        </Container>
       </Layout>
-    </ContextProvider>
   )
 }
 
-export default Home
+export default BlogIndex
 
 export const pageQuery = graphql`
   query {

@@ -8,7 +8,6 @@ module.exports = {
     "prettier",
   ],
   parser: "@typescript-eslint/parser",
-
   env: {
     browser: true,
     node: true,

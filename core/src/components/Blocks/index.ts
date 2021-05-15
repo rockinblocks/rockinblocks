@@ -1,0 +1,1 @@
+export { Hero, IHeroProps, HeroForm } from "./Hero"

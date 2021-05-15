@@ -54,8 +54,13 @@ export const Navbar: FC<INavbarProps> = props => {
             >
               <ul className={styles["navbar__navigation"]}>
                 <li>
-                  <Link to="/docs/v0.1.0/introduction" target="_blank">
+                  <Link to="/docs/v0.1.0/introduction">
                     <span>Docs</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog">
+                    <span>Blog</span>
                   </Link>
                 </li>
                 <li>

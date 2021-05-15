@@ -5,7 +5,7 @@ import { usePlugin } from "tinacms"
 import { useRemarkForm } from "gatsby-tinacms-remark"
 import Layout from "../../components/mainLayout"
 import SEO from "../../components/Utilities/SEO"
-import { Container } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import { Box, Container } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -53,17 +53,19 @@ export default function Template({
       </Helmet>
       <SEO title={title} description={description} />
       <Container column>
-        <h1 className="post-title">{title}</h1>
-        <p>{date}</p>
-        <div className="post-image-wrapper">
-          <img style={{ maxWidth: "100%" }} src={imageBucket} />
-        </div>
-        <div
-          style={{ flex: 1 }}
-          className="blog-post-content"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <Box display="flex" justifyContent="center">
+          <Box flex=".80">
+            <Box display="flex" flexDirection="column">
+              <h1 className="post-title">{title}</h1>
+              <p>{date}</p>
+              <div
+                style={{ flex: 1 }}
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            </Box>
+          </Box>
+        </Box>
       </Container>
     </Layout>
   )

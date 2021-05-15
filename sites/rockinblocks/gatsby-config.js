@@ -96,12 +96,12 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          "@components": path.resolve(__dirname, 'src/components'),
-          "@elements": path.resolve(__dirname, 'src/components/Elements'),
-          "@hooks": path.resolve(__dirname, 'src/hooks'),
-          "@layout": path.resolve(__dirname, 'src/components/Layout'),
-          "@utilities": path.resolve(__dirname, 'src/components/Utilities'),
-          "@styles": path.resolve(__dirname, 'src/styles'),
+          "@components": path.join(__dirname, '/src/components'),
+          "@elements": path.join(__dirname, '/src/components/Elements'),
+          "@hooks": path.join(__dirname, '/src/hooks'),
+          "@layout": path.join(__dirname, '/src/components/Layout'),
+          "@utilities": path.join(__dirname, '/src/components/Utilities'),
+          "@styles": path.join(__dirname, '/src/styles'),
         },
         extensions: ['js', 'jsx']
       }
