@@ -25,7 +25,7 @@
     "build:watch": "rollup -c -w",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
-    "lint": "yarn check-types && yarn eslint",
+    "lint": "yarn check-types && yarn xo",
     "lint:fix": "yarn eslint:fix",
     "eslint": "eslint . --ext .js,.jsx,.tsx,.ts",
     "eslint:fix": "eslint . --ext .js,.jsx,.tsx,.ts --fix",

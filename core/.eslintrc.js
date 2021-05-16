@@ -1,12 +1,5 @@
 module.exports = {
-  extends: [
-    "airbnb",
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-    "plugin:import/errors",
-    "plugin:import/typescript",
-    "prettier",
-  ],
+  extends: ["xo", "xo-react", "xo-typescript", "prettier"],
   parser: "@typescript-eslint/parser",
   env: {
     browser: true,
@@ -25,7 +18,7 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "import/no-extraneous-dependencies": "off",
-    "no-use-before-define": "off", // we use @typescript-eslint/no-use-before-define instead
+    "no-use-before-define": "off", // We use @typescript-eslint/no-use-before-define instead
     "global-require": "off",
     "react/require-default-props": "off",
     "jsx-a11y/label-has-for": 0,
@@ -134,7 +127,7 @@ module.exports = {
     "no-sequences": "error",
     "no-throw-literal": "error",
     yoda: "error",
-    "no-shadow": "off", // we use @typescript-eslint/no-shadow instead
+    "no-shadow": "off", // We use @typescript-eslint/no-shadow instead
     "no-undef-init": "error",
     "no-nested-ternary": "error",
     "no-unneeded-ternary": "error",
@@ -176,7 +169,7 @@ module.exports = {
         "@typescript-eslint/no-use-before-define": "error",
         "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unsafe-call": "off",
-        "@typescript-eslint/no-floating-promises": "off", // we have valid use-cases for that
+        "@typescript-eslint/no-floating-promises": "off", // We have valid use-cases for that
         // TODO: These rules were disabled because of the backward compatibility with the old codebase
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/unbound-method": "off",

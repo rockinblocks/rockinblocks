@@ -1,13 +1,13 @@
 import React from "react"
 import { Story, Meta } from "@storybook/react"
-import { Content, ContentProps } from "./Content"
+import { Content, IContentProps } from "./Content"
 
 export default {
   title: "Blocks/Content",
   component: Content,
 } as Meta
 
-const Template: Story<ContentProps> = args => <Content {...args} />
+const Template: Story<IContentProps> = args => <Content {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
