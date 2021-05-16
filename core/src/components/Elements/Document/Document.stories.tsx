@@ -1,6 +1,6 @@
 import React from 'react';
-import {Story, Meta} from '@storybook/react';
-import {Document, IDocumentProps} from './Document';
+import { Story, Meta } from '@storybook/react';
+import { Document, IDocumentProps } from './Document';
 
 export default {
 	title: 'Elements/Document',

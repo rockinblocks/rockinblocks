@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {Box} from '../../Layout';
+import React, { FC } from 'react';
+import { Box } from '../../Layout';
 import styles from './Document.scss';
 
 export interface IDocumentFrontmatter {
@@ -16,8 +16,8 @@ export interface IDocumentProps {
 	html: string;
 }
 
-export const Document: FC<IDocumentProps> = ({html, frontmatter}) => {
-	const {title} = frontmatter;
+export const Document: FC<IDocumentProps> = ({ html, frontmatter }) => {
+	const { title } = frontmatter;
 	return (
 		<>
 			<Box className={styles.document} display="flex">
@@ -28,10 +28,9 @@ export const Document: FC<IDocumentProps> = ({html, frontmatter}) => {
 					<div className={styles.document__main}>
 						<main>
 							<div
-								style={{flex: 1}}
+								style={{ flex: 1 }}
 								className={styles.document__html}
-								// eslint-disable-next-line react/no-danger
-								dangerouslySetInnerHTML={{__html: html}}
+								dangerouslySetInnerHTML={{ __html: html }}
 							/>
 						</main>
 					</div>
