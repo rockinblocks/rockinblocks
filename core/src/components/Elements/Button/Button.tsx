@@ -1,9 +1,9 @@
-import React, {FC} from 'react';
-import {Link} from 'gatsby';
+import React, { FC } from 'react';
+import { Link } from 'gatsby';
 import styles from './Button.scss';
 
 export interface IButtonProps {
-	text: string;
+	text?: string;
 	backgroundColor?: string;
 	textColor?: string;
 	to?: string;
@@ -11,9 +11,9 @@ export interface IButtonProps {
 }
 
 export const Button: FC<IButtonProps> = props => {
-	const {text, backgroundColor, textColor, to} = props;
+	const { text, backgroundColor, textColor, to } = props;
 
-	const Wrapper: FC = ({children}): JSX.Element => {
+	const Wrapper: FC = ({ children }): JSX.Element => {
 		if (to) {
 			return (
 				<Link className={styles.button} to={to}>
@@ -29,14 +29,15 @@ export const Button: FC<IButtonProps> = props => {
 		<Wrapper>
 			<div
 				className={styles.button__inner}
-				style={{backgroundColor}}
+				style={{ backgroundColor }}
 				{...props}
 			>
 				<span
 					className={styles.button__text}
-					style={{color: textColor || '#ffffff'}}
+					style={{ color: textColor ?? '#ffffff' }}
+					data-rb="button-text"
 				>
-					{text}
+					{text ?? 'Learn More'}
 				</span>
 			</div>
 		</Wrapper>

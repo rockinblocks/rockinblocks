@@ -1,12 +1,12 @@
 import React from 'react';
-import {Story, Meta} from '@storybook/react';
-import {Button, IButtonProps} from './Button';
+import { Story, Meta } from '@storybook/react';
+import { Button, IButtonProps } from './Button';
 
 export default {
 	title: 'Elements/Button',
 	component: Button,
 	argTypes: {
-		backgroundColor: {control: 'color'}
+		backgroundColor: { control: 'color' }
 	}
 } as Meta;
 
