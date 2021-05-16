@@ -1,9 +1,9 @@
-import React, {FC} from 'react';
-import {Link} from 'gatsby';
-import {NavbarToggle} from '../NavbarToggle';
-import {Box, Col, Container, Row} from '../../Layout';
-import {ReactComponent as Logo} from '../../../assets/rockinblocks-logo.svg';
-import {ReactComponent as IconGitHub} from '../../../assets/icon-github.svg';
+import React, { FC } from 'react';
+import { Link } from 'gatsby';
+import { NavbarToggle } from '../NavbarToggle';
+import { Box, Col, Container, Row } from '../../Layout';
+import { ReactComponent as Logo } from '../../../assets/rockinblocks-logo.svg';
+import { ReactComponent as IconGitHub } from '../../../assets/icon-github.svg';
 import styles from './Navbar.scss';
 
 export interface INavbarProps {
@@ -11,7 +11,7 @@ export interface INavbarProps {
 }
 
 export const Navbar: FC<INavbarProps> = props => {
-	const {appName} = props;
+	const { appName } = props;
 
 	return (
 		<div className={styles.navbar}>

@@ -50,5 +50,6 @@
     "src/components/**/*.test.js",
     "src/components/**/*.test.ts",
     ".storybook",
-  ]
+  ],
+  "plugins": [{ "name": "typescript-plugin-css-modules" }]
 }

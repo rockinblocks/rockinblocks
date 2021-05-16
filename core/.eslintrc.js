@@ -1,6 +1,6 @@
 module.exports = {
   extends: ["xo", "xo-react", "xo-typescript", "prettier"],
-  parser: "babel-eslint",
+  parser: "@typescript/eslint-parser",
   env: {
     browser: true,
     node: true,

@@ -2,6 +2,18 @@
 	"rules": {
 		"semi": [2, "always"],
 		"quotes": [1, "single"],
-		"unicorn/filename-case": 0
-	}
+		"unicorn/filename-case": 0,
+		"object-curly-spacing": [1, "always"],
+		"@typescript-eslint/object-curly-spacing": [1, "always"],
+		"prefer-destructuring": ["error", {"object": true, "array": false}]
+	},
+	"overrides": [
+    {
+      "files": ["**/*.test.tsx", "**/*.test.ts"],
+      "rules": {
+        "unicorn/no-array-callback-reference": 0,
+				"@typescript-eslint/no-unsafe-argument": 0
+      }
+    }
+  ]
 }
