@@ -1,11 +1,11 @@
-import React from "react"
-import { shallow } from "enzyme"
-import { Footer } from "./Footer"
+import React from 'react';
+import {shallow} from 'enzyme';
+import {Footer} from './Footer';
 
-describe("<Footer />", () => {
-  it("should render", () => {
-    const wrapper = shallow(<Footer exampleProp="Rockin' Blocks!" />)
+describe('<Footer />', () => {
+	it('should render', () => {
+		const wrapper = shallow(<Footer />);
 
-    expect(true).toBeTruthy()
-  })
-})
+		expect(wrapper.html()).toBeTruthy();
+	});
+});

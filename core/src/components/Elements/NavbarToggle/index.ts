@@ -1,2 +1,2 @@
-export { NavbarToggle } from "./NavbarToggle"
-export type { INavbarToggleProps } from "./NavbarToggle"
+export {NavbarToggle} from './NavbarToggle';
+export type {INavbarToggleProps} from './NavbarToggle';

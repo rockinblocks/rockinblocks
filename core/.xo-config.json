@@ -1,5 +1,6 @@
 {
 	"rules": {
+		"semi": [2, "always"],
 		"quotes": [1, "single"],
 		"unicorn/filename-case": 0
 	}

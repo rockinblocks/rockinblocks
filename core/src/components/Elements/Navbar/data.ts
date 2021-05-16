@@ -1,3 +1,3 @@
 export default {
-  appName: "ACME App",
-}
+	appName: 'ACME App'
+};

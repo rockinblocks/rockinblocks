@@ -1,4 +1,4 @@
-import React, {FC, ReactNode} from 'react';
+import React, {FC} from 'react';
 import {Link} from 'gatsby';
 import styles from './Button.scss';
 
