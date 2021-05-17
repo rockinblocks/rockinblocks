@@ -19,6 +19,5 @@ The `riff` command creates a working block within the `blocks/src/components/Blo
    ├── HomeIntroduction.stories.tsx
    ├── HomeIntroduction.test.tsx
    ├── HomeIntroduction.tsx
-   ├── index.ts
-   └── src
+   └── index.ts
 ```

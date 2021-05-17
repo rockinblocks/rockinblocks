@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useBuilder } from "../Builder"
 import { useTheme } from "../Utilities/Theme"
-import { Content, Hero } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import { Hero } from "@rockinblocks/rockinblocks"
 
 export const Blocks = () => {
   const { rawJson } = useBuilder()
@@ -25,13 +25,6 @@ export const Blocks = () => {
             subheading={block?.rawJson?.subheading ?? ""}
             buttonText={block?.rawJson?.buttonText ?? ""}
             buttonLink={block?.rawJson?.buttonLink ?? ""}
-            {...theme}
-          />
-        )
-      case "builder-content":
-        return (
-          <Content
-            sections={block?.rawJson?.sectionHeading ?? ""}
             {...theme}
           />
         )

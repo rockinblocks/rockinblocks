@@ -1,11 +1,11 @@
 import React from "react"
-import Helmet from "react-helmet"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 import { usePlugin } from "tinacms"
 import { useRemarkForm } from "gatsby-tinacms-remark"
 import Layout from "../../components/mainLayout"
 import SEO from "../../components/Utilities/SEO"
-import { Box, Container } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import { Box, Container, Document } from "@rockinblocks/rockinblocks"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -56,13 +56,7 @@ export default function Template({
         <Box display="flex" justifyContent="center">
           <Box flex=".80">
             <Box display="flex" flexDirection="column">
-              <h1 className="post-title">{title}</h1>
-              <p>{date}</p>
-              <div
-                style={{ flex: 1 }}
-                className="blog-post-content"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+              <Document frontmatter={frontmatter} html={html} />
             </Box>
           </Box>
         </Box>
