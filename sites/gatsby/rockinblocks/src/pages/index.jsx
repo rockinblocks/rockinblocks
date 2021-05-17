@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/mainLayout"
 import { ContextProvider, SEO } from "../components/Utilities"
 import { Blocks } from "../components/Builder"
+import { Footer } from "@rockinblocks/rockinblocks"
 
 const Home = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -12,6 +13,7 @@ const Home = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <SEO title="A practical Yarn workspace powered Gatsby, Storybook, and Tina CMS for building a block library in React." />
         <Blocks />
+        <Footer />
       </Layout>
     </ContextProvider>
   )

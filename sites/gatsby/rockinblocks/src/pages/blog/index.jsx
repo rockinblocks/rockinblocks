@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/mainLayout"
-import { SEO } from "../components/Utilities"
-import { Container } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import Layout from "../../components/mainLayout"
+import { SEO } from "../../components/Utilities/SEO"
+import { Container, Footer } from "@rockinblocks/rockinblocks"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -14,6 +14,7 @@ const BlogIndex = ({ data, location }) => {
         <Container>
             <h1>Rockin' Blog</h1>
         </Container>
+        <Footer />
       </Layout>
   )
 }

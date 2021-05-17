@@ -10,7 +10,7 @@ import {
   Container,
   Document,
   Sidebar,
-  IMenuItem,
+  Footer,
 } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Template({
@@ -95,6 +95,7 @@ export default function Template({
           </Box>
         </Container>
       </Box>
+      <Footer />
     </Layout>
   )
 }
