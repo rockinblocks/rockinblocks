@@ -73,7 +73,7 @@ export const Navbar: FC<INavbarProps> = props => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog">
+                  <Link to="/blog/rockin-blocks-is-in-early-alpha">
                     <span>Blog</span>
                   </Link>
                 </li>
