@@ -14,7 +14,7 @@ export const Badge: FC<IBadgeProps & CSSProperties> = (
 	const { text, textColor } = props;
 	const style = {
 		color: textColor,
-		backgroundColor: '#333333'
+		backgroundColor: '#fa3250'
 	};
 
 	return (
