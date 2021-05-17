@@ -1,12 +1,12 @@
 import React from 'react';
-import {Story, Meta} from '@storybook/react';
-import {Hero, IHeroProps} from './Hero';
+import { Story, Meta } from '@storybook/react';
+import { Hero, IHeroProps } from './Hero';
 
 export default {
 	title: 'Blocks/Hero',
 	component: Hero,
 	argTypes: {
-		backgroundColor: {control: 'color'}
+		backgroundColor: { control: 'color' }
 	}
 } as Meta;
 

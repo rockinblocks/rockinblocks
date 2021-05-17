@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { CSSProperties, ReactNode } from 'react';
 import styles from './Col.scss';
 
 export interface IColProps {
-	children?: any;
+	children?: ReactNode;
 	display?: string;
 	flex?: number | string;
-	flexDirection?: any;
+	flexDirection?: string;
 	justifyContent?: string;
 	style?: React.CSSProperties | undefined;
 }
 
 export const Col: React.FC<
-IColProps & React.HTMLAttributes<HTMLDivElement>
+IColProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = props => {
 	const {
 		display,
@@ -29,7 +29,7 @@ IColProps & React.HTMLAttributes<HTMLDivElement>
 		...style
 	};
 	return (
-		<div className={styles.col} style={{...styleProps}} {...props}>
+		<div className={styles.col} style={{ ...styleProps }} {...props}>
 			{children}
 		</div>
 	);

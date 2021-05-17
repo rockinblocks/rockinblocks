@@ -4,8 +4,8 @@ const webpack = require('webpack');
 module.exports = {
 	module: {
 		rules: [
-			{test: /\.tsx?$/, loader: 'ts-loader'},
-			{enforce: 'pre', test: /\.js$/, loader: 'source-map-loader'},
+			{ test: /\.tsx?$/, loader: 'ts-loader' },
+			{ enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
 			{
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
@@ -30,7 +30,7 @@ module.exports = {
 		]
 	},
 	devtool: 'source-map',
-	resolve: {extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']},
+	resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'] },
 	plugins: [
 		new webpack.ProvidePlugin({
 			process: 'process/browser'

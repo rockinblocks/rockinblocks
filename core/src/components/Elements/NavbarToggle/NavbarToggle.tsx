@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 import styles from './NavbarToggle.scss';
 
 export interface INavbarToggleProps {

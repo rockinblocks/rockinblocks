@@ -31,6 +31,7 @@ export const Document: FC<IDocumentProps> = ({ html, frontmatter }) => {
 								style={{ flex: 1 }}
 								className={styles.document__html}
 								dangerouslySetInnerHTML={{ __html: html }}
+								data-rb="document"
 							/>
 						</main>
 					</div>

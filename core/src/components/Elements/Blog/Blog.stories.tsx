@@ -1,6 +1,6 @@
 import React from 'react';
-import {Story, Meta} from '@storybook/react';
-import {Blog} from './Blog';
+import { Story, Meta } from '@storybook/react';
+import { Blog } from './Blog';
 
 export default {
 	title: 'Pages/Blog',

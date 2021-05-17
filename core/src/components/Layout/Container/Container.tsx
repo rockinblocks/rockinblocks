@@ -1,26 +1,35 @@
-import React from 'react';
+import React, { CSSProperties, ReactNode } from 'react';
 import styles from './Container.scss';
 
 export interface IContainerProps {
-	children?: any;
+	children?: ReactNode;
 	display?: string;
-	flex?: number;
-	flexDirection?: any;
+	flex?: number | string;
+	flexDirection?: string;
 	justifyContent?: string;
+	style?: React.CSSProperties | undefined;
 }
 
 export const Container: React.FC<
-IContainerProps & React.HTMLAttributes<HTMLDivElement>
+IContainerProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = props => {
-	const {display, flex, flexDirection, justifyContent, children} = props;
-	const style = {
+	const {
 		display,
 		flex,
 		flexDirection,
-		justifyContent
+		justifyContent,
+		children,
+		style
+	} = props;
+	const styleProps = {
+		display,
+		flex,
+		flexDirection,
+		justifyContent,
+		...style
 	};
 	return (
-		<div className={styles.container} style={{...style}} {...props}>
+		<div className={styles.container} style={{ ...styleProps }} {...props}>
 			{children}
 		</div>
 	);

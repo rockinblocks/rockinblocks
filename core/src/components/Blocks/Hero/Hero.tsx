@@ -1,8 +1,8 @@
-import React, {FC} from 'react';
-import {Box, Col, Container, Row} from '../../Layout';
-import {Button} from '../../Elements/Button';
+import React, { FC } from 'react';
+import { Box, Col, Container, Row } from '../../Layout';
+import { Button } from '../../Elements/Button';
 import styles from './Hero.scss';
-import {ReactComponent as Vector} from './Hero.svg';
+import { ReactComponent as Vector } from './Hero.svg';
 
 export interface IHeroProps {
 	heading: string;
@@ -13,7 +13,7 @@ export interface IHeroProps {
 }
 
 export const Hero: FC<IHeroProps> = props => {
-	const {heading, subheading, buttonText, buttonLink, primaryColor} = props;
+	const { heading, subheading, buttonText, buttonLink, primaryColor } = props;
 	return (
 		<div className={styles.hero}>
 			<Container>

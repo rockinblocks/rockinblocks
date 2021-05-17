@@ -1,6 +1,6 @@
 import React from 'react';
-import {Story, Meta} from '@storybook/react';
-import {Home} from './Home';
+import { Story, Meta } from '@storybook/react';
+import { Home } from './Home';
 
 export default {
 	title: 'Pages/Home',

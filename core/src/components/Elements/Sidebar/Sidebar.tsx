@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {Link} from 'gatsby';
+import React, { FC } from 'react';
+import { Link } from 'gatsby';
 import styles from './Sidebar.scss';
 
 export interface ISidebarMenuItem {
@@ -11,30 +11,29 @@ export interface ISidebarProps {
 	menuItems: ISidebarMenuItem[];
 }
 
-export const Sidebar: FC<ISidebarProps> = ({menuItems}) => {
+export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
 	return (
-		<div className={styles.sidebar}>
+		<div className={styles?.sidebar}>
 			<div className={styles['sidebar__navigation-wrapper']}>
 				<ul className={styles.sidebar__navigation}>
-					{menuItems &&
-            menuItems.map((menuItem: ISidebarMenuItem) => {
-            	const {path, title, order} = menuItem;
-            	const [sub] = order.split('.');
+					{ menuItems?.map((menuItem: ISidebarMenuItem) => {
+						const { path, title, order } = menuItem;
+						const [sub] = order.split('.');
 
-            	if (Number(sub)) {
-            		return (
-            			<li className={styles['sidebar__nav-item-sub']} key={path}>
-            				<Link to={path}>{title}</Link>
-            			</li>
-            		);
-            	}
+						if (Number(sub)) {
+							return (
+								<li className={styles['sidebar__nav-item-sub']} key={path}>
+									<Link to={path}>{title}</Link>
+								</li>
+							);
+						}
 
-            	return (
-            		<li className={styles['sidebar__nav-item-top']} key={path}>
-            			<Link to={path}>{title}</Link>
-            		</li>
-            	);
-            })}
+						return (
+							<li className={styles['sidebar__nav-item-top']} key={path}>
+								<Link to={path}>{title}</Link>
+							</li>
+						);
+					})}
 				</ul>
 			</div>
 		</div>

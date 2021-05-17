@@ -1,6 +1,6 @@
 import React from 'react';
-import {Hero} from '../../Blocks/Hero';
-import {Navbar} from '../../Elements/Navbar';
+import { Hero } from '../../Blocks/Hero';
+import { Navbar } from '../../Elements/Navbar';
 
 export const Home = () => {
 	const heroProps = {
