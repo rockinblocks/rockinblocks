@@ -6,9 +6,7 @@ import styles from './Footer.scss';
 export const Footer: FC = (): JSX.Element => {
 	return (
 		<Box className={styles.footer}>
-			<Box display="flex">
-			</Box>
-			<Box display="flex">
+			<Box display="flex" justifyContent="center">
 				<Link className={styles.footer__link} to="/sitemap.xml">
           Sitemap
 				</Link>

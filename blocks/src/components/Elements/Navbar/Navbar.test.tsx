@@ -30,6 +30,6 @@ describe("<Navbar />", () => {
   });
 
   it("should render the current version", () => {
-    expect(wrapper.find(Badge).html()).toContain("v0.1.0-alpha.4");
+    expect(wrapper.find(Badge).html()).toContain("v0.1.0-alpha");
   });
 });

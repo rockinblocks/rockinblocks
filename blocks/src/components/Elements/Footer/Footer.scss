@@ -4,6 +4,11 @@
 .footer {
   background-color: $dark;
   padding: spacing(sm);
+
+  @include media-breakpoint-up(lg) {
+    padding: spacing(md) spacing(sm);
+    margin-top: spacing(xl);
+  }
 }
 
 .footer__quote {

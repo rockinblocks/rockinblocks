@@ -55,7 +55,7 @@ export const Navbar: FC<INavbarProps> = props => {
               data-rb="navbar-version"
             >
               <Badge 
-                text="v0.1.0-alpha.4"
+                text="v0.1.0-alpha"
                 textColor="#ffffff"
                 variant="success"
                 data-rb="navbar-version-badge"

@@ -12,6 +12,8 @@ export type { IContainerProps } from './Layout/Container';
 export { Navbar } from './Elements/Navbar';
 export type { INavbarProps } from './Elements/Navbar';
 
+export { Footer } from './Elements/Footer';
+
 export { Button } from './Elements/Button';
 export type { IButtonProps } from './Elements/Button';
 
