@@ -7,7 +7,7 @@ export interface IBoxProps {
 	flex?: number | string;
 	flexDirection?: string;
 	justifyContent?: string;
-	style?: React.CSSProperties | undefined;
+	style?: CSSProperties | undefined;
 }
 
 export const Box: React.FC<

@@ -7,7 +7,7 @@ export interface IContainerProps {
 	flex?: number | string;
 	flexDirection?: string;
 	justifyContent?: string;
-	style?: React.CSSProperties | undefined;
+	style?: CSSProperties;
 }
 
 export const Container: React.FC<
