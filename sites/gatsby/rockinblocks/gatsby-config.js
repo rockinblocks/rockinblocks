@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `https://rockinblocks.io`
   },
   plugins: [
+    `@rockinblocks/gatsby-plugin-rockinblocks`,
     {
       resolve: 'gatsby-plugin-tinacms',
       options: {

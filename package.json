@@ -5,8 +5,9 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "core",
+      "blocks",
       "cli",
+      "plugins/**/*",
       "sites/gatsby/**/*"
     ],
     "nohoist": [
@@ -15,14 +16,14 @@
     ]
   },
   "scripts": {
-    "clean": "rm -rf node_modules blocks/node_modules sites/gatsby/rockinblocks/node_modules sites/gatsby/rockinblocks/.cache sites/gatsby/rockinblocks/public",
+    "clean": "rm -rf node_modules blocks/node_modules sites/**/**/node_modules sites/**/**/.cache sites/**/**/public",
     "dev": "yarn blocks:sb && yarn web:dev",
     "build": "yarn blocks:build && yarn blocks:hoist && yarn web:build",
-    "blocks:sb": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks storybook",
-    "blocks:make": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks riff",
-    "blocks:build": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks build",
+    "blocks:sb": "yarn workspace @rockinblocks/rockinblocks storybook",
+    "blocks:make": "yarn workspace @rockinblocks/rockinblocks riff",
+    "blocks:build": "yarn workspace @rockinblocks/rockinblocks build",
     "blocks:hoist": "symlink-dir core/src/components blocks",
-    "blocks:test": "yarn workspace @rockinblocks/gatsby-plugin-rockinblocks jest",
+    "blocks:test": "yarn workspace @rockinblocks/rockinblocks jest",
     "web": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",
     "web:content:hoist": "symlink-dir sites/gatsby/rockinblocks/src/content content/rockinblocks",
     "web:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
