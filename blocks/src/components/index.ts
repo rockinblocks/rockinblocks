@@ -15,6 +15,9 @@ export type { INavbarProps } from './Elements/Navbar';
 export { Button } from './Elements/Button';
 export type { IButtonProps } from './Elements/Button';
 
+export { Badge } from './Elements/Badge';
+export type { IBadgeProps } from './Elements/Badge';
+
 export { Document } from './Elements/Document';
 export type { IDocumentProps } from './Elements/Document';
 

@@ -7,7 +7,6 @@ export interface IButtonProps {
 	backgroundColor?: string;
 	textColor?: string;
 	to?: string;
-	onClick?: () => Record<string, unknown>;
 }
 
 export const Button: FC<IButtonProps> = props => {
