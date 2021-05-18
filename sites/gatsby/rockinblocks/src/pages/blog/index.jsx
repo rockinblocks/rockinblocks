@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/mainLayout"
 import { SEO } from "../../components/Utilities/SEO"
-import { Container, Footer } from "@rockinblocks/rockinblocks"
+import { Container, Footer } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title

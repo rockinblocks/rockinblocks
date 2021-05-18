@@ -22,7 +22,7 @@
     "blocks:sb": "yarn workspace @rockinblocks/rockinblocks storybook",
     "blocks:make": "yarn workspace @rockinblocks/rockinblocks riff",
     "blocks:build": "yarn workspace @rockinblocks/rockinblocks build",
-    "blocks:hoist": "symlink-dir core/src/components blocks",
+    "blocks:hoist": "symlink-dir blocks/src/components ./lib",
     "blocks:test": "yarn workspace @rockinblocks/rockinblocks jest",
     "blocks:lint": "yarn workspace @rockinblocks/rockinblocks xo",
     "web": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",

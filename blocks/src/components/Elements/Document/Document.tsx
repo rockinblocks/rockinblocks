@@ -22,9 +22,9 @@ export const Document: FC<IDocumentProps> = ({ html, frontmatter }) => {
 		<>
 			<Box className={styles.document} display="flex">
 				<Box flex={0.8}>
-					<Box className={styles.document__intro}>
+					<div className={styles.document__intro}>
 						<h1 className={styles.document__title}>{title}</h1>
-					</Box>
+					</div>
 					<div className={styles.document__main}>
 						<main>
 							<div

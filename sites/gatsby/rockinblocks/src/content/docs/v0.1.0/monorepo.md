@@ -27,17 +27,22 @@ The monorepo structure is really composed of two parts: your blocks and your sit
 │       ├── images
 │       ├── pages
 │       └── styles
+├── plugins
+│   └── gatsby
+│       ├── package.json
+│       └── styles
 └── sites
-    └── rockinblocks
-        └── src
-            ├── components
-            │   ├── Builder
-            │   ├── Layout
-            │   └── Utilities
-            ├── content
-            ├── images
-            ├── pages
-            └── styles
+	├── gatsby
+		└── rockinblocks
+			└── src
+				├── components
+				│   ├── Builder
+				│   ├── Layout
+				│   └── Utilities
+				├── content
+				├── images
+				├── pages
+				└── styles
 ```
 
 [Next: Blocks](/docs/v0.1.0/blocks)

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/mainLayout"
 import { ContextProvider, SEO } from "../components/Utilities"
 import { Blocks } from "../components/Builder"
-import { Footer } from "@rockinblocks/rockinblocks"
+import { Footer } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 const Home = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title

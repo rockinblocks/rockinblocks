@@ -5,7 +5,7 @@ import { usePlugin } from "tinacms"
 import { useRemarkForm } from "gatsby-tinacms-remark"
 import Layout from "../../components/mainLayout"
 import SEO from "../../components/Utilities/SEO"
-import { Box, Container, Document } from "@rockinblocks/rockinblocks"
+import { Box, Container, Document } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.

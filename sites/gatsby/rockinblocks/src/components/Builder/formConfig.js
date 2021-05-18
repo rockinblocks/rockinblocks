@@ -1,6 +1,6 @@
 import {
   HeroForm as BuilderHero,
-} from "@rockinblocks/rockinblocks"
+} from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export const formConfig = {
   label: "Page Builder",

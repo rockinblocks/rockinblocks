@@ -95,7 +95,9 @@ export default function Template({
           </Box>
         </Container>
       </Box>
-      <Footer />
+      <Box>
+        <Footer />
+      </Box>
     </Layout>
   )
 }
