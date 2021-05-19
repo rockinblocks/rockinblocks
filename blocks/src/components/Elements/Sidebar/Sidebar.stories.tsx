@@ -7,9 +7,9 @@ export default {
   component: Sidebar,
 } as Meta;
 
-const Template: Story<ISidebarProps> = args => <Sidebar {...args} />;
+const Template: Story<ISidebarProps> = args => <Sidebar {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   menuItems: [
     {

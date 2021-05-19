@@ -7,8 +7,7 @@
     "packages": [
       "blocks",
       "cli",
-      "plugins/**/*",
-      "sites/gatsby/**/*"
+      "sites/*"
     ],
     "nohoist": [
       "**/@fontsource",
@@ -27,7 +26,6 @@
     "blocks:test": "yarn workspace @rockinblocks/rockinblocks jest",
     "blocks:lint": "yarn workspace @rockinblocks/rockinblocks xo",
     "web": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",
-    "web:content:hoist": "symlink-dir sites/gatsby/rockinblocks/src/content content/rockinblocks",
     "web:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
     "web:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build",
     "web:lint": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks lint",

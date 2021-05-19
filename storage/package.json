@@ -1,9 +1,0 @@
-{
-  "name": "@rockinblocks/garage",
-  "version": "0.1.0-alpha",
-  "description": "Store your shared web and marketing assets in an S3 bucket.",
-  "main": "index.ts",
-  "repository": "https://github.com/rockinblocks/rockinblocks",
-  "author": "Jed Darrohn <jamesdarrohn@gmail.com>",
-  "license": "MIT"
-}

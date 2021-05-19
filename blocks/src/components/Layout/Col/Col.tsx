@@ -29,4 +29,4 @@ export const Col: React.FC<
   );
 };
 
-export default Col;
+export default Col

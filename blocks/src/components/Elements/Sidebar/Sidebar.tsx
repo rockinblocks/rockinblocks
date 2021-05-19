@@ -31,4 +31,4 @@ export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
   );
 };
 
-export default Sidebar;
+export default Sidebar
