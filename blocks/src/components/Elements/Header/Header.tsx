@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar } from "@rockinblocks/gatsby-plugin-rockinblocks";
+import { Navbar } from "../Navbar";
 
 export const Header: React.FC = (): JSX.Element => {
   return (
     <header>
       <div className="header">
-        <Navbar color={"#ffffff"} backgroundColor="#ffffff" />
+        <Navbar />
       </div>
     </header>
   );
