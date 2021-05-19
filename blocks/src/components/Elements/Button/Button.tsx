@@ -29,7 +29,6 @@ export const Button: FC<IButtonProps> = props => {
 			<div
 				className={styles.button__inner}
 				style={{ backgroundColor }}
-				{...props}
 			>
 				<span
 					className={styles.button__text}
