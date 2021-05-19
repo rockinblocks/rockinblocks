@@ -6,7 +6,7 @@
   padding: spacing(sm);
 
   @include media-breakpoint-up(lg) {
-    padding: spacing(md) spacing(sm);
+    padding: spacing(sm);
     margin-top: spacing(xl);
   }
 }
@@ -20,5 +20,12 @@
 .footer__link {
   color: $light;
   opacity: 0.5;
+  padding: 0 spacing(xs);
+  display: inline-flex;
+  border-right: 0.125rem solid rgba($light, 0.5);
+
+  &:last-of-type {
+    border-right: 0;
+  }
 }
 

@@ -13,14 +13,8 @@ export interface IColProps {
 export const Col: React.FC<
 IColProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = props => {
-	const {
-		display,
-		flex,
-		flexDirection,
-		justifyContent,
-		children,
-		style
-	} = props;
+	const { display, flex, flexDirection, justifyContent, children, style } =
+    props;
 	const styleProps = {
 		display,
 		flex,

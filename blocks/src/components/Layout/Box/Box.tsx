@@ -25,7 +25,7 @@ IBoxProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 	};
 
 	return (
-		<div className={styles.box} style={{ ...styleProps }}>
+		<div className={styles.box} style={{ ...styleProps }} {...props}>
 			{children}
 		</div>
 	);

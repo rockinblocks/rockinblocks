@@ -9,25 +9,27 @@ description: >-
   accelerate product development and improve startup success.
 keywords: 'gatsby, yarn workspace, storybook, blocks, react'
 ---
-## Our first tour has begun!
 
-After years and years, mentor after mentor, several failed startups, a few easy gigs, countless "impossible" tasks somehow accomplished, amazing clients, problematic clients, WordPress, Gatsby, Drupal, Laravel, Electron, Symfony, Vue....you name it....all of these helped me grow and grow, and I owe so much to Denver and this development community.
+## A frontend-driven Yarn workspace focused on helping developers deliver successful products
+
+There are countless tools and solutions that enable teams to be more productive, but not all tools help teams produce better quality work. Continually I was seeing companies of all sizes facing the same similar issues: struggling with branding, duplicated work, unmanageable code bases. Usually these companies would fall into one of two categories: they had either outgrown their legacy software and design, stitched together over years and years. While initially creating **Rockin' Blocks**, there were a few things I knew I wanted it to do, knowing that there would be potentially some serious ground to cover.
+
+I wanted **Rockin' Blocks** to:
+
+- Easily help developers write documentation as they build their products
+- Enable frontend teams to create design systems and beautifully branded sites
+- Provide an easy-to-use Yarn workspace and monorepo driven by the JS community
+- Give developers a way to delegate work to non-developers earlier in the product lifespan
 
 ### How did this come about?
 
-Over the past year I realized: "Damn.......I have never really paid it back to the open source community." My entire life and much that I have now I owe to open source developers that have busted ass to maintain the tools that put food on my table. Long story short, I decided to create an open source project called Rockin' Blocks. I joined the Gatsby Discord and posted in their `#theme-authoring` channel that I had an idea about a project using Gatsby and Tina CMS. A few days later I chatted about the idea with a key member of the Gatsby team, and they thought the concept was pretty exciting, too. I chatted with them a few times, bouncing ideas back and forth, and feel I have really nailed down a pretty cool idea that I feel would be useful and help folks build better projects.
+I decided to create an open source project called Rockin' Blocks. I joined the Gatsby Discord and posted in their `#theme-authoring` channel that I had an idea about a project using Gatsby and Tina CMS. A few days later, I chatted about the idea with a key member of the Gatsby team, and they thought the concept was pretty cool, too. We chatted a few times, bouncing ideas back and forth, and feel I have really nailed down a pretty useful tool that can help folks build better projects.
 
-### What does it do?
+### Always open source
 
-**Rockin' Blocks allows you to build, maintain, and ship a reusable block library, as well as  build, maintain, and ship the sites that are built with this library.** A great example might be: Disney has 150 landing pages. A single block library, complete with Disney branding, can be shipped throughout all 150 sites.
+**Rockin' Blocks** will always be open source. Just like WordPress, Vue, Laravel, React, jQuery, and many other tools that I have used over the years, I aim to provide something useful to the community that will and always will remain free to use.
 
-### Is Rockin' Blocks for me?
-
-**Rockin' Blocks is:**
-
-- A simple Yarn workspace. It is a great Yarn workspace for beginners and getting used to managing mutiple projects in one monorepo.
-- A great starter for a design system. It ships with Storybook so developers can develop components in isolation.
-- A great starter for documentation. It ships with Markdown support with code highlighting powered by PrismJS to make writing docs a breeze.
+To everyone around the world: Welcome to **Rockin' Blocks**!
 
 Here is to the first of many! Cheers!
 
