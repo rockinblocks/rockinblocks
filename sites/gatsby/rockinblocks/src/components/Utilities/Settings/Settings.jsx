@@ -15,6 +15,8 @@ export const useSettingsProvider = () => {
     query {
       settingsJson {
         appName
+        appVersion
+        gtmId
         rawJson
         fileRelativePath
       }
