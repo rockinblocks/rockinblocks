@@ -1,6 +1,6 @@
 {
-  "name": "@rockinblocks/gatsby-plugin-rockinblocks",
-  "version": "0.1.0-alpha.3",
+  "name": "@rockinblocks/rockinblocks",
+  "version": "0.1.0-alpha",
   "description": "Blocks for Rockin' Blocks",
   "author": "Jed Darrohn",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "build:watch": "rollup -c -w",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
-    "lint": "yarn check-types && yarn eslint",
+    "lint": "yarn check-types && yarn xo",
     "lint:fix": "yarn eslint:fix",
     "eslint": "eslint . --ext .js,.jsx,.tsx,.ts",
     "eslint:fix": "eslint . --ext .js,.jsx,.tsx,.ts --fix",
@@ -217,6 +217,14 @@
     "exclude": "node_modules"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "ava": "^3.15.0",
+    "clsx": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "eslint-config-xo-react": "^0.25.0",
+    "eslint-config-xo-typescript": "^0.41.1",
+    "eslint-plugin-ava": "^12.0.0",
+    "symlink-dir": "^5.0.1",
+    "typescript-plugin-css-modules": "^3.2.0",
+    "xo": "^0.40.1"
   }
 }
