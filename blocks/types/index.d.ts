@@ -1,18 +1,7 @@
-// NPM Package
-declare module "@mecum/ui";
-
-// SCSS
-declare module '*.scss' {
-	const classes: Record<string, string>;
-	export default classes;
-}
-
-// SVG
-declare module "*.svg";
-
 // Layout
 export type { IBoxProps } from "../src/components/Layout/Box";
 export type { IColProps } from "../src/components/Layout/Col";
+export type { IRowProps } from "../src/components/Layout/Row";
 export type { IContainerProps } from "../src/components/Layout/Container";
 
 // Elements
