@@ -17,16 +17,7 @@ export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
 			<div className={styles['sidebar__navigation-wrapper']}>
 				<ul className={styles.sidebar__navigation}>
 					{ menuItems?.map((menuItem: ISidebarMenuItem) => {
-						const { path, title, order } = menuItem;
-						const [sub] = order.split('.');
-
-						if (Number(sub)) {
-							return (
-								<li className={styles['sidebar__nav-item-sub']} key={path}>
-									<Link to={path}>{title}</Link>
-								</li>
-							);
-						}
+						const { path, title } = menuItem;
 
 						return (
 							<li className={styles['sidebar__nav-item-top']} key={path}>

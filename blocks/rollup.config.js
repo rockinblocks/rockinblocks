@@ -31,6 +31,7 @@ export default {
 			use: ['sass']
 		}),
 		typescript({
+			useTsconfigDeclarationDir: true,
 			typescript: require('typescript'),
 			include: ['*.js+(|x)', '**/*.js+(|x)'],
 			exclude: [

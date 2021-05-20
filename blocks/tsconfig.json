@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "./dist",
+    "declarationDir": "./types",
     "module": "esnext",
     "noImplicitAny": true,
     "outDir": "./dist",
-    "target": "es5",
+    "target": "es6",
     "moduleResolution": "node",
     "baseUrl": "./src",
     "lib": [
