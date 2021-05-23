@@ -21,17 +21,15 @@
     "npm": ">=6"
   },
   "scripts": {
+    "prebuild": "yarn lint --fix && yarn test:coverage",
     "build": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
     "build:watch": "rimraf dist && rollup -c -w",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
     "lint": "yarn check-types && yarn xo src/**/*.tsx",
-    "lint:fix": "yarn eslint:fix",
-    "eslint": "eslint . --ext .js,.jsx,.tsx,.ts",
-    "eslint:fix": "eslint . --ext .js,.jsx,.tsx,.ts --fix",
     "check-types": "tsc",
     "prepare": "yarn build",
-    "prerelease": "yarn lint:fix && yarn test:coverage",
+    "prerelease": "yarn lint --fix && yarn test:coverage",
     "release": "yarn publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -120,6 +118,7 @@
     "react-dom": "^16",
     "react-styleguidist": "^11.1.5",
     "react-test-renderer": "^16",
+    "react-typography": "^0.16.20",
     "rimraf": "^3.0.2",
     "rollup": "^2.40.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -139,6 +138,7 @@
     "stylelint-scss": "^3.19.0",
     "ts-loader": "^8.0.17",
     "typescript": "^4.2.3",
+    "typography": "^0.16.21",
     "url-loader": "^4.1.1",
     "webpack": "^5.24.3"
   },
