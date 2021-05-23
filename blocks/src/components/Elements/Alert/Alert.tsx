@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import clsx from "clsx";
+import { Container } from "../../Layout";
 import styles from "./Alert.scss";
 
 export interface IAlertProps {
@@ -14,10 +15,14 @@ export interface IAlertProps {
 export const Alert: FC<IAlertProps> = ({ text, type, link }): JSX.Element => {
   return (
     <div className={clsx(styles.alert, type)}>
-      <span>{text}</span>
-      <span>
-        <a href={link?.location}>{link?.text}</a>
-      </span>
+      <Container justifyContent="space-between">
+        <span>{text}</span>
+        <span>
+          <a href={link?.location}>
+            {link?.text}
+          </a>
+        </span>
+      </Container>
     </div>
   );
 };
