@@ -24,11 +24,11 @@ export const Box: React.FC<
     ...style,
   };
 
-	return (
-		<div className={styles.box} style={{ ...styleProps }}>
-			{children}
-		</div>
-	);
+  return (
+    <div className={styles.box} style={{ ...styleProps }}>
+      {children}
+    </div>
+  );
 };
 
 export default Box;
