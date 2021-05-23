@@ -17,7 +17,7 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules blocks/node_modules sites/**/**/node_modules sites/**/**/.cache sites/**/**/public",
-    "dev": "yarn blocks:sb && yarn web:dev",
+    "dev": "yarn blocks:sb & yarn web:dev",
     "build": "yarn blocks:build && yarn web:build",
     "blocks:sb": "yarn workspace @rockinblocks/rockinblocks storybook",
     "blocks:make": "yarn workspace @rockinblocks/rockinblocks riff",
