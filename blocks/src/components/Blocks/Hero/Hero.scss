@@ -14,19 +14,6 @@
   }
 }
 
-.hero__col--content {
-  @include media-breakpoint-up(sm) {
-    flex: 0.70;
-  }
-
-  @include media-breakpoint-up(lg) {
-    flex: 0.60;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 .hero__heading {
   @include typography-display();
   margin: 0;
@@ -42,22 +29,12 @@
   margin-bottom: spacing(md);
 }
 
-.hero__col--image {
-  @include media-breakpoint-up(sm) {
-    flex: 0.30;
-  }
-
-  @include media-breakpoint-up(lg) {
-    flex: 0.40;
-    padding: 0 spacing(md);
-  }
-}
-
 .hero__image-wrapper {
   overflow: hidden;
   margin-top: spacing(md);
 
   @include media-breakpoint-up(lg) {
+    padding: 0 spacing(md);
     margin-top: 0;
   }
 }
