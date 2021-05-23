@@ -1,5 +1,5 @@
 ---
-title: Installation | Install Rockin' Blocks | Rockin' Blocks
+title: Installation
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'rockin blocks installation, gatsby page builder'

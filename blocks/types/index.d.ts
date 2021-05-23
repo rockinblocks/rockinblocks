@@ -14,5 +14,7 @@ export { Document } from './components/Elements/Document';
 export type { IDocumentProps } from './components/Elements/Document';
 export { Sidebar } from './components/Elements/Sidebar';
 export type { ISidebarProps } from './components/Elements/Sidebar';
+export { Alert } from './components/Elements/Alert';
+export type { IAlertProps } from './components/Elements/Alert';
 export { Hero, HeroForm } from './components/Blocks/Hero';
 export type { IHeroProps } from './components/Blocks/Hero';

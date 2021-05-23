@@ -84,7 +84,7 @@ export default function Template({
           {JSON.stringify(articleSchema)}
         </script>
       </Helmet>
-      <SEO title={title} description={description} />
+      <SEO title={`${title} | Rockin' Blocks | A Yarn workspace for React, powered by Gatsby`} description={description} />
       <Box display="flex">
         <Container>
           <Box display="flex" flex={20}>

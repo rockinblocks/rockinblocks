@@ -1,5 +1,5 @@
 ---
-title: Create a Block | Create a block with Riff, the Rockin' Blocks CLI tool | Rockin' Blocks
+title: Create a Block
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'gatsby, tinacms, blocks, gatsby page builder'

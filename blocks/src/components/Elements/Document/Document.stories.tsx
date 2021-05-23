@@ -1,16 +1,16 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
-import { Document, IDocumentProps } from './Document';
-import DocumentData from './data';
+import React from "react";
+import { Story, Meta } from "@storybook/react";
+import { Document, IDocumentProps } from "./Document";
+import DocumentData from "./data";
 
 export default {
-	title: 'Elements/Document',
-	component: Document
+  title: "Elements/Document",
+  component: Document,
 } as Meta;
 
-const Template: Story<IDocumentProps> = args => <Document {...args}/>;
+const Template: Story<IDocumentProps> = args => <Document {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-	...DocumentData
+  ...DocumentData,
 };

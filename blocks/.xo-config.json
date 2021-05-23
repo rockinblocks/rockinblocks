@@ -3,7 +3,7 @@
 	"rules": {
 		"@typescript-eslint/object-curly-spacing": [1, "always"],
     "@typescript-eslint/indent": 1,
-    "@typescript-eslint/quotes": [1, "single"],
+    "@typescript-eslint/quotes": [1, "double"],
     "react/prop-types": 0,
     "react/no-danger": 0,
     "react/no-unescaped-entities": 0,

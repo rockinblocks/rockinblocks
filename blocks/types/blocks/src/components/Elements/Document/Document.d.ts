@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from "react";
 export interface IDocumentFrontmatter {
     title: string;
     date_created: string;

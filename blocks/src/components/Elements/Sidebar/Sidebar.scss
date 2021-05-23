@@ -15,6 +15,7 @@
 
   @include media-breakpoint-up(lg) {
     min-height: 40vh;
+    margin-right: spacing(md);
   }
 }
 

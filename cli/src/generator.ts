@@ -45,7 +45,7 @@ const generateComponentIndex = async (name?: string) => {
       writeFile(
         `src/components/Blocks/${name}/index.ts`,
         `export { ${name} } from "./${name}"
-export type { ${name}Props } from "./${name}"
+export type { I${name}Props } from "./${name}"
 `,
       );
     });
@@ -66,11 +66,11 @@ const generateComponentReact = async (name?: string) => {
       `import React, { FC } from "react"
 import styles from "./${name}.scss"
 
-export interface ${name}Props {
+export interface I${name}Props {
   exampleProp: string
 }
 
-export const ${name}: FC<${name}Props> = (): JSX.Element => {
+export const ${name}: FC<I${name}Props> = (): JSX.Element => {
   return (
     <div className={styles.${toCamelCase(name || "Block")}}>
       <p>
@@ -125,14 +125,14 @@ const generateComponentStories = async (name?: string) => {
       `src/components/Blocks/${name}/${name}.stories.tsx`,
       `import React from "react"
 import { Story, Meta } from "@storybook/react"
-import { ${name}, ${name}Props } from "./${name}"
+import { ${name}, I${name}Props } from "./${name}"
 
 export default {
   title: "Blocks/${name}",
   component: ${name},
 } as Meta
 
-const Template: Story<${name}Props> = args => <${name} {...args} />
+const Template: Story<I${name}Props> = args => <${name} {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

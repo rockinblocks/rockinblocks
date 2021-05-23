@@ -5,4 +5,6 @@
   padding: spacing(xs);
   background-color: $secondary;
   color: $white;
+  display: flex;
+  justify-content: space-between;
 }

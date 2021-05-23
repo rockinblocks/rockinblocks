@@ -1,5 +1,5 @@
 ---
-title: Introduction | Introduction to Rockin' Blocks | Rockin' Blocks
+title: Introduction
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'rockin blocks installation, design ops, block library, react, gatsby'

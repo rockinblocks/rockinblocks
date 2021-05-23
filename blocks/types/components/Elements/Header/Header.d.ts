@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 export declare const Header: React.FC;
 export declare const HeaderForm: {
     id: string;
