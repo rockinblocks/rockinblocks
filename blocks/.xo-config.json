@@ -1,12 +1,13 @@
 {
 	"rules": {
-		"semi": [2, "always"],
-		"quotes": 0,
-    "@typescript-eslint/quotes": [1, "single"],
-		"unicorn/filename-case": 0,
-		"object-curly-spacing": [1, "always"],
 		"@typescript-eslint/object-curly-spacing": [1, "always"],
     "@typescript-eslint/indent": 1,
+    "@typescript-eslint/quotes": [1, "single"],
+    "react/prop-types": 0,
+		"semi": [2, "always"],
+		"quotes": 0,
+		"object-curly-spacing": [1, "always"],
+		"unicorn/filename-case": 0,
 		"prefer-destructuring": ["error", {"object": true, "array": false}]
 	},
 	"overrides": [
