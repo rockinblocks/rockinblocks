@@ -159,7 +159,7 @@ var generateComponentStories = function (name) { return __awaiter(void 0, void 0
 var generateComponentTests = function (name) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         try {
-            writeFile("src/components/Blocks/" + name + "/" + name + ".test.tsx", "import React from \"react\"\nimport { shallow } from \"enzyme\"\nimport { " + name + " } from \"./" + name + "\"\n\ndescribe(\"<" + name + " />\", () => {\n  it(\"should render\", () => {\n    const wrapper = shallow(<" + name + " exampleProp=\"Rockin' Blocks!\" />)\n\n    expect(true).toBeTruthy()\n  })\n})\n");
+            writeFile("src/components/Blocks/" + name + "/" + name + ".test.tsx", "import React from \"react\"\nimport { shallow } from \"enzyme\"\nimport { " + name + " } from \"./" + name + "\"\n\ndescribe(\"<" + name + " />\", () => {\n  it(\"should render\", () => {\n    const wrapper = shallow(<" + name + " exampleProp=\"Rockin' Blocks!\" />)\n\n    expect(wrapper.html()).toBeTruthy()\n  })\n})\n");
         }
         catch (error) {
             console.error("There was an error:", error.message);

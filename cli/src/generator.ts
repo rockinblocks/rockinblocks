@@ -163,7 +163,7 @@ describe("<${name} />", () => {
   it("should render", () => {
     const wrapper = shallow(<${name} exampleProp="Rockin' Blocks!" />)
 
-    expect(true).toBeTruthy()
+    expect(wrapper.html()).toBeTruthy()
   })
 })
 `,
