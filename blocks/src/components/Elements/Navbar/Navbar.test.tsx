@@ -8,7 +8,7 @@ import { Navbar } from './Navbar';
 import props from './data';
 
 describe('<Navbar />', () => {
-	const wrapper = shallow(<Navbar {...props} />);
+	const wrapper = shallow(<Navbar {...props}/>);
 	it('logo should link to the home page', () => {
 		expect(wrapper.find(Link).find({ to: '/' }).find(Logo)).toHaveLength(1);
 		expect(wrapper.find(Link).first().prop('to')).toEqual('/');

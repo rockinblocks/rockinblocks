@@ -7,7 +7,7 @@ export default {
 	component: Navbar
 } as Meta;
 
-const Template: Story<INavbarProps> = (args): JSX.Element => <Navbar {...args} />;
+const Template: Story<INavbarProps> = (args): JSX.Element => <Navbar {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {

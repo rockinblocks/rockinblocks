@@ -4,7 +4,7 @@ import { Header } from './Header';
 
 describe('<Header />', () => {
 	it('should render', () => {
-		const wrapper = shallow(<Header />);
+		const wrapper = shallow(<Header/>);
 
 		expect(wrapper.html()).toBeTruthy();
 	});

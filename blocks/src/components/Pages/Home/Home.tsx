@@ -15,8 +15,8 @@ export const Home = () => {
 
 	return (
 		<>
-			<Navbar appName="Rockin' Docs!" />
-			<Hero {...heroProps} />
+			<Navbar appName="Rockin' Docs!"/>
+			<Hero {...heroProps}/>
 		</>
 	);
 };

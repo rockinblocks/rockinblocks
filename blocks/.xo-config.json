@@ -1,9 +1,12 @@
 {
+  "extends": ["xo", "xo-typescript", "xo-react"],
 	"rules": {
 		"@typescript-eslint/object-curly-spacing": [1, "always"],
     "@typescript-eslint/indent": 1,
     "@typescript-eslint/quotes": [1, "single"],
     "react/prop-types": 0,
+    "react/no-danger": 0,
+    "react/no-unescaped-entities": 0,
 		"semi": [2, "always"],
 		"quotes": 0,
 		"object-curly-spacing": [1, "always"],

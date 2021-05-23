@@ -32,7 +32,7 @@ export const Hero: FC<IHeroProps> = props => {
 
 					<Col flex={0.45}>
 						<div className={styles['hero__image-wrapper']}>
-							<Vector />
+							<Vector/>
 						</div>
 					</Col>
 				</Row>

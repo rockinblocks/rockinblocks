@@ -5,7 +5,7 @@ export const Header: React.FC = (): JSX.Element => {
 	return (
 		<header>
 			<div className="header">
-				<Navbar />
+				<Navbar/>
 			</div>
 		</header>
 	);

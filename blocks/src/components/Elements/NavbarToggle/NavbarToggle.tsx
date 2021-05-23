@@ -8,9 +8,9 @@ export interface INavbarToggleProps {
 export const NavbarToggle: FC<INavbarToggleProps> = (): JSX.Element => {
 	return (
 		<div className={styles['rb-navbar-toggle']}>
-			<span />
-			<span />
-			<span />
+			<span/>
+			<span/>
+			<span/>
 		</div>
 	);
 };

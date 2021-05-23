@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Footer } from './Footer';
+import { Alert } from './Alert';
 
-describe('<Footer />', () => {
+describe('<Alert />', () => {
 	it('should render', () => {
-		const wrapper = shallow(<Footer/>);
+		const wrapper = shallow(<Alert text="Rockin' Blocks!" type="info"/>);
 
 		expect(wrapper.html()).toBeTruthy();
 	});

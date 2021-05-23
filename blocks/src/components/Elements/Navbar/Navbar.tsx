@@ -83,13 +83,13 @@ export const Navbar: FC<INavbarProps> = props => {
 										data-rb="navbar-github-anchor"
 									>
 										<div className={styles.navbar__github}>
-											<IconGitHub />
+											<IconGitHub/>
 										</div>
 									</a>
 								</li>
 							</ul>
 						</Box>
-						<NavbarToggle />
+						<NavbarToggle/>
 					</Col>
 				</Row>
 			</Container>

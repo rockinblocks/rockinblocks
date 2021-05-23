@@ -7,7 +7,7 @@ export default {
 	component: Badge
 } as Meta;
 
-const Template: Story<IBadgeProps> = args => <Badge {...args} />;
+const Template: Story<IBadgeProps> = args => <Badge {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {

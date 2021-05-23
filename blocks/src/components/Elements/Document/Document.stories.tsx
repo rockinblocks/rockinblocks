@@ -8,7 +8,7 @@ export default {
 	component: Document
 } as Meta;
 
-const Template: Story<IDocumentProps> = args => <Document {...args} />;
+const Template: Story<IDocumentProps> = args => <Document {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {

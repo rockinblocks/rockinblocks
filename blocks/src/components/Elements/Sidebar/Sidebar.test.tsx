@@ -18,7 +18,7 @@ const menuItems = [
 
 describe('<Sidebar />', () => {
 	it('should render the ordered menu items', () => {
-		const wrapper = shallow(<Sidebar menuItems={menuItems} />);
+		const wrapper = shallow(<Sidebar menuItems={menuItems}/>);
 		const [installation, monorepo] = menuItems;
 
 		expect(wrapper.text()).toContain(installation.title);

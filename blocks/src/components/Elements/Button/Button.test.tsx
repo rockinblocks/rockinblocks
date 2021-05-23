@@ -7,14 +7,14 @@ describe('<Button />', () => {
 		const props: IButtonProps = {
 			text: 'Let\'s Get Started'
 		};
-		const wrapper = shallow(<Button {...props} />);
+		const wrapper = shallow(<Button {...props}/>);
 
 		expect(wrapper.find('[data-rb="button-text"]').text()).toContain(props.text);
 	});
 
 	it('should display default text if none is given', () => {
 		const props: IButtonProps = {};
-		const wrapper = shallow(<Button {...props} />);
+		const wrapper = shallow(<Button {...props}/>);
 
 		expect(wrapper.find('span[data-rb="button-text"]').text()).toContain('Learn More');
 	});

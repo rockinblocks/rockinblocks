@@ -7,7 +7,7 @@ export default {
 	component: Home
 } as Meta;
 
-const Template: Story = args => <Home {...args} />;
+const Template: Story = args => <Home {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {};

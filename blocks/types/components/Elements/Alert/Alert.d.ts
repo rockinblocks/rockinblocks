@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react';
 export interface AlertProps {
     text: string;
     type: string;

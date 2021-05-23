@@ -20,7 +20,7 @@ export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
 						const { path, title } = menuItem;
 
 						return (
-							<li className={styles['sidebar__nav-item-top']} key={path}>
+							<li key={path} className={styles['sidebar__nav-item-top']}>
 								<Link to={path}>{title}</Link>
 							</li>
 						);
