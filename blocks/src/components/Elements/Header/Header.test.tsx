@@ -1,11 +1,11 @@
-import React from "react"
-import { shallow } from "enzyme"
-import { Header } from "./Header"
+import React from 'react';
+import { shallow } from 'enzyme';
+import { Header } from './Header';
 
-describe("<Header />", () => {
-  it("should render", () => {
-    const wrapper = shallow(<Header />)
+describe('<Header />', () => {
+	it('should render', () => {
+		const wrapper = shallow(<Header />);
 
-    expect(true).toBeTruthy()
-  })
-})
+		expect(wrapper.html()).toBeTruthy();
+	});
+});

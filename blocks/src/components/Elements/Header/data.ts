@@ -1,3 +1,3 @@
 export default {
-  "appName": "Rockin' Blocks"
-}
+	appName: 'Rockin\' Blocks'
+};
