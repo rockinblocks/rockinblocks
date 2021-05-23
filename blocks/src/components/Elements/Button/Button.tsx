@@ -27,16 +27,17 @@ export const Button: FC<IButtonProps> = props => {
 
   return (
     <Wrapper>
-      <div className={styles.button__inner} style={{ backgroundColor }}>
-        <button
-          className={styles.button__text}
-          style={{ color: textColor ?? "#ffffff" }}
-          data-rb="button-text"
-          type="button"
-        >
-          {text ?? "Learn More"}
-        </button>
-      </div>
+      <button type="button" className={styles.button}>
+        <div className={styles.button__inner} style={{ backgroundColor }}>
+          <span
+            className={styles.button__text}
+            style={{ color: textColor ?? "#ffffff" }}
+            data-rb="button-text"
+          >
+            {text ?? "Learn More"}
+          </span>
+        </div>
+      </button>
     </Wrapper>
   );
 };
