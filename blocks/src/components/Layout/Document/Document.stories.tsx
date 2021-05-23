@@ -4,7 +4,7 @@ import { Document, IDocumentProps } from "./Document";
 import DocumentData from "./data";
 
 export default {
-  title: "Elements/Document",
+  title: "Layout/Document",
   component: Document,
 } as Meta;
 

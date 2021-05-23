@@ -12,7 +12,7 @@ export type { IContainerProps } from './Layout/Container';
 export { Navbar } from './Elements/Navbar';
 export type { INavbarProps } from './Elements/Navbar';
 
-export { Footer } from './Elements/Footer';
+export { Footer } from './Layout/Footer';
 
 export { Button } from './Elements/Button';
 export type { IButtonProps } from './Elements/Button';
@@ -20,8 +20,8 @@ export type { IButtonProps } from './Elements/Button';
 export { Badge } from './Elements/Badge';
 export type { IBadgeProps } from './Elements/Badge';
 
-export { Document } from './Elements/Document';
-export type { IDocumentProps } from './Elements/Document';
+export { Document } from './Layout/Document';
+export type { IDocumentProps } from './Layout/Document';
 
 export { Sidebar } from './Elements/Sidebar';
 export type { ISidebarProps } from './Elements/Sidebar';

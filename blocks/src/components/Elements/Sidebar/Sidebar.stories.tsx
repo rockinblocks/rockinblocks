@@ -3,7 +3,7 @@ import { Story, Meta } from "@storybook/react";
 import { Sidebar, ISidebarProps } from "./Sidebar";
 
 export default {
-  title: "Elements/Sidebar",
+  title: "Layout/Sidebar",
   component: Sidebar,
 } as Meta;
 

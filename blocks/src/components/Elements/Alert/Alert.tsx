@@ -1,6 +1,6 @@
-import React, { FC } from "react";
+import React, { CSSProperties, FC } from "react";
 import clsx from "clsx";
-import { Container } from "../../Layout";
+import { Box, Container } from "../../Layout";
 import styles from "./Alert.scss";
 
 export interface IAlertProps {
@@ -10,17 +10,25 @@ export interface IAlertProps {
     text: string;
     location: string;
   };
+  onClick?: (event: MouseEvent) => void;
 }
 
-export const Alert: FC<IAlertProps> = ({ text, type, link }): JSX.Element => {
+export const Alert: FC<IAlertProps & CSSProperties> = ({
+  text,
+  type,
+  link,
+  onClick = null,
+}): JSX.Element => {
   return (
     <div className={clsx(styles.alert, type)}>
       <Container justifyContent="space-between">
-        <span>{text}</span>
+        <Box display="flex" justifyContent="center" flexDirection="column">
+          <span>{text}</span>
+        </Box>
         <span>
-          <a href={link?.location}>
+          <button type="button" {...onClick}>
             {link?.text}
-          </a>
+          </button>
         </span>
       </Container>
     </div>

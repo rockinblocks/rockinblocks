@@ -23,7 +23,8 @@
   "scripts": {
     "prebuild": "yarn lint --fix && yarn lint:prettier && yarn test:coverage",
     "build": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
-    "build:watch": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c -w",
+    "build:dev": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
+    "watch": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c -w",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
     "lint": "yarn check-types && yarn xo src/**/**/*.tsx",

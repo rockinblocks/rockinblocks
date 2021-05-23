@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box } from "../../Layout";
+import { Box } from "..";
 import styles from "./Document.scss";
 
 export interface IDocumentFrontmatter {

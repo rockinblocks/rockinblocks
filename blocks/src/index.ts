@@ -12,15 +12,15 @@ export type { IContainerProps } from './components/Layout/Container';
 export { Navbar } from './components/Elements/Navbar';
 export type { INavbarProps } from './components/Elements/Navbar';
 
-export { Header } from './components/Elements/Header';
+export { Header } from './components/Layout/Header';
 
-export { Footer } from './components/Elements/Footer';
+export { Footer } from './components/Layout/Footer';
 
 export { Button } from './components/Elements/Button';
 export type { IButtonProps } from './components/Elements/Button';
 
-export { Document } from './components/Elements/Document';
-export type { IDocumentProps } from './components/Elements/Document';
+export { Document } from './components/Layout/Document';
+export type { IDocumentProps } from './components/Layout/Document';
 
 export { Sidebar } from './components/Elements/Sidebar';
 export type { ISidebarProps } from './components/Elements/Sidebar';

@@ -18,7 +18,7 @@ describe("<Button />", () => {
     const props: IButtonProps = {};
     const wrapper = shallow(<Button {...props} />);
 
-    expect(wrapper.find('span[data-rb="button-text"]').text()).toContain(
+    expect(wrapper.find('[data-rb="button-text"]').text()).toContain(
       "Learn More"
     );
   });

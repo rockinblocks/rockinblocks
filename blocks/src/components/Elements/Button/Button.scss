@@ -16,6 +16,11 @@
   transition: background-color $transition-time, transform $transition-time;
   transform: translateY(0);
 
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
   @include media-breakpoint-up(lg) {
     max-width: 12rem;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "../Navbar";
+import { Navbar } from "../../Elements/Navbar";
 import styles from "./Blog.scss";
 
 export const Blog = () => {

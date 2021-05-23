@@ -7,6 +7,7 @@ export interface IButtonProps {
   backgroundColor?: string;
   textColor?: string;
   to?: string;
+  onClick?: (event: MouseEvent) => void;
 }
 
 export const Button: FC<IButtonProps> = props => {
@@ -27,13 +28,14 @@ export const Button: FC<IButtonProps> = props => {
   return (
     <Wrapper>
       <div className={styles.button__inner} style={{ backgroundColor }}>
-        <span
+        <button
           className={styles.button__text}
           style={{ color: textColor ?? "#ffffff" }}
           data-rb="button-text"
+          type="button"
         >
           {text ?? "Learn More"}
-        </span>
+        </button>
       </div>
     </Wrapper>
   );
