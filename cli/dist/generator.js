@@ -45,7 +45,7 @@ import chalk from "chalk";
 export var generator = function (options) {
     var name = options.name;
     generateBlockReact(name);
-    console.info(chalk.green("\n\uD83C\uDFB8\uD83C\uDFB6\uD83E\uDD18 Successfully created " + name + "! \uD83E\uDD18\uD83C\uDFB6\uD83C\uDFB8\nCheck your " + chalk.blue("src/components/Blocks") + " directory for you new block!\n"));
+    console.info(chalk.green("\n\uD83C\uDFB8\uD83C\uDFB6\uD83E\uDD18 Successfully created " + name + "! \uD83E\uDD18\uD83C\uDFB6\uD83C\uDFB8\nCheck your " + chalk.blue("blocks/src/components/Blocks") + " directory for you new block!\n"));
 };
 /**
  * Generate the Rockin' Block using React
@@ -78,7 +78,7 @@ var generateBlockReact = function (name) { return __awaiter(void 0, void 0, void
  * Creates the component directory and the index file
  * Exports the block and the type interface
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 var generateComponentIndex = function (name) { return __awaiter(void 0, void 0, void 0, function () {
     var error_1;
@@ -103,7 +103,7 @@ var generateComponentIndex = function (name) { return __awaiter(void 0, void 0, 
 /**
  * Creates the React component for the block
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 var generateComponentReact = function (name) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
@@ -120,7 +120,7 @@ var generateComponentReact = function (name) { return __awaiter(void 0, void 0, 
  * Creates the SCSS Component for the block
  * Assumes the component directly already exists
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 var generateComponentScss = function (name) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
@@ -137,7 +137,7 @@ var generateComponentScss = function (name) { return __awaiter(void 0, void 0, v
  * Creates the Storybook stories for the block
  * Assumes the component directly already exists
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 var generateComponentStories = function (name) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
@@ -154,7 +154,7 @@ var generateComponentStories = function (name) { return __awaiter(void 0, void 0
  * Creates the Jest tests for the block
  * Assumes the component directly already exists
  * @link https://nodejs.org/docs/latest-v15.x/api/fs.html
- * @param name The name of the block, i.e. Hero
+ * @param {string} name The name of the block, i.e. Hero
  */
 var generateComponentTests = function (name) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {

@@ -1,12 +1,11 @@
-"use strict";
-// import test from 'ava';
-// import luthier from './cli';
-// test('title', t => {
-// 	t.throws(() => {
-// 		luthier(123);
-// 	}, {
-// 		instanceOf: TypeError,
-// 		message: 'Expected a string, got number'
-// 	});
-// 	t.is(luthier('unicorns'), 'unicorns & rainbows');
-// });
+import test from "ava";
+// import riff from "./cli";
+test("riff", function (test) {
+    test.throws(function () {
+        // riff(123);
+    }, {
+        instanceOf: TypeError,
+        message: "Expected a string, got number",
+    });
+    // test.is(riff("unicorns"), "unicorns & rainbows");
+});
