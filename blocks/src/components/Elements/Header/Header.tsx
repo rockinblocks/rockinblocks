@@ -21,10 +21,7 @@ export const HeaderForm = {
 			description: 'Name of the app',
 			component: 'text'
 		}
-	],
-	onSubmit: async () => {
-		window.alert('Saved!');
-	}
+	]
 };
 
 export default Header;
