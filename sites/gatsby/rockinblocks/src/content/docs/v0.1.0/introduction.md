@@ -1,8 +1,8 @@
 ---
-title: Introduction
+title: Introduction | Introduction to Rockin' Blocks | Rockin' Blocks
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
-keywords: 'rockin blocks installation, gatsby page builder'
+keywords: 'rockin blocks installation, design ops, block library, react, gatsby'
 path: /docs/v0.1.0/introduction
 description: Getting set up with Rockin' Blocks is a breeze.
 order: '1.0'

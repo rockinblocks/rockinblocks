@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
-    "build:watch": "rollup -c -w",
+    "build:watch": "rimraf dist && rollup -c -w",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
     "lint": "yarn check-types && yarn xo",

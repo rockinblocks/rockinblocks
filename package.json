@@ -20,6 +20,7 @@
     "dev": "yarn blocks:sb & yarn web:dev",
     "build": "yarn blocks:build && yarn web:build",
     "blocks:sb": "yarn workspace @rockinblocks/rockinblocks storybook",
+    "blocks:watch": "yarn workspace @rockinblocks/rockinblocks build:watch",
     "blocks:make": "yarn workspace @rockinblocks/rockinblocks riff",
     "blocks:build": "yarn workspace @rockinblocks/rockinblocks build",
     "blocks:hoist": "symlink-dir blocks/src/components ./lib",

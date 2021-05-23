@@ -1,5 +1,5 @@
 ---
-title: Create a block
+title: Create a Block | Create a block with Riff, the Rockin' Blocks CLI tool | Rockin' Blocks
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'gatsby, tinacms, blocks, gatsby page builder'
@@ -9,7 +9,7 @@ order: '4.1'
 type: document
 ---
 
-Let's work together to create a block called `HomeIntroduction`. This block is essentially going to be a basic call-to-action, with just a simple heading, a small paragraph of content, and a button that will link to our GitHub page at https://github.com/rockinblocks/rockinblocks.
+Let's work together to create a block called `HomeIntroduction`.
 
 ## Generate the block with Riff 🎸
 
@@ -26,5 +26,5 @@ You should see the following success message:
 
 ```
 🎸🎶🤘 Successfully created HomeIntroduction! 🤘🎶🎸
-Check your src/components/Blocks directory for you new block!
+Check your blocks/src/components/Blocks directory for you new block!
 ```
