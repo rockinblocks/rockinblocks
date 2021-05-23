@@ -28,12 +28,10 @@ export const Navbar: FC<INavbarProps> = props => {
 							<Link to="/" className={styles.navbar__brand}>
 								<span>
 									{Logo ? (
-										<>
-											<Logo
-												data-rb="navbar-logo"
-												className={styles.navbar__logo}
-											/>
-										</>
+										<Logo
+											data-rb="navbar-logo"
+											className={styles.navbar__logo}
+										/>
 									) : (
 										<span>{appName}</span>
 									)}

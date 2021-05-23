@@ -19,25 +19,23 @@ export interface IDocumentProps {
 export const Document: FC<IDocumentProps> = ({ html, frontmatter }) => {
 	const { title } = frontmatter;
 	return (
-		<>
-			<Box className={styles.document} display="flex">
-				<Box flex={0.8}>
-					<div className={styles.document__intro}>
-						<h1 className={styles.document__title}>{title}</h1>
-					</div>
-					<div className={styles.document__main}>
-						<main>
-							<div
-								style={{ flex: 1 }}
-								className={styles.document__html}
-								dangerouslySetInnerHTML={{ __html: html }}
-								data-rb="document"
-							/>
-						</main>
-					</div>
-				</Box>
+		<Box className={styles.document} display="flex">
+			<Box flex={0.8}>
+				<div className={styles.document__intro}>
+					<h1 className={styles.document__title}>{title}</h1>
+				</div>
+				<div className={styles.document__main}>
+					<main>
+						<div
+							style={{ flex: 1 }}
+							className={styles.document__html}
+							dangerouslySetInnerHTML={{ __html: html }}
+							data-rb="document"
+						/>
+					</main>
+				</div>
 			</Box>
-		</>
+		</Box>
 	);
 };
 
