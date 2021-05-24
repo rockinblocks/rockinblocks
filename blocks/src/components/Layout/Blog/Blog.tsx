@@ -2,12 +2,14 @@ import React from "react";
 import { Navbar } from "../../Elements/Navbar";
 import styles from "./Blog.scss";
 
-export const Blog = () => {
+export const Blog: React.FC = (): JSX.Element => {
   return (
-    <>
+    <div>
       <Navbar appName="Rockin' Docs!" />
       <h1 className={styles.pageHeading}>Rockin' Blog </h1>
       <p>The Official Rockin' Blocks Blog</p>
-    </>
+    </div>
   );
 };
+
+export default Blog;

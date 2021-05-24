@@ -1,1 +1,3 @@
-export declare const Blog: () => JSX.Element;
+import React from "react";
+export declare const Blog: React.FC;
+export default Blog;

@@ -5,7 +5,7 @@ module.exports = {
     title: `Rockin' Blocks`,
     description: `Blocks that Just Rock`,
     author: `@RockinBlocksJS`,
-    siteUrl: `https://rockinblocks.io`
+    siteUrl: `https://www.rockinblocks.io`
   },
   plugins: [
     `@rockinblocks/gatsby-plugin-rockinblocks`,
@@ -35,13 +35,6 @@ module.exports = {
       options: {
         name: `posts`,
         path: path.join(__dirname, `/src/content/posts`),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `/src/images`),
       },
     },
     {
@@ -99,7 +92,6 @@ module.exports = {
         alias: {
           "@components": path.join(__dirname, '/src/components'),
           "@elements": path.join(__dirname, '/src/components/Elements'),
-          "@hooks": path.join(__dirname, '/src/hooks'),
           "@layout": path.join(__dirname, '/src/components/Layout'),
           "@utilities": path.join(__dirname, '/src/components/Utilities'),
           "@styles": path.join(__dirname, '/src/styles'),

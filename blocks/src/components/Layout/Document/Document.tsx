@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import clsx from "clsx";
 import { Box } from "..";
 import styles from "./Document.scss";
 
@@ -14,12 +15,16 @@ export interface IDocumentFrontmatter {
 export interface IDocumentProps {
   frontmatter: IDocumentFrontmatter;
   html: string;
+  type: string;
 }
 
-export const Document: FC<IDocumentProps> = ({ html, frontmatter }) => {
+export const Document: FC<IDocumentProps> = ({ html, frontmatter, type }) => {
   const { title } = frontmatter;
   return (
-    <Box className={styles.document} display="flex">
+    <Box
+      className={clsx(styles.document, styles[type])}
+      display="flex"
+    >
       <Box flex={0.8}>
         <div className={styles.document__intro}>
           <h1 className={styles.document__title}>{title}</h1>

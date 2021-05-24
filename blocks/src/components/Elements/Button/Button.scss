@@ -7,22 +7,7 @@
   background-color: palette(primary);
   border: none;
   padding: 0;
-}
-
-.button__inner {
-  padding: spacing(xs) spacing(sm);
-  border-radius: $button-border-radius;
-  font-family: $font-family-main;
-  color: $button-font-color;
-  font-weight: $button-font-weight;
-  justify-content: center;
-  transition: background-color $transition-time, transform $transition-time;
-  transform: translateY(0);
-
-  button {
-    background-color: transparent;
-    border: none;
-  }
+  transition: background-color $transition-time;
 
   @include media-breakpoint-up(lg) {
     max-width: 12rem;
@@ -33,8 +18,16 @@
     }
 
     &:active {
-      transform: translateY(0.125rem);
       background-color: darken($primary, 20%);
     }
   }
+}
+
+.button__inner {
+  padding: spacing(xs) spacing(sm);
+  border-radius: $button-border-radius;
+  font-family: $font-family-main;
+  color: $button-font-color;
+  font-weight: $button-font-weight;
+  justify-content: center;
 }

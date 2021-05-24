@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "gatsby";
+import GitHubButton from "react-github-btn";
 import { NavbarToggle } from "../NavbarToggle";
 import { Box, Col, Container, Row } from "../../Layout";
 import { Badge } from "../Badge";
@@ -46,46 +47,31 @@ export const Navbar: FC<INavbarProps> = props => {
             justifyContent="flex-end"
           >
             <Box
-              className={styles.navbar__version}
-              display="flex"
-              flexDirection="column"
-              justifyContent="center"
-              data-rb="navbar-version"
-            >
-              <Badge
-                text="v0.1.0-alpha"
-                textColor="#ffffff"
-                variant="success"
-                data-rb="navbar-version-badge"
-              />
-            </Box>
-            <Box
               className={styles["navbar__navigation-wrapper"]}
               flexDirection="column"
               justifyContent="center"
             >
               <ul className={styles.navbar__navigation}>
                 <li>
-                  <Link to="/docs/v0.1.0/introduction">
+                  <Link to="/docs/v0/introduction">
                     <span>Docs</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog/rockin-blocks-is-in-early-alpha">
+                  <Link to="/blog">
                     <span>Blog</span>
                   </Link>
                 </li>
                 <li>
-                  <a
-                    href="http://github.com/rockinblocks/rockindocs"
-                    target="_blank"
-                    rel="noreferrer"
-                    data-rb="navbar-github-anchor"
+                  <GitHubButton
+                    href="https://github.com/rockinblocks/rockinblocks"
+                    data-icon="octicon-star"
+                    data-size="large"
+                    data-show-count="true"
+                    aria-label="Star rockinblocks/rockinblocks on GitHub"
                   >
-                    <div className={styles.navbar__github}>
-                      <IconGitHub />
-                    </div>
-                  </a>
+                    Star
+                  </GitHubButton>
                 </li>
               </ul>
             </Box>

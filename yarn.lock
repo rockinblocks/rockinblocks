@@ -11788,6 +11788,11 @@ git-up@^4.0.2:
     is-ssh "^1.3.0"
     parse-url "^5.0.0"
 
+github-buttons@^2.8.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/github-buttons/-/github-buttons-2.17.0.tgz#512e92570f0ada93cf71b645b2a162ce4b10ab11"
+  integrity sha512-NW860y597KUab+00I6MQ0z1xWD/yNYa/XT/bLY2kL/Z2Sf1NsZxC2mZ3W9DIpVytnw8vXnv1eCFahmGwC51sFQ==
+
 github-from-package@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/github-from-package/-/github-from-package-0.0.0.tgz#97fb5d96bfde8973313f20e8288ef9a167fa64ce"
@@ -19237,6 +19242,13 @@ react-final-form@^6.3.0:
   integrity sha512-FCs6GC0AMWJl2p6YX7kM+a0AvuSLAZUgbVNtRBskOs4g984t/It0qGtx51O+9vgqnqk6JyoxmIzxKMq+7ch/vg==
   dependencies:
     "@babel/runtime" "^7.12.1"
+
+react-github-btn@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-github-btn/-/react-github-btn-1.2.0.tgz#464066f999a77c0eed27980260601b51cbe15614"
+  integrity sha512-/b2TGTeek5Ky+KtuP5BxOaXgb1FGhbwgZNI6rkwkGk7+xtCtsNMkdchOcCnC3qU1JGTWPKzYZWpPBIouVhXAoQ==
+  dependencies:
+    github-buttons "^2.8.0"
 
 react-group@^3.0.2:
   version "3.0.2"

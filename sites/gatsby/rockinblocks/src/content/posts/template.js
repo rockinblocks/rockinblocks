@@ -5,7 +5,14 @@ import { usePlugin } from "tinacms"
 import { useRemarkForm } from "gatsby-tinacms-remark"
 import Layout from "../../components/mainLayout"
 import SEO from "../../components/Utilities/SEO"
-import { Box, Container, Document, Footer } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import {
+  Box,
+  Col,
+  Container,
+  Document,
+  Footer,
+  Row,
+} from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -53,13 +60,13 @@ export default function Template({
       </Helmet>
       <SEO title={title} description={description} />
       <Container column>
-        <Box display="flex" justifyContent="center">
-          <Box flex=".80">
+        <Row display="flex">
+          <Col flex=".80">
             <Box display="flex" flexDirection="column">
               <Document frontmatter={frontmatter} html={html} />
             </Box>
-          </Box>
-        </Box>
+          </Col>
+        </Row>
       </Container>
       <Footer />
     </Layout>

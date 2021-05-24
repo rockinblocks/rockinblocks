@@ -3,7 +3,7 @@
     "declaration": true,
     "declarationDir": "./types",
     "module": "esnext",
-    "target": "es6",
+    "target": "esnext",
     "noImplicitAny": true,
     "outDir": "./dist",
     "moduleResolution": "node",

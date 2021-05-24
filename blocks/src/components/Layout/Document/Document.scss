@@ -7,6 +7,16 @@
 .document__main {
   padding: spacing(xs);
   font-family: $font-family-main;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: spacing(md);
+  }
+}
+
+.post {
+  @include media-breakpoint-up(lg) {
+    padding-left: 0 !important;
+  }
 }
 
 .document__title {
