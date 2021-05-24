@@ -11,17 +11,4 @@ export const Header: React.FC = (): JSX.Element => {
   );
 };
 
-export const HeaderForm = {
-  id: "rockin-docs-header",
-  label: "Header",
-  fields: [
-    {
-      label: "App Name",
-      name: "rawJson.appName",
-      description: "Name of the app",
-      component: "text",
-    },
-  ],
-};
-
 export default Header;

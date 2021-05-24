@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "gatsby";
-import { Box, Col, Container, Row } from ".."
+import { Box, Col, Container, Row } from "..";
 import styles from "./Footer.scss";
 
 export const Footer: FC = (): JSX.Element => {

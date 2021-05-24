@@ -1,4 +1,4 @@
-export { Hero, HeroForm } from './Hero';
+export { Hero } from './Hero';
 export type { IHeroProps } from './Hero';
 
 export { Posts } from './Posts';

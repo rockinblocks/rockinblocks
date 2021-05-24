@@ -3,9 +3,7 @@ import { Link } from "gatsby";
 import GitHubButton from "react-github-btn";
 import { NavbarToggle } from "../NavbarToggle";
 import { Box, Col, Container, Row } from "../../Layout";
-import { Badge } from "../Badge";
 import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg";
-import { ReactComponent as IconGitHub } from "../../../assets/icon-github.svg";
 import styles from "./Navbar.scss";
 
 export interface INavbarProps {
