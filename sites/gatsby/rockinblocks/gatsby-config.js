@@ -9,18 +9,6 @@ module.exports = {
   },
   plugins: [
     `@rockinblocks/gatsby-plugin-rockinblocks`,
-    {
-      resolve: 'gatsby-plugin-tinacms',
-      options: {
-        enabled: process.env.NODE_ENV !== 'production',
-        sidebar: true,
-        plugins: [
-          'gatsby-tinacms-git',
-          'gatsby-tinacms-json',
-          'gatsby-tinacms-remark',
-        ],
-      },
-    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
@@ -36,13 +24,6 @@ module.exports = {
         name: `posts`,
         path: path.join(__dirname, `/src/content/posts`),
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `componentJson`,
-        path: path.join(__dirname, `/src/components`),
-      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
