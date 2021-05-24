@@ -3,7 +3,7 @@ title: Workflow
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'rockin blocks installation, gatsby page builder'
-path: /docs/v0.1.0/workflow
+path: /docs/v0/workflow
 description: Getting set up with Rockin' Blocks is a breeze.
 order: '6.0'
 type: document

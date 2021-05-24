@@ -7,10 +7,12 @@ import Layout from "../../components/mainLayout"
 import SEO from "../../components/Utilities/SEO"
 import {
   Box,
+  Col,
   Container,
   Document,
-  Sidebar,
   Footer,
+  Row,
+  Sidebar,
 } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Template({
@@ -18,7 +20,7 @@ export default function Template({
 }) {
   const [markdownRemark, form] = useRemarkForm(data.markdownRemark)
   const { frontmatter, html, plainText } = markdownRemark
-  const { title, date, description, keywords, imageBucket } = frontmatter
+  const { title, date, description, keywords, imageBucket, type } = frontmatter
   const { edges: documents } = data.allMarkdownRemark
   const [menuItems, setMenuItems] = useState([])
 
@@ -52,24 +54,27 @@ export default function Template({
     image: imageBucket,
   }
 
-  const sortAndSetItems = useCallback((items) => {
-    items.sort((item, nextItem) => {
-      const { order } = item
-      const { order: nextOrder } = nextItem
+  const sortAndSetItems = useCallback(
+    items => {
+      items.sort((item, nextItem) => {
+        const { order } = item
+        const { order: nextOrder } = nextItem
 
-      if (order < nextOrder) {
-        return -1
-      }
+        if (order < nextOrder) {
+          return -1
+        }
 
-      return 1
-    })
+        return 1
+      })
 
-    setMenuItems(items)
-  }, [documents])
+      setMenuItems(items)
+    },
+    [documents]
+  )
 
   useEffect(() => {
     const items = []
-    documents.forEach((document) => {
+    documents.forEach(document => {
       const { frontmatter } = document.node
       items.push(frontmatter)
     })
@@ -84,17 +89,20 @@ export default function Template({
           {JSON.stringify(articleSchema)}
         </script>
       </Helmet>
-      <SEO title={`${title} | Rockin' Blocks | A Yarn workspace for React, powered by Gatsby`} description={description} />
-      <Box display="flex">
-        <Container>
-          <Box display="flex" flex={20}>
+      <SEO
+        title={`${title} | Rockin' Blocks | A Yarn workspace for React, powered by Gatsby`}
+        description={description}
+      />
+      <Container>
+        <Row>
+          <Col display="flex" flex={20}>
             <Sidebar menuItems={menuItems} />
-          </Box>
-          <Box flex={80}>
-            <Document frontmatter={frontmatter} html={html} />
-          </Box>
-        </Container>
-      </Box>
+          </Col>
+          <Col flex={80}>
+            <Document frontmatter={frontmatter} html={html} type={type} />
+          </Col>
+        </Row>
+      </Container>
       <Box>
         <Footer />
       </Box>
@@ -115,6 +123,7 @@ export const pageQuery = graphql`
             title
             path
             order
+            type
           }
         }
       }
@@ -129,6 +138,7 @@ export const pageQuery = graphql`
         title
         description
         keywords
+        type
       }
       plainText
     }

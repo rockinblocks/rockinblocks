@@ -1,9 +1,9 @@
 ---
-title: Create a Block
+title: 'Blocks: Create a Block'
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'gatsby, tinacms, blocks, gatsby page builder'
-path: /docs/v0.1.0/blocks/create
+path: /docs/v0/blocks/create
 description: Understanding blocks and how they work with Gatsby and Tina CMS.
 order: '4.1'
 type: document
@@ -24,7 +24,7 @@ $ yarn riff --name=HomeIntroduction
 
 You should see the following success message:
 
-```
+```bash
 🎸🎶🤘 Successfully created HomeIntroduction! 🤘🎶🎸
 Check your blocks/src/components/Blocks directory for you new block!
 ```

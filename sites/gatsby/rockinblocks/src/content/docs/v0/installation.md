@@ -3,7 +3,7 @@ title: Installation
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'rockin blocks installation, gatsby page builder'
-path: /docs/v0.1.0/installation
+path: /docs/v0/installation
 description: Getting set up with Rockin' Blocks is a breeze.
 order: '2.0'
 type: document
@@ -83,5 +83,3 @@ $ yarn web:dev
 ```
 
 Your **Rockin' Blocks** project should be up and running!
-
-[Next: Examining the monorepo](/docs/v0.1.0/monorepo)

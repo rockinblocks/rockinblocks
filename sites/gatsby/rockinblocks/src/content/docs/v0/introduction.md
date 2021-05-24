@@ -3,12 +3,14 @@ title: Introduction
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
 keywords: 'rockin blocks installation, design ops, block library, react, gatsby'
-path: /docs/v0.1.0/introduction
+path: /docs/v0/introduction
 description: Getting set up with Rockin' Blocks is a breeze.
 order: '1.0'
 type: document
 ---
 ## What is Rockin' Blocks?
+
+### Work better. Make better work.
 
 **Rockin' Blocks** is a DesignOps starter kit for developing a modular block library that can be shared and reused throughout multiple React applications.
 
@@ -20,3 +22,7 @@ type: document
 - A foundation for writing documentation for your company or application
 - A working, easy-to-setup Typescript implementation for building or tinkering with Typescript in React
 - Any situation where you need a resuable component library in multiple Gatsby applications
+
+### Where is the demo?
+
+If you are looking for the **Rockin' Blocks** demo, you're looking at it! When you spin up a new site from the **Rockin' Blocks** [monorepo](http://github.com/rockinblocks/rockindocs), you will get immediately have this site, fully functional, at your disposal.

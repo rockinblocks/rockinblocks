@@ -5,7 +5,7 @@ date_updated: '2020-04-12'
 keywords: >-
   monorepo, yarn workspace monorepo, gatsby, starter, yarn workspace, open
   source yarn workspace
-path: /docs/v0.1.0/monorepo
+path: /docs/v0/monorepo
 description: Getting set up with Rockin' Blocks is a breeze.
 order: '3.0'
 type: document
@@ -31,8 +31,8 @@ The monorepo structure is really composed of two parts: your blocks and your sit
 │       └── styles
 ├── plugins
 │   └── gatsby
-│       ├── package.json
-│       └── styles
+│       ├── gatsby-config.js
+│       └── package.json
 └── sites
 	├── gatsby
 		└── rockinblocks
@@ -46,5 +46,3 @@ The monorepo structure is really composed of two parts: your blocks and your sit
 				├── pages
 				└── styles
 ```
-
-[Next: Blocks](/docs/v0.1.0/blocks)
