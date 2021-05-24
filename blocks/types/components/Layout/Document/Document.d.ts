@@ -11,7 +11,6 @@ export interface IDocumentFrontmatter {
 export interface IDocumentProps {
     frontmatter: IDocumentFrontmatter;
     html: string;
-    type: string;
 }
 export declare const Document: FC<IDocumentProps>;
 export default Document;

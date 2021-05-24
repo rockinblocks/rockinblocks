@@ -7,14 +7,3 @@ export interface IHeroProps {
     primaryColor?: string;
 }
 export declare const Hero: FC<IHeroProps>;
-export declare const HeroForm: {
-    id: string;
-    label: string;
-    key: string;
-    fields: {
-        label: string;
-        name: string;
-        description: string;
-        component: string;
-    }[];
-};
