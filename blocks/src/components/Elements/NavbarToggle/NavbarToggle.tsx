@@ -15,4 +15,4 @@ export const NavbarToggle: FC<INavbarToggleProps> = (): JSX.Element => {
   );
 };
 
-export default NavbarToggle
+export default NavbarToggle;

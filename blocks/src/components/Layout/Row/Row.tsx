@@ -27,4 +27,4 @@ export const Row: React.FC<
   );
 };
 
-export default Row
+export default Row;

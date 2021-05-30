@@ -10,11 +10,7 @@ type: document
 ---
 ## What is Rockin' Blocks?
 
-<<<<<<< HEAD:sites/gatsby/rockinblocks/src/content/docs/v0/introduction.md
 **Rockin' Blocks** is a DesignOps starter kit for developing a modular block library that can be shared and reused throughout multiple Gatsby applications.
-=======
-**Rockin' Blocks** is a DesignOps starter kit for developing a modular block library that can be shared and reused throughout multiple [Gatsby](https://gatsbyjs.com) applications.
->>>>>>> Revert "Linting, type-checking, blog, privacy policy":sites/rockinblocks/src/content/docs/v0.1.0/introduction.md
 
 **Rockin' Blocks** could be great if you are looking for:
 

@@ -10,9 +10,9 @@ export default {
   },
 } as Meta;
 
-const Template: Story<IHeroProps> = args => <Hero {...args} />
+const Template: Story<IHeroProps> = args => <Hero {...args} />;
 
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 Default.args = {
   heading: "Rock out with your docs out.",
   subheading:

@@ -44,10 +44,12 @@
   ],
   "exclude": [
     "coverage",
-    "config",
+    "config/**",
     "dist",
     "node_modules/**",
     "src/components/**/*.test.js",
     "src/components/**/*.test.ts",
-  ]
+    ".storybook",
+  ],
+  "plugins": [{ "name": "typescript-plugin-css-modules" }]
 }

@@ -29,4 +29,4 @@ export const Container: React.FC<
   );
 };
 
-export default Container
+export default Container;
