@@ -10,7 +10,7 @@ frontend:
         commands:
           - yarn web:build
     artifacts:
-      baseDirectory: sites/rockinblocks/public
+      baseDirectory: sites/gatsby/rockinblocks/public
       files:
         - "**/*"
     appRoot: /
