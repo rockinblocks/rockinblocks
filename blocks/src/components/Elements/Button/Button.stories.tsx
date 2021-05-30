@@ -1,6 +1,6 @@
-import React from "react"
-import { Story, Meta } from "@storybook/react"
-import { Button, ButtonProps } from "./Button"
+import React from "react";
+import { Story, Meta } from "@storybook/react";
+import { Button, IButtonProps } from "./Button";
 
 export default {
   title: "Elements/Button",
@@ -8,11 +8,11 @@ export default {
   argTypes: {
     backgroundColor: { control: "color" },
   },
-} as Meta
+} as Meta;
 
-const Template: Story<ButtonProps> = args => <Button {...args} />
+const Template: Story<IButtonProps> = args => <Button {...args} />;
 
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 Default.args = {
   text: "Start a Project",
-}
+};

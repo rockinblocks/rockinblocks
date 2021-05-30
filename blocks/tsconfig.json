@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "./dist",
+    "declarationDir": "./types",
     "module": "esnext",
+    "target": "esnext",
     "noImplicitAny": true,
     "outDir": "./dist",
-    "target": "es5",
     "moduleResolution": "node",
     "baseUrl": "./src",
     "lib": [
@@ -44,10 +44,12 @@
   ],
   "exclude": [
     "coverage",
-    "config",
+    "config/**",
     "dist",
     "node_modules/**",
     "src/components/**/*.test.js",
     "src/components/**/*.test.ts",
-  ]
+    ".storybook",
+  ],
+  "plugins": [{ "name": "typescript-plugin-css-modules" }]
 }

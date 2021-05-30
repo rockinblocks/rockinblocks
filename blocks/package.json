@@ -1,6 +1,6 @@
 {
-  "name": "@rockinblocks/gatsby-plugin-rockinblocks",
-  "version": "0.1.0-alpha.3",
+  "name": "@rockinblocks/rockinblocks",
+  "version": "0.1.0",
   "description": "Blocks for Rockin' Blocks",
   "author": "Jed Darrohn",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git@gitlab.com:rockinblocks/rockinblocks.git"
   },
-  "homepage": "https://www.rockinblocks.io",
+  "homepage": "https://rockinblocks.io",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -21,25 +21,25 @@
     "npm": ">=6"
   },
   "scripts": {
+    "prebuild": "yarn lint --fix && yarn lint:prettier && yarn test:coverage",
     "build": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
-    "build:watch": "rollup -c -w",
+    "build:dev": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
+    "watch": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c -w",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
-    "lint": "yarn check-types && yarn eslint",
-    "lint:fix": "yarn eslint:fix",
-    "eslint": "eslint . --ext .js,.jsx,.tsx,.ts",
-    "eslint:fix": "eslint . --ext .js,.jsx,.tsx,.ts --fix",
+    "lint": "yarn check-types && yarn xo src/**/**/*.tsx",
+    "lint:prettier": "prettier src/**/**/*.tsx -w",
     "check-types": "tsc",
     "prepare": "yarn build",
-    "prerelease": "yarn lint:fix && yarn test:coverage",
+    "prerelease": "yarn lint --fix && yarn test:coverage",
     "release": "yarn publish",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "gatsby": "^2.20.12",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^16",
+    "react-dom": "^16",
     "react-helmet": "^5.2.1"
   },
   "dependencies": {
@@ -53,7 +53,7 @@
     "@fontsource/righteous": "^4.2.0",
     "@fontsource/roboto": "^4.2.0",
     "@fontsource/roboto-mono": "^4.2.0",
-    "@rockinblocks/riff": "0.1.0-alpha.1",
+    "@rockinblocks/riff": "0.1.0",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
@@ -73,9 +73,9 @@
     "@testing-library/user-event": "^12.8.1",
     "@types/classnames": "^2.2.11",
     "@types/enzyme": "^3.10.8",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.1",
-    "@types/react-helmet": "^6.1.1",
+    "@types/react": "^16",
+    "@types/react-dom": "^16",
+    "@types/react-helmet": "^5",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
@@ -114,12 +114,13 @@
     "prettier": "^2.2.1",
     "process": "^0.11.10",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
+    "react": "^16",
     "react-app-polyfill": "^2.0.0",
     "react-docgen-typescript": "^1.21.0",
-    "react-dom": "^17.0.1",
+    "react-dom": "^16",
     "react-styleguidist": "^11.1.5",
-    "react-test-renderer": "^17.0.1",
+    "react-test-renderer": "^16",
+    "react-typography": "^0.16.20",
     "rimraf": "^3.0.2",
     "rollup": "^2.40.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -139,6 +140,7 @@
     "stylelint-scss": "^3.19.0",
     "ts-loader": "^8.0.17",
     "typescript": "^4.2.3",
+    "typography": "^0.16.21",
     "url-loader": "^4.1.1",
     "webpack": "^5.24.3"
   },
@@ -217,6 +219,14 @@
     "exclude": "node_modules"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "ava": "^3.15.0",
+    "clsx": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "eslint-config-xo-react": "^0.25.0",
+    "eslint-config-xo-typescript": "^0.41.1",
+    "eslint-plugin-ava": "^12.0.0",
+    "symlink-dir": "^5.0.1",
+    "typescript-plugin-css-modules": "^3.2.0",
+    "xo": "^0.40.1"
   }
 }

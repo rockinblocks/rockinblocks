@@ -1,21 +1,19 @@
-import React, { FC } from "react"
-import { Link } from "gatsby"
-import { NavbarToggle } from "../NavbarToggle"
-import { Box, Col, Container, Row } from "../../Layout"
-import styles from "./Navbar.scss"
-import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg"
-import { ReactComponent as LogoMobile } from "../../../assets/rockinblocks-no-mark.svg"
-import { ReactComponent as IconGitHub } from "../../../assets/icon-github.svg"
+import React, { FC } from "react";
+import { Link } from "gatsby";
+import { NavbarToggle } from "../NavbarToggle";
+import { Box, Col, Container, Row } from "../../Layout";
+import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg";
+import styles from "./Navbar.scss";
 
 export interface INavbarProps {
-  appName?: string
+  appName?: string;
 }
 
 export const Navbar: FC<INavbarProps> = props => {
-  const { appName } = props
+  const { appName } = props;
 
   return (
-    <div className={styles["navbar"]}>
+    <div className={styles.navbar}>
       <Container display="flex">
         <Row>
           <Col
@@ -25,15 +23,13 @@ export const Navbar: FC<INavbarProps> = props => {
             justifyContent="center"
           >
             <Box>
-              <Link to="/" className={styles["navbar__brand"]}>
+              <Link to="/" className={styles.navbar__brand}>
                 <span>
                   {Logo ? (
-                    <>
-                      <Logo
-                        data-rb="navbar-logo"
-                        className={styles["navbar__logo"]}
-                      />
-                    </>
+                    <Logo
+                      data-rb="navbar-logo"
+                      className={styles.navbar__logo}
+                    />
                   ) : (
                     <span>{appName}</span>
                   )}
@@ -52,23 +48,16 @@ export const Navbar: FC<INavbarProps> = props => {
               flexDirection="column"
               justifyContent="center"
             >
-              <ul className={styles["navbar__navigation"]}>
+              <ul className={styles.navbar__navigation}>
                 <li>
-                  <Link to="/docs/v0.1.0/introduction" target="_blank">
+                  <Link to="/docs/v0/introduction">
                     <span>Docs</span>
                   </Link>
                 </li>
                 <li>
-                  <a
-                    href="http://github.com/rockinblocks/rockindocs"
-                    target="_blank"
-                    rel="noreferrer"
-                    data-rb="navbar-github-anchor"
-                  >
-                    <div className={styles["navbar__github"]}>
-                      <IconGitHub />
-                    </div>
-                  </a>
+                  <Link to="/blog">
+                    <span>Blog</span>
+                  </Link>
                 </li>
               </ul>
             </Box>
@@ -77,5 +66,5 @@ export const Navbar: FC<INavbarProps> = props => {
         </Row>
       </Container>
     </div>
-  )
-}
+  );
+};

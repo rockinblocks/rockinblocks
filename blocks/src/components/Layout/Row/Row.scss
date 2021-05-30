@@ -3,5 +3,15 @@
 .row {
   display: flex;
   width: 100%;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
 }

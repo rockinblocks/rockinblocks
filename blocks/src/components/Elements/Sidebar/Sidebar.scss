@@ -1,19 +1,17 @@
 @import "../../../styles/shared";
 
 .sidebar {
-  background: linear-gradient($light, rgba($light, 0.2));
   font-family: $font-family-main;
   color: $light;
   font-weight: $button-font-weight;
   display: flex;
   font-size: 1.675rem;
   width: 100%;
-  padding: spacing(sm) spacing(xs);
-  border-radius: 0.5rem;
-  position: sticky;
-  top: 0;
-
+  padding: spacing(sm) 0;
+  
   @include media-breakpoint-up(lg) {
+    position: sticky;
+    top: 0;
     min-height: 40vh;
   }
 }
@@ -42,7 +40,7 @@
 
 .sidebar__navigation li {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   padding: (spacing(xs) / 4) spacing(xs);
   border-radius: 2rem;
   transition: background-color $transition-time;

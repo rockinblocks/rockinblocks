@@ -3,18 +3,11 @@
 .button {
   text-decoration: none;
   display: inline-flex;
-}
-
-.button__inner {
-  padding: spacing(xs) spacing(sm);
-  background-color: palette(primary);
-  font-family: $font-family-main;
-  color: $button-font-color;
-  font-weight: $button-font-weight;
   border-radius: $button-border-radius;
-  justify-content: center;
-  transition: background-color $transition-time, transform $transition-time;
-  transform: translateY(0);
+  background-color: palette(primary);
+  border: none;
+  padding: 0;
+  transition: background-color $transition-time;
 
   @include media-breakpoint-up(lg) {
     max-width: 12rem;
@@ -25,8 +18,16 @@
     }
 
     &:active {
-      transform: translateY(0.125rem);
       background-color: darken($primary, 20%);
     }
   }
+}
+
+.button__inner {
+  padding: spacing(xs) spacing(sm);
+  border-radius: $button-border-radius;
+  font-family: $font-family-main;
+  color: $button-font-color;
+  font-weight: $button-font-weight;
+  justify-content: center;
 }
