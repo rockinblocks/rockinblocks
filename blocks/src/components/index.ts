@@ -2,6 +2,7 @@
 export { Alert } from './Elements/Alert';
 export { Badge } from './Elements/Badge';
 export { Button } from './Elements/Button';
+export { GitHubButton } from './Elements/GitHubButton';
 export { Navbar } from './Elements/Navbar';
 export { Post } from './Elements/Post';
 export { Sidebar } from './Elements/Sidebar';

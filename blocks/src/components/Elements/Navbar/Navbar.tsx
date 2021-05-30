@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "gatsby";
 import { NavbarToggle } from "../NavbarToggle";
+import { GitHubButton } from "../GitHubButton";
 import { Box, Col, Container, Row } from "../../Layout";
 import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg";
 import styles from "./Navbar.scss";
@@ -58,6 +59,9 @@ export const Navbar: FC<INavbarProps> = props => {
                   <Link to="/blog">
                     <span>Blog</span>
                   </Link>
+                </li>
+                <li>
+                  <GitHubButton />
                 </li>
               </ul>
             </Box>

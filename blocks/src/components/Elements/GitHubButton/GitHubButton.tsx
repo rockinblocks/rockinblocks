@@ -11,6 +11,7 @@ export const GitHubButton: FC = (): JSX.Element => {
       <a
         className="github-button"
         href="https://github.com/rockinblocks/rockinblocks"
+        data-color-scheme="no-preference: light; light: dark_dimmed; dark: dark_dimmed;"
         data-icon="octicon-star"
         data-size="large"
         data-show-count="true"
