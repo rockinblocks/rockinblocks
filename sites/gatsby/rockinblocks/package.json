@@ -1,7 +1,7 @@
 {
   "name": "@rockinblocks/gatsby-starter-rockinblocks",
   "description": "Page builder GatsbyJS starter powered by Tina CMS",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0",
   "author": "Jed Darrohn <jed@rockinblocks.io>",
   "homepage": "https://rockinblocks.io",
   "dependencies": {
@@ -10,7 +10,7 @@
     "@fontsource/righteous": "^4.2.0",
     "@fontsource/roboto": "^4.2.0",
     "@fontsource/roboto-mono": "^4.2.0",
-    "@rockinblocks/gatsby-plugin-rockinblocks": "0.1.0-alpha.4",
+    "@rockinblocks/gatsby-plugin-rockinblocks": "0.1.0",
     "@storybook/addon-actions": "^6.2.2",
     "@storybook/addon-essentials": "^6.2.2",
     "@storybook/addon-links": "^6.2.2",
@@ -79,7 +79,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop -p 8787",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "lint": "eslint src/components/**/*.{js,jsx}",
+    "lint": "xo src/components/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -93,5 +93,9 @@
   },
   "bugs": {
     "url": "https://github.com/rockinblocks/gatsby-starter-rockinblocks/issues"
+  },
+  "devDependencies": {
+    "eslint-config-xo-react": "^0.25.0",
+    "xo": "^0.40.1"
   }
 }

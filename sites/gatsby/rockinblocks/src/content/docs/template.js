@@ -1,10 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
-import { usePlugin } from "tinacms"
-import { useRemarkForm } from "gatsby-tinacms-remark"
 import Layout from "../../components/mainLayout"
-import SEO from "../../components/Utilities/SEO"
+import { SEO } from "../../components/Utilities/SEO"
 import {
   Box,
   Col,
@@ -18,14 +16,10 @@ import {
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const [markdownRemark, form] = useRemarkForm(data.markdownRemark)
-  const { frontmatter, html, plainText } = markdownRemark
-  const { title, date, description, keywords, imageBucket, type } = frontmatter
+  const { frontmatter, html, plainText } = data.markdownRemark
+  const { title, date, description, keywords, type } = frontmatter
   const { edges: documents } = data.allMarkdownRemark
   const [menuItems, setMenuItems] = useState([])
-
-  // Register Tina form
-  usePlugin(form)
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -51,7 +45,7 @@ export default function Template({
       },
     },
     keywords: keywords,
-    image: imageBucket,
+    image: "https://oblong-objects-media.s3-us-west-2.amazonaws.com/oblong-logo-160x160.png",
   }
 
   const sortAndSetItems = useCallback(
@@ -129,7 +123,6 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      ...TinaRemark
       html
       frontmatter {
         date_created(formatString: "MMMM DD, YYYY")

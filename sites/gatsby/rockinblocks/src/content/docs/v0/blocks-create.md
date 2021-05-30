@@ -9,7 +9,7 @@ order: '4.1'
 type: document
 ---
 
-Let's work together to create a block called `HomeIntroduction`.
+Let's work together to create a block called `CallToAction`.
 
 ## Generate the block with Riff 🎸
 
@@ -19,12 +19,12 @@ Let's work together to create a block called `HomeIntroduction`.
 # Run the command from the root of the workspace
 # The block will be generated within blocks/src/components/Blocks
 
-$ yarn riff --name=HomeIntroduction
+$ yarn riff --name=CallToAction
 ```
 
 You should see the following success message:
 
-```bash
-🎸🎶🤘 Successfully created HomeIntroduction! 🤘🎶🎸
+```
+🎸🎶🤘 Successfully created CallToAction! 🤘🎶🎸
 Check your blocks/src/components/Blocks directory for you new block!
 ```

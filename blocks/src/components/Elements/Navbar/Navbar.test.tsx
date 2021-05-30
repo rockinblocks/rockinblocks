@@ -13,8 +13,8 @@ describe("<Navbar />", () => {
   });
 
   it("should render the Docs link", () => {
-    expect(wrapper.find({ to: "/docs/v0.1.0/introduction" })).toHaveLength(1);
-    expect(wrapper.find({ to: "/docs/v0.1.0/introduction" }).text()).toEqual(
+    expect(wrapper.find({ to: "/docs/v0/introduction" })).toHaveLength(1);
+    expect(wrapper.find({ to: "/docs/v0/introduction" }).text()).toEqual(
       "Docs"
     );
   });

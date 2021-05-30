@@ -10,9 +10,7 @@ type: document
 ---
 ## What is Rockin' Blocks?
 
-### Work better. Make better work.
-
-**Rockin' Blocks** is a DesignOps starter kit for developing a modular block library that can be shared and reused throughout multiple React applications.
+**Rockin' Blocks** is a DesignOps starter kit for developing a modular block library that can be shared and reused throughout multiple Gatsby applications.
 
 **Rockin' Blocks** could be great if you are looking for:
 

@@ -1,10 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import { usePlugin } from "tinacms"
-import { useRemarkForm } from "gatsby-tinacms-remark"
 import Layout from "../../components/mainLayout"
-import SEO from "../../components/Utilities/SEO"
+import { SEO } from "../../components/Utilities/SEO"
 import {
   Box,
   Col,
@@ -13,16 +11,13 @@ import {
   Footer,
   Row,
 } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import { propTypes } from "react-bootstrap/esm/Image"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const [markdownRemark, form] = useRemarkForm(data.markdownRemark)
-  const { frontmatter, html, plainText } = markdownRemark
-  const { title, date, description, keywords, imageBucket } = frontmatter
-
-  // Register Tina form
-  usePlugin(form)
+  const { frontmatter, html, plainText } = data.markdownRemark
+  const { title, date, description, keywords, type } = frontmatter
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -48,7 +43,7 @@ export default function Template({
       },
     },
     keywords: keywords,
-    image: imageBucket,
+    image: "https://oblong-objects-media.s3-us-west-2.amazonaws.com/oblong-logo-160x160.png",
   }
 
   return (
@@ -63,7 +58,7 @@ export default function Template({
         <Row display="flex">
           <Col flex=".80">
             <Box display="flex" flexDirection="column">
-              <Document frontmatter={frontmatter} html={html} />
+              <Document frontmatter={frontmatter} html={html} type={type} />
             </Box>
           </Col>
         </Row>
@@ -76,13 +71,11 @@ export default function Template({
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      ...TinaRemark
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
         image
-        imageBucket
         title
         description
         keywords

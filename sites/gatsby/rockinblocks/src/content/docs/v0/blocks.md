@@ -9,6 +9,10 @@ order: '4.0'
 type: document
 ---
 
+## What is a block?
+
 A **block** can be defined as simply a section of a website. Blocks can range in functionality, from simply displaying a heading and some content, to allowing users to submit a form or checkout from an ecommerce store.
 
-**Rockin' Blocks** allows developers to easily create, develop, test, maintain, and share these blocks.
+## What is Rockin' Blocks?
+
+**Rockin' Blocks** allows developers to easily create, develop, test, maintain, and share these blocks. This documentation will take you through the creation of your first block: a simple call-to-action block that can be used throughout all of your Rockin' Blocks Javascript applications.

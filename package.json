@@ -1,6 +1,6 @@
 {
-  "name": "@rockinblocks/rockinblocks",
-  "version": "0.1.0-alpha.1",
+  "name": "@rockinblocks/workspace",
+  "version": "0.1.0",
   "license": "MIT",
   "private": true,
   "workspaces": {
@@ -30,6 +30,7 @@
     "web:content:hoist": "symlink-dir sites/gatsby/rockinblocks/src/content content/rockinblocks",
     "web:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
     "web:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build",
+    "web:lint": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks lint",
     "riff": "yarn --cwd blocks riff"
   },
   "dependencies": {

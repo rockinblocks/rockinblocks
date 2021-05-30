@@ -21,11 +21,13 @@ export { Container } from './Layout/Container';
 export { Document } from './Layout/Document';
 export { Footer } from './Layout/Footer';
 export { Header } from './Layout/Header';
+export { Row } from './Layout/Row';
 
 export type { IBoxProps } from './Layout/Box';
 export type { IContainerProps } from './Layout/Container';
 export type { IColProps } from './Layout/Col';
 export type { IDocumentProps } from './Layout/Document';
+export type { IRowProps } from './Layout/Row';
 
 // Blocks
 export { Hero } from './Blocks/Hero';

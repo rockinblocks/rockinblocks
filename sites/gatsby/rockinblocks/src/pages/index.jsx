@@ -13,7 +13,7 @@ const Home = ({ data, location }) => {
         <SEO title="A practical Yarn workspace powered Gatsby, Storybook, and Tina CMS for building a block library in React." />
         <Hero
           heading="Rock out with your blocks out."
-          seoHeading="An open-Gatsby workspace with documentation-driven development in mind, focused on improving startup success."
+          seoHeading="A Gatsby Yarn workspace focused on helping developers deliver successful products and get to MVP faster"
           subheading="Create your own block library in React. Rockin' Blocks is built with one of the fastest web frameworks, GatsbyJS, which means when it comes to performance, Rockin' Blocks can really shred."
           buttonText="Start a Project"
           buttonLink="/docs/v0/introduction"

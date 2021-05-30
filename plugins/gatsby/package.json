@@ -1,6 +1,6 @@
 {
   "name": "@rockinblocks/gatsby-plugin-rockinblocks",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0",
   "description": "A minimal boilerplate for the essential files Gatsby looks for in a plugin",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,6 @@
     "react-helmet": "^5.2.1"
   },
   "dependencies": {
-    "@rockinblocks/rockinblocks": "0.1.0-alpha"
+    "@rockinblocks/rockinblocks": "0.1.0"
   }
 }
