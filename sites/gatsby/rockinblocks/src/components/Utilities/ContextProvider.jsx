@@ -1,15 +1,12 @@
-import React from 'react'
-import { ThemeProvider } from './Theme'
-import { SettingsProvider } from './Settings'
-import { BuilderProvider } from '../Builder'
+import React from "react"
+import { ThemeProvider } from "./Theme"
+import { SettingsProvider } from "./Settings"
 
 export const ContextProvider = ({ children }) => {
   return (
     <SettingsProvider>
       <ThemeProvider>
-          <BuilderProvider>
-            {children}
-          </BuilderProvider>
+        {children}
       </ThemeProvider>
     </SettingsProvider>
   )
