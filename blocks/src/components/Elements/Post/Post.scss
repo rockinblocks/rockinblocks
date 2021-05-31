@@ -5,3 +5,11 @@
   background-color: #ffffff;
   flex: 1;
 }
+
+.post__link {
+  font-family: $font-family-headings;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+  }
+}

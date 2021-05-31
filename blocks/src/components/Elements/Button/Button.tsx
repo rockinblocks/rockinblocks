@@ -7,11 +7,12 @@ export interface IButtonProps {
   backgroundColor?: string;
   textColor?: string;
   to?: string;
+  href?: string;
   onClick?: (event: MouseEvent) => void;
 }
 
 export const Button: FC<IButtonProps> = props => {
-  const { text, backgroundColor, textColor, to } = props;
+  const { text, backgroundColor, textColor, to, href } = props;
 
   const Wrapper: FC = ({ children }): JSX.Element => {
     if (to) {
@@ -19,6 +20,14 @@ export const Button: FC<IButtonProps> = props => {
         <Link className={styles.button} to={to}>
           {children}
         </Link>
+      );
+    }
+
+    if (href) {
+      return (
+        <a style={{ textDecoration: "none" }} href={href}>
+          {children}
+        </a>
       );
     }
 
