@@ -20,6 +20,7 @@ export interface IPostsProps {
 
 export const Posts: FC<IPostsProps> = ({ posts }): JSX.Element => (
   <div className={styles.posts}>
+    <h1>The Rockin' Blog</h1>
     {posts?.map(({ node }: PostNode) => {
       const { path, title, date }: PostFrontmatter = node.frontmatter;
       return (
