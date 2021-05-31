@@ -6,6 +6,8 @@ describe("<GitHubButton />", () => {
   it("should render", () => {
     const wrapper = shallow(<GitHubButton />);
 
-    expect(wrapper.html()).toBeTruthy();
+    expect(wrapper.find("a").props().href).toEqual(
+      "https://github.com/rockinblocks/rockinblocks"
+    );
   });
 });
