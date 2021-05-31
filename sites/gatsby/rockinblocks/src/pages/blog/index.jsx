@@ -18,9 +18,6 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="A practical Yarn workspace powered Gatsby, Storybook, and Tina CMS for building a block library in React." />
       <Container>
         <Row>
-          <h1>Rockin' Blog</h1>
-        </Row>
-        <Row>
           {posts && <Posts posts={posts} />}
         </Row>
       </Container>
