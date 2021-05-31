@@ -14,8 +14,12 @@ export const Post: FC<IPostProps> = ({ path, title, date }): JSX.Element => {
       <article key={path}>
         <header>
           <div className={styles.post__body}>
-            <h3 className={styles.post__link}>
-              <Link style={{ boxShadow: "none" }} to={path}>
+            <h3 className={styles.post__title}>
+              <Link
+                className={styles.post__link}
+                style={{ boxShadow: "none" }}
+                to={path}
+              >
                 {title}
               </Link>
             </h3>
