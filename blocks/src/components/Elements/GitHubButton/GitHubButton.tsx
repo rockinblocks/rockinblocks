@@ -17,7 +17,7 @@ export const GitHubButton: FC = (): JSX.Element => {
         data-show-count="true"
         aria-label="Star rockinblocks/rockinblocks on GitHub"
       >
-        Star
+        GitHub
       </a>
     </div>
   );
