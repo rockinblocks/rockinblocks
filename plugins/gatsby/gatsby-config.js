@@ -4,6 +4,7 @@ const path = require('path')
 // Potentially pull in from a settings JSON file
 module.exports = {
 	plugins: [
+		`gatsby-plugin-styled-components`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
