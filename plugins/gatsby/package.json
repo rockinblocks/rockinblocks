@@ -1,7 +1,7 @@
 {
   "name": "@rockinblocks/gatsby-plugin-rockinblocks",
   "version": "0.1.1",
-  "description": "A minimal boilerplate for the essential files Gatsby looks for in a plugin",
+  "description": "Anything needed by Rockin' Blocks to work within Gatsby",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,8 +11,8 @@
     "gatsby",
     "gatsby-plugin"
   ],
-  "author": "Kyle Gill <kyle.robert.gill@gmail.com>",
-  "license": "0BSD",
+  "author": "Jed Darrohn <jed@rockinblocks.io>",
+  "license": "MIT",
   "peerDependencies": {
     "gatsby": "^2.20.12",
     "react": "^16",
