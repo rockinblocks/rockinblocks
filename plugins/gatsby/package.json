@@ -21,5 +21,8 @@
   },
   "dependencies": {
     "@rockinblocks/rockinblocks": "0.1.0"
+  },
+  "devDependencies": {
+    "gatsby-plugin-styled-components": "^4.6.0"
   }
 }
