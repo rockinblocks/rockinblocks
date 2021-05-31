@@ -7,7 +7,7 @@ keywords: >-
   storybook
 path: /docs/v0/blocks/storybook
 description: Getting set up with Rockin' Blocks is a breeze.
-order: '5.0'
+order: '5.3'
 type: document
 ---
 ## Storybook

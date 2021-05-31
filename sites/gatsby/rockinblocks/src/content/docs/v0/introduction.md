@@ -19,9 +19,9 @@ type: document
 - Markdown support for easy-to-manage blog posts and documentation
 - Markdown & PrismJS code highlighting with Nord theme out of box 🥶
 - Structured data for every page, post, and piece of documentation, as well as XML sitemap
-- Easily hook up CI/CD with [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/), [AWS Amplify]()
+- Easily hook up CI/CD with [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/)
 
-## What is Rockin' Blocks?
+## Who could benefit from Rockin' Blocks?
 
 **Rockin' Blocks** is a DesignOps starter kit for developing a modular block library that can be shared and reused throughout multiple Gatsby applications.
 
