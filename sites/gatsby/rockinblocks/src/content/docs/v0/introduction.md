@@ -8,7 +8,20 @@ description: Getting set up with Rockin' Blocks is a breeze.
 order: '1.0'
 type: document
 ---
-## What is Rockin' Blocks?
+
+## Features
+
+- Craft React blocks, and the Gatsby sites built with those blocks, in a simple Yarn workspace
+- Storybook included with example stories for our core elements to help you get started
+- Start testing with Jest/Enzyme immediately with examples
+- Generate a working block with a single CLI command
+- No Bootstrap, Material UI, or Tailwind. Add what you want, as you see fit.
+- Markdown support for easy-to-manage blog posts and documentation
+- Markdown & PrismJS code highlighting with Nord theme out of box 🥶
+- Structured data for every page, post, and piece of documentation, as well as XML sitemap
+- Easily hook up CI/CD with [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/)
+
+## Who could benefit from Rockin' Blocks?
 
 **Rockin' Blocks** is a DesignOps starter kit for developing a modular block library that can be shared and reused throughout multiple Gatsby applications.
 

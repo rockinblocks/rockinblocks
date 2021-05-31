@@ -20,6 +20,8 @@ $ gatsby new fresh-rockinblocks https://github.com/rockinblocks/rockinblocks
 
 ### Use the GitHub repository
 
+[https://github.com/rockinblocks/rockinblocks](https://github.com/rockinblocks/rockinblocks)
+
 ```bash
 # Clone down the Yarn workspace a new project folder
 # We will call our app rb-demo-app
@@ -32,7 +34,6 @@ $ git clone https://github.com/rockinblocks/rockinblocks.git rb-demo-app
 $ cd rb-demo-app && rm -rf ./.git && git init
 
 ```
-
 
 ## Workspace
 
@@ -70,6 +71,18 @@ When working within a monorepo, there are many folders, and it's easily to find 
 # You can delete this folder at any time without affecting the core library
 
 $ yarn blocks:hoist
+```
+
+### Build your CLI tool (Optional
+
+If you don't want to use the CLI tool, you can skip this step. 
+
+Rockin' Blocks ships with a simple CLI tool to generate new blocks called **Riff**. It's shipped with the monorepo, so you'll need to build the tool to use it.
+
+```bash
+# This will create the /dist directory in the CLI package
+
+$ yarn workspace @rockinblocks/cli build
 ```
 
 ### Start the Gatsby site

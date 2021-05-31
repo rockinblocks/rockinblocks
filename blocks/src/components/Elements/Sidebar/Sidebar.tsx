@@ -13,7 +13,7 @@ export interface ISidebarProps {
 
 export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
   return (
-    <div className={styles?.sidebar}>
+    <div className={styles.sidebar}>
       <div className={styles["sidebar__navigation-wrapper"]}>
         <ul className={styles.sidebar__navigation}>
           {menuItems?.map((menuItem: ISidebarMenuItem) => {
@@ -25,6 +25,17 @@ export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
               </li>
             );
           })}
+        </ul>
+        <ul className={styles.sidebar__navigation}>
+          <li className={styles["sidebar__nav-item-top"]}>
+            <a href="https://github.com/rockinblocks/rockinblocks">GitHub</a>
+          </li>
+          <li className={styles["sidebar__nav-item-top"]}>
+            <a href="https://discord.gg/du2rWCDtRF">Discord</a>
+          </li>
+          <li className={styles["sidebar__nav-item-top"]}>
+            <a href="https://twitter.com/RockinBlocksJS">Twitter</a>
+          </li>
         </ul>
       </div>
     </div>

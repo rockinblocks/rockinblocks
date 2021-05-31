@@ -5,7 +5,7 @@ date_updated: '2020-04-12'
 keywords: 'gatsby, tinacms, blocks, gatsby page builder'
 path: /docs/v0/blocks/structure
 description: Understanding blocks and how they work with Gatsby and Tina CMS.
-order: '4.2'
+order: '5.2'
 type: document
 ---
 

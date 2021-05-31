@@ -1,11 +1,11 @@
 ---
 title: 'Blocks: Create a Block'
-date_created: '2020-04-12'
-date_updated: '2020-04-12'
+date_created: '2020-05-31'
+date_updated: '2020-05-31'
 keywords: 'gatsby, tinacms, blocks, gatsby page builder'
 path: /docs/v0/blocks/create
 description: Understanding blocks and how they work with Gatsby and Tina CMS.
-order: '4.1'
+order: '5.1'
 type: document
 ---
 

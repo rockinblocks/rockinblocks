@@ -4,6 +4,7 @@ export interface IButtonProps {
     backgroundColor?: string;
     textColor?: string;
     to?: string;
+    href?: string;
     onClick?: (event: MouseEvent) => void;
 }
 export declare const Button: FC<IButtonProps>;

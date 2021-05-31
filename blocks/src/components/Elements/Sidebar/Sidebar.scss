@@ -29,7 +29,7 @@
 .sidebar__navigation {
   padding: 0;
   list-style: none;
-  margin: 0;
+  margin: 0 0 spacing(sm);
   display: flex;
   flex-direction: column;
 }
@@ -41,10 +41,9 @@
 .sidebar__navigation li {
   font-size: 1rem;
   font-weight: 600;
-  padding: (spacing(xs) / 4) spacing(xs);
+  padding: (spacing(xs) / 2) spacing(xs);
   border-radius: 2rem;
   transition: background-color $transition-time;
-  margin-bottom: spacing(xs) / 4;
 }
 
 .sidebar__navigation li:hover {
@@ -55,11 +54,6 @@
 .sidebar__navigation li:active {
   background-color: darken($light, 5%);
   cursor: pointer;
-}
-
-
-.sidebar__navigation li:last-of-type {
-  padding-right: 0;
 }
 
 .sidebar__nav-item-top a {
@@ -73,4 +67,8 @@
   font-size: 0.875rem !important;
   font-weight: 400 !important;
   color: $text-color-muted !important;
+}
+
+.sidebar__buttons {
+  margin-top: spacing(sm);
 }

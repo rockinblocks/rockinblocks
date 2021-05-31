@@ -40,7 +40,7 @@ I wanted to help startups get to an MVP as quickly as possible, and I needed **R
 
 ### Crafting elegant design systems
 
-
+**Rockin' Blocks** pairs extremely well with design software like Sketch and Figma, where concepts like frames and symbols are easily translated to elements and blocks in **Rockin' Blocks**. Make each component picture perfect while building quickly in Storybook.
 
 ### Always remain open source for the lifecycle of the project
 

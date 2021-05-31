@@ -52,4 +52,32 @@
       color: $text-color;
     }
   }
+
+  table {
+    background-color: $dark;
+    width: 100%;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+
+  thead {
+    border-radius: 0.25rem;
+  }
+
+  td, th {
+    color: darken($light, 15%);
+    padding: spacing(xs);
+  }
+
+  th {
+    background-color: rgba(#000000, 0.15);
+    color: $white;
+    font-weight: 400;
+    border: none;
+  }
+
+  table code {
+    background-color: rgba(#000000, 0.15);
+    font-size: 1rem;
+  }
 }
