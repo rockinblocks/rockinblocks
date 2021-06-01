@@ -20,7 +20,7 @@
     "react-helmet": "^5.2.1"
   },
   "dependencies": {
-    "@rockinblocks/rockinblocks": "0.1.0"
+    "@rockinblocks/rockinblocks": "0.1.1"
   },
   "devDependencies": {
     "gatsby-plugin-styled-components": "^4.6.0"

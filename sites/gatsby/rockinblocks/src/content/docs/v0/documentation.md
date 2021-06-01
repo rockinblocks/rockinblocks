@@ -11,7 +11,7 @@ type: document
 
 ## Markdown support
 
-**Rockin' Blocks** provides support Markdown out of the box. Simply add a new Markdown file to your site's `src/content/docs` directory. There is a small amount of "frontmatter" used to tell Rockin' Blocks a little bit about the document:
+**Rockin' Blocks** provides support Markdown out of the box. Simply add a new Markdown file to your site's `src/content/docs` directory. There is a small amount of "frontmatter" used to tell **Rockin' Blocks** a little bit about the document:
 
 ```
 ---
