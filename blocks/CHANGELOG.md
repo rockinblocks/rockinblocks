@@ -1,9 +1,10 @@
 ## Release 0.1.1
 
-### TBD
+### Monday, May 31, 2021
 
 - Adding in GitHub stargazers button without external package
 - Navbar now includes GitHubButton component
+- Buttons can have an `href` prop for external links
 
 ## Release 0.1.0
 
