@@ -25,6 +25,13 @@ module.exports = {
         path: path.join(__dirname, `/src/content/posts`),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: path.join(__dirname, `/src/content/pages`),
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
