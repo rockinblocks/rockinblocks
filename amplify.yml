@@ -6,6 +6,7 @@ frontend:
           - nvm install 15
           - yarn install
           - yarn blocks:build
+          - yarn gatsby clean
       build:
         commands:
           - yarn web:build
