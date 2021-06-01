@@ -1,14 +1,14 @@
 {
   "name": "@rockinblocks/workspace",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "private": true,
   "workspaces": {
     "packages": [
       "blocks",
       "cli",
-      "plugins/**/*",
-      "sites/gatsby/**/*"
+      "plugins/**",
+      "sites/**/**"
     ],
     "nohoist": [
       "**/@fontsource",
@@ -16,7 +16,7 @@
     ]
   },
   "scripts": {
-    "clean": "rm -rf node_modules blocks/node_modules sites/**/**/node_modules sites/**/**/.cache sites/**/**/public",
+    "clean": "rm -rf node_modules blocks/node_modules sites/**/**/node_modules sites/**/**/.cache sites/**/**/public plugins/**/**/node_modules",
     "dev": "yarn blocks:sb & yarn web:dev",
     "build": "yarn blocks:build && yarn web:build",
     "blocks:sb": "yarn workspace @rockinblocks/rockinblocks storybook",
