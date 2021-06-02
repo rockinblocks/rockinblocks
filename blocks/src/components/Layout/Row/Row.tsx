@@ -13,10 +13,12 @@ export interface IRowProps {
 export const Row: React.FC<
   IRowProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = (props): JSX.Element => {
-  const { children, display, flexDirection, justifyContent, style } = props;
+  const { children, display, flexDirection, flexWrap, justifyContent, style } =
+    props;
   const styleProps = {
     display,
     flexDirection,
+    flexWrap,
     justifyContent,
     ...style,
   };

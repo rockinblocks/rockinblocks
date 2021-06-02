@@ -30,7 +30,7 @@ export const Hero: FC<IHeroProps> = props => {
             </Box>
           </Col>
 
-          <Col flex={0.45}>
+          <Col flex={0.45} flexDirection="column">
             <div className={styles["hero__image-wrapper"]}>
               <Vector />
             </div>

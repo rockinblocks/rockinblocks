@@ -31,8 +31,10 @@ export type { IDocumentProps } from './Layout/Document';
 export type { IRowProps } from './Layout/Row';
 
 // Blocks
+export { Content } from './Blocks/Content';
 export { Hero } from './Blocks/Hero';
 export { Posts } from './Blocks/Posts';
+export type { IContentProps } from './Blocks/Content';
 export type { IHeroProps } from './Blocks/Hero';
 export type { IPostsProps } from './Blocks/Posts';
 

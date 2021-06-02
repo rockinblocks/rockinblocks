@@ -14,8 +14,8 @@ type: document
 - Craft React blocks, and the Gatsby sites built with those blocks, in a simple Yarn workspace
 - Storybook included with example stories for our core elements to help you get started
 - Start testing with Jest/Enzyme immediately with examples
-- Generate a working block with a single CLI command
-- No Bootstrap, Material UI, or Tailwind. Add what you want, as you see fit.
+- Quickly generate a working block with a single CLI command
+- Easily add Bootstrap, Material UI, or TailwindCSS, or start from scratch.
 - Markdown support for easy-to-manage blog posts and documentation
 - Markdown & PrismJS code highlighting with Nord theme out of box 🥶
 - Structured data for every page, post, and piece of documentation, as well as XML sitemap

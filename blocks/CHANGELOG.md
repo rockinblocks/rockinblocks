@@ -1,3 +1,11 @@
+## Release 0.1.2
+
+### Tuesday, June 1, 2021
+
+- Adding a basic `Content` component as another example
+- Writing tests for `Content`
+- Some layout fixes to `Col`
+
 ## Release 0.1.1
 
 ### Monday, May 31, 2021
