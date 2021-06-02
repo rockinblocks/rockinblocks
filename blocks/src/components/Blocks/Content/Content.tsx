@@ -14,7 +14,7 @@ export const ContentIntro: React.FC<IContentIntroProps> = ({
   subheading,
 }) => {
   return (
-    <Box className={styles.content__intro} flex={0.6}>
+    <Box className={styles.content__intro}>
       <h3 className={styles.content__heading}>{heading}</h3>
       <p className={styles.content__subheading}>{subheading}</p>
     </Box>
@@ -32,7 +32,11 @@ export const ContentSection: FC<
   IContentSectionProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = ({ heading, body, buttonText, buttonLink }): JSX.Element => {
   return (
-    <Box>
+    <Box
+      display="flex"
+      flexDirection="column"
+      justifyContent="space-between"
+    >
       <div>
         <h3 className={styles["content__section-heading"]}>{heading}</h3>
         <p className={styles["content__section-body"]}>{body}</p>
@@ -58,20 +62,15 @@ export const Content: FC<
     <div className={styles.content}>
       <Container>
         <Row justifyContent="flex-end">
-          <Col flex={0.67}>
+          <Col flex={(2 / 3)}>
             <ContentIntro {...{ heading, subheading }} />
           </Col>
         </Row>
       </Container>
       <Container>
         <Row>
-          <Col
-            flex={1}
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-          >
-            <div style={{ padding: '1rem'}}>
+          <Col flex={1} display="flex" justifyContent="center" flexDirection="column">
+            <div style={{ padding: "1rem" }}>
               <Vector className={styles.content__vector} />
             </div>
           </Col>
@@ -80,11 +79,13 @@ export const Content: FC<
               <Row display="flex" flexWrap="wrap">
                 {sections?.map((sectionProps: IContentSectionProps) => {
                   return (
-                    <Col key={Math.random().toString(36)} flex={"1 0 50%"}>
+                    <Col
+                      key={Math.random().toString(36)}
+                      flex="1 0 50%"
+                      display="flex"
+                    >
                       <div className={styles.content__section}>
-                        <ContentSection
-                          {...sectionProps}
-                        />
+                        <ContentSection {...sectionProps} />
                       </div>
                     </Col>
                   );
