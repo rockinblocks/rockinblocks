@@ -10,35 +10,35 @@ const Home = ({ data, location }) => {
   const content = {
     heading: "Meet the Band",
     subheading:
-      "Gatsby, Storybook, and Tina CMS come together for the first time to bring you an elegant, efficient, and practical development experience.",
+      "Gatsby and Storybook come together for the first time to bring you an elegant, efficient, and practical development experience.",
     sections: [
       {
-        heading: "Sed ut perspiciatis",
+        heading: "Share your blocks across Gatsby apps",
         body:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
-        buttonText: "Learn More",
-        buttonLink: "Lorem Ipsum",
+          "Rockin' Blocks enables design systems to flourish with reusable block components across all of your applications.",
+        buttonText: "Start Jamming",
+        buttonLink: "/docs/v0/introduction",
       },
       {
-        heading: "Lorem ipsum dolor",
+        heading: "Gatsby & Storybook: Rock of Ages",
         body:
-          "Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-        buttonText: "Learn More",
-        buttonLink: "Lorem Ipsum",
+          "Gatsby and Storybook are two rockstars that are about to go on tour, and you're going with them! Pick up your axe and start shredding: start a Rockin' Blocks project today!",
+        buttonText: "Pick Up Your Axe",
+        buttonLink: "/docs/v0/introduction",
       },
       {
-        heading: "Nemo enim ipsam",
+        heading: "Documentation-driven jam sessions",
         body:
-          "Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.",
-        buttonText: "Learn More",
-        buttonLink: "Lorem Ipsum",
+          "Write your documentation hand-in-hand with your application. With Markdown support out of the box, including code highlighting with PrismJS and the Nord theme.",
+        buttonText: "Craft Masterpiece",
+        buttonLink: "/docs/v0/introduction",
       },
       {
-        heading: "Tempor incididunt",
+        heading: "Join the Discord",
         body:
-          "Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.",
-        buttonText: "Learn More",
-        buttonLink: "Lorem Ipsum",
+          "Interested in contributing? Want to share a great idea? Open source means open to new ideas and suggestions. Join the Discord!",
+        buttonText: "Join the Band",
+        buttonLink: "//discord.gg/vmFSbjuP25",
       },
     ],
   }
