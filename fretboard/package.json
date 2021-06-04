@@ -21,14 +21,14 @@
     "npm": ">=6"
   },
   "scripts": {
-    "prebuild": "yarn lint --fix && yarn lint:prettier && yarn test:coverage",
+    "prebuild": "yarn lint --fix && yarn lint:prettier",
     "build": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
     "build:dev": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c",
     "watch": "rimraf dist && cross-env NODE_ENV=production BABEL_ENV=production rollup -c -w",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors",
-    "lint": "yarn check-types && yarn xo src/**/**/*.tsx",
-    "lint:prettier": "prettier src/**/**/*.tsx -w",
+    "lint": "yarn check-types && yarn xo src/**/**/*.ts",
+    "lint:prettier": "prettier src/**/**/*.ts -w",
     "check-types": "tsc",
     "prepare": "yarn build",
     "prerelease": "yarn lint --fix && yarn test:coverage",
