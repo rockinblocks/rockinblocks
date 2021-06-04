@@ -5,11 +5,22 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import Header from "../components/Layout/Header/Header"
+import { useBackstage } from "../components/Utilities/Backstage"
 
 const Layout = ({ children }) => {
+  const { appName, appVersion, gtmID } = useBackstage;
+
+  useEffect(() => {
+    console.log({
+      appName,
+      appVersion,
+      gtmID,
+    })
+  },[]);
+
   return (
     <>
       <Header />

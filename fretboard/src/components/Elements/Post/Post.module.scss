@@ -1,0 +1,11 @@
+@import "../../../styles/shared";
+
+.post {
+  flex-direction: column;
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.post__link {
+  font-family: $font-family-headings;
+}

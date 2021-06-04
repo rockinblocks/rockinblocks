@@ -7,12 +7,15 @@
     "packages": [
       "blocks",
       "cli",
+      "fretboard",
       "plugins/**",
       "sites/**/**"
     ],
     "nohoist": [
       "**/@fontsource",
-      "**/@fontsource/**"
+      "**/@fontsource/**",
+      "**/@rockinblocks/fretboard",
+      "**/@rockinblocks/fretboard/**"
     ]
   },
   "scripts": {

@@ -1,0 +1,34 @@
+.d-flex {
+  display: flex !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.bg-dark {
+  background-color: #383838 !important;
+}
+
+.click-region {
+  position: relative;
+}
+
+.click-region__target {
+  color: currentColor;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+}

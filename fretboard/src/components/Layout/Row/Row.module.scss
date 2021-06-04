@@ -1,0 +1,17 @@
+@import "../../../styles/shared";
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}

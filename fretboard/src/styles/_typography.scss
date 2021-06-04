@@ -1,0 +1,50 @@
+@import "~@fontsource/poppins/700.css";
+@import "~@fontsource/roboto-mono/400.css";
+
+body {
+  color: var(--text-color);
+  font-family: $font-family-main;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h6 {
+    margin-bottom: 0;
+  }
+}
+
+.font-family-mono {
+  font-family: "Roboto Mono", monospace;
+}

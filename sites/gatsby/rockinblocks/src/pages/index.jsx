@@ -46,7 +46,7 @@ const Home = ({ data, location }) => {
   return (
     <ContextProvider>
       <Layout location={location} title={siteTitle}>
-        <SEO title="A practical Yarn workspace powered Gatsby, Storybook, and Tina CMS for building a block library in React." />
+        <SEO title="A practical Yarn workspace powered Gatsby and Storybook for crafting a reusable block library for your next big idea." />
         <Hero
           heading="Rock out with your blocks out."
           subheading="Save dozens of hours starting with Rockin' Blocks as your Gatsby starter theme. Craft an elegant block library in React immediately without wasting time with configuration. When it comes to performance, Rockin' Blocks can really shred: with caching, page loads are often less than a second."
