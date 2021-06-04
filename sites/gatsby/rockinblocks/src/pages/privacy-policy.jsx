@@ -77,7 +77,7 @@ word-break: break-word !important;
   return (
     <ContextProvider>
       <Layout location={location} title={siteTitle}>
-        <SEO title="A practical Yarn workspace powered Gatsby, Storybook, and Tina CMS for building a block library in React." />
+        <SEO title="A practical Yarn workspace powered by Gatsby and Storybook for building a block library in React." />
 				<Container>
 					<Document frontmatter={frontmatter} html={html} />
 				</Container>

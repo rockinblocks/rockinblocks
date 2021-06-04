@@ -13,7 +13,7 @@ export const Default = Template.bind({});
 Default.args = {
   heading: "Meet the Band",
   subheading:
-    "Gatsby, Storybook, and Tina CMS come together for the first time to bring you an elegant, efficient, and practical development experience.",
+    "Gatsby and Storybook come together for the first time to bring you an elegant, efficient, and practical development experience.",
   sections: [
     {
       heading: "Sed ut perspiciatis",
