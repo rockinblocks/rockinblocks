@@ -3,25 +3,25 @@ import clsx from "clsx";
 import styles from "./Badge.scss";
 
 export interface IBadgeProps {
-	text?: string;
-	textColor?: string;
-	variant?: string;
+  text?: string;
+  textColor?: string;
+  variant?: string;
 }
 
 export const Badge: FC<IBadgeProps & CSSProperties> = (
-	props: IBadgeProps
+  props: IBadgeProps
 ): JSX.Element => {
-	const { text, textColor } = props;
-	const style = {
-		color: textColor,
-		backgroundColor: "#fa3250"
-	};
+  const { text, textColor } = props;
+  const style = {
+    color: textColor,
+    backgroundColor: "#fa3250",
+  };
 
-	return (
-		<span className={clsx(styles.badge)} data-rb="badge">
-			<p style={style}>{text}</p>
-		</span>
-	);
+  return (
+    <span className={clsx(styles.badge)} data-rb="badge">
+      <p style={style}>{text}</p>
+    </span>
+  );
 };
 
 export default Badge;

@@ -6,7 +6,7 @@ export interface IAlertProps {
         text: string;
         location: string;
     };
-    onClick?: any;
+    onClick?: () => void;
 }
 export declare const Alert: FC<IAlertProps & CSSProperties>;
 export default Alert;
