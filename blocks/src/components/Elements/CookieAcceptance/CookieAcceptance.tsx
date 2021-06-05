@@ -20,12 +20,14 @@ export const CookieAcceptance: FC = (): JSX.Element => {
   return (
     <div className={styles.cookieAcceptance}>
       {!acceptedCookies && (
-        <div style={{ position: "fixed", bottom: 0, left: 0, right: 0 }}>
+        <div>
           <Alert
             text="This site uses cookies to improve the user experience for you and your users."
             type="info"
             link={{ text: "Accept Cookies", location: "/privacy-policy" }}
-            onClick={() => handleAcceptedCookies}
+            onClick={() => {
+              handleAcceptedCookies();
+            }}
           />
         </div>
       )}

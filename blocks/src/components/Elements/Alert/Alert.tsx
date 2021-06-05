@@ -26,7 +26,7 @@ export const Alert: FC<IAlertProps & CSSProperties> = ({
           <span>{text}</span>
         </Box>
         <Box>
-          <button type="button" {...onClick}>
+          <button type="button" onClick={onClick}>
             {link?.text}
           </button>
         </Box>
