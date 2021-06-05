@@ -37,3 +37,7 @@ type: document
 ### Where is the demo?
 
 If you are looking for the **Rockin' Blocks** demo, you're looking at it! When you spin up a new site from the **Rockin' Blocks** [monorepo](http://github.com/rockinblocks/rockindocs), you will get immediately have this site, fully functional, at your disposal.
+
+### Early Development
+
+*Rockin' Blocks** is still in early development, and things will still change from time to time. I will do my best to release logically and help with anything that may arise. Feel free to [create an issue](https://github.com/rockinblocks/rockinblocks/issues/new) if you encounter anything along the way.
