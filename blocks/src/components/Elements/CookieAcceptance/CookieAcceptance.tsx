@@ -12,9 +12,6 @@ export const CookieAcceptance: FC = (): JSX.Element => {
 
   useEffect(() => {
     const accepted = window.localStorage.getItem("rockinblocks_cookies");
-    console.log({
-      accepted,
-    });
     if (!accepted) {
       setAcceptedCookies(false);
     }
