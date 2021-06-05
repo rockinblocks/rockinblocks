@@ -13,9 +13,7 @@ const Layout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1000)
+    setIsLoading(false)
   }, [])
 
   return (
