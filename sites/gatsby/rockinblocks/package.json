@@ -1,7 +1,7 @@
 {
   "name": "@rockinblocks/gatsby-starter-rockinblocks",
   "description": "Page builder GatsbyJS starter powered by Tina CMS",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Jed Darrohn <jed@rockinblocks.io>",
   "homepage": "https://rockinblocks.io",
   "dependencies": {
@@ -10,7 +10,7 @@
     "@fontsource/righteous": "^4.2.0",
     "@fontsource/roboto": "^4.2.0",
     "@fontsource/roboto-mono": "^4.2.0",
-    "@rockinblocks/gatsby-plugin-rockinblocks": "0.1.3",
+    "@rockinblocks/gatsby-plugin-rockinblocks": "0.1.4",
     "@storybook/addon-actions": "^6.2.2",
     "@storybook/addon-essentials": "^6.2.2",
     "@storybook/addon-links": "^6.2.2",
