@@ -3,8 +3,8 @@
 // CSS Modules with SCSS support
 .alert {
   padding: spacing(xs);
-  background-color: $light;
-  color: $text-color;
+  background-color: $dark;
+  color: $light;
   display: flex;
   justify-content: space-between;
 }
