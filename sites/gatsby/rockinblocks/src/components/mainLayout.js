@@ -5,18 +5,31 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
-import Header from "../components/Layout/Header/Header"
+import { Loading, Navbar } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 const Layout = ({ children }) => {
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1000)
+  }, [])
+
   return (
     <>
-      <Header />
-      <div className="layout-wrapper">
-        <main>{children}</main>
-        {/* <Footer /> */}
-      </div>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <Navbar appName="Rockin' Blocks" color={"#ffffff"} backgroundColor="#ffffff" />
+          <div className="layout-wrapper">
+            <main>{children}</main>
+          </div>
+        </>
+      )}
     </>
   )
 }
