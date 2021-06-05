@@ -1,3 +1,9 @@
+## Release 0.1.3
+
+### Tuesday, June 4, 2021
+
+- Adding `Loading` to the main layout for now to mitigate FOUC
+
 ## Release 0.1.2
 
 ### Tuesday, June 1, 2021

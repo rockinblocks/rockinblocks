@@ -1,3 +1,11 @@
+## Release 0.1.3
+
+### Friday, June 4, 2021
+
+- Fixing `Col` within `Content` for better responsive behavior
+- Creating `Elements/Loading` to display when users first load the app
+- Small context fixes/changes in `installation.md`
+
 ## Release 0.1.2
 
 ### Tuesday, June 1, 2021
