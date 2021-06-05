@@ -3,9 +3,9 @@ import { shallow } from "enzyme";
 import { Posts } from "./Posts";
 
 describe("<Posts />", () => {
-  it("should render", () => {
-    const wrapper = shallow(<Posts posts={[]} />);
+	it("should render", () => {
+		const wrapper = shallow(<Posts posts={[]}/>);
 
-    expect(wrapper.html()).toBeTruthy();
-  });
+		expect(wrapper.html()).toBeTruthy();
+	});
 });

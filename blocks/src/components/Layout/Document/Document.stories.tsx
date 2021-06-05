@@ -4,13 +4,13 @@ import { Document, IDocumentProps } from "./Document";
 import DocumentData from "./data";
 
 export default {
-  title: "Layout/Document",
-  component: Document,
+	title: "Layout/Document",
+	component: Document
 } as Meta;
 
-const Template: Story<IDocumentProps> = args => <Document {...args} />;
+const Template: Story<IDocumentProps> = args => <Document {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {
-  ...DocumentData,
+	...DocumentData
 };
