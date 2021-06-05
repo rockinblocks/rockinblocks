@@ -26,6 +26,14 @@
   margin-bottom: spacing(md);
 }
 
+.content__column {
+  flex: 1 0 100%;
+  
+  @include media-breakpoint-up(md) {
+    flex: 1 0 50%;
+  }
+}
+
 .content__section {
   margin: spacing(xs) / 2;
   background-color: $light;
@@ -52,8 +60,4 @@
 
 .content__section-body {
   margin-bottom: spacing(md);
-}
-
-.content__vector {
-
 }
