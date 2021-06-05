@@ -14,8 +14,15 @@ export interface IColProps {
 export const Col: React.FC<
   IColProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = props => {
-  const { display, flex, flexDirection, justifyContent, children, style, className } =
-    props;
+  const {
+    display,
+    flex,
+    flexDirection,
+    justifyContent,
+    children,
+    style,
+    className,
+  } = props;
   const styleProps = {
     display,
     flex,
@@ -24,7 +31,7 @@ export const Col: React.FC<
     ...style,
   };
   return (
-    <div className={clsx([ styles.col, className ])} style={{ ...styleProps }}>
+    <div className={clsx([styles.col, className])} style={{ ...styleProps }}>
       {children}
     </div>
   );
