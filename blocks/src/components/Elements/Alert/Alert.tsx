@@ -10,26 +10,26 @@ export interface IAlertProps {
     text: string;
     location: string;
   };
-  onClick?: (event: MouseEvent) => void;
+  onClick?: () => void;
 }
 
 export const Alert: FC<IAlertProps & CSSProperties> = ({
   text,
   type,
   link,
-  onClick = null,
+  onClick,
 }): JSX.Element => {
   return (
     <div className={clsx(styles.alert, type)}>
-      <Container justifyContent="space-between">
+      <Container display="flex" justifyContent="space-between">
         <Box display="flex" justifyContent="center" flexDirection="column">
           <span>{text}</span>
         </Box>
-        <span>
+        <Box>
           <button type="button" {...onClick}>
             {link?.text}
           </button>
-        </span>
+        </Box>
       </Container>
     </div>
   );

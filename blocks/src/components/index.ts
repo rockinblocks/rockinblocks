@@ -2,7 +2,9 @@
 export { Alert } from './Elements/Alert';
 export { Badge } from './Elements/Badge';
 export { Button } from './Elements/Button';
+export { CookieAcceptance } from './Elements/CookieAcceptance';
 export { GitHubButton } from './Elements/GitHubButton';
+export { Loading } from './Elements/Loading';
 export { Navbar } from './Elements/Navbar';
 export { Post } from './Elements/Post';
 export { Sidebar } from './Elements/Sidebar';

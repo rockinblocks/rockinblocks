@@ -1,4 +1,5 @@
 import React, { CSSProperties, ReactNode } from "react";
+import clsx from "clsx";
 import styles from "./Col.scss";
 
 export interface IColProps {
@@ -13,8 +14,15 @@ export interface IColProps {
 export const Col: React.FC<
   IColProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = props => {
-  const { display, flex, flexDirection, justifyContent, children, style } =
-    props;
+  const {
+    display,
+    flex,
+    flexDirection,
+    justifyContent,
+    children,
+    style,
+    className,
+  } = props;
   const styleProps = {
     display,
     flex,
@@ -23,7 +31,7 @@ export const Col: React.FC<
     ...style,
   };
   return (
-    <div className={styles.col} style={{ ...styleProps }}>
+    <div className={clsx([styles.col, className])} style={{ ...styleProps }}>
       {children}
     </div>
   );

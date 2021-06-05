@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "gatsby";
 import { Box, Col, Container, Row } from "..";
+import { CookieAcceptance } from "../../Elements";
 import styles from "./Footer.scss";
 
 export const Footer: FC = (): JSX.Element => {
@@ -26,6 +27,7 @@ export const Footer: FC = (): JSX.Element => {
           </Row>
         </Container>
       </div>
+      <CookieAcceptance />
     </div>
   );
 };

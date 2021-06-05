@@ -8,14 +8,14 @@
     "type": "git",
     "url": "git@gitlab.com:rockinblocks/rockinblocks.git"
   },
-  "homepage": "https://rockinblocks.io",
+  "homepage": "https://www.rockinblocks.io",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
+  "module": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
-  "types": "dist/index.d.ts",
+  "types": "types/blocks/src/index.d.ts",
   "engines": {
     "node": ">=14",
     "npm": ">=6"

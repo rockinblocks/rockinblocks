@@ -32,11 +32,7 @@ export const ContentSection: FC<
   IContentSectionProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = ({ heading, body, buttonText, buttonLink }): JSX.Element => {
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
-    >
+    <Box display="flex" flexDirection="column" justifyContent="space-between">
       <div>
         <h3 className={styles["content__section-heading"]}>{heading}</h3>
         <p className={styles["content__section-body"]}>{body}</p>
@@ -62,14 +58,19 @@ export const Content: FC<
     <div className={styles.content}>
       <Container>
         <Row justifyContent="flex-end">
-          <Col flex={(2 / 3)}>
+          <Col flex={2 / 3}>
             <ContentIntro {...{ heading, subheading }} />
           </Col>
         </Row>
       </Container>
       <Container>
         <Row>
-          <Col flex={1} display="flex" justifyContent="center" flexDirection="column">
+          <Col
+            flex={1}
+            display="flex"
+            justifyContent="center"
+            flexDirection="column"
+          >
             <div style={{ padding: "1rem" }}>
               <Vector className={styles.content__vector} />
             </div>
@@ -81,8 +82,8 @@ export const Content: FC<
                   return (
                     <Col
                       key={Math.random().toString(36)}
-                      flex="1 0 50%"
                       display="flex"
+                      className={styles.content__column}
                     >
                       <div className={styles.content__section}>
                         <ContentSection {...sectionProps} />

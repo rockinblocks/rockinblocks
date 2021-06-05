@@ -73,7 +73,7 @@ When working within a monorepo, there are many folders, and it's easily to find 
 $ yarn blocks:hoist
 ```
 
-### Build your CLI tool (Optional
+### Build your CLI tool (Optional)
 
 If you don't want to use the CLI tool, you can skip this step. 
 
@@ -83,6 +83,10 @@ Rockin' Blocks ships with a simple CLI tool to generate new blocks called **Riff
 # This will create the /dist directory in the CLI package
 
 $ yarn workspace @rockinblocks/cli build
+
+# You may need to make the CLI file executable
+
+$ chmod +x ./dist/cli.js
 ```
 
 ### Start the Gatsby site

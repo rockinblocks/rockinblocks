@@ -22,9 +22,19 @@
 
 .navbar__logo {
   transition: opacity ($transition-time * 4);
+  display: none;
 
   @include media-breakpoint-up(sm) {
     max-width: 12rem;
+    display: block;
+  }
+}
+
+.navbar__monogram {
+  display: inline-flex;
+  
+  @include media-breakpoint-up(sm) {
+    display: none;
   }
 }
 

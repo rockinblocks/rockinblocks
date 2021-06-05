@@ -1,0 +1,1 @@
+export { CookieAcceptance } from "./CookieAcceptance"

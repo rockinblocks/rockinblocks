@@ -1,7 +1,9 @@
 export { Alert } from './Alert';
 export { Badge } from './Badge';
 export { Button } from './Button';
+export { CookieAcceptance } from './CookieAcceptance';
 export { GitHubButton } from './GitHubButton';
+export { Loading } from './Loading';
 export { Navbar } from './Navbar';
 export { NavbarToggle } from './NavbarToggle';
 export { Post } from './Post';
