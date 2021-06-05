@@ -32,11 +32,7 @@ export const ContentSection: FC<
   IContentSectionProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = ({ heading, body, buttonText, buttonLink }): JSX.Element => {
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      justifyContent="space-between"
-    >
+    <Box display="flex" flexDirection="column" justifyContent="space-between">
       <div>
         <h3 className={styles["content__section-heading"]}>{heading}</h3>
         <p className={styles["content__section-body"]}>{body}</p>
