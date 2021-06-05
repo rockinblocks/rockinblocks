@@ -1,11 +1,10 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import { Link } from "gatsby";
 import { Box, Col, Container, Row } from "..";
-import { Alert, CookieAcceptance } from "../../Elements";
+import { CookieAcceptance } from "../../Elements";
 import styles from "./Footer.scss";
 
 export const Footer: FC = (): JSX.Element => {
-
   return (
     <div>
       <div className={styles.footer}>

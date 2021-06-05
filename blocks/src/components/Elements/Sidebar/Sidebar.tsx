@@ -31,7 +31,13 @@ export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
             <a href="https://github.com/rockinblocks/rockinblocks">GitHub</a>
           </li>
           <li className={styles["sidebar__nav-item-top"]}>
-            <a href="https://github.com/rockinblocks/rockinblocks/issues/new" target="_blank">GitHub: Create Issue</a>
+            <a
+              href="https://github.com/rockinblocks/rockinblocks/issues/new"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub: Create Issue
+            </a>
           </li>
           <li className={styles["sidebar__nav-item-top"]}>
             <a href="https://discord.gg/du2rWCDtRF">Discord</a>

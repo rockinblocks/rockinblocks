@@ -1,6 +1,6 @@
-import React, { FC, useEffect, useState } from "react"
-import { Alert } from ".."
-import styles from "./CookieAcceptance.scss"
+import React, { FC, useEffect, useState } from "react";
+import { Alert } from "..";
+import styles from "./CookieAcceptance.scss";
 
 export const CookieAcceptance: FC = (): JSX.Element => {
   const [acceptedCookies, setAcceptedCookies] = useState(true);
@@ -33,7 +33,7 @@ export const CookieAcceptance: FC = (): JSX.Element => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default CookieAcceptance
+export default CookieAcceptance;
