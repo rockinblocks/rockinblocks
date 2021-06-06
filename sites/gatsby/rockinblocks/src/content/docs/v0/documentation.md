@@ -37,3 +37,7 @@ type: document
 | `description`  | `string` | For SEO. A description of the document         |
 | `order`        | `string` | Order to be displayed in sidebar, e.g. `'1.3'` |
 | `type`         | `string` | Should be `document` for documentation         |
+
+## Real-time editing
+
+As of Rockin' Blocks version 0.2.0, documentation markdown can be edited in real-time use [Tina CMS](https://tina.io).
