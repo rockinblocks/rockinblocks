@@ -32,7 +32,6 @@ $ git clone https://github.com/rockinblocks/rockinblocks.git rb-demo-app
 # Unhook from our Git remote, and initialize your own Git
 
 $ cd rb-demo-app && rm -rf ./.git && git init
-
 ```
 
 ## Workspace
@@ -75,9 +74,9 @@ $ yarn blocks:hoist
 
 ### Build your CLI tool (Optional)
 
-If you don't want to use the CLI tool, you can skip this step. 
+If you don't want to use the CLI tool, you can skip this step.
 
-Rockin' Blocks ships with a simple CLI tool to generate new blocks called **Riff**. It's shipped with the monorepo, so you'll need to build the tool to use it.
+**Rockin' Blocks** ships with a simple CLI tool to generate new blocks called **Riff**. It's shipped with the monorepo, so you'll need to build the tool to use it.
 
 ```bash
 # This will create the /dist directory in the CLI package
