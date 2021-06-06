@@ -3,9 +3,10 @@ title: Led Zeppelin
 date_created: '2021-06-05'
 date_updated: '2021-06-05'
 keywords: 'gatsby, tinacms, storybook, yarn workspace, rockinblocks, rockin blocks'
-path: blog/led-zeppelin
+path: /blog/led-zeppelin
 description: A wonderful post.
 type: post
+date: '2021-05-29'
 ---
 
 ## If we could just hold hands
