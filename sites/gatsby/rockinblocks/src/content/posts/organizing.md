@@ -3,7 +3,7 @@ title: Organizing
 date_created: '2021-06-05'
 date_updated: '2021-06-05'
 keywords: 'gatsby, tinacms, storybook, yarn workspace, rockinblocks, rockin blocks'
-path: blog/organizing
+path: /blog/organizing
 description: A wonderful post.
 type: post
 ---
