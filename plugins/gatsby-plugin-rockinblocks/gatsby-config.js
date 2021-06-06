@@ -4,8 +4,6 @@ const path = require('path');
 // Potentially pull in from a settings JSON file
 module.exports = {
 	plugins: [
-		`gatsby-plugin-tinacms`,
-		`gatsby-plugin-styled-components`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
@@ -56,6 +54,20 @@ module.exports = {
 			},
 		},
 		`gatsby-transformer-remark-plaintext`,
-		`gatsby-plugin-sass`
+		`gatsby-plugin-sass`,
+		`gatsby-plugin-styled-components`,
+		{
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": path.join(__dirname, '/src/components'),
+          "@elements": path.join(__dirname, '/src/components/Elements'),
+          "@layout": path.join(__dirname, '/src/components/Layout'),
+          "@utilities": path.join(__dirname, '/src/components/Utilities'),
+          "@styles": path.join(__dirname, '/src/styles'),
+        },
+        extensions: ['js', 'jsx']
+      }
+    },
 	],
 };

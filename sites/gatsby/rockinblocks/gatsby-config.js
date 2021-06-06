@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [
     `@rockinblocks/gatsby-plugin-rockinblocks`,
+    `@rockinblocks/gatsby-plugin-rockinblocks-cms`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
@@ -29,19 +30,6 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          "@components": path.join(__dirname, '/src/components'),
-          "@elements": path.join(__dirname, '/src/components/Elements'),
-          "@layout": path.join(__dirname, '/src/components/Layout'),
-          "@utilities": path.join(__dirname, '/src/components/Utilities'),
-          "@styles": path.join(__dirname, '/src/styles'),
-        },
-        extensions: ['js', 'jsx']
-      }
-    },
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
