@@ -1,21 +1,29 @@
-const path = require('path')
+const path = require('path');
 
 // TODO Remove the hard-coded URl to the favicon here
 // Potentially pull in from a settings JSON file
 module.exports = {
 	plugins: [
-		`gatsby-plugin-styled-components`,
 		{
-			resolve: `gatsby-plugin-manifest`,
+			resolve: 'gatsby-plugin-tinacms',
 			options: {
-				name: `gatsby-starter-rockinblocks`,
-				short_name: `starter`,
-				start_url: `/`,
-				background_color: `#663399`,
-				theme_color: `#663399`,
-				display: `minimal-ui`,
-				icon: `src/theme/favicon.png`, // This path is relative to the root of the site.
+				enabled: process.env.NODE_ENV !== 'production',
+				sidebar: true,
+				plugins: [
+					{
+            resolve: 'gatsby-tinacms-git',
+            options: {
+              pathToContent: '/',
+              defaultCommitMessage: `Edited with Rockin' Blocks! 🎸`,
+              defaultCommitName: `Rockin' Blocks`,
+              defaultCommitEmail: 'git@rockinblocks.io',
+              pushOnCommit: false,
+            },
+          },
+					'gatsby-tinacms-remark',
+					'gatsby-tinacms-json',
+				],
 			},
 		},
-	]
-}
+	],
+};
