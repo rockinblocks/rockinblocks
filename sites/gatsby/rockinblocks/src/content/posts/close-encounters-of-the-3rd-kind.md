@@ -2,7 +2,7 @@
 title: Close Encounters of the 3rd Kind
 path: /blog/close-encounters-of-the-3rd-kind
 image: 'https://placehold.it/960x640'
-date: '2021-06-06T20:36:59.998Z'
+date: '2021-06-06'
 description: A wonderful post.
 keywords: 'gatsby, tinacms, storybook, yarn workspace, rockinblocks, rockin blocks'
 type: post
