@@ -25,12 +25,10 @@
   },
   "devDependencies": {
     "gatsby-plugin-styled-components": "^4.6.0",
-    "gatsby-plugin-tinacms": "^0.41.0",
-    "gatsby-tinacms-git": "^0.41.0",
-    "gatsby-tinacms-json": "^0.41.0",
-    "gatsby-tinacms-mdx": "^0.41.0",
-    "gatsby-tinacms-remark": "^0.41.0",
-    "gatsby-tinacms-teams": "^0.39.0",
-    "tinacms": "^0.41.0"
+    "gatsby-plugin-tinacms": "^0.38.0",
+    "gatsby-tinacms-git": "^0.38.0",
+    "gatsby-tinacms-json": "^0.38.0",
+    "gatsby-tinacms-remark": "^0.38.0",
+    "tinacms": "^0.38.0"
   }
 }
