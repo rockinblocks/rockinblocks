@@ -39,4 +39,4 @@ If you are looking for the **Rockin' Blocks** demo, you're looking at it! When y
 
 ### Early Development
 
-**Rockin'** is still in early development, and things will still change from time to time. I will do my best to release logically and help with anything that may arise. Feel free to [create an issue](https://github.com/rockinblocks/rockinblocks/issues/new) if you encounter anything along the way.
+**Rockin' Blocks** is still in early development, and things will still change from time to time. I will do my best to release logically and help with anything that may arise. Feel free to [create an issue](https://github.com/rockinblocks/rockinblocks/issues/new) if you encounter anything along the way.
