@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: `Rockin' Blocks`,
-    description: `Blocks that Just Rock`,
+    description: `Blocks that just rock!`,
     author: `@RockinBlocksJS`,
     siteUrl: `https://www.rockinblocks.io`
   },
@@ -25,55 +25,10 @@ module.exports = {
         path: path.join(__dirname, `/src/content/posts`),
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `json`,
-        path: path.join(__dirname, `/src/content/pages`),
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-              languageExtensions: [
-                {
-                  language: "superscript",
-                  extend: "javascript",
-                  definition: {
-                    superscript_types: /(SuperType)/,
-                  },
-                  insertBefore: {
-                    function: {
-                      superscript_keywords: /(superif|superelse)/,
-                    },
-                  },
-                },
-              ],
-              prompt: {
-                user: "root",
-                host: "localhost",
-                global: false,
-              },
-              escapeEntities: {},
-            },
-          },
-        ],
-      },
-    },
-    `gatsby-transformer-remark-plaintext`,
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -91,7 +46,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: `GTM-WFW54V5`,
-        includeInDevelopment: true,
+        includeInDevelopment: false,
         defaultDataLayer: { platform: "gatsby" },
       },
     },
