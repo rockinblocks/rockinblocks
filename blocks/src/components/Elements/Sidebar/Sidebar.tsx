@@ -45,6 +45,9 @@ export const Sidebar: FC<ISidebarProps> = ({ menuItems }) => {
           <li className={styles["sidebar__nav-item-top"]}>
             <a href="https://twitter.com/RockinBlocksJS">Twitter</a>
           </li>
+          <li className={styles["sidebar__nav-item-top"]}>
+            <a href="https://reddit.com/r/rockinblocks">Reddit</a>
+          </li>
         </ul>
       </div>
     </div>
