@@ -9,7 +9,7 @@ order: '8.0'
 type: document
 ---
 
-## Real-time editing and content creation with TinaCMS
+## Real-time editing
 
 As of Rockin' Blocks version 0.2.0, Markdown files can be both created and edited in real-time using [TinaCMS](https://tina.io). Additionally, **Rockin' Blocks** leverages Tina's very useful Git CMS support for Gatsby that allows developers, and even non-developers, to have a unique code-free editing experience while still adhering to modern code best practices.
 

@@ -8,7 +8,9 @@ module.exports = {
 			resolve: 'gatsby-plugin-tinacms',
 			options: {
 				enabled: process.env.NODE_ENV !== 'production',
-				sidebar: true,
+				sidebar: {
+					position: 'displace'
+				},
 				plugins: [
 					{
             resolve: 'gatsby-tinacms-git',
