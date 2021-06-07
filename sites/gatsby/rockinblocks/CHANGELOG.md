@@ -22,4 +22,4 @@
 
 - Initial release with semantic versioning
 - Includes documentation and blog
-- Slim down from alpha release with Tina CMS
+- Slim down from alpha release with TinaCMS
