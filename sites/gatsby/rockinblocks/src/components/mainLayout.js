@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Loading, Navbar } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 const Layout = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     setIsLoading(false)
@@ -22,7 +22,11 @@ const Layout = ({ children }) => {
         <Loading />
       ) : (
         <>
-          <Navbar appName="Rockin' Blocks" color={"#ffffff"} backgroundColor="#ffffff" />
+          <Navbar
+            appName="Rockin' Blocks"
+            color={"#ffffff"}
+            backgroundColor="#ffffff"
+          />
           <div className="layout-wrapper">
             <main>{children}</main>
           </div>
