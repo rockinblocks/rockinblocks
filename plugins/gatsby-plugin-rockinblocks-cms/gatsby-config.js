@@ -13,15 +13,15 @@ module.exports = {
 				},
 				plugins: [
 					{
-            resolve: 'gatsby-tinacms-git',
-            options: {
-              pathToContent: '/',
-              defaultCommitMessage: `Edited with Rockin' Blocks! 🎸`,
-              defaultCommitName: `Rockin' Blocks`,
-              defaultCommitEmail: 'git@rockinblocks.io',
-              pushOnCommit: false,
-            },
-          },
+						resolve: 'gatsby-tinacms-git',
+						options: {
+							pathToContent: '/',
+							defaultCommitMessage: `Edited with Rockin' Blocks! 🎸`,
+							defaultCommitName: `Rockin' Blocks`,
+							defaultCommitEmail: 'git@rockinblocks.io',
+							pushOnCommit: false,
+						},
+					},
 					'gatsby-tinacms-remark',
 					'gatsby-tinacms-json',
 				],
