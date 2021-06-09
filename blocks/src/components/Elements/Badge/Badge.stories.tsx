@@ -3,7 +3,7 @@ import { Story, Meta } from "@storybook/react";
 import { Badge, IBadgeProps } from "./Badge";
 
 export default {
-  title: "Blocks/Badge",
+  title: "Elements/Badge",
   component: Badge,
 } as Meta;
 
