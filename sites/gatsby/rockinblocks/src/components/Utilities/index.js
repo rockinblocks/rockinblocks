@@ -1,2 +1,2 @@
-export { ContextProvider } from "./ContextProvider";
-export { SEO } from "./SEO";
+export { ContextProvider } from "./ContextProvider.jsx";
+export { SEO } from "./SEO.jsx";

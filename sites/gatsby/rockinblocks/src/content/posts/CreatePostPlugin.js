@@ -1,49 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React, { useEffect, useState } from "react"
-import PropTypes from "prop-types"
-import { withPlugin } from "tinacms"
 import { RemarkCreatorPlugin } from "gatsby-tinacms-remark"
-import { Loading, Navbar } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
-const Layout = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    setIsLoading(false)
-  }, [])
-
-  return (
-    <>
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <>
-          <Navbar
-            appName="Rockin' Blocks"
-            color={"#ffffff"}
-            backgroundColor="#ffffff"
-          />
-          <div className="layout-wrapper">
-            <main>{children}</main>
-          </div>
-        </>
-      )}
-    </>
-  )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-const CreatePostPlugin = new RemarkCreatorPlugin({
-  label: "Create Document",
+export const CreatePostPlugin = new RemarkCreatorPlugin({
+  label: "Create Post",
   fields: [
     {
       name: "title",
@@ -63,7 +21,7 @@ const CreatePostPlugin = new RemarkCreatorPlugin({
       name: "path",
       component: "text",
       label: "Path",
-      placeholder: "/docs/v0/blocks",
+      placeholder: "",
       description: "The URL path for this document",
     },
     {
@@ -114,4 +72,5 @@ My lover, she is lying, on the dark side of the globe
 `,
 })
 
-export default withPlugin(Layout, [CreatePostPlugin])
+export default CreatePostPlugin
+

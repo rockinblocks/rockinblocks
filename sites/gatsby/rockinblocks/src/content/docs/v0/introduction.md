@@ -16,9 +16,9 @@ type: document
 * Quickly generate a working block with a single CLI command
 * Easily add Bootstrap, Material UI, or TailwindCSS, or start from scratch.
 * Markdown support for easy-to-manage blog posts and documentation
+* Written in Typescript for autocompletion in all of your projects
 * Markdown & PrismJS code highlighting with Nord theme out of box 🥶
 * Structured data for every page, post, and piece of documentation, as well as XML sitemap
-* Easily hook up CI/CD with [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/)
 
 ## Who could benefit from Rockin' Blocks?
 

@@ -2,7 +2,9 @@
 title: Monorepo
 date_created: '2020-04-12'
 date_updated: '2020-04-12'
-keywords: monorepo, yarn workspace monorepo, gatsby, starter, yarn workspace, open source yarn workspace
+keywords: >-
+  monorepo, yarn workspace monorepo, gatsby, starter, yarn workspace, open
+  source yarn workspace
 path: /docs/v0/monorepo
 description: Getting set up with Rockin' Blocks is a breeze.
 order: '3.0'
