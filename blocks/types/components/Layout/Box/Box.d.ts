@@ -1,5 +1,6 @@
 import React, { CSSProperties, ReactNode } from "react";
 export interface IBoxProps {
+    className?: string;
     children?: ReactNode;
     display?: string;
     flex?: number | string;

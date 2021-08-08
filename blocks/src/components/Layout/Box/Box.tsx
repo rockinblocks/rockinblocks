@@ -1,6 +1,6 @@
 import React, { CSSProperties, ReactNode } from "react";
+import clsx from "clsx";
 import styles from "./Box.scss";
-import clsx from "clsx"
 
 export interface IBoxProps {
   className?: string;
@@ -15,8 +15,15 @@ export interface IBoxProps {
 export const Box: React.FC<
   IBoxProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = (props): JSX.Element => {
-  const { className, children, display, flex, flexDirection, justifyContent, style } =
-    props;
+  const {
+    className,
+    children,
+    display,
+    flex,
+    flexDirection,
+    justifyContent,
+    style,
+  } = props;
 
   const styleProps = {
     display,

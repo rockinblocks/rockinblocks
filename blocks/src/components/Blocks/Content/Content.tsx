@@ -77,7 +77,7 @@ export const Content: FC<
           </Col>
           <Col flex={2}>
             {sections && (
-              <Row className={ styles.content__sections }>
+              <Row className={styles.content__sections}>
                 {sections?.map((sectionProps: IContentSectionProps) => {
                   return (
                     <Col
