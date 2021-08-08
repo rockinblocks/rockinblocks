@@ -15,6 +15,7 @@
 .content__heading {
   @include typography-h2();
   margin-bottom: spacing(md);
+  padding: spacing(xs);
 
   @include media-breakpoint-up(lg) {
     font-size: 4rem;
@@ -24,6 +25,7 @@
 .content__subheading {
   @include typography-subheading();
   margin-bottom: spacing(md);
+  padding: spacing(xs);
 }
 
 .content__column {
