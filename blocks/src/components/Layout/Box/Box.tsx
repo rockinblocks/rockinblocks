@@ -1,7 +1,9 @@
 import React, { CSSProperties, ReactNode } from "react";
 import styles from "./Box.scss";
+import clsx from "clsx"
 
 export interface IBoxProps {
+  className?: string;
   children?: ReactNode;
   display?: string;
   flex?: number | string;
@@ -13,7 +15,7 @@ export interface IBoxProps {
 export const Box: React.FC<
   IBoxProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = (props): JSX.Element => {
-  const { children, display, flex, flexDirection, justifyContent, style } =
+  const { className, children, display, flex, flexDirection, justifyContent, style } =
     props;
 
   const styleProps = {
@@ -25,7 +27,7 @@ export const Box: React.FC<
   };
 
   return (
-    <div className={styles.box} style={{ ...styleProps }}>
+    <div className={clsx([styles.box, className])} style={{ ...styleProps }}>
       {children}
     </div>
   );
