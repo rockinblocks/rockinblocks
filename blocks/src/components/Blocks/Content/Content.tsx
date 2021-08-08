@@ -77,12 +77,11 @@ export const Content: FC<
           </Col>
           <Col flex={2}>
             {sections && (
-              <Row display="flex" flexWrap="wrap">
+              <Row className={ styles.content__sections }>
                 {sections?.map((sectionProps: IContentSectionProps) => {
                   return (
                     <Col
                       key={Math.random().toString(36)}
-                      display="flex"
                       className={styles.content__column}
                     >
                       <div className={styles.content__section}>

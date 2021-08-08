@@ -33,6 +33,14 @@
   
   @include media-breakpoint-up(md) {
     flex: 1 0 50%;
+    display: flex;
+  }
+}
+
+.content__sections {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -43,13 +51,13 @@
   color: $text-color-muted;
   font-size: 1rem;
   line-height: 1.5rem;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: spacing(xs);
-  margin-bottom: spacing(md);
-
-  @include media-breakpoint-up(lg) {
+  margin-bottom: spacing(sm);
+  
+  @include media-breakpoint-up(md) {
+    display: flex;
     padding: spacing(md);
     margin-bottom: spacing(xs) / 4;
   }
