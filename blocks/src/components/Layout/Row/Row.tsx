@@ -3,7 +3,7 @@ import styles from "./Row.scss";
 import clsx from "clsx"
 
 export interface IRowProps {
-  className: string;
+  className?: string;
   children?: ReactNode;
   display?: string;
   flexDirection?: string;

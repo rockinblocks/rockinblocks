@@ -1,6 +1,6 @@
 import React, { CSSProperties, ReactNode } from "react";
 export interface IRowProps {
-    className: string;
+    className?: string;
     children?: ReactNode;
     display?: string;
     flexDirection?: string;
