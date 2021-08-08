@@ -158,7 +158,7 @@ export const Template = ({
           <Col display="flex" flex={20}>
             <Sidebar menuItems={menuItems} />
           </Col>
-          <Col flex={80}>
+          <Col display="block" flex={80}>
             <Document frontmatter={frontmatter} html={html} type={type} />
           </Col>
         </Row>

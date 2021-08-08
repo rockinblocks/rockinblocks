@@ -20,22 +20,20 @@ export interface IDocumentProps {
 export const Document: FC<IDocumentProps> = ({ html, frontmatter }) => {
   const { title, type } = frontmatter;
   return (
-    <Box className={clsx(styles.document, styles[type])} display="flex">
-      <Box flex={0.8}>
-        <div className={styles.document__intro}>
-          <h1 className={styles.document__title}>{title}</h1>
-        </div>
-        <div className={styles.document__main}>
-          <main>
-            <div
-              style={{ flex: 1 }}
-              className={styles.document__html}
-              dangerouslySetInnerHTML={{ __html: html }}
-              data-rb="document"
-            />
-          </main>
-        </div>
-      </Box>
+    <Box className={ clsx([styles.document]) }>
+      <div className={styles.document__intro}>
+        <h1 className={styles.document__title}>{title}</h1>
+      </div>
+      <div className={styles.document__main}>
+        <main>
+          <div
+            style={{ flex: 1, width: "100%" }}
+            className={styles.document__html}
+            dangerouslySetInnerHTML={{ __html: html }}
+            data-rb="document"
+          />
+        </main>
+      </div>
     </Box>
   );
 };
