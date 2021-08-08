@@ -11,7 +11,6 @@
     "@fontsource/roboto": "^4.2.0",
     "@fontsource/roboto-mono": "^4.2.0",
     "@rockinblocks/gatsby-plugin-rockinblocks": "0.2.0",
-    "@rockinblocks/gatsby-plugin-rockinblocks-cms": "0.2.0",
     "@storybook/addon-actions": "^6.2.2",
     "@storybook/addon-essentials": "^6.2.2",
     "@storybook/addon-links": "^6.2.2",
