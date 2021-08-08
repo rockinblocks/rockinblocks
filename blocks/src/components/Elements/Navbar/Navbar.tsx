@@ -19,7 +19,7 @@ export const Navbar: FC<INavbarProps> = props => {
         <Row flexDirection="row">
           <Col display="flex" flexDirection="column" justifyContent="center">
             <Link to="/" className={styles.navbar__brand}>
-              <span>
+              <Box display="flex">
                 {Logo ? (
                   <>
                     <Logo
@@ -36,7 +36,7 @@ export const Navbar: FC<INavbarProps> = props => {
                 ) : (
                   <span>{appName}</span>
                 )}
-              </span>
+              </Box>
             </Link>
           </Col>
           <Col flexDirection="row" display="flex" justifyContent="flex-end">
