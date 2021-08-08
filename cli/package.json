@@ -1,6 +1,6 @@
 {
 	"name": "@rockinblocks/riff",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Generate blocks for your Rockin' Blocks project",
 	"license": "MIT",
 	"repository": "https://github.com/rockinblocks/rockinblocks",
