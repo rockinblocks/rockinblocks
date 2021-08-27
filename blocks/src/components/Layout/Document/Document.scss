@@ -3,10 +3,17 @@
 @import "../../../styles/blog";
 @import "../../../styles/prism";
 
+.document {
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+}
+
 .document__intro,
 .document__main {
   padding: spacing(xs);
   font-family: $font-family-main;
+  display: block;
 
   @include media-breakpoint-up(lg) {
     padding-left: spacing(md);

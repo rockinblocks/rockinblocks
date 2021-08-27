@@ -1,6 +1,6 @@
 import React from "react";
-import { ThemeProvider } from "./Theme/Theme";
-import { SettingsProvider } from "./Settings/Settings";
+import { ThemeProvider } from "./Theme/Theme.jsx";
+import { SettingsProvider } from "./Settings/Settings.jsx";
 
 export const ContextProvider = ({ children }) => {
 	return (

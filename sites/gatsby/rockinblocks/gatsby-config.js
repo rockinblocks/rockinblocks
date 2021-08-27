@@ -3,12 +3,35 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: `Rockin' Blocks`,
-    description: `Blocks that Just Rock`,
+    description: `Blocks that just rock!`,
     author: `@RockinBlocksJS`,
     siteUrl: `https://www.rockinblocks.io`
   },
   plugins: [
     `@rockinblocks/gatsby-plugin-rockinblocks`,
+    {
+			resolve: 'gatsby-plugin-tinacms',
+			options: {
+				enabled: process.env.NODE_ENV !== 'production',
+				sidebar: {
+					position: 'displace'
+				},
+				plugins: [
+					{
+						resolve: 'gatsby-tinacms-git',
+						options: {
+							pathToContent: '/',
+							defaultCommitMessage: `Edited with Rockin' Blocks! 🎸`,
+							defaultCommitName: `Rockin' Blocks`,
+							defaultCommitEmail: 'git@rockinblocks.io',
+							pushOnCommit: false,
+						},
+					},
+					'gatsby-tinacms-remark',
+					'gatsby-tinacms-json',
+				],
+			},
+		},
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
@@ -25,73 +48,15 @@ module.exports = {
         path: path.join(__dirname, `/src/content/posts`),
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `json`,
-        path: path.join(__dirname, `/src/content/pages`),
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-              languageExtensions: [
-                {
-                  language: "superscript",
-                  extend: "javascript",
-                  definition: {
-                    superscript_types: /(SuperType)/,
-                  },
-                  insertBefore: {
-                    function: {
-                      superscript_keywords: /(superif|superelse)/,
-                    },
-                  },
-                },
-              ],
-              prompt: {
-                user: "root",
-                host: "localhost",
-                global: false,
-              },
-              escapeEntities: {},
-            },
-          },
-        ],
-      },
-    },
-    `gatsby-transformer-remark-plaintext`,
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          "@components": path.join(__dirname, '/src/components'),
-          "@elements": path.join(__dirname, '/src/components/Elements'),
-          "@layout": path.join(__dirname, '/src/components/Layout'),
-          "@utilities": path.join(__dirname, '/src/components/Utilities'),
-          "@styles": path.join(__dirname, '/src/styles'),
-        },
-        extensions: ['js', 'jsx']
-      }
-    },
-    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: `GTM-WFW54V5`,
-        includeInDevelopment: true,
+        includeInDevelopment: false,
         defaultDataLayer: { platform: "gatsby" },
       },
     },

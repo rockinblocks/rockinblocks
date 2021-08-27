@@ -1,6 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react"
 import Helmet from "react-helmet"
+import { useRemarkForm, DeleteAction } from "gatsby-tinacms-remark"
+import { usePlugin, withPlugin } from "tinacms"
 import { graphql } from "gatsby"
+import { CreateDocumentPlugin } from "./CreateDocumentPlugin"
 import Layout from "../../components/mainLayout"
 import { SEO } from "../../components/Utilities/SEO"
 import {
@@ -13,13 +16,91 @@ import {
   Sidebar,
 } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
-export default function Template({
+export const Template = ({
   data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { frontmatter, html, plainText } = data.markdownRemark
-  const { title, date, description, keywords, type } = frontmatter
-  const { edges: documents } = data.allMarkdownRemark
+}) => {
+  const { markdownRemark: propsMarkdownRemark, allMarkdownRemark } = data
+  const { edges: documents } = allMarkdownRemark
   const [menuItems, setMenuItems] = useState([])
+
+  const sortAndSetItems = useCallback(
+    items => {
+      items.sort((item, nextItem) => {
+        const { order } = item
+        const { order: nextOrder } = nextItem
+
+        if (order < nextOrder) {
+          return -1
+        }
+
+        return 1
+      })
+
+      setMenuItems(items)
+    },
+    [documents]
+  )
+
+  const formOptions = {
+    label: "Edit Document",
+    actions: [DeleteAction],
+    fields: [
+      {
+        label: "Title",
+        name: "rawFrontmatter.title",
+        description: "Enter the title of the document here",
+        component: "text",
+      },
+      {
+        label: "Date Created",
+        name: "rawFrontmatter.date_created",
+        description: "Date document was created",
+        component: "text",
+      },
+      {
+        label: "Date Updated",
+        name: "rawFrontmatter.date_updated",
+        description: "Date document was last updated",
+        component: "text",
+      },
+      {
+        label: "Keywords",
+        name: "rawFrontmatter.keywords",
+        description: "A comma-spaced list of keywords for SEO",
+        component: "text",
+      },
+      {
+        label: "Description",
+        name: "rawFrontmatter.description",
+        description: "Description of document for SEO",
+        component: "textarea",
+      },
+      {
+        label: "Path",
+        name: "rawFrontmatter.path",
+        description:
+          "The URL path for this document, e.g. /docs/v0/introduction",
+        component: "text",
+      },
+      {
+        label: "Order",
+        name: "rawFrontmatter.order",
+        description: "The order of the document in the sidebar menu",
+        component: "text",
+      },
+      {
+        label: "Markdown",
+        name: "rawMarkdownBody",
+        description: "The body of the document with Markdown support",
+        component: "markdown",
+      },
+    ],
+  }
+
+  const [markdownRemark, form] = useRemarkForm(propsMarkdownRemark, formOptions)
+
+  const { frontmatter, html, plainText } = markdownRemark
+  const { title, date, description, keywords, type } = frontmatter
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -45,26 +126,11 @@ export default function Template({
       },
     },
     keywords: keywords,
-    image: "https://oblong-objects-media.s3-us-west-2.amazonaws.com/oblong-logo-160x160.png",
+    image:
+      "https://oblong-objects-media.s3-us-west-2.amazonaws.com/oblong-logo-160x160.png",
   }
 
-  const sortAndSetItems = useCallback(
-    items => {
-      items.sort((item, nextItem) => {
-        const { order } = item
-        const { order: nextOrder } = nextItem
-
-        if (order < nextOrder) {
-          return -1
-        }
-
-        return 1
-      })
-
-      setMenuItems(items)
-    },
-    [documents]
-  )
+  usePlugin(form)
 
   useEffect(() => {
     const items = []
@@ -92,7 +158,7 @@ export default function Template({
           <Col display="flex" flex={20}>
             <Sidebar menuItems={menuItems} />
           </Col>
-          <Col flex={80}>
+          <Col display="block" flex={80}>
             <Document frontmatter={frontmatter} html={html} type={type} />
           </Col>
         </Row>
@@ -103,6 +169,8 @@ export default function Template({
     </Layout>
   )
 }
+
+export default withPlugin(Template, CreateDocumentPlugin)
 
 export const pageQuery = graphql`
   query($path: String!) {
@@ -123,6 +191,7 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
+      ...TinaRemark
       html
       frontmatter {
         date_created(formatString: "MMMM DD, YYYY")

@@ -1,7 +1,9 @@
 import React, { CSSProperties, ReactNode } from "react";
+import clsx from "clsx";
 import styles from "./Row.scss";
 
 export interface IRowProps {
+  className?: string;
   children?: ReactNode;
   display?: string;
   flexDirection?: string;
@@ -13,8 +15,15 @@ export interface IRowProps {
 export const Row: React.FC<
   IRowProps & React.HTMLAttributes<HTMLDivElement> & CSSProperties
 > = (props): JSX.Element => {
-  const { children, display, flexDirection, flexWrap, justifyContent, style } =
-    props;
+  const {
+    className,
+    children,
+    display,
+    flexDirection,
+    flexWrap,
+    justifyContent,
+    style,
+  } = props;
   const styleProps = {
     display,
     flexDirection,
@@ -23,7 +32,7 @@ export const Row: React.FC<
     ...style,
   };
   return (
-    <div className={styles.row} style={{ ...styleProps }}>
+    <div className={clsx([className, styles.row])} style={{ ...styleProps }}>
       {children}
     </div>
   );

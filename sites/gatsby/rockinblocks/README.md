@@ -19,8 +19,8 @@
 
 ## Coming Soon
 
-- Tina CMS for live page editing with Git commits upon save
-- Tina CMS for live editing Markdown blog posts in real time
+- TinaCMS for live page editing with Git commits upon save
+- TinaCMS for live editing Markdown blog posts in real time
 - The ability to create new pages through Tina, not just through Markdown files
 - Better structured data configuration through **Settings**
 - CLI tool for quickly creating new blocks

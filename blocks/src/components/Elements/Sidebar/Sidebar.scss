@@ -8,6 +8,7 @@
   font-size: 1.675rem;
   width: 100%;
   padding: spacing(sm) 0;
+  align-self: flex-start;
   
   @include media-breakpoint-up(lg) {
     position: sticky;
