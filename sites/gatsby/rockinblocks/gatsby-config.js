@@ -9,7 +9,29 @@ module.exports = {
   },
   plugins: [
     `@rockinblocks/gatsby-plugin-rockinblocks`,
-    `@rockinblocks/gatsby-plugin-rockinblocks-cms`,
+    {
+			resolve: 'gatsby-plugin-tinacms',
+			options: {
+				enabled: process.env.NODE_ENV !== 'production',
+				sidebar: {
+					position: 'displace'
+				},
+				plugins: [
+					{
+						resolve: 'gatsby-tinacms-git',
+						options: {
+							pathToContent: '/',
+							defaultCommitMessage: `Edited with Rockin' Blocks! 🎸`,
+							defaultCommitName: `Rockin' Blocks`,
+							defaultCommitEmail: 'git@rockinblocks.io',
+							pushOnCommit: false,
+						},
+					},
+					'gatsby-tinacms-remark',
+					'gatsby-tinacms-json',
+				],
+			},
+		},
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {

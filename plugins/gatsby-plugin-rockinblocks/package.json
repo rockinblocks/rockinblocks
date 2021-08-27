@@ -1,6 +1,6 @@
 {
   "name": "@rockinblocks/gatsby-plugin-rockinblocks",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Anything needed by Rockin' Blocks to work within Gatsby",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "react-helmet": "^5.2.1"
   },
   "dependencies": {
-    "@rockinblocks/rockinblocks": "0.2.0"
+    "@rockinblocks/rockinblocks": "0.2.1"
   },
   "devDependencies": {
     "@sindresorhus/slugify": "^2.1.0",
