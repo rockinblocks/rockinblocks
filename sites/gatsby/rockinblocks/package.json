@@ -68,8 +68,7 @@
     "react-tinacms-inline": "^0.38.0",
     "sass": "^1.32.11",
     "storybook": "^6.2.2",
-    "styled-components": "^5.2.1",
-    "tinacms": "^0.38.0"
+    "styled-components": "^5.2.1"
   },
   "keywords": [
     "gatsby"
