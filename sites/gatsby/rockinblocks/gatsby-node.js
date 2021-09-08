@@ -42,7 +42,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-
   // Setup documentation files
   const documentTemplate = path.resolve(`src/content/docs/template.js`)
   const documents = await graphql(`
@@ -79,4 +78,40 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {}, // additional data can be passed via context
     })
   })
+
+
+  // Setup page files
+  const pageTemplate = path.resolve(`src/content/pages/template.js`)
+  const pages = await graphql(`
+    {
+      allPagesJson(
+        limit: 1000
+      ) {
+        edges {
+          node {
+            path
+          }
+        }
+      }
+    }
+  `)
+  
+  // Handle errors
+  if (pages.errors) {
+    reporter.panicOnBuild(
+      `Error while running GraphQL query on pages.`
+    )
+    return
+  }
+  
+  // Build out documentation
+  pages.data.allPagesJson.edges.forEach(({ node }) => {
+    createPage({
+      path: node.path,
+      component: pageTemplate,
+      context: {}, // additional data can be passed via context
+    })
+  })
 }
+
+
