@@ -19,7 +19,7 @@ export const Hero: FC<IHeroProps> = props => {
       <Container>
         <Row>
           <Col flex={0.55}>
-            <Box className={styles.hero__inner}>
+            <Box className={styles.inner}>
               <p className={styles.hero__heading}>{heading}</p>
               <p className={styles.hero__subheading}>{subheading}</p>
               <Button
@@ -39,4 +39,21 @@ export const Hero: FC<IHeroProps> = props => {
       </Container>
     </div>
   );
+};
+
+export const HeroBlock = {
+  label: "Hero",
+  key: "hero-block",
+  defaultItem: {
+    hero__heading: "Keep on rockin' in the free world!",
+    hero__subheading: "Neil Young",
+    hero__buttonText: "Start Rockin'",
+    hero__buttonLink: "/get-started",
+  },
+  fields: [
+    { name: "hero__heading", label: "Heading", component: "text" },
+    { name: "hero__subheading", label: "Subheading", component: "text" },
+    { name: "hero__buttonText", label: "Button Text", component: "text" },
+    { name: "hero__buttonLink", label: "Button Link", component: "text" },
+  ],
 };

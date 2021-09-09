@@ -27,7 +27,7 @@ export type { IColProps } from './Layout/Col';
 export type { IDocumentProps } from './Layout/Document';
 export type { IRowProps } from './Layout/Row';
 export { Content } from './Blocks/Content';
-export { Hero } from './Blocks/Hero';
+export { Hero, HeroBlock } from './Blocks/Hero';
 export { Posts } from './Blocks/Posts';
 export type { IContentProps } from './Blocks/Content';
 export type { IHeroProps } from './Blocks/Hero';
