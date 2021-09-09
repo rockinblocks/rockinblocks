@@ -1,5 +1,11 @@
 {
   "path": "/contribute",
   "hero_copy": "Contribute to Rockin' Blocks",
-  "blocks": []
+  "blocks": [
+    {
+      "heading": "Keep on rockin' in the free world!",
+      "subheading": "Neil Young",
+      "_template": "hero-block"
+    }
+  ]
 }
