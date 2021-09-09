@@ -3,7 +3,7 @@
   "blocks": [
     {
       "hero__heading": "Blocks that just rock.",
-      "hero__subheading": "Rockin' Blocks now comes with TinaCMS. And we are turning it up to 11.",
+      "hero__subheading": "Rockin' Blocks now comes with TinaCMS, enabling teams to create fully customizable page building experiences while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
       "_template": "hero-block"
     }
   ]
