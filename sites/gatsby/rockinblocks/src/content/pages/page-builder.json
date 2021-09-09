@@ -9,7 +9,7 @@
       "hero__buttonLink": "/docs/v0/introduction"
     },
     {
-      "contentBasic__content": "## Keep on Truckin",
+      "contentBasic__content": "## Keep on Truckin\n\nRockin' Blocks now comes with TinaCMS, enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
       "contentBasic__flexDirection": "row",
       "_template": "content-basic-block"
     }
