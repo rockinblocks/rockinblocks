@@ -3,8 +3,8 @@
   "hero_copy": "Contribute to Rockin' Blocks",
   "blocks": [
     {
-      "heading": "Keep on rockin' in the free world!",
-      "subheading": "Neil Young",
+      "hero__heading": "Keep on rockin' in the free world!",
+      "hero__subheading": "Neil Young",
       "_template": "hero-block"
     }
   ]
