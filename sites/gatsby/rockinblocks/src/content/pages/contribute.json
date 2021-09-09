@@ -2,8 +2,8 @@
   "path": "/contribute",
   "blocks": [
     {
-      "hero__heading": "Keep on rockin' in the free world!",
-      "hero__subheading": "Neil Young",
+      "hero__heading": "Blocks that just rock.",
+      "hero__subheading": "Rockin' Blocks now comes with TinaCMS. And we are turning it up to 11.",
       "_template": "hero-block"
     }
   ]
