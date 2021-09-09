@@ -7,6 +7,11 @@
       "_template": "hero-block",
       "hero__buttonText": "Start the Tour",
       "hero__buttonLink": "/docs/v0/introduction"
+    },
+    {
+      "contentBasic__content": "## Keep on Truckin",
+      "contentBasic__flexDirection": "row",
+      "_template": "content-basic-block"
     }
   ]
 }
