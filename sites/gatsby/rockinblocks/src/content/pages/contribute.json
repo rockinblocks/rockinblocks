@@ -5,7 +5,9 @@
     {
       "hero__heading": "Keep on rockin' in the free world!",
       "hero__subheading": "Neil Young",
-      "_template": "hero-block"
+      "_template": "hero-block",
+      "heading": "Neil Y",
+      "subheading": "Keep on Rockin' in the Free World!"
     }
   ]
 }
