@@ -2,6 +2,11 @@
   "path": "/contribute",
   "blocks": [
     {
+      "hero__heading": "",
+      "hero__subheading": "Neil Young",
+      "_template": "hero-block"
+    },
+    {
       "hero__heading": "Keep on rockin' in the free world!",
       "hero__subheading": "Neil Young",
       "_template": "hero-block"
