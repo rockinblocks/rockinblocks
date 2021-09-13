@@ -3,7 +3,18 @@ import React from "react"
 import { usePlugin } from "tinacms"
 import { useJsonForm } from "gatsby-tinacms-json"
 import { graphql } from "gatsby"
-import { Hero, HeroBlock } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import Layout from "../../components/mainLayout"
+import { SEO } from "../../components/Utilities/SEO"
+
+import Helmet from "react-helmet"
+import {
+  Box,
+  Footer,
+  Hero,
+  HeroBlock,
+  ContentBasic,
+  ContentBasicBlock
+} from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Page(props) {
   const [data, form] = useJsonForm(props.data.pagesJson, {
@@ -14,6 +25,7 @@ export default function Page(props) {
         component: "blocks",
         templates: {
           "hero-block": HeroBlock,
+          "content-basic-block": ContentBasicBlock
         },
       },
     ],
@@ -32,22 +44,36 @@ export default function Page(props) {
           <Hero
             heading={data.hero__heading}
             subheading={data.hero__subheading}
+            buttonText={data.hero__buttonText}
+            buttonLink={data.hero__buttonLink}
           />
         )
+      case "content-basic-block":
+        return (
+          <ContentBasic content={data.contentBasic__content} />
+        )
       default:
-        break;
+        break
     }
     return <h2>Block</h2>
   }
 
   return (
-    <section>
-      <div>
-        {blocks.map(block => (
-          <Block key={block.__template} {...block} />
-        ))}
-      </div>
-    </section>
+    <Layout>
+      <Helmet>
+
+      </Helmet>
+      <main>
+        <div>
+          {blocks.map(block => (
+            <Block key={block.__template} {...block} />
+          ))}
+        </div>
+      </main>
+      <Box>
+        <Footer />
+      </Box>
+    </Layout>
   )
 }
 
