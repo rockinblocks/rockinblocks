@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import ReactMarkdown  from "react-markdown";
 import { Box, Col, Container, Row } from "../../Layout";
 import { Button } from "../../Elements/Button";
 import styles from "./Hero.scss";
@@ -19,9 +20,9 @@ export const Hero: FC<IHeroProps> = props => {
       <Container>
         <Row>
           <Col flex={0.55}>
-            <Box className={styles.inner}>
+            <Box className={styles.hero__inner}>
               <p className={styles.hero__heading}>{heading}</p>
-              <p className={styles.hero__subheading}>{subheading}</p>
+              <ReactMarkdown className={styles.hero__subheading} children={subheading ?? ''}></ReactMarkdown>
               <Button
                 backgroundColor={primaryColor}
                 text={buttonText}
@@ -52,7 +53,7 @@ export const HeroBlock = {
   },
   fields: [
     { name: "hero__heading", label: "Heading", component: "text" },
-    { name: "hero__subheading", label: "Subheading", component: "text" },
+    { name: "hero__subheading", label: "Subheading", component: "markdown" },
     { name: "hero__buttonText", label: "Button Text", component: "text" },
     { name: "hero__buttonLink", label: "Button Link", component: "text" },
   ],

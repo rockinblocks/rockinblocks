@@ -1,0 +1,66 @@
+@import "../../../styles/shared";
+
+// CSS Modules with SCSS support
+.contentBasic {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-headings;
+    margin-top: spacing(md);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h2 {
+    line-height: 1.875rem;
+  }
+
+  p, li {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: $text-color-muted;
+
+    strong {
+      color: $text-color;
+    }
+  }
+
+  table {
+    background-color: $dark;
+    width: 100%;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+
+  thead {
+    border-radius: 0.25rem;
+  }
+
+  td, th {
+    color: darken($light, 15%);
+    padding: spacing(xs);
+  }
+
+  th {
+    background-color: rgba(#000000, 0.15);
+    color: $white;
+    font-weight: 400;
+    border: none;
+  }
+
+  table code {
+    background-color: rgba(#000000, 0.15);
+    font-size: 1rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__content {
+      padding-right: 25%;
+    }
+  }
+}
