@@ -3,13 +3,13 @@
   "blocks": [
     {
       "hero__heading": "Page building + editing.",
-      "hero__subheading": "Rockin' Blocks now comes with [TinaCMS](https://tina.io), enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
+      "hero__subheading": "**Rockin' Blocks** now comes with [TinaCMS](https://tina.io), enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
       "_template": "hero-block",
       "hero__buttonText": "Start the Tour",
       "hero__buttonLink": "/docs/v0/introduction"
     },
     {
-      "contentBasic__content": "## Contraque quamlibet Longius Tonantis aevi\n\nLorem markdownum [saltem](http://www.me.org/duabusetficti) quid poma cunctis et\namorem _vident classes axem_; eras amores, _saxea septemfluus eripite_ felix\nvix. Solo nunc tibi, relictis nova, tot sub amicius parmam. Novis inopi essem\nauctor in clara totiens ab ipsam gurgite. Et ensis vires mihi palmas. Sua tacui\ncandore, nupta sibi foret, cum voce magno, qui robora venturaque.\n\n_Numitorque_ moveri, credite et armos aetate, nomen erit aut? Suo vecte quae\nSardibus canentis in lustrabere aenis, funus pedibusque nomina quae Virbius!\nPaulatim _quod_ primo pars concordes pectore, oblivia, tibi. Solem inque\nIovisque pedes cupiere natalibus passis iaculum stimulis mixta vi baculum sine\ncarinae nostro dum videndi ratus intrarant.\n\n## ",
+      "contentBasic__content": "# Build a custom page builder hand-in-hand with your design system\n\nBy leveraging the power of Gatsby combined with the elegance of [TinaCMS](https://tina.ia), the **Rockin' Blocks** workspace allows teams to start working in an elegant sandbox without wasting a bunch of time getting configured.\n\n## Easy to edit and understand\n\nThe **Rockin' Blocks** workspace brings [Gatsby](https://gatsbyjs.com) and [TinaCMS](https://tina.io) together to provide a robust CMS experience on top of a simple GraphQL interface with basic JSON and Markdown files. The end result is a development experience that is easy for both developers and marketing teams to contribute and share the burden of getting a product to market.\n\n## Transition from WordPress or Drupal\n\n**Rockin' Blocks** is a great starting point for teams that are familiar with building and maintaining sites in older CMS frameworks like WordPress and Drupal. If you're familiar in developing with plugins like [Advanced Custom Fields](), you'll have no problem getting started with **Rockin' Blocks**.",
       "contentBasic__flexDirection": "row",
       "_template": "content-basic-block"
     }
