@@ -3,7 +3,7 @@
   "blocks": [
     {
       "hero__heading": "Page building + editing.",
-      "hero__subheading": "Rockin' Blocks now comes with TinaCMS, enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
+      "hero__subheading": "Rockin' Blocks now comes with [TinaCMS](https://tina.io), enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
       "_template": "hero-block",
       "hero__buttonText": "Start the Tour",
       "hero__buttonLink": "/docs/v0/introduction"
