@@ -118,6 +118,7 @@
     "react-app-polyfill": "^2.0.0",
     "react-docgen-typescript": "^1.21.0",
     "react-dom": "^16",
+    "react-markdown": "^7",
     "react-styleguidist": "^11.1.5",
     "react-test-renderer": "^16",
     "react-typography": "^0.16.20",
