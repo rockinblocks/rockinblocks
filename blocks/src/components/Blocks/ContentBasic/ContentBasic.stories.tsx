@@ -3,15 +3,15 @@ import { Story, Meta } from "@storybook/react";
 import { ContentBasic, IContentBasicProps } from "./ContentBasic";
 
 export default {
-  title: "Blocks/ContentBasic",
-  component: ContentBasic,
+	title: "Blocks/ContentBasic",
+	component: ContentBasic
 } as Meta;
 
-const Template: Story<IContentBasicProps> = args => <ContentBasic {...args} />;
+const Template: Story<IContentBasicProps> = args => <ContentBasic {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {
-  content: `
+	content: `
 # Consumpta videri
 
 ## Contraque quamlibet Longius Tonantis aevi
@@ -27,5 +27,5 @@ Sardibus canentis in lustrabere aenis, funus pedibusque nomina quae Virbius!
 Paulatim *quod* primo pars concordes pectore, oblivia, tibi. Solem inque
 Iovisque pedes cupiere natalibus passis iaculum stimulis mixta vi baculum sine
 carinae nostro dum videndi ratus intrarant.
-  `,
+  `
 };

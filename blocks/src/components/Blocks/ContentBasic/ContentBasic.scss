@@ -60,7 +60,9 @@
 
   @include media-breakpoint-up(lg) {
     &__content {
-      padding-right: 25%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-right: 35%;
     }
   }
 }

@@ -3,11 +3,11 @@ import { Story, Meta } from "@storybook/react";
 import { Loading } from "./Loading";
 
 export default {
-  title: "Elements/Loading",
-  component: Loading,
+	title: "Elements/Loading",
+	component: Loading
 } as Meta;
 
-const Template: Story = args => <Loading {...args} />;
+const Template: Story = args => <Loading {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {};

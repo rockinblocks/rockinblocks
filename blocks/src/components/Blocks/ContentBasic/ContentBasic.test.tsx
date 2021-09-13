@@ -3,9 +3,9 @@ import { shallow } from "enzyme";
 import { ContentBasic } from "./ContentBasic";
 
 describe("<ContentBasic />", () => {
-  it("should render", () => {
-    const wrapper = shallow(<ContentBasic content="Rockin' Blocks!" />);
+	it("should render", () => {
+		const wrapper = shallow(<ContentBasic content="Rockin' Blocks!"/>);
 
-    expect(wrapper.html()).toBeTruthy();
-  });
+		expect(wrapper.html()).toBeTruthy();
+	});
 });

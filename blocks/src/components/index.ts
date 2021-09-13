@@ -34,9 +34,11 @@ export type { IRowProps } from './Layout/Row';
 
 // Blocks
 export { Content } from './Blocks/Content';
+export { ContentBasic, ContentBasicBlock } from './Blocks/ContentBasic';
 export { Hero, HeroBlock } from './Blocks/Hero';
 export { Posts } from './Blocks/Posts';
 export type { IContentProps } from './Blocks/Content';
+export type { IContentBasicProps } from './Blocks/ContentBasic';
 export type { IHeroProps } from './Blocks/Hero';
 export type { IPostsProps } from './Blocks/Posts';
 
