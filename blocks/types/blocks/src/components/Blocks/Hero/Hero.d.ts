@@ -13,6 +13,8 @@ export declare const HeroBlock: {
     defaultItem: {
         hero__heading: string;
         hero__subheading: string;
+        hero__buttonText: string;
+        hero__buttonLink: string;
     };
     fields: {
         name: string;

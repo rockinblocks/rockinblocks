@@ -7,3 +7,18 @@ export interface IHeroProps {
     primaryColor?: string;
 }
 export declare const Hero: FC<IHeroProps>;
+export declare const HeroBlock: {
+    label: string;
+    key: string;
+    defaultItem: {
+        hero__heading: string;
+        hero__subheading: string;
+        hero__buttonText: string;
+        hero__buttonLink: string;
+    };
+    fields: {
+        name: string;
+        label: string;
+        component: string;
+    }[];
+};
