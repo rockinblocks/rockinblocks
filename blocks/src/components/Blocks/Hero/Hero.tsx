@@ -22,7 +22,10 @@ export const Hero: FC<IHeroProps> = props => {
           <Col flex={0.55}>
             <Box className={styles.hero__inner}>
               <p className={styles.hero__heading}>{heading}</p>
-              <ReactMarkdown className={styles.hero__subheading}>
+              <ReactMarkdown
+                options={{ forceBlock: true }}
+                className={styles.hero__subheading}
+              >
                 {subheading ?? ""}
               </ReactMarkdown>
               <Button

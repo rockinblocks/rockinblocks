@@ -13,7 +13,10 @@ export const ContentBasic: FC<IContentBasicProps> = ({
   return (
     <div className={styles.contentBasic}>
       <Container>
-        <ReactMarkdown className={styles.contentBasic__content}>
+        <ReactMarkdown
+          options={{ forceBlock: true }}
+          className={styles.contentBasic__content}
+        >
           {content}
         </ReactMarkdown>
       </Container>
