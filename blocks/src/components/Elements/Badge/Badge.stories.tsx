@@ -3,15 +3,15 @@ import { Story, Meta } from "@storybook/react";
 import { Badge, IBadgeProps } from "./Badge";
 
 export default {
-	title: "Elements/Badge",
-	component: Badge
+  title: "Elements/Badge",
+  component: Badge,
 } as Meta;
 
-const Template: Story<IBadgeProps> = args => <Badge {...args}/>;
+const Template: Story<IBadgeProps> = args => <Badge {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-	text: "Rock On!",
-	textColor: "#ffffff",
-	variant: "success"
+  text: "Rock On!",
+  textColor: "#ffffff",
+  variant: "success",
 };

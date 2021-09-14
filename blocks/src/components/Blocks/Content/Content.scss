@@ -45,7 +45,7 @@
 }
 
 .content__section {
-  margin: spacing(xs) / 2;
+  margin: div(spacing(xs), 2);
   background-color: $light;
   border-radius: $card-border-radius;
   color: $text-color-muted;
@@ -59,7 +59,7 @@
   @include media-breakpoint-up(md) {
     display: flex;
     padding: spacing(md);
-    margin-bottom: spacing(xs) / 4;
+    margin-bottom: div(spacing(xs), 4);
   }
 }
 

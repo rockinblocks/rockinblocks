@@ -1,7 +1,7 @@
 @import "../../../styles/shared";
 
 .navbar {
-  padding: (spacing(xs) / 2) spacing(xs);
+  padding: div(spacing(xs), 2) spacing(xs);
   background-color: $white;
   color: $text-color;
   display: flex;
