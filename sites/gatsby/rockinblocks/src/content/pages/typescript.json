@@ -2,7 +2,7 @@
   "path": "/features/typescript",
   "blocks": [
     {
-      "hero__heading": "Ship better code with confidence.",
+      "hero__heading": "Do you know your type?",
       "hero__subheading": "# Typescript makes life easier.\n\n**Rockin' Blocks** ships with Typescript out of the box, helping you find nuances throughout your code before your lead engineer (or your drummer). Enjoy type generation and autocompletion from your own component library.",
       "_template": "hero-block",
       "hero__buttonText": "View the Code",
