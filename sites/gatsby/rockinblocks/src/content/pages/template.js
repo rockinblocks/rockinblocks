@@ -42,17 +42,6 @@ export default function Page(props) {
   const Block = data => {
     const { _template } = data
     switch (_template) {
-      case "hero-block":
-        return (
-          <Hero
-            heading={data.hero__heading}
-            subheading={data.hero__content}
-            buttonText={data.hero__buttonText}
-            buttonLink={data.hero__buttonLink}
-          />
-        )
-      case "content-basic-block":
-        return <ContentBasic content={data.contentBasic__content} />
       case "cta-block":
         return (
           <CallToAction
@@ -60,6 +49,17 @@ export default function Page(props) {
             content={data.cta__content}
             buttonText={data.cta__buttonText}
             buttonLink={data.cta__buttonLink ?? "/"}
+          />
+        )
+      case "content-basic-block":
+        return <ContentBasic content={data.contentBasic__content} />
+      case "hero-block":
+        return (
+          <Hero
+            heading={data.hero__heading}
+            content={data.hero__content}
+            buttonText={data.hero__buttonText}
+            buttonLink={data.hero__buttonLink}
           />
         )
       default:
@@ -91,10 +91,6 @@ export const pageQuery = graphql`
       id
       path
       blocks {
-        cta__heading
-        cta__content
-        cta__buttonText
-        cta__buttonLink
         hero__heading
         hero__content
         hero__buttonText

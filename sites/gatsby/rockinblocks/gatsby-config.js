@@ -1,37 +1,37 @@
-const path = require('path')
+const path = require("path")
 
 module.exports = {
   siteMetadata: {
     title: `Rockin' Blocks`,
     description: `Blocks that just rock!`,
     author: `@RockinBlocksJS`,
-    siteUrl: `https://www.rockinblocks.io`
+    siteUrl: `https://www.rockinblocks.io`,
   },
   plugins: [
     `@rockinblocks/gatsby-plugin-rockinblocks`,
     {
-			resolve: 'gatsby-plugin-tinacms',
-			options: {
-				enabled: process.env.NODE_ENV !== 'production',
-				sidebar: {
-					position: 'displace'
-				},
-				plugins: [
-					{
-						resolve: 'gatsby-tinacms-git',
-						options: {
-							pathToContent: '/',
-							defaultCommitMessage: `Edited with Rockin' Blocks! 🎸`,
-							defaultCommitName: `Rockin' Blocks`,
-							defaultCommitEmail: 'git@rockinblocks.io',
-							pushOnCommit: false,
-						},
-					},
-					'gatsby-tinacms-remark',
-					'gatsby-tinacms-json',
-				],
-			},
-		},
+      resolve: "gatsby-plugin-tinacms",
+      options: {
+        enabled: process.env.NODE_ENV !== "production",
+        sidebar: {
+          position: "displace",
+        },
+        plugins: [
+          {
+            resolve: "gatsby-tinacms-git",
+            options: {
+              pathToContent: "/",
+              defaultCommitMessage: `Edited with Rockin' Blocks! 🎸`,
+              defaultCommitName: `Rockin' Blocks`,
+              defaultCommitEmail: "git@rockinblocks.io",
+              pushOnCommit: false,
+            },
+          },
+          "gatsby-tinacms-remark",
+          "gatsby-tinacms-json",
+        ],
+      },
+    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
@@ -53,6 +53,13 @@ module.exports = {
       options: {
         name: `pages`,
         path: path.join(__dirname, `/src/content/pages`),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `features`,
+        path: path.join(__dirname, `/src/content/pages/features`),
       },
     },
     `gatsby-transformer-sharp`,

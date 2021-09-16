@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import styles from "./CallToAction.scss";
 import ReactMarkdown from "markdown-to-jsx";
 import { Button } from "../..";
+import styles from "./CallToAction.scss";
 
 export interface ICallToActionProps {
   heading: string;
@@ -20,9 +20,7 @@ export const CallToAction: FC<ICallToActionProps> = (props): JSX.Element => {
         </p>
       </div>
       <div className={styles["call-to-action__content"]}>
-        <ReactMarkdown options={{ forceBlock: true }}>
-          {content}
-        </ReactMarkdown>
+        <ReactMarkdown options={{ forceBlock: true }}>{content}</ReactMarkdown>
       </div>
       <div className={styles["call-to-action__action"]}>
         <Button to={buttonLink} text={buttonText} />
@@ -49,4 +47,3 @@ export const CallToActionBlock = {
     { name: "cta__buttonLink", label: "Button Link", component: "text" },
   ],
 };
-

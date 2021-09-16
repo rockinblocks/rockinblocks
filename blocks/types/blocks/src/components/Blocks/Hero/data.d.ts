@@ -1,6 +1,6 @@
 declare const HeroData: {
     heading: string;
-    subheading: string;
+    content: string;
     buttonText: string;
     buttonLink: string;
 };

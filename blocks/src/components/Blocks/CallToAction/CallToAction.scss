@@ -25,7 +25,7 @@
 
   @include media-breakpoint-up(lg) {
     & > p {
-      font-size: 4rem;
+      font-size: 3.5rem;
       margin-bottom: spacing(md);
     }
   }
@@ -44,6 +44,10 @@
   }
 
   @include media-breakpoint-up(lg) {
+    max-width: 55%;
+    display: block;
+    margin: 0 auto;
+
     & h1:first-child,
     & h2:first-child,
     & h3:first-child,
@@ -52,7 +56,7 @@
     & h6:first-child,
     & p:first-child {
       margin-top: 0;
-      font-size: 1rem;
+      font-size: 1.625rem;
       margin-bottom: spacing(md);
     }
   }

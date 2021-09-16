@@ -14,9 +14,9 @@ const Template: Story<IHeroProps> = args => <Hero {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  heading: "Rock out with your docs out.",
-  subheading:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  heading: "Create + Maintain",
+  content:
+    "# Craft an elegant component library and fully-customizable page builder that align perfectly with your design system.\n\n**Rockin' Blocks** is a fully-equipped application starter powered by Gatsby, Storybook, and TinaCMS. Create your application alongside your documentation and blog in a single repository. Easily share a your new component library across multiple Javascript applications. Take advantage of blazing-fast page speeds and version content edits.",
   buttonText: "Start a Project",
   buttonLink: "/docs/v0.1.0/introduction",
 };

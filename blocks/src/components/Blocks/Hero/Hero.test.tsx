@@ -11,11 +11,11 @@ describe("<Hero />", () => {
     expect(wrapper.find("p").first().text()).toEqual(heading);
   });
 
-  it("should render the subheading", () => {
-    const { subheading } = props;
+  it("should render the hero content", () => {
+    const { content } = props;
     const wrapper = render(<Hero {...props} />);
-
-    expect(wrapper.html()).toContain(subheading);
+ 
+    expect(wrapper.html()).toContain(content);
   });
 
   it("should render the button", () => {

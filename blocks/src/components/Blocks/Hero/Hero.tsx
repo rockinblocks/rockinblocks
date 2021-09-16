@@ -7,14 +7,14 @@ import { ReactComponent as Vector } from "./Hero.svg";
 
 export interface IHeroProps {
   heading: string;
-  subheading?: string;
+  content?: string;
   buttonText: string;
   buttonLink?: string;
   primaryColor?: string;
 }
 
 export const Hero: FC<IHeroProps> = props => {
-  const { heading, subheading, buttonText, buttonLink, primaryColor } = props;
+  const { heading, content, buttonText, buttonLink, primaryColor } = props;
   return (
     <div className={styles.hero}>
       <Container>
@@ -24,9 +24,9 @@ export const Hero: FC<IHeroProps> = props => {
               <p className={styles.hero__heading}>{heading}</p>
               <ReactMarkdown
                 options={{ forceBlock: true }}
-                className={styles.hero__subheading}
+                className={styles.hero__content}
               >
-                {subheading ?? ""}
+                {content ?? ""}
               </ReactMarkdown>
               <Button
                 backgroundColor={primaryColor}
@@ -52,13 +52,13 @@ export const HeroBlock = {
   key: "hero-block",
   defaultItem: {
     hero__heading: "Keep on rockin' in the free world!",
-    hero__subheading: "Neil Young",
+    hero__content: "Neil Young",
     hero__buttonText: "Start Rockin'",
     hero__buttonLink: "/get-started",
   },
   fields: [
     { name: "hero__heading", label: "Heading", component: "text" },
-    { name: "hero__subheading", label: "Subheading", component: "markdown" },
+    { name: "hero__content", label: "Content", component: "markdown" },
     { name: "hero__buttonText", label: "Button Text", component: "text" },
     { name: "hero__buttonLink", label: "Button Link", component: "text" },
   ],
