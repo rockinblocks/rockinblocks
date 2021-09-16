@@ -9,6 +9,13 @@
       "hero__buttonLink": "https://github.com/rockinblocks/rockinblocks"
     },
     {
+      "cta__heading": "Build your dream.",
+      "cta__content": "**Craft a fully-customizable page builder from your design system.**",
+      "cta__buttonText": "Start Rockin'",
+      "cta__buttonLink": "/docs/v0/installation",
+      "_template": "cta-block"
+    },
+    {
       "contentBasic__content": "# Rockin' Blocks is written in Typescript\n\n## Benefits of using Typescript\n\n### Enjoy autocompletion of your own component library.\n\nAll of the elements and blocks provided by **Rockin' Blocks** -- even the blocks you create -- will provide autocompletion within VS Code, Atom, and Sublime. Examples of typed components are provided to help new Typescript developers get started.\n\n### Detect issues right away, before they ever leave your computer.\n\nIn tandem with your text editor, Typescript will flag type issues for you before you even compile to let you know that there might be something wrong right away.",
       "contentBasic__flexDirection": "row",
       "_template": "content-basic-block"
