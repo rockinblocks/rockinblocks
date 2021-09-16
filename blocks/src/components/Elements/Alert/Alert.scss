@@ -3,20 +3,10 @@
 // CSS Modules with SCSS support
 .alert {
   padding: spacing(xs);
-  background-color: $dark;
+  background-color: $secondary;
   color: $light;
   display: flex;
   justify-content: space-between;
-}
-
-.alert button {
-  background-color: $secondary;
-  color: $white;
-  border: 0;
-  padding: div(spacing(xs), 2) spacing(xs);
-  border-radius: spacing(xs);
-
-  &:hover {
-    cursor: pointer;
-  }
+  margin-bottom: spacing(md);
+  font-size: 1.125rem;
 }

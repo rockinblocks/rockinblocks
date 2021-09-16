@@ -1,6 +1,6 @@
 import React, { CSSProperties, FC } from "react";
 import clsx from "clsx";
-import { Box, Container } from "../../Layout";
+import { Box, Button, Container } from "../..";
 import styles from "./Alert.scss";
 
 export interface IAlertProps {
@@ -17,7 +17,6 @@ export const Alert: FC<IAlertProps & CSSProperties> = ({
   text,
   type,
   link,
-  onClick,
 }): JSX.Element => {
   return (
     <div className={clsx(styles.alert, type)}>
@@ -26,9 +25,7 @@ export const Alert: FC<IAlertProps & CSSProperties> = ({
           <span>{text}</span>
         </Box>
         <Box>
-          <button type="button" onClick={onClick}>
-            {link?.text}
-          </button>
+          <Button text={link?.text} to={link?.location} />
         </Box>
       </Container>
     </div>

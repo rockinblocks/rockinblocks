@@ -12,6 +12,7 @@ const Template: Story<IAlertProps> = args => <Alert {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   text: "Rockin' Blocks may collect a small amount of data to help improve our online user experiences.",
+  type: "info",
   link: {
     text: "Approve",
     location: "#",
