@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "gatsby";
-import { GitHubButton } from "../GitHubButton";
-import { Box, Col, Container, Row } from "../../Layout";
+import { Box, Col, Container, Row, GitHubButton } from "../..";
 import { ReactComponent as Logo } from "../../../assets/rockinblocks-logo.svg";
 import { ReactComponent as Monogram } from "../../../assets/rockinblocks-no-mark.svg";
 import styles from "./Navbar.scss";

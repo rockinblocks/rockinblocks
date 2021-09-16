@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "../../Elements/Navbar";
+import { Navbar } from "../..";
 
 export const Header: React.FC = (): JSX.Element => {
   return (
