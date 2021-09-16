@@ -10,7 +10,7 @@
     },
     {
       "cta__heading": "The monorepo life.",
-      "cta__content": "## Manage your app, documentation, blog, components, and even all of your content in the same monorepo.",
+      "cta__content": "## Manage your app, documentation, blog, components, and even all of your content in the same Git repository.",
       "cta__buttonText": "Start Rockin'",
       "cta__buttonLink": "/get-started",
       "_template": "cta-block"
