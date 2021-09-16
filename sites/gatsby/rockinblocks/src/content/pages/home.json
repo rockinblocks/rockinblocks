@@ -1,0 +1,19 @@
+{
+  "path": "/",
+  "blocks": [
+    {
+      "hero__heading": "Building + Editing",
+      "hero__content": "# Customize your page building experience to match your design system.\n\n**Rockin' Blocks** now comes with [TinaCMS](https://tina.io), enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
+      "_template": "hero-block",
+      "hero__buttonText": "Start a Project",
+      "hero__buttonLink": "/docs/v0/installation"
+    },
+    {
+      "cta__heading": "The monorepo life.",
+      "cta__content": "## Manage your app, documentation, blog, components, and even all of your content in the same monorepo.\n\nIf you haven't tried out a monorepo yet, no worries! Starting with **Rockin' Blocks** is a great way to get your feet wet and familiarize yourself with the monorepo workflow. ",
+      "cta__buttonText": "Start Rockin'",
+      "cta__buttonLink": "/get-started",
+      "_template": "cta-block"
+    }
+  ]
+}
