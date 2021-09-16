@@ -9,7 +9,11 @@ import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { withPlugin } from "tinacms"
 import { RemarkCreatorPlugin } from "gatsby-tinacms-remark"
-import { Loading, Navbar } from "@rockinblocks/gatsby-plugin-rockinblocks"
+import {
+  Loading,
+  Navbar,
+  Alert,
+} from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 const Layout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
@@ -28,6 +32,13 @@ const Layout = ({ children }) => {
             appName="Rockin' Blocks"
             color={"#ffffff"}
             backgroundColor="#ffffff"
+          />
+          <Alert
+            text="Rockin' Blocks now ships with a fully-customizable page builder, powered by TinaCMS! 🦙"
+            link={{
+              text: "Install Now",
+              location: "/docs/v0/installation",
+            }}
           />
           <div className="layout-wrapper">
             <main>{children}</main>
