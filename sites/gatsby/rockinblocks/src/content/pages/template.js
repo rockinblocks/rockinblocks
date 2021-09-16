@@ -4,7 +4,7 @@ import { usePlugin } from "tinacms"
 import { useJsonForm } from "gatsby-tinacms-json"
 import { graphql } from "gatsby"
 import Layout from "../../components/mainLayout"
-import { SEO } from "../../components/Utilities/SEO"
+// import { SEO } from "../../components/Utilities/SEO"
 
 import Helmet from "react-helmet"
 import {
@@ -13,7 +13,9 @@ import {
   Hero,
   HeroBlock,
   ContentBasic,
-  ContentBasicBlock
+  ContentBasicBlock,
+  CallToAction,
+  CallToActionBlock,
 } from "@rockinblocks/gatsby-plugin-rockinblocks"
 
 export default function Page(props) {
@@ -24,8 +26,9 @@ export default function Page(props) {
         name: "rawJson.blocks",
         component: "blocks",
         templates: {
+          "cta-block": CallToActionBlock,
+          "content-basic-block": ContentBasicBlock,
           "hero-block": HeroBlock,
-          "content-basic-block": ContentBasicBlock
         },
       },
     ],
@@ -43,14 +46,21 @@ export default function Page(props) {
         return (
           <Hero
             heading={data.hero__heading}
-            subheading={data.hero__subheading}
+            subheading={data.hero__content}
             buttonText={data.hero__buttonText}
             buttonLink={data.hero__buttonLink}
           />
         )
       case "content-basic-block":
+        return <ContentBasic content={data.contentBasic__content} />
+      case "cta-block":
         return (
-          <ContentBasic content={data.contentBasic__content} />
+          <CallToAction
+            heading={data.cta__heading}
+            content={data.cta__content}
+            buttonText={data.cta__buttonText}
+            buttonLink={data.cta__buttonLink ?? "/"}
+          />
         )
       default:
         break
@@ -60,9 +70,7 @@ export default function Page(props) {
 
   return (
     <Layout>
-      <Helmet>
-
-      </Helmet>
+      <Helmet></Helmet>
       <main>
         <div>
           {blocks.map(block => (
@@ -83,8 +91,14 @@ export const pageQuery = graphql`
       id
       path
       blocks {
+        cta__heading
+        cta__content
+        cta__buttonText
+        cta__buttonLink
         hero__heading
-        hero__subheading
+        hero__content
+        hero__buttonText
+        hero__buttonLink
       }
       rawJson
       fileRelativePath
