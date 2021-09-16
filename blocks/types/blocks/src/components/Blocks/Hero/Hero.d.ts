@@ -1,7 +1,7 @@
 import { FC } from "react";
 export interface IHeroProps {
     heading: string;
-    subheading?: string;
+    content?: string;
     buttonText: string;
     buttonLink?: string;
     primaryColor?: string;
@@ -12,7 +12,7 @@ export declare const HeroBlock: {
     key: string;
     defaultItem: {
         hero__heading: string;
-        hero__subheading: string;
+        hero__content: string;
         hero__buttonText: string;
         hero__buttonLink: string;
     };
