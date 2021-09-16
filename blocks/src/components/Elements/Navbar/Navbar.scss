@@ -1,7 +1,8 @@
+@use "sass:math";
 @import "../../../styles/shared";
 
 .navbar {
-  padding: div(spacing(xs), 2) spacing(xs);
+  padding: math.div(spacing(xs), 2) spacing(xs);
   background-color: $white;
   color: $text-color;
   display: flex;

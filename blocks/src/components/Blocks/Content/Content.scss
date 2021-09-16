@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "../../../styles/shared";
 
 .content {
@@ -45,7 +46,7 @@
 }
 
 .content__section {
-  margin: div(spacing(xs), 2);
+  margin: math.div(spacing(xs), 2);
   background-color: $light;
   border-radius: $card-border-radius;
   color: $text-color-muted;
@@ -59,7 +60,7 @@
   @include media-breakpoint-up(md) {
     display: flex;
     padding: spacing(md);
-    margin-bottom: div(spacing(xs), 4);
+    margin-bottom: math.div(spacing(xs), 4);
   }
 }
 

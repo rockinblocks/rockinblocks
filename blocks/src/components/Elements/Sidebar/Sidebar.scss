@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "../../../styles/shared";
 
 .sidebar {
@@ -42,7 +43,7 @@
 .sidebar__navigation li {
   font-size: 1rem;
   font-weight: 600;
-  padding: div(spacing(xs), 2) spacing(xs);
+  padding: math.div(spacing(xs), 2) spacing(xs);
   border-radius: 2rem;
   transition: background-color $transition-time;
 }
