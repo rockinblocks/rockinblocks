@@ -3,7 +3,7 @@
   "blocks": [
     {
       "hero__heading": "Rock out with your blocks out.",
-      "hero__content": "## Manage your app, documentation, blog, components, and content in the same Git repository.\n\n**Rockin' Blocks** now comes with [TinaCMS](https://tina.io), enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
+      "hero__content": "## Manage your apps, documentation, blog, components, and content in the same Git repository.\n\n**Rockin' Blocks** now comes with [TinaCMS](https://tina.io), enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
       "_template": "hero-block",
       "hero__buttonText": "Start a Project",
       "hero__buttonLink": "/docs/v0/installation"
