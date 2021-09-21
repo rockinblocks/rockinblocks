@@ -55,13 +55,6 @@ module.exports = {
         path: path.join(__dirname, `/src/content/pages`),
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `features`,
-        path: path.join(__dirname, `/src/content/pages/features`),
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
