@@ -15,7 +15,9 @@ export const generator = (options: GeneratorOptions): void => {
   console.info(
     chalk.green(`
 🎸🎶🤘 Successfully created ${name}! 🤘🎶🎸
-Check your ${chalk.blue("blocks/src/components/Blocks")} directory for you new block!
+Check your ${chalk.blue(
+      "blocks/src/components/Blocks",
+    )} directory for you new block!
 `),
   );
 };
@@ -50,7 +52,7 @@ export type { I${name}Props } from "./${name}"
       );
     });
   } catch (error) {
-    console.error("There was an issue creating your block.", error.message);
+    console.error({ error, message: "There was an error." });
   }
 };
 
@@ -86,7 +88,7 @@ export default ${name}
 `,
     );
   } catch (error) {
-    console.error("There was an issue creating your block.", error.message);
+    console.error({ error, message: "There was an error." });
   }
 };
 
@@ -109,7 +111,7 @@ const generateComponentScss = async (name?: string) => {
 `,
     );
   } catch (error) {
-    console.error("There was an error:", error.message);
+    console.error({ error, message: "There was an error." });
   }
 };
 
@@ -141,7 +143,7 @@ Default.args = {
 `,
     );
   } catch (error) {
-    console.error("There was an error:", error.message);
+    console.error({ error, message: "There was an error." });
   }
 };
 
@@ -169,7 +171,7 @@ describe("<${name} />", () => {
 `,
     );
   } catch (error) {
-    console.error("There was an error:", error.message);
+    console.error({ error, message: "There was an error." });
   }
 };
 

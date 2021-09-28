@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, render } from "enzyme";
 import { Button } from "../../Elements/Button";
 import { Hero } from "./Hero";
 import props from "./data";
@@ -11,10 +11,11 @@ describe("<Hero />", () => {
     expect(wrapper.find("p").first().text()).toEqual(heading);
   });
 
-  it("should render the subheading", () => {
-    const { subheading } = props;
-    const wrapper = shallow(<Hero {...props} />);
-    expect(wrapper.find("p").last().text()).toEqual(subheading);
+  it("should render the hero content", () => {
+    const { content } = props;
+    const wrapper = render(<Hero {...props} />);
+ 
+    expect(wrapper.html()).toContain(content);
   });
 
   it("should render the button", () => {

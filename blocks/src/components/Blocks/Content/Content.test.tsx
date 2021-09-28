@@ -29,7 +29,7 @@ const content = {
       heading: "Join the Discord",
       body: "Interested in contributing? Want to share a great idea? Open source means open to new ideas and suggestions. Join the Discord!",
       buttonText: "Join the Band",
-      buttonLink: "//discord.gg/vmFSbjuP25",
+      buttonLink: "/docs/v0/installation",
     },
   ],
 };

@@ -15,18 +15,51 @@
 }
 
 .hero__heading {
-  @include typography-display();
-  margin: 0;
-  margin-bottom: spacing(sm);
+  color: $text-color;
+  font-family: $font-family-headings;
+  line-height: 1.75rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 spacing(sm);
+
+  @include media-breakpoint-up(xs) {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 4.375rem;
+    line-height: 4.125rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
 
   @include media-breakpoint-up(lg) {
     margin-bottom: spacing(xs);
   }
 }
 
-.hero__subheading {
-  @include typography-subheading();
+.hero__content {
+  color: $text-color-muted;
   margin-bottom: spacing(md);
+}
+
+.hero__content h1 {
+  font-size: 1.25rem;
+
+  @include media-breakpoint-up(xs) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .hero__image-wrapper {

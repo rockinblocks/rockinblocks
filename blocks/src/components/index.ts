@@ -33,10 +33,15 @@ export type { IDocumentProps } from './Layout/Document';
 export type { IRowProps } from './Layout/Row';
 
 // Blocks
+export { CallToAction, CallToActionBlock } from './Blocks/CallToAction';
 export { Content } from './Blocks/Content';
-export { Hero } from './Blocks/Hero';
+export { ContentBasic, ContentBasicBlock } from './Blocks/ContentBasic';
+export { Hero, HeroBlock } from './Blocks/Hero';
 export { Posts } from './Blocks/Posts';
+
+export type { ICallToActionProps } from './Blocks/CallToAction';
 export type { IContentProps } from './Blocks/Content';
+export type { IContentBasicProps } from './Blocks/ContentBasic';
 export type { IHeroProps } from './Blocks/Hero';
 export type { IPostsProps } from './Blocks/Posts';
 

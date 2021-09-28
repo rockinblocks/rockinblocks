@@ -1,0 +1,69 @@
+@import "../../../styles/shared";
+
+// CSS Modules with SCSS support
+.call-to-action {
+  background-color: $dark;
+  padding: spacing(sm);
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: spacing(lg) spacing(sm)
+  }
+}
+
+.call-to-action__heading {
+  color: $light;
+  font-family: $font-family-headings;
+
+  & > p {
+    font-size: 2.75rem;
+    margin-bottom: spacing(xs);
+  }
+
+  @include media-breakpoint-up(lg) {
+    & > p {
+      font-size: 3.5rem;
+      margin-bottom: spacing(md);
+    }
+  }
+}
+
+.call-to-action__content {
+  & h1:first-child,
+  & h2:first-child,
+  & h3:first-child,
+  & h4:first-child,
+  & h5:first-child,
+  & h6:first-child,
+  & p:first-child {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 55%;
+    display: block;
+    margin: 0 auto;
+
+    & h1:first-child,
+    & h2:first-child,
+    & h3:first-child,
+    & h4:first-child,
+    & h5:first-child,
+    & h6:first-child,
+    & p:first-child {
+      margin-top: 0;
+      font-size: 1.625rem;
+      margin-bottom: spacing(md);
+    }
+  }
+
+  color: darken($light, 20);
+}
+
+.call-to-action__action {
+  margin-bottom: spacing(md)
+}
