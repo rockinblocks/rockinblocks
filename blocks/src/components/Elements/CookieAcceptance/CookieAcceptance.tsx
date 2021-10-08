@@ -20,9 +20,7 @@ export const CookieAcceptance: FC = (): JSX.Element => {
   return (
     <div className={styles.cookieAcceptance}>
       {!acceptedCookies && (
-        <Box
-          className={styles["cookieAcceptance__alert"]}
-        >
+        <Box className={styles.cookieAcceptance__alert}>
           <Container display="flex" justifyContent="space-between">
             <Box display="flex" flexDirection="column" justifyContent="center">
               This site uses cookies to improve the user experiences for you and
@@ -30,8 +28,10 @@ export const CookieAcceptance: FC = (): JSX.Element => {
             </Box>
             <Box>
               <span
-                className={styles["cookieAcceptance__link"]}
-                onClick={() => handleAcceptedCookies()}
+                className={styles.cookieAcceptance__link}
+                onClick={() => {
+                  handleAcceptedCookies();
+                }}
               >
                 Accept Cookies
               </span>
