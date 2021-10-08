@@ -14,7 +14,7 @@ describe("<Hero />", () => {
   it("should render the hero content", () => {
     const { content } = props;
     const wrapper = render(<Hero {...props} />);
- 
+
     expect(wrapper.html()).toContain(content);
   });
 

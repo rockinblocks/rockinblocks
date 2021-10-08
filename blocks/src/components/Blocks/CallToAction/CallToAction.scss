@@ -2,7 +2,7 @@
 
 // CSS Modules with SCSS support
 .call-to-action {
-  background-color: $dark;
+  background-color: $white;
   padding: spacing(sm);
   text-align: center;
 
@@ -15,7 +15,7 @@
 }
 
 .call-to-action__heading {
-  color: $light;
+  color: $dark;
   font-family: $font-family-headings;
 
   & > p {
@@ -61,7 +61,7 @@
     }
   }
 
-  color: darken($light, 20);
+  color: $text-color-muted;
 }
 
 .call-to-action__action {
