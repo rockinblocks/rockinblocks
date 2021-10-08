@@ -8,3 +8,13 @@
   right: 0;
   z-index: 10;
 }
+
+.cookieAcceptance__alert {
+  background-color: $black;
+  padding: spacing(xs);
+  color: $light;
+}
+
+.cookieAcceptance__link {
+  text-decoration: underline;
+}
