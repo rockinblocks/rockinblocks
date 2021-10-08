@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { Box } from "../..";
+import { Box, Container } from "../..";
 import styles from "./CookieAcceptance.scss";
 
 export const CookieAcceptance: FC = (): JSX.Element => {
@@ -22,21 +22,21 @@ export const CookieAcceptance: FC = (): JSX.Element => {
       {!acceptedCookies && (
         <Box
           className={styles["cookieAcceptance__alert"]}
-          display="flex"
-          justifyContent="space-between"
         >
-          <Box display="flex" flexDirection="column" justifyContent="center">
-            This site uses cookies to improve the user experiences for you and
-            your users.
-          </Box>
-          <Box>
-            <span
-              className={styles["cookieAcceptance__link"]}
-              onClick={() => handleAcceptedCookies()}
-            >
-              Accept Cookies
-            </span>
-          </Box>
+          <Container display="flex" justifyContent="space-between">
+            <Box display="flex" flexDirection="column" justifyContent="center">
+              This site uses cookies to improve the user experiences for you and
+              your users.
+            </Box>
+            <Box>
+              <span
+                className={styles["cookieAcceptance__link"]}
+                onClick={() => handleAcceptedCookies()}
+              >
+                Accept Cookies
+              </span>
+            </Box>
+          </Container>
         </Box>
       )}
     </div>
