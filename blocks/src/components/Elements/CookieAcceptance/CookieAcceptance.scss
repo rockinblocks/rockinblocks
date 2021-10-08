@@ -17,4 +17,8 @@
 
 .cookieAcceptance__link {
   text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
