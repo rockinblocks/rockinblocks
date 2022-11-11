@@ -1,39 +1,28 @@
 {
   "name": "@rockinblocks/workspace",
-  "version": "0.3.1",
+  "version": "1.0.0-alpha",
   "license": "MIT",
   "private": true,
   "workspaces": {
     "packages": [
       "blocks",
-      "cli",
-      "plugins/**",
-      "sites/**/**"
-    ],
-    "nohoist": [
-      "**/@fontsource",
-      "**/@fontsource/**"
+      "web"
     ]
   },
-  "scripts": {
-    "clean": "rm -rf node_modules blocks/node_modules sites/**/**/node_modules sites/**/**/.cache sites/**/**/public plugins/**/**/node_modules",
-    "dev": "yarn blocks:sb & yarn web:dev",
-    "build": "yarn blocks:build && yarn web:build",
-    "blocks:sb": "yarn workspace @rockinblocks/rockinblocks storybook",
-    "blocks:watch": "yarn workspace @rockinblocks/rockinblocks build:watch",
-    "blocks:make": "yarn workspace @rockinblocks/rockinblocks riff",
-    "blocks:build": "yarn workspace @rockinblocks/rockinblocks build",
-    "blocks:hoist": "symlink-dir blocks/src/components ./lib",
-    "blocks:test": "yarn workspace @rockinblocks/rockinblocks jest",
-    "blocks:lint": "yarn workspace @rockinblocks/rockinblocks xo",
-    "web": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks",
-    "web:content:hoist": "symlink-dir sites/gatsby/rockinblocks/src/content content/rockinblocks",
-    "web:dev": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks develop",
-    "web:build": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks build",
-    "web:lint": "yarn workspace @rockinblocks/gatsby-starter-rockinblocks lint",
-    "riff": "yarn --cwd blocks riff"
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-vite": "^0.2.5",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue3": "^6.5.13",
+    "babel-loader": "^8.2.5",
+    "vue-loader": "^16.8.3"
   },
-  "dependencies": {
-    "rimraf": "^3.0.2"
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   }
 }
