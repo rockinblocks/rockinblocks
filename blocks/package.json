@@ -1,36 +1,38 @@
 {
   "name": "@rockinblocks/rockinblocks",
-  "private": true,
   "version": "1.0.0-alpha",
   "type": "module",
-  "author": "Jed Darrohn",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.com:rockinblocks/rockinblocks.git"
+  "main": "./dist/rblx.umd.cjs",
+  "module": "./dist/rblx.js",
+  "exports": {
+    ".": {
+      "import": "./dist/rblx.js",
+      "require": "./dist/rblx.umd.cjs"
+    }
   },
-  "homepage": "https://www.rockinblocks.io",
-  "main": "dist/rockinblocks.js",
-  "module": "dist/rockinblocks.js",
-  "files": [
-    "dist",
-    "types"
-  ],
+  "types": "lib/components/**/**/*.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "peerDependencies": {
+    "gatsby": "^5.0.0",
+    "gatsby-plugin-image": "^3.0.0",
+    "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-plugin-sharp": "^5.0.0",
+    "gatsby-source-filesystem": "^5.0.0",
+    "gatsby-transformer-sharp": "^5.0.0"
+  },
   "dependencies": {
-    "@heroicons/vue": "^2.0.13",
-    "@storybook/addon-actions": "^6.5.13",
-    "vue": "^3.2.41"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.2.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.1",
-    "vite": "^3.2.0"
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
   }
 }

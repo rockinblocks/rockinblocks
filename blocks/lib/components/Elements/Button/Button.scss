@@ -1,0 +1,34 @@
+@import "../../../styles/shared";
+
+.button {
+  text-decoration: none;
+  display: inline-flex;
+  border-radius: $button-border-radius;
+  background-color: palette(primary);
+  border: none;
+  padding: 0;
+  transition: background-color $transition-time;
+  font-size: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 12rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken($primary, 10%);
+    }
+
+    &:active {
+      background-color: darken($primary, 20%);
+    }
+  }
+}
+
+.button__inner {
+  padding: spacing(xs) spacing(sm);
+  border-radius: $button-border-radius;
+  font-family: $font-family-main;
+  color: $button-font-color;
+  font-weight: $button-font-weight;
+  justify-content: center;
+}
