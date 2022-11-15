@@ -3,8 +3,10 @@
   "blocks": [
     {
       "hero": {
-        "heading": "Create + Maintain",
-        "content": "Manage your apps, documentation, blog, components, and content in the same Git repository.\n\n**Rockin' Blocks** now comes with [TinaCMS](https://tina.io), enabling teams to create fully-customizable page building experiences, while still leveraging the limitless power of React. Create blocks as simple as a card, or as complex as a checkout, then add it to your own drag-and-drop page builder.",
+        "heading": "The #1 TailwindCSS Gatsby Starter",
+        "display": "Create + Maintain",
+        "subheading": "Build a reusable TailwindCSS library and ship it to all of your web touchpoints.",
+        "content": "Use the power of Rockin' Blocks to create a fully-customizable experience for your next web application. Powered by Gatsby and TailwindCSS, Rockin' Blocks components will save you time and money, allowing you to focus on the core of your application.",
         "buttonText": "Start a Project",
         "buttonLink": "/docs/v0/installation"
       },
@@ -18,6 +20,14 @@
         "buttonLink": "/docs/v0/installation"
       },
       "_template": "cta-1"
+    },
+    {
+      "features": {
+        "heading": "TailwindCSS & Gatsby",
+        "subheading": "Easy to extend",
+        "content": "Create your own reusable block library for all of your corporate touchpoints."
+      },
+      "_template": "features-1"
     }
   ]
 }

@@ -13,9 +13,9 @@ export interface IButtonProps {
 
 export const Button: FC<IButtonProps> = props => {
   return (
-      <button className="bg-pink-500 p-4 lg:w-48 rounded-full">
+      <button className="bg-red-500 p-4 lg:w-48 rounded-full">
         <span className="text-white font-bold">
-          Custom Button
+          Start a Project
         </span>
       </button>
   );

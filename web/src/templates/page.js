@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Helmet from "react-helmet"
-import { Hero, CallToAction } from "@rockinblocks/rockinblocks"
+import { Features, Hero, CallToAction } from "@rockinblocks/rockinblocks"
 
 const PageTemplate = ({ data }) => {
-
-  const { pagesJson } = data;
-  const { blocks } = pagesJson;
+  const { pagesJson } = data
+  const { blocks } = pagesJson
 
   const Block = data => {
     const { _template } = data
@@ -21,10 +21,20 @@ const PageTemplate = ({ data }) => {
             buttonLink={data.cta.buttonLink ?? "/"}
           />
         )
+      case "features-1":
+        return (
+          <Features
+            content={data.features.content}
+            heading={data.features.heading}
+            subheading={data.features.subheading}
+          />
+        )
       case "hero-1":
         return (
           <Hero
             heading={data.hero.heading}
+            subheading={data.hero.subheading}
+            display={data.hero.display}
             content={data.hero.content}
             buttonText={data.hero.buttonText}
             buttonLink={data.hero.buttonLink}
@@ -62,11 +72,18 @@ export const query = graphql`
           content
           heading
         }
+        features {
+          content
+          heading
+          subheading
+        }
         hero {
           buttonLink
           buttonText
           content
+          display
           heading
+          subheading
         }
       }
     }
