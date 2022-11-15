@@ -13,7 +13,7 @@ export const CallToAction: FC<ICallToActionProps> = (props): JSX.Element => {
   return (
     <div className="bg-slate-50 lg:py-32">
       <div className="container mx-auto">
-        <h2 className="text-center lg:text-6xl font-bold mb-6 max-w-2xl mx-auto">{ heading }</h2>
+        <h2 className="text-center lg:text-6xl font-bold mb-6 max-w-2xl mx-auto leading-loose">{ heading }</h2>
         <p className="text-center text-2xl text-slate-500 max-w-xl mx-auto mb-6">
           { content }
         </p>
