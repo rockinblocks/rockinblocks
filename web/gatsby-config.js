@@ -49,5 +49,13 @@ module.exports = {
         path: path.join(__dirname, `/src/content/pages`),
       },
     },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `docs`,
+        path: path.join(__dirname, `/src/content/docs`),
+      },
+    },
   ],
 }
