@@ -26,6 +26,7 @@ const PageTemplate = ({ data }) => {
           <Features
             content={data.features.content}
             heading={data.features.heading}
+            items={data.features.items}
             subheading={data.features.subheading}
           />
         )
@@ -76,6 +77,10 @@ export const query = graphql`
           content
           heading
           subheading
+          items {
+            heading
+            content
+          }
         }
         hero {
           buttonLink

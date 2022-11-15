@@ -24,8 +24,42 @@
     {
       "features": {
         "heading": "TailwindCSS & Gatsby",
-        "subheading": "Easy to extend",
-        "content": "Create your own reusable block library for all of your corporate touchpoints."
+        "subheading": "Development made easy",
+        "content": "Create your own reusable block library for all of your corporate touchpoints.",
+        "items": [
+          {
+            "heading": "Lightning fast",
+            "content": "Compile your own UI library with Vite at astonishing speeds."
+          },
+          {
+            "heading": "Easy to extend",
+            "content": "Use the library you and your team know and love in TailwindCSS."
+          },
+          {
+            "heading": "Built-in docs",
+            "content": "Write your documentation right next to your app in the same monorepo."
+          },
+          {
+            "heading": "Versioned content",
+            "content": "Manage your content through the same repository as your app in easy-to-use JSON files."
+          },
+          {
+            "heading": "Lightning fast",
+            "content": "Compile your own UI library with Vite at astonishing speeds."
+          },
+          {
+            "heading": "Easy to extend",
+            "content": "Use the library you and your team know and love in TailwindCSS."
+          },
+          {
+            "heading": "Built-in docs",
+            "content": "Write your documentation right next to your app in the same monorepo."
+          },
+          {
+            "heading": "Versioned content",
+            "content": "Manage your content through the same repository as your app in easy-to-use JSON files."
+          }
+        ]
       },
       "_template": "features-1"
     }
