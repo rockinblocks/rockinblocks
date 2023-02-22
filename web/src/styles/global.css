@@ -1,3 +1,246 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Generated with http://k88hudson.github.io/syntax-highlighting-theme-generator/www */
+/* http://k88hudson.github.io/react-markdocs */
+/**
+ * @author k88hudson
+ *
+ * Based on prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+/*********************************************************
+* General
+*/
+pre[class*="language-"],
+code[class*="language-"] {
+  color: #cbd5e1;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"]::mozselection,
+code[class*="language-"]::mozselection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+@media print {
+  pre[class*="language-"],
+  code[class*="language-"] {
+    text-shadow: none;
+  }
+}
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  background: #334155;
+}
+:not(pre) > code[class*="language-"] {
+  padding: .1em .3em;
+  border-radius: .3em;
+  color: #f87171;
+  background: #475569;
+}
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: .7;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #93a1a1;
+}
+.token.punctuation {
+  color: #999999;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #e7e5e4;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #34d399;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #fde047;
+  background: #475569;
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #06b6d4;
+}
+.token.function {
+  color: #f87171;
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: #fbbf24;
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}
+/*********************************************************
+* Line highlighting
+*/
+pre[data-line] {
+  position: relative;
+}
+pre[class*="language-"] > code[class*="language-"] {
+  position: relative;
+  z-index: 1;
+}
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: #64748b;
+  box-shadow: inset 5px 0 0 #f7d87c;
+  z-index: 0;
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+/* purgecss start ignore */
+/* Markdown Styles */
+/* Global */
+.markdown {
+  @apply leading-relaxed text-sm;
+}
+
+@screen sm {
+  .markdown {
+    @apply text-base;
+  }
+}
+
+@screen lg {
+  .markdown {
+    @apply text-lg;
+  }
+}
+
+/* Headers */
+.markdown h1,
+.markdown h2 {
+  @apply text-xl my-6 font-semibold;
+}
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply text-lg my-3 font-semibold;
+}
+
+@screen sm {
+  .markdown h1,
+  .markdown h2 {
+    @apply text-2xl;
+  }
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    @apply text-xl;
+  }
+}
+
+/* Links */
+.markdown a {
+  @apply text-blue-600;
+}
+.markdown a:hover {
+  @apply underline;
+}
+/* Paragraph */
+.markdown p {
+  @apply mb-4;
+}
+/* Lists */
+.markdown ul,
+.markdown ol {
+  @apply mb-4 ml-8;
+}
+.markdown li > p,
+.markdown li > ul,
+.markdown li > ol {
+  @apply mb-0;
+}
+.markdown ol {
+  @apply list-decimal;
+}
+.markdown ul {
+  @apply list-disc;
+}
+/* Blockquotes */
+.markdown blockquote {
+  @apply p-2 mx-6 bg-gray-100 mb-4 border-l-4 border-gray-400 italic;
+}
+.markdown blockquote > p {
+  @apply mb-0;
+}
+/* Tables */
+.markdown td,
+.markdown th {
+  @apply px-2 py-1 border border-gray-400;
+}
+.markdown tr:nth-child(odd) {
+  @apply bg-gray-100;
+}
+.markdown table {
+  @apply mb-6;
+}
+
+/* Wrap any inline highlights `that are really long`, but don't modify
+   the setting for codeblocks (inside ```), which are rendered in as:
+   <pre><code>...
+*/
+.markdown :not(pre) > code.language-text {
+  white-space: pre-line;
+}
+/* purgecss end ignore */

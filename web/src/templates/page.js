@@ -37,8 +37,10 @@ const PageTemplate = ({ data }) => {
             subheading={data.hero.subheading}
             display={data.hero.display}
             content={data.hero.content}
-            buttonText={data.hero.buttonText}
-            buttonLink={data.hero.buttonLink}
+            buttonText1={data.hero.buttonText1}
+            buttonLink1={data.hero.buttonLink1}
+            buttonText2={data.hero.buttonText2}
+            buttonLink2={data.hero.buttonLink2}
           />
         )
       default:
@@ -83,8 +85,10 @@ export const query = graphql`
           }
         }
         hero {
-          buttonLink
-          buttonText
+          buttonLink1
+          buttonText1
+          buttonLink2
+          buttonText2
           content
           display
           heading

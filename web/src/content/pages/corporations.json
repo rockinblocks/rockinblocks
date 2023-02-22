@@ -1,16 +1,14 @@
 {
-  "path": "/",
+  "path": "/corporations/",
   "blocks": [
     {
       "hero": {
         "heading": "The #1 Low-code Marketplace",
-        "display": "Discover the beauty of blocks",
+        "display": "Build Blocks + Get Paid",
         "subheading": "Elegant, low-code, community-driven blocks that save your company time and money.",
         "content": "Rockin' Blocks is the leading component marketplace that brings developers and corporations together to solve technical problems quickly with built-in support.",
-        "buttonText1": "I am a developer",
-        "buttonLink1": "/developers",
-        "buttonText2": "I am a product owner",
-        "buttonLink2": "/corporations/"
+        "buttonText1": "View the Blocks",
+        "buttonLink1": "/marketplace"
       },
       "_template": "hero-1"
     },

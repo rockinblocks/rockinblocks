@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^6.0.0",
     "gatsby-plugin-sharp": "^5.0.0",
     "gatsby-plugin-sitemap": "^6.0.0",
+    "gatsby-remark-prismjs": "^7.0.0",
     "gatsby-source-filesystem": "^5.0.0",
     "gatsby-transformer-json": "^5.0.0",
     "gatsby-transformer-remark": "^6.0.0",

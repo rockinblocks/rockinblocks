@@ -29,8 +29,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 heading
               }
               hero {
-                buttonLink
-                buttonText
+                buttonLink1
+                buttonText1
+                buttonLink2
+                buttonText2
                 content
                 heading
               }
@@ -58,4 +60,41 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+    // Setup documentation files
+    // const documentTemplate = path.resolve(`src/templates/document.js`)
+    // const documents = await graphql(`
+    //   {
+    //     allMarkdownRemark(
+    //       filter: { frontmatter: { type: { eq: "document" } } }
+    //       sort: {frontmatter: {title: DESC}}
+    //       limit: 1000
+    //     ) {
+    //       edges {
+    //         node {
+    //           frontmatter {
+    //             path
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // `)
+  
+    // // Handle errors
+    // if (documents.errors) {
+    //   reporter.panicOnBuild(
+    //     `Error while running GraphQL query on document pages.`
+    //   )
+    //   return
+    // }
+  
+    // // Build out documentation
+    // documents.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    //   createPage({
+    //     path: node.frontmatter.path,
+    //     component: documentTemplate,
+    //     context: {}, // additional data can be passed via context
+    //   })
+    // })
 }
